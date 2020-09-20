@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html lang="ie" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Capitul 1 - scritorium</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        
+
+        <div id="definition"></div>
+
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="../index.html">Hem</a></li><li class="spacer"></li><li class="chapter-item affix "><li class="part-title">Non-fiction</li><li class="chapter-item "><a href="../MicriCrestomatie/0.html"><strong aria-hidden="true">1.</strong> Micri Crestomatie</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../MicriCrestomatie/1.html"><strong aria-hidden="true">1.1.</strong> Capitul 1</a></li></ol></li><li class="chapter-item "><li class="part-title">Fiction</li><li class="chapter-item "><a href="../LiLittPrince/0.html"><strong aria-hidden="true">2.</strong> Li Litt Prince</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../LiLittPrince/1.html"><strong aria-hidden="true">2.1.</strong> Capitul 1</a></li></ol></li><li class="chapter-item expanded "><a href="../UnDesertor/0.html"><strong aria-hidden="true">3.</strong> Un Desertor</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../UnDesertor/1.html" class="active"><strong aria-hidden="true">3.1.</strong> Capitul 1</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">scritorium</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <div id="langPicker"></div>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>Yo totmen ne intentet venir a ci, ma yo havet viageat in du dies e esset fatigat. Mi ocules dolet, e mi cute esset rigid pro sudore e polve. Li pales de telegraf dansat in mi cap. Yo esset fortiat a perdormir un nocte in un real lette, por esser sparniat de escutar li perpetui battida del rotes sur li junturas de rel. Dunc yo descendet, per hasard.</p>
+<p>It esset tard, e li illumination esset mal; pro to yo in li comense ne posset percepter mult del cité. Yo savet que it esset old, e li ranges de dom aspectet comic. Li omnibus del hotel, un antiqui diligence, cliquettat for con me e un altri senior; noi representat li tot captura. Yo recivet un chambre, e pos haver jacentat me in li lette yo prendet un del gazettes sur li table de nocte, por far indormir me per leer it. It actet se pri nascetes e morites, pri tumultus e ebrietá e pri li curiositás del cité, omnicos enumerat in quin o six lineas. Or mi ocules haltat a un nom quel yo iterat, pro que it causat un sorte de echo in mi memorie; qualmen, to yo ne savet in li comense. Yo leet: doctor Gabriel Liepe. Il residet in li dom del cordero Åman a Grand Mercate e receptet visites de malades omni dies inter horas decidu e deciquar. Gabriel Liepe... Yo repetit li nom, e li rules del memorie comensat desspulat lor ancian bandes.</p>
+<p>Lu unesim concret, quel yo posset associar con li no, esset un tre diffusi impression de un noctal vigilantie finient in li matinal illuminada: sole aprilari tra un par micri fenestres in un chambre-pare tre lontan sur Kungsholmen; panorama super Mälaren, emalie-grisi in li jorneada; un segle lucidat del sole. Li chambre esset li studio de un medico: libres, preparates, instrumentes e in su angul li squelette covrit del verdi toal. E disperset ci e ta sur li stules quelc yun mannes, qui hontat pro lor fysionomies e qui ne plu posset trovar li paroles. Li mann in li angul del sofa, ti con li hastosti demi-extint pupilles, esque il ne nomat se Liepe? Su deformat fronte aspectet quam si nequande plastat pret o quam si presset a exteriori in bosses de alcun fermentative, un vulcanic materie quel movet se eruptivmen in lu interiori. Noi havet incontrat nos un par vezes, e il interessat me. Il havet su propri gust tre limitat; il revat pri japan arte e modern mystica e esset sempre plen de jovial sarcasme vers su compatriotes. Il ne fat hastar su exámin, ma yo audit per su camarades que ti expectat se devenir excellent. Un par de su dissertationes havet evocat sensation. Su rayon esset ti del morbes mental.</p>
+<p>Or noi perdit li intercontacte; it passat annus sin que yo audit su nom, e finalmen yo anc obliviat it. It trovat se nequande in li gazettes de Stockholm. Nu it apparit ci, quam un comete escortat de un tot caude de enigmas. Pro quo hat devenit silent circum il? Pro quo hat il desertet de omnicos e incavat se ci? Qual esset il nu? Yo lassat li problema al dorme, e in li matin yo eat por obtener claritá pri it.</p>
+<p>Receptet me un ridícul micri cité, silent e morosi, con barrat covrimentes de fenestre e un melancolic policist in un angul de strada. Presc omni domes inclinat se al láter talmen que it semblat quam si li cité esset alquo claudicant. Alcú fluet aqua; yo trovat it e transeat un ponte petrin, havente avan me un olda con un capre. Li tempe esset frigid, e li fluvie odorat mofe. Un vulte intrari sufflat me su frigid hala a in li visage; ta interne stat un strangi individuo, qui ticat con li fingres e desmettet li casquette till li suol. Yo continuat vader. Grand Mercate esset vacui, con su pumpe in li centre e con tuffes de herbe inter li convex petres. Yo serchat, till que yo trovat li nom-platte del medico sur un blanc-pinselat barriere de lette circum un micri jardin. Py yo apertet li porta barrieri e intrat.</p>
+<p>Li medico self apparit in li porta, e yo strax reconosset le. Su vulte frontal aspectet ancor plu colossal sub li detenuat capilles, queles esset fortmen grisi jant, ma lu hastosi in li regard havet desapparit. Il regardat diselinante li cap il lassat me intrar preter il; yo esset un patient, e de ti merce existet null abundantie ci.</p>
+<p>-- Nu yo comprende, dit il rapidmen, pos have saventat mi nom. In plu, li visage semblat frappant a me. Tre affabil de te serchar me. Noi sidet compressetmen in un micri cabine, quel esset plenmen stuffat de medical utensiles e curiosages. Japan esset constantmen li patria de su anim. Sur li paretes il havet long bandes de paper con japan motives; ultra-blu lagos; tenui Arbores floreant in blanc e sin ombres; dracones e litt féminas con sapates altment talonat, con hectic osses de guancie e agulies crucial in lor capilles. Anc li figures de porcellan sur li scri-table originat ex li regne insulari, e li incriere presentat un inflat e cruel image de pagan con desmettet cranie. In un cage sidet un cacatú dormient quam un old chef-prestro, e sur li tapisse jacet un jalni catte.</p>
+<p>Pos li unesim gladiadas in avanposto con reciproc commenoranties noi avansat plu proxim a unaltes, e yo questionat le tot directmen pri li cause de que il havet fixat se in ti ci loco. E pro quo il havet desapparit tam subitmen.</p>
+<p>-- Subitmen? Il ridet. Yo besonat annus por desapparir. Omni die yo desapparit poc a poc, e finalmen yo havet solmen a metter &quot;li bell restes&quot; sur li tren. Nequo eveni subitmen che li image de Deo; il mey rapter un bese o mortar spontanmen su proximo. Li moment es sempre un punctu final. Yo esset enoyat pri Stockholm; qualmen yo hat esset enoyat, to es un altri historie. On volet dar me un docentura, in casu que yo restat; on tendet li brasses in li aer e parlat pri li socie, li futur, deves vers noi self e pri pundes queles noi ne deve infossar. Alor yo devenit anxiosi e fugit.</p>
+<p>Tu comprende: yo esset lassi ye li homes. Yo compleset me in li alienatoria; li incageat alienates es supportabil, ma tis qui promena in libertá circum noi, es pejor. Promenat du cent e quinanti mill de illi in Stockholm, e it esset impossibil negliger omnes. In omni casu, tis ne negliget me; in frottar se a me illi infectet me a minim un poc. Finalmen yo sentit me quam in un balne vapori de transpiration de omni ti homan cerebres. Li animes descolorat se e spoliat. Alquo presset me al péctor; it esset quam si yo havet inhalat ne aer, ma eterisat homes. Li atmosfere esset plen del idiotie de Lundström e del vilanie de Carlsson; omni to yo esset obligat a consumer omni die, pro que yo besonat oxygen, hydrogen e nitrogen. - Ci it es melior. Hay spacie sur li stradas. Yo es medico assistent in li alienatoria, e yo frequenta solmen homes qui ne ha li sam conceptiones quam tis del majorité pri li circumdant objectes e qui pro to es incageat. Pro li cerebres de tis yo time nequo. Forsan yo es immun.</p>
+<p>-- Dunc tu complese te. Ma esque tu ne, quelcvez, desira frequentar anc homes con san mentes?</p>
+<p>Il levat se e plenat su pipa. Su ocules palpebrat in li fum.</p>
+<p>-- Car fratre, hay nequi mentalmen san. Li normal hom es [BEGIN ???] un plefjklfjds, in fdjskfldsjfmen. [END ???] Il existe solmen sur li paper. - [BEGIN ???] Mel fjfkdl ajdf un fiori norub [END ???] quel ha desligat se, addit il [BEGIN ???] fjdsklfjsl.</p>
+<p>To restat il sfdj il [END ???] manjat con li appetite de un gigante [BEGIN ???] sf, Il vegectet sur o sunguosi [END ???] e ridet bruientmen. Solmen [BEGIN ???] fa un observat, [END ???] qualmen tot su apparentie havet alterat se. [BEGIN ???] Yo il magri visage Bel yuno, [END ???] con su mal carnation sicc e inpur e fisset do precoci passiones, havet resultat se un Dysinomie in evident benesser e con superflu parties de fjdsa, Anc li voce havet devenit un nov. It ne plu sibilet e ne disfendet se; lontan e long it portat li parlada de un satisfat hom.</p>
+<p>-- To es felici, dit yo.</p>
+<p>-- Ten, yo constatat que it esset stult esser lu contrari. Li caffe esset servit in li jardin, sub un castaniero. It havet pluviat recentmen. Venit li crepuscul, cindre-grisi e humid e con acidatri odores ex humid folies e humus. In li silentie yo posset audir li murmurada del fluvie. Tot li micri jardin semblat exhalar un infinit grive. Circum noi esset un atomosfere de morte, de obliviat dies e de generationes hant esset sepultet. It semblat, quam si li aer esset saturat de alcun invisibl materie, ti del terra li vapor del bon terra, quel donat visiones e repose.</p>
+<p>Evidentmen mi amico hat divinat alquo de mi penses.</p>
+<p>-- Tu opine que it es morni ci. A me omni to es bon. Finalmen mi anim ha trovat su paisage. It es necessi que ambes have li approximativmen sam temperatura, pro que illi may cumpleser se. Al gente in general li isolation e li crepuscul suggeste anxie; to es un rest del primitiv horror ocram li obscuritá. A me li anxie veni sempre in li clar jorne, quande yo trova me inter li homes. Alor eveni que yo senti un obstinat horror, un impluse de hastar a hem por celar mi cap sub un cussin. Ma yo standa sempre plu bon in li moment u diminue se li luce de jorne.</p>
+<p>Yo sidet regardante Liepe; il parlat ingenatmen e sin dar alcune importantie a su paroles. Tot su ente indicat a un hom in equilibrie e demandant null change concernant su existentie. Tamen yo ne posset liberar me de un sentiment de que ti ci mann avan me, con li statura de un Hercules e con li boncordiosi fortie del semideo in parlada e gestes, esset li victim de un mismanovre, de un tactic erra vers il self. Esque il esset tam san quam il aspectet? Un malade senti se san, quande su morbid demandes ea satisfat. Li silentie, li obscuritá, lu incrementat e lu morient de ti ci micri loco abderari, esque omni to ne representat a Liepe lu sam quel li opium es a un hom corporalmen tormentat? In narotisar se il credet, que il curat se. Li via al sanitá ea vers li jorne, ma li vias de il ductet a intro, e il vivet detra demi-rulat cortines. Su munde stat populat de ombres.</p>
+<p>Un qui hat desertet del vive.</p>
+<p>Subitmen il esset emotionat, e su visage convulset pro dolore.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../UnDesertor/0.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../UnDesertor/0.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script src="https://occidental-lang.com/website-word-lookup/lookup.js"></script>
+        <script>
+            lookupInit('https://occidental-lang.com/website-word-lookup/dict.json');
+            document.onselectionchange = debounce(lookup, 500);
+        </script>
+        
+
+    </body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE HTML>
+<html lang="ie" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Capitul 1 - scritorium</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        
+
+        <div id="definition"></div>
+
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="../index.html">Hem</a></li><li class="spacer"></li><li class="chapter-item affix "><li class="part-title">Non-fiction</li><li class="chapter-item expanded "><a href="../MicriCrestomatie/0.html"><strong aria-hidden="true">1.</strong> Micri Crestomatie</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../MicriCrestomatie/1.html" class="active"><strong aria-hidden="true">1.1.</strong> Capitul 1</a></li></ol></li><li class="chapter-item "><li class="part-title">Fiction</li><li class="chapter-item "><a href="../LiLittPrince/0.html"><strong aria-hidden="true">2.</strong> Li Litt Prince</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../LiLittPrince/1.html"><strong aria-hidden="true">2.1.</strong> Capitul 1</a></li></ol></li><li class="chapter-item "><a href="../UnDesertor/0.html"><strong aria-hidden="true">3.</strong> Un Desertor</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../UnDesertor/1.html"><strong aria-hidden="true">3.1.</strong> Capitul 1</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">scritorium</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <div id="langPicker"></div>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3><a class="header" href="#altruisme" id="altruisme">ALTRUISME</a></h3>
+<p>Micri Fred salvat ex aqua su conscolero sub quel ruptet se li glacie.</p>
+<p>&quot;Quo ha inspirat te riscar propri vive por tui camarado?&quot; questionat le un old dama.</p>
+<p>&quot;Il havet mi patines.&quot;</p>
+<h3><a class="header" href="#un-bon-exemple" id="un-bon-exemple">UN BON EXEMPLE</a></h3>
+<p>Instructor: &quot;Indica me un liquore quel ne congela.&quot;</p>
+<p>Scolero: &quot;Calid aqua.&quot;</p>
+<h3><a class="header" href="#li-ultim-rata" id="li-ultim-rata">LI ULTIM RATA</a></h3>
+<p>Ergo, vu, seniora, paya li ultim rata al luluore? Qualmen standa li infantett?</p>
+<p>On bon, serion; yer ella maritat se.</p>
+<h3><a class="header" href="#ella-self-complee-it" id="ella-self-complee-it">ELLA SELF COMPLEE IT</a></h3>
+<ul>
+<li>Quo tu va dir a tui marita, quande tu va venir tam tard in li nocte a hem?</li>
+</ul>
+<p>Yo? Solmen: &quot;bon vésper!&quot; Lu ceteri va dir ella.</p>
+<h3><a class="header" href="#Íncredibil" id="Íncredibil">ÍNCREDIBIL</a></h3>
+<p>&quot;Presenta te, Sam, que yo ha lassat ante du dies un decifranc in li parc sur un banca e quande yo ha venit ta hodie, it ancor esset ta.&quot;</p>
+<p>&quot;Li decifranc?&quot;</p>
+<p>&quot;No, li banca.&quot;</p>
+<h3><a class="header" href="#domestic-Órdine" id="domestic-Órdine">DOMESTIC ÓRDINE</a></h3>
+<p>Senior Nigrin ea hem. Li porta sta cludet. Sr. Nigrin agita li cloche un moment. Necos. Il agita un hore. Null response. Il ea e aducte un serrurero. Sur li via il incontra un policist quem il prende con se. Li serrurero aperte li porta, ili intra in li avanchambre e poy in li cocinería. Sur li table ili trova un foliette de paper e sur it quelc lineas scrit per li manu de seniora Nigrin. Ili lee: &quot;Yo es in kino. Li clave es avan li porta sub li matte.&quot;</p>
+<h3><a class="header" href="#contra-li-tortura-de-animales" id="contra-li-tortura-de-animales">CONTRA LI TORTURA DE ANIMALES</a></h3>
+<p>Director de un obscur teatre ha fixat avan li intrada li sequent avertiment: &quot;Ducter canes in li teatre es prohibit!&quot;</p>
+<p>Li sequent die alcun jocon ha subscrit: &quot;Li societé por protecter animales.&quot;</p>
+<h3><a class="header" href="#li-spiritual-manjage" id="li-spiritual-manjage">LI SPIRITUAL MANJAGE</a></h3>
+<p>A Oscar Wilde misset su conosset scritor un libre con calid dedication.</p>
+<p>Wilde publicat pri ti libre un curt ma anihilant critica.</p>
+<p>Pos un semane li autor visitat Wilde e revuante li biblioteca il trovat su libre. Regardante li libre il dit con indignation:</p>
+<ul>
+<li>Nu, to es un fort colpe! Vu ya ha tranchat solmen li unesim págines e támen vu ha scrit un refusant critica. To es ya adminim ínresponsibil!</li>
+</ul>
+<p>Wilde regardat le con compatiós ride e poy dit amicalmen:</p>
+<ul>
+<li>Pro quo tal reprocha? Si noi vole constatar, esque un ove es mal, noi ya ne besona manjar it tot.</li>
+</ul>
+<h3><a class="header" href="#un-exÁmine" id="un-exÁmine">UN EXÁMINE</a></h3>
+<p>&quot;Esque vu posse dir me,&quot; questionat li examinator un candidate, &quot;quel es li diferent qualitás de frigore e de calore?&quot;</p>
+<p>Pos un moment de pensada li yun mann response:</p>
+<p>&quot;Li calore dilata e li frigore contrae.&quot;</p>
+<p>&quot;Bon. E nu, esque vu posse dar me un exemple de dilatation per li calore e de contration per li frigore?&quot;</p>
+<p>&quot;In hiverne, quande it frige, li dies es tre curt e in estive, quande it cale, li dies es tre long.&quot;</p>
+<p>Li examinator ridetta, ma noi ne save, esque li candidate recivet un tre bon note de su exámine de fisica.</p>
+<h3><a class="header" href="#un-desfacil-consilie" id="un-desfacil-consilie">UN DESFACIL CONSILIE</a></h3>
+<ul>
+<li>
+<p>Yo ancor hesita, esque ear al nuptia. Ad u tu es invitat?</p>
+</li>
+<li>
+<p>Yo ne es invitat, ma yo es sponso.</p>
+</li>
+</ul>
+<h3><a class="header" href="#quo-es-diafan" id="quo-es-diafan">QUO ES DIAFAN?</a></h3>
+<p>&quot;Esque vor professor explicat vos li elementari qualitás de córpores?&quot; questionat li examinator.</p>
+<p>&quot;Yes, senior.&quot;</p>
+<p>&quot;Bon. Ergo, ples dir me, quo es un córpore diafan?&quot;</p>
+<p>Silentie.</p>
+<p>&quot;Nu?&quot;</p>
+<p>&quot;Un córpore diafan es... Yo rememora bon... it es... es...&quot;</p>
+<p>&quot;It es un córpore tra quel on vide li luce, ne ver?&quot;</p>
+<p>&quot;Yes, senior.&quot;</p>
+<p>&quot;Bon. Pro que vu ne savet dar me li definition, ples dar me un exemple.&quot;</p>
+<p>&quot;Por exemple... un serrure.&quot;</p>
+<p>&quot;Qualmen - un serrure?&quot;</p>
+<p>&quot;Yes, nam on posse remarcar li luce tra li apertura del clave.&quot;</p>
+<h3><a class="header" href="#burocratisme" id="burocratisme">BUROCRATISME</a></h3>
+<p>Un passagero hat obliviat in li taxi Nr. XX 333 un paquette. Quande li chofero apertet it, il trovat tri trutes recent captet. Quam honest mann, il vehiculat al policial comissariatu por deposir ta li trovate. Li dejorant oficiate dit le:</p>
+<p>&quot;Si nequi va postular li trutes durant un annu, vu posse reprender les, ili va esser vor.&quot;</p>
+<h3><a class="header" href="#secun-custom" id="secun-custom">SECUN CUSTOM</a></h3>
+<p>Li professor del latin omnidie voca scolero Trepidon e regularimen li cose fini con &quot;ínsuficent&quot;. Ma un die Trepidon ne esset in li scol.</p>
+<p>Professor: &quot;Trepidon, continua traducter.&quot;</p>
+<p>Li scoleros voca: &quot;Senior, professor, il es absent.&quot;</p>
+<p>Professor: &quot;To, Trepidon, ne impedi. Vu have denove ínsuficent.&quot;</p>
+<h3><a class="header" href="#un-ne-sufice" id="un-ne-sufice">UN NE SUFICE</a></h3>
+<p>Senior Biraci marchat tra li chossé quande li fúlmine fat un colpe. Senior Briraci jetta se in li fosse e resta sin move. Ci veni tri samaritanes e prova reviver le. Ma senior Biraci ne move ni un ocul. Tande un samaritane di:</p>
+<p>&quot;Du de nos va frottar le e un va ear por aportar bir.&quot;</p>
+<p>Senior Biraci, audiente li ultim paroles, exclama:</p>
+<p>&quot;Stopp! Un va frottar me e du va ear por aportar bir.&quot;</p>
+<h3><a class="header" href="#un-erra" id="un-erra">UN ERRA</a></h3>
+<p>Professor in nocte: Esque es ci alqui?</p>
+<p>Furtero: Nequi es ci.</p>
+<p>Professor: Yo mersía vos, yo támen errat.</p>
+<h3><a class="header" href="#sur-li-mercate" id="sur-li-mercate">SUR LI MERCATE</a></h3>
+<p>&quot;No, senior, yo ne posse reducter li precie; it mey mi marita strax morir; e mi infantes mey morir ye difterite, si yo ne ad-paya un corone ye chascun metre!&quot;</p>
+<p>&quot;Nu, da me tri metres de ti stoff. Ma di me, qualmen vu posse pro un corone talmen hasardar con tot vor familie?&quot;</p>
+<p>&quot;Totmen facil. Yo es celibi.&quot;</p>
+<h3><a class="header" href="#un-venus" id="un-venus">UN VENUS</a></h3>
+<p>&quot;Si yo posse consiliar te, car filio, marita ti de Mayer, ella va reciver presc un quart million.&quot;</p>
+<p>&quot;Ma, papá, ella ya horribilmen claudica!&quot;</p>
+<p>&quot;Ne vale. Tu posse calechear con ella e talmen on va saver necos.&quot;</p>
+<p>&quot;Ma, papá, ella have un ocul vitrin!&quot;</p>
+<p>&quot;Plu bon, ella va vider tui mancas e culpas solmen ye demí.&quot;</p>
+<p>&quot;Ma ella have mem un imposant bosse!&quot;</p>
+<p>&quot;Pro amore de deo, esque ella deve haver ni un defect? Esque ella deve esser un ver Venus?&quot;</p>
+<h3><a class="header" href="#li-citÉ-de-honestes" id="li-citÉ-de-honestes">LI CITÉ DE HONESTES</a></h3>
+<p>Un magnato volent dar su dominia in arenda, di a un interessato:</p>
+<p>&quot;Cuida strax desaparir! Vu judéos de Szerdahély es solmen furteros e rascales!&quot;</p>
+<p>&quot;Excusa, senior, che nos existe tre mult honest homes. Yo posse nominar quelc cent de ili.&quot;</p>
+<p>&quot;Nu, nomina almen tri!&quot;</p>
+<p>Li judéo reflecte long e poy di:</p>
+<p>&quot;Yo peti, senior, esque ili deve esser just de Szerdahély?&quot;</p>
+<h3><a class="header" href="#dementie" id="dementie">DEMENTIE</a></h3>
+<p>Humboldt petit li celebri psichiatro Blanche, possibilisar le un diné con alcun demente (follo).</p>
+<p>&quot;Con plesur,&quot; dit Blanche. &quot;Ples venir che me deman dinear.&quot;</p>
+<p>Li proxim die Humboldt sidentat se apu li table del celebri medico contra du ínconosset gastes. Un de ili, vestit in nigri, ha salutat e sidentat se. Il manjat, trincat e silentiat. -- Li duesim con desfriset capilles, in blu negligent butonat veste, apoyat se per cudes sur li table, manjat per plen bocca e samtemporanmen babillat e babillat, ne cuidante pri li coherentie de su historiettes.</p>
+<p>Durant li dessert Humboldt clinat se a Blanche e monstrante al senior in blu veste, chuchotat le in li orel:</p>
+<p>&quot;Yo mersía vos, ti demente es tre interessant.&quot;</p>
+<p>&quot;Qualmen?&quot; clamat li medico. &quot;Ti senior ya ne es dement! Li demente es li altri.&quot;</p>
+<p>&quot;Ti quel sempre tace?&quot;</p>
+<p>&quot;Certmen.&quot;</p>
+<p>&quot;Qui do es ti quel continualmen parla?&quot;</p>
+<p>&quot;Ti? To es ya Balzac!&quot;</p>
+<h3><a class="header" href="#bon-calculation" id="bon-calculation">BON CALCULATION</a></h3>
+<p>&quot;Si es quar moscas sur li table e yo morta un, quant moscas resta sur li table?&quot;</p>
+<p>&quot;Un,&quot; responde un micri puella, e quande li preceptor íncontentmen sucusse li cap, ella adjunte fiermen: &quot;Li mort.&quot;</p>
+<h3><a class="header" href="#li-max-regulari-vive" id="li-max-regulari-vive">LI MAX REGULARI VIVE.</a></h3>
+<p>&quot;Senior Manjon, vu aspecte tre mal. Vu deve viver un poc plu regularimen.&quot;</p>
+<p>&quot;Ma, mi vive es tre regulari! Chascun vésper yo ea regularimen al gastería, ta yo regularimen trinca ott til deci glasses de bir e inter clocca duant tri e un yo retorna regularimen al hem. Esque on posse viver plu regularimen?&quot;</p>
+<h3><a class="header" href="#in-li-cinema" id="in-li-cinema">IN LI CINEMA</a></h3>
+<p>&quot;Senior, yo ne comprende, qualmen vu posset in obscur grattar mi manu!&quot;</p>
+<p>&quot;Sincerimen dit, senioretta, nu in lucid anc yo ne comprende to.&quot;</p>
+<h3><a class="header" href="#un-combinat-cura" id="un-combinat-cura">UN COMBINAT CURA</a></h3>
+<p>Medico: Vor marita deve quin dies absolutmen abstiner de manja. Ultra to yo va dar la pillules queles ella deve usar pos chascun manja.</p>
+<h3><a class="header" href="#ne-omnicos-splendent-es-aure" id="ne-omnicos-splendent-es-aure">NE OMNICOS SPLENDENT ES AURE</a></h3>
+<p>Li preceptor: &quot;Esque alqui posse dir me un exemple confirmant li proverbie: Ne omnicos es aure quo splende?&quot;</p>
+<p>Micri Ernesto: &quot;Vor pantalon, senior.&quot;</p>
+<h3><a class="header" href="#un-amic-del-animales" id="un-amic-del-animales">UN AMIC DEL ANIMALES</a></h3>
+<p>&quot;Esque vu es zoofil, senior Blond?&quot;</p>
+<p>&quot;Oh yes, yo ama les tre; precipue homares, ostres e gallinelles.</p>
+<h3><a class="header" href="#un-miscomprense" id="un-miscomprense">UN MISCOMPRENSE</a></h3>
+<p>&quot;Vide, li lápid-haccator have un tre dur pan.&quot;</p>
+<p>-- Vermen? Yo opinet, que to es lápides!&quot;</p>
+<h3><a class="header" href="#li-rect-response" id="li-rect-response">LI RECT RESPONSE</a></h3>
+<p>Patre: &quot;Carletto, si li matre da te un torte, quo tu va dir la?&quot;</p>
+<p>Carletto: &quot;Da me ancor un.&quot;</p>
+<h3><a class="header" href="#bon-consilie" id="bon-consilie">BON CONSILIE</a></h3>
+<p>Filio: &quot;Quo tu pensa, patre, esque yo deve devenir oculist o dentist?&quot;</p>
+<p>Patre: &quot;Dentist; nam on have solmen du ocules ma triant du dentes.&quot;</p>
+<h3><a class="header" href="#sempre-selfic" id="sempre-selfic">SEMPRE SELFIC</a></h3>
+<p>Li old Smit es malad. Apu su lette sede su fidel marita Suzi e plora.</p>
+<p>&quot;Nu, ne plora,&quot; di li old Smith, &quot;e si tu vole far alquó por me, prende sur te li bell nov silkin robe.&quot;</p>
+<p>Suzi prendet li nov robe.</p>
+<p>&quot;E prende anc li chapel con li long strucin plum.&quot;</p>
+<p>Suzi posit sur li cap li chapel con li plum.</p>
+<p>&quot;E prende anc li ventol con li bell ivorin tenette.&quot;</p>
+<p>Suzi trovat li ventol.</p>
+<p>&quot;E prende omni juveles,&quot; continua Smit.</p>
+<p>Suzi prendet omni familian juveles.</p>
+<p>&quot;E nu pudra te un poc.&quot;</p>
+<p>Suzi pudra se avan li spegul, ma ne possente plu retener se, ella questiona: &quot;Yo peti te, Alfred, pro quo tu demanda de me to ci?&quot;</p>
+<p>&quot;Nu, Suzi, li afere es tal: Si li bon Deo va venir por me, fórsan tu va pleser le plu quam yo e in ti casu il va preferibilmen prender te.&quot;</p>
+<h2><a class="header" href="#proverbies" id="proverbies">PROVERBIES</a></h2>
+<ul>
+<li>
+<p>Del parol til action li via es tre long.</p>
+</li>
+<li>
+<p>Li pluvie de matin ne abhorre li peregrine.</p>
+</li>
+<li>
+<p>Li fructe nequande cade lontan del árbor.</p>
+</li>
+<li>
+<p>Vale plu directer se a Deo quam a su santos.</p>
+</li>
+<li>
+<p>Null fructe sin lucte.</p>
+</li>
+<li>
+<p>Li parol argentin, li silentie aurin.</p>
+</li>
+<li>
+<p>Quande lu mal es fat, chascun ha previdet it.</p>
+</li>
+<li>
+<p>Li clave aurin aperte omni portas.</p>
+</li>
+<li>
+<p>Qui ne accepte consilie ne merite auxilie.</p>
+</li>
+<li>
+<p>Li veritá es filia del témpore.</p>
+</li>
+<li>
+<p>Roma ne es constructet in un die.</p>
+</li>
+<li>
+<p>In vigorosi córpor un anim vigorosi.</p>
+</li>
+<li>
+<p>Li árbor fa se conosset per fructes.</p>
+</li>
+<li>
+<p>Grand pisces manja li micris.</p>
+</li>
+<li>
+<p>Null rose sin spines.</p>
+</li>
+<li>
+<p>Qui ne sema in verne, ne recolta in autun.</p>
+</li>
+<li>
+<p>Omni mercero lauda su merce.</p>
+</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../MicriCrestomatie/0.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../LiLittPrince/0.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../MicriCrestomatie/0.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../LiLittPrince/0.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script src="https://occidental-lang.com/website-word-lookup/lookup.js"></script>
+        <script>
+            lookupInit('https://occidental-lang.com/website-word-lookup/dict.json');
+            document.onselectionchange = debounce(lookup, 500);
+        </script>
+        
+
+    </body>
+</html>
