@@ -7,7 +7,14 @@ title = "scritorium"
 
 [output.html]
 theme = "src/theme"
+default-theme = "rust"
+git-repository-url = "https://github.com/occidental-lang/scritorium"
+site-url = "/scritorium/"
+cname = "occidental-lang.com"
 
 [output.html.fold]
 enable = true
 level = 0
+
+[build]
+build-dir = "docs"
