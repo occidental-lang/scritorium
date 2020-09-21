@@ -1,0 +1,898 @@
+<!DOCTYPE HTML>
+<html lang="ie" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>B 1 - scritorium</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        
+
+        <div id="definition"></div>
+
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="../index.html">Hem</a></li><li class="chapter-item "><a href="../MicriCrestomatie/0.html"><strong aria-hidden="true">1.</strong> Micri Crestomatie</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../MicriCrestomatie/1.html"><strong aria-hidden="true">1.1.</strong> Capitul 1</a></li><li class="chapter-item "><a href="../MicriCrestomatie/proverbies.html"><strong aria-hidden="true">1.2.</strong> Proverbies</a></li></ol></li><li class="chapter-item "><a href="../LiLittPrince/0.html"><strong aria-hidden="true">2.</strong> Li Litt Prince</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../LiLittPrince/1.html"><strong aria-hidden="true">2.1.</strong> Capitul 1</a></li><li class="chapter-item "><a href="../LiLittPrince/2.html"><strong aria-hidden="true">2.2.</strong> Capitul 2</a></li><li class="chapter-item "><a href="../LiLittPrince/3.html"><strong aria-hidden="true">2.3.</strong> Capitul 3</a></li><li class="chapter-item "><a href="../LiLittPrince/4.html"><strong aria-hidden="true">2.4.</strong> Capitul 4</a></li><li class="chapter-item "><a href="../LiLittPrince/5.html"><strong aria-hidden="true">2.5.</strong> Capitul 5</a></li><li class="chapter-item "><a href="../LiLittPrince/6.html"><strong aria-hidden="true">2.6.</strong> Capitul 6</a></li><li class="chapter-item "><a href="../LiLittPrince/7.html"><strong aria-hidden="true">2.7.</strong> Capitul 7</a></li><li class="chapter-item "><a href="../LiLittPrince/8.html"><strong aria-hidden="true">2.8.</strong> Capitul 8</a></li><li class="chapter-item "><a href="../LiLittPrince/9.html"><strong aria-hidden="true">2.9.</strong> Capitul 9</a></li><li class="chapter-item "><a href="../LiLittPrince/10.html"><strong aria-hidden="true">2.10.</strong> Capitul 10</a></li><li class="chapter-item "><a href="../LiLittPrince/11.html"><strong aria-hidden="true">2.11.</strong> Capitul 11</a></li><li class="chapter-item "><a href="../LiLittPrince/12.html"><strong aria-hidden="true">2.12.</strong> Capitul 12</a></li><li class="chapter-item "><a href="../LiLittPrince/13.html"><strong aria-hidden="true">2.13.</strong> Capitul 13</a></li></ol></li><li class="chapter-item "><a href="../UnDesertor/0.html"><strong aria-hidden="true">3.</strong> Un Desertor</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../UnDesertor/1.html"><strong aria-hidden="true">3.1.</strong> Capitul 1</a></li></ol></li><li class="chapter-item expanded "><a href="../Cosmoglotta/0.html"><strong aria-hidden="true">4.</strong> Cosmoglotta</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/1927.html"><strong aria-hidden="true">4.1.</strong> 1927</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/038.html"><strong aria-hidden="true">4.1.1.</strong> A 38</a></li><li class="chapter-item "><a href="../Cosmoglotta/039.html"><strong aria-hidden="true">4.1.2.</strong> A 39</a></li><li class="chapter-item "><a href="../Cosmoglotta/040.html"><strong aria-hidden="true">4.1.3.</strong> A 40</a></li><li class="chapter-item "><a href="../Cosmoglotta/041.html"><strong aria-hidden="true">4.1.4.</strong> A 41</a></li><li class="chapter-item "><a href="../Cosmoglotta/042.html"><strong aria-hidden="true">4.1.5.</strong> A 42</a></li><li class="chapter-item "><a href="../Cosmoglotta/043.html"><strong aria-hidden="true">4.1.6.</strong> A 43</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1928.html"><strong aria-hidden="true">4.2.</strong> 1928</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/044.html"><strong aria-hidden="true">4.2.1.</strong> A 44</a></li><li class="chapter-item "><a href="../Cosmoglotta/045.html"><strong aria-hidden="true">4.2.2.</strong> A 45</a></li><li class="chapter-item "><a href="../Cosmoglotta/046.html"><strong aria-hidden="true">4.2.3.</strong> A 46</a></li><li class="chapter-item "><a href="../Cosmoglotta/047.html"><strong aria-hidden="true">4.2.4.</strong> A 47</a></li><li class="chapter-item "><a href="../Cosmoglotta/048.html"><strong aria-hidden="true">4.2.5.</strong> A 48</a></li><li class="chapter-item "><a href="../Cosmoglotta/049.html"><strong aria-hidden="true">4.2.6.</strong> A 49</a></li><li class="chapter-item "><a href="../Cosmoglotta/050.html"><strong aria-hidden="true">4.2.7.</strong> A 50</a></li><li class="chapter-item "><a href="../Cosmoglotta/051-052.html"><strong aria-hidden="true">4.2.8.</strong> A 51-52</a></li><li class="chapter-item "><a href="../Cosmoglotta/053.html"><strong aria-hidden="true">4.2.9.</strong> A 53</a></li><li class="chapter-item "><a href="../Cosmoglotta/054.html"><strong aria-hidden="true">4.2.10.</strong> A 54</a></li><li class="chapter-item "><a href="../Cosmoglotta/055.html"><strong aria-hidden="true">4.2.11.</strong> A 55</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1929.html"><strong aria-hidden="true">4.3.</strong> 1929</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/056.html"><strong aria-hidden="true">4.3.1.</strong> A 56</a></li><li class="chapter-item "><a href="../Cosmoglotta/057.html"><strong aria-hidden="true">4.3.2.</strong> A 57</a></li><li class="chapter-item "><a href="../Cosmoglotta/058.html"><strong aria-hidden="true">4.3.3.</strong> A 58</a></li><li class="chapter-item "><a href="../Cosmoglotta/059.html"><strong aria-hidden="true">4.3.4.</strong> A 59</a></li><li class="chapter-item "><a href="../Cosmoglotta/060.html"><strong aria-hidden="true">4.3.5.</strong> A 60</a></li><li class="chapter-item "><a href="../Cosmoglotta/061.html"><strong aria-hidden="true">4.3.6.</strong> A 61</a></li><li class="chapter-item "><a href="../Cosmoglotta/062-63.html"><strong aria-hidden="true">4.3.7.</strong> A 62-63</a></li><li class="chapter-item "><a href="../Cosmoglotta/064.html"><strong aria-hidden="true">4.3.8.</strong> A 64</a></li><li class="chapter-item "><a href="../Cosmoglotta/065.html"><strong aria-hidden="true">4.3.9.</strong> A 65</a></li><li class="chapter-item "><a href="../Cosmoglotta/066.html"><strong aria-hidden="true">4.3.10.</strong> A 66</a></li><li class="chapter-item "><a href="../Cosmoglotta/067.html"><strong aria-hidden="true">4.3.11.</strong> A 67</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1930.html"><strong aria-hidden="true">4.4.</strong> 1930</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/068.html"><strong aria-hidden="true">4.4.1.</strong> A 68</a></li><li class="chapter-item "><a href="../Cosmoglotta/069.html"><strong aria-hidden="true">4.4.2.</strong> A 69</a></li><li class="chapter-item "><a href="../Cosmoglotta/070.html"><strong aria-hidden="true">4.4.3.</strong> A 70</a></li><li class="chapter-item "><a href="../Cosmoglotta/071.html"><strong aria-hidden="true">4.4.4.</strong> A 71</a></li><li class="chapter-item "><a href="../Cosmoglotta/072.html"><strong aria-hidden="true">4.4.5.</strong> A 72</a></li><li class="chapter-item "><a href="../Cosmoglotta/073.html"><strong aria-hidden="true">4.4.6.</strong> A 73</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1931.html"><strong aria-hidden="true">4.5.</strong> 1931</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/074.html"><strong aria-hidden="true">4.5.1.</strong> A 74</a></li><li class="chapter-item "><a href="../Cosmoglotta/075.html"><strong aria-hidden="true">4.5.2.</strong> A 75</a></li><li class="chapter-item "><a href="../Cosmoglotta/076.html"><strong aria-hidden="true">4.5.3.</strong> A 76</a></li><li class="chapter-item "><a href="../Cosmoglotta/077.html"><strong aria-hidden="true">4.5.4.</strong> A 77</a></li><li class="chapter-item "><a href="../Cosmoglotta/078.html"><strong aria-hidden="true">4.5.5.</strong> A 78</a></li><li class="chapter-item "><a href="../Cosmoglotta/079.html"><strong aria-hidden="true">4.5.6.</strong> A 79</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1932.html"><strong aria-hidden="true">4.6.</strong> 1932</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/080.html"><strong aria-hidden="true">4.6.1.</strong> A 80</a></li><li class="chapter-item "><a href="../Cosmoglotta/081.html"><strong aria-hidden="true">4.6.2.</strong> A 81</a></li><li class="chapter-item "><a href="../Cosmoglotta/082.html"><strong aria-hidden="true">4.6.3.</strong> A 82</a></li><li class="chapter-item "><a href="../Cosmoglotta/083.html"><strong aria-hidden="true">4.6.4.</strong> A 83</a></li><li class="chapter-item "><a href="../Cosmoglotta/084.html"><strong aria-hidden="true">4.6.5.</strong> A 84</a></li><li class="chapter-item "><a href="../Cosmoglotta/085.html"><strong aria-hidden="true">4.6.6.</strong> A 85</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1933.html"><strong aria-hidden="true">4.7.</strong> 1933</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/086.html"><strong aria-hidden="true">4.7.1.</strong> A 86</a></li><li class="chapter-item "><a href="../Cosmoglotta/087.html"><strong aria-hidden="true">4.7.2.</strong> A 87</a></li><li class="chapter-item "><a href="../Cosmoglotta/088.html"><strong aria-hidden="true">4.7.3.</strong> A 88</a></li><li class="chapter-item "><a href="../Cosmoglotta/089.html"><strong aria-hidden="true">4.7.4.</strong> A 89</a></li><li class="chapter-item "><a href="../Cosmoglotta/090.html"><strong aria-hidden="true">4.7.5.</strong> A 90</a></li><li class="chapter-item "><a href="../Cosmoglotta/091.html"><strong aria-hidden="true">4.7.6.</strong> A 91</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1934.html"><strong aria-hidden="true">4.8.</strong> 1934</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/092.html"><strong aria-hidden="true">4.8.1.</strong> A 92</a></li><li class="chapter-item "><a href="../Cosmoglotta/093.html"><strong aria-hidden="true">4.8.2.</strong> A 93</a></li><li class="chapter-item "><a href="../Cosmoglotta/094.html"><strong aria-hidden="true">4.8.3.</strong> A 94</a></li><li class="chapter-item "><a href="../Cosmoglotta/095.html"><strong aria-hidden="true">4.8.4.</strong> A 95</a></li><li class="chapter-item "><a href="../Cosmoglotta/096.html"><strong aria-hidden="true">4.8.5.</strong> A 96</a></li><li class="chapter-item "><a href="../Cosmoglotta/097.html"><strong aria-hidden="true">4.8.6.</strong> A 97</a></li><li class="chapter-item "><a href="../Cosmoglotta/098.html"><strong aria-hidden="true">4.8.7.</strong> A 98</a></li><li class="chapter-item "><a href="../Cosmoglotta/099.html"><strong aria-hidden="true">4.8.8.</strong> A 99</a></li></ol></li><li class="chapter-item expanded "><a href="../Cosmoglotta/1935.html"><strong aria-hidden="true">4.9.</strong> 1935</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Cosmoglotta/B-001.html" class="active"><strong aria-hidden="true">4.9.1.</strong> B 1</a></li><li class="chapter-item "><a href="../Cosmoglotta/100.html"><strong aria-hidden="true">4.9.2.</strong> A 100</a></li><li class="chapter-item "><a href="../Cosmoglotta/101.html"><strong aria-hidden="true">4.9.3.</strong> A 101</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-002.html"><strong aria-hidden="true">4.9.4.</strong> B 2</a></li><li class="chapter-item "><a href="../Cosmoglotta/102.html"><strong aria-hidden="true">4.9.5.</strong> A 102</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-003.html"><strong aria-hidden="true">4.9.6.</strong> B 3</a></li><li class="chapter-item "><a href="../Cosmoglotta/103.html"><strong aria-hidden="true">4.9.7.</strong> A 103</a></li><li class="chapter-item "><a href="../Cosmoglotta/104.html"><strong aria-hidden="true">4.9.8.</strong> A 104</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-004.html"><strong aria-hidden="true">4.9.9.</strong> B 4</a></li><li class="chapter-item "><a href="../Cosmoglotta/105.html"><strong aria-hidden="true">4.9.10.</strong> A 105</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/theRest.html"><strong aria-hidden="true">4.10.</strong> The Rest</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">scritorium</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <div id="langPicker"></div>
+                        
+                        <a href="https://github.com/occidental-lang/scritorium" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#cosmoglotta-b-01-jan-feb-mar-1935" id="cosmoglotta-b-01-jan-feb-mar-1935">Cosmoglotta B 01 (jan-feb-mar 1935)</a></h1>
+<p>COSMOGLOTTA-INFORMATIONES</p>
+<p>Numeró 1    Januar-Februar-Marte 1935.</p>
+<p>Apari durant chascun trimestre quam suplement a Cosmoglotta printat</p>
+<p>Redaction e Administration: Occidental-Buró, CHAPELLE (Vaud), Svissia.</p>
+<p>Precie de abonnament, junt con Cosmoglotta, por 1935: Fr. 3,50 sviss.</p>
+<h2><a class="header" href="#a-nor-letores" id="a-nor-letores">A nor letores!</a></h2>
+<p>Alcunes va esser probabilmen astonat reciver un jurnal mimeografat. Noi
+deve dar les un explication. In ultim témpor, de pluri láteres on ha
+preocupat se pri li fate de Cosmoglotta, quel, pro li actual desfacil
+economic circumstanties, suffre un poc pri li crise. On ha proposit
+restricter li edition printat e dar li Cronica e divers informationes
+per mimeograf. Specialmen sr. Fritzche de Leipzig in un circulare
+studiat li maniere passar li témpor de crise economic sin damage.</p>
+<p>Li custas de printation de Cosmoglotta in Svissia es li max bass
+possibil. Noi deve constatar, pos comparation de precies, que on ne
+posse obtener in altri landes plu bass conditiones. Do on deve lassar li
+printation in Svissia. Ma sr. Fritzsche proposi:</p>
+<hr />
+<p>Un reduction del print-custas va esser possibil si noi prende li
+resolution printar omni duesim numeró de Cosmoglotta per li
+<em>mimeograf-machine</em> quel have li Occidental-Buró in Svissia. To vole
+dir que noi intercala inter omni du numerós tipografat un numeró
+multigrafat in li maniere del anteyan revúe «Helvetia».</p>
+<hr />
+<p>Respondent a ti circulare, sr. E. de Wahl scri:</p>
+<hr />
+<p>Anc li idé alternar printat Cosmoglotta con mimeografat numerós es a
+considerar. Sembla me, que it vell esser bon dar diferent nómines a ti
+du species pro continual numerós del printat edition. Tande on posse
+reservar li mimeografat por nor comunicationes al coidealistes,
+polemicas, intern questiones, etc. i.e. to quo es destinat por li extern
+propaganda. In li printat edition on vell scrir to quo es destinat por
+li grand publica e li ancor ne firm coidealistes, do articules de
+propaganda, clarationes de singul paroles o grammatical formes e
+íncertitás (quam nu in li «linguistic responses»).</p>
+<hr />
+<p>Noi agnoscet que ti propositiones es just. Do, con li aprobation del
+principal ductores, noi decidet editer in 1935</p>
+<ul>
+<li>6 numerós de Cosmoglotta sur 16 págines tipografat,</li>
+<li>4 numerós de Cosmoglotta-Informationes mimeografat,</li>
+<li>10 numerós por li annu.</li>
+</ul>
+<p>Per ti arangeament, noi publica in Cosmoglotta-Informationes li Cronica,
+li comunicationes del societés national, li adresses, etc. omnicos, quo
+perdi su valore pos quelc témpore, durant que in Cosmoglotta tipografat
+noi publica li articules havent un interesse <em>permanent</em>, quo permisse
+publicar li cadernes por formar un <em>libre</em> ne contenent alquo obsolet.</p>
+<p>Li edition tipografat es inviat chascun vez a mult adresses por ganiar
+nov abonnates.</p>
+<p>Li edition mimeografat es inviat solmen al abonnates e al membres del
+landal societés. A it, noi junte si possibil li circulares e organes del
+societés national.</p>
+<p>Noi peti li responsiv persones del landal organisationes benevoler
+colaborar con nos por dar nos li necessi informationes concernent lor
+respectiv land. Li Federationes quel edite folies mimeografat (Svedia,
+Tchecoslovakia, Francia), reproductet per altri medies (Germania) o mem
+printat (Anglia) vell posser adjunter lor editiones a
+Cosmoglotta-Informationes. Tis qui scri lor textus sur matricies, posse
+inviar nos li matricies; li altris posse inviar li folies printat.</p>
+<p><em>Li format deve esser 210 x 297 mm</em>. (Sam format quam
+Cosmoglotta-Informationes. <em>Noi besona 300 exemplares</em>. Li textus deve
+arivar 15 ante li aparition de Cosmoglotta-Informationes -- Ples dar nos li complet
+adresses del membres de vor associationes. Si possibil, ples scrir les
+per scri-machine con 4 copies per carbone, <em>sur glutinat paper</em>. To va
+facilisar nor labor!</p>
+<p>SOCIETÉ DE GARANTES POR «COSMOGLOTTA»</p>
+<p>Secun proposition de quelc coidealistes, un societé de garantes por
+assecurar li edition de Cosmoglotta (e Cosmoglotta-Informationes) esset
+fundat.</p>
+<p>Li regulament es includet in li present caderne de
+Cosmoglotta-Informationes. Noi espera que ti societé va incontrar li
+general aprobation e que omni coidealistes de quel li situation
+financial permisse to, va subscrir adminim un parte de Fr. 10.— sviss.</p>
+<p>Noi memora que li aquisition de 3 nov abonnates a Cosmoglotta coresponde
+a un parte del societé de garantes por quel li aquisitor recive li
+membratu.</p>
+<p>Li jure del membres del Societé de garantes es:</p>
+<p>a) Reciver duplic abonnament (3 exemplares) si ili expresse ti desire.
+b) Reciver li contos de Cosmoglotta. c) Expresser al presidente del
+societé de garantes lor remarcas pri li contos de Cosmoglotta. d) Votar
+pri important decisiones concernent Cosmoglotta.</p>
+<p>Li payament de chascun parte de Fr. 10.— sviss da li jure de un voce por
+li votationes.</p>
+<p>Li nómine del subscritores es publicat in Cosmoglotta-Informationes.</p>
+<p>Vi li unesim liste de subscritores:</p>
+<p>[cols=«&lt;,&lt;,&gt;»]
+|===
+| Subscritor                          | Subscritiones  | Fr.</p>
+<p>| Ric Berger, Morges (Svissia)        | 1, 2, 3, 4, 5  | 50.—
+| Fred Lagnel, Chapelle (Svissia)     | 6, 7, 8, 9, 10 | 50.—
+| Josef Svec, Praha (Tchecoslovakia)  | 11, 12         | 20.—
+| L.M. de Guesnet, Paris (Francia)    | 13, 14         | 20.—
+| Gerald A. Moore, London (Anglia)    | 15, 16, 17     | 30.—
+| Ed. Mayor, Lausanne (Svissia)       | 18             | 10.—
+| G{dot} Bohin, Housséville (Francia) | 19             | 10.—
+| G{dot} Prinz, Bernburg (Germania)   | 20             | 10.—
+| Major Tanner, Bern (Svissia)        | 21             | 10.—
+| Willy Mildebrath, Bernau (Germania) | 22, 23         | 20.—
+| Ilmari Federn, Köbenhavn (Dania)    | 24             | 10.—
+| C.W.v. Sydov, Lund (Svedia)         | 25, 26         | 20.—
+| M.A. Fritzsche, Leipzig (Germania)  | 27             | 10.—
+| Pastor Erhard, Karlstad (Svedia)    | 28             | 10.—
+| B{dot} Blomé, Kristinehamn (Svedia) | 29             | 10.—
+| A{dot} Haldin, Eskilstuna (Svedia)  | 30             | 10.—
+| E{dot} Berggren, Stockholm (Svedia) | 31             | 10.—
+| Osk. Dillén, Stockholm (Svedia)     | 32             | 10.—
+| Ing. Lindström, Enskede (Svedia)    | 33             | 10.—
+| Red. Lindholm, Stockholm (Svedia)   | 34             | 10.—
+| C.E. Sjöstedt, Ostersund (Svedia)   | 35             | 10.—
+| Yngve Sköld, Stockholm (Svedia)     | 36             | 10.—
+| M{dot} Guilbert, Paris (Francia)    | 37             | 10.—
+| Summa                               |                | 370.—
+|===</p>
+<p>Noi calidmen mersia omni subscritores! Tis qui ja payat lor abonnament
+posse, por devenir garante, inviar nos li diferentie inter Fr. 3,50 e
+Fr. 10.— o Fr. 7.— e Fr. 10.—. Qui va ancor alongar nor liste?</p>
+<h2><a class="header" href="#li-insigne-de-occidental" id="li-insigne-de-occidental">Li insigne de Occidental</a></h2>
+<p>Pos que li articul aparit in Cosmoglotta, noi recivet ancor li sequent
+propositiones. Noi peti nor letores queles have un bon idé, continuar li
+discussion ante votation general.</p>
+<p>Sr. Berggren de Stockholm proposi:</p>
+<p>«Si nequel apt figura es presentat, noi tot simplicmen deve far
+fabricar emblemas secun li proposition de Union: Ergo:»</p>
+<p>Propositiones de sr. E. de Wahl:</p>
+<p>{bracket}Occidental(idental) L(ingue) I(nternat.) A(uxiliari)]</p>
+<p>Sr. Akerman de London scri:</p>
+<hr />
+<p>Yo proposi que li insigne de Occidental mey esser un pentacle (o
+pentagramm -- 5-puntes stelle) in aure sur blanc funde.</p>
+<p>Ti figura es extremmen antiqui quam magic talisman. In modern dies it ha
+esset adoptet sur national flaggas, p.ex. de Chile, Cuba, Egiptia,
+Liberia, Turkia, Unit States, etc., e omnes conosse li «White Star
+Line». Talmen it have quasi un caráctere international. Támen yo ne
+memora un tal stelle de aurin colore.</p>
+<p>Li facte que Esperanto usa un verdi pentacle vell esser bon simbolisme.
+Noi vell agnoscer it quam li unesim passu vers un natural sistema. Li
+verde de it posse representar li verne, durant que li aure es li matur
+fructification.</p>
+<p>On posse adjunter li parol Lingue International e Occidental per micri
+lítteres. O simplicmen L.I. in li superiori spacies e Occidental in li
+inferiori spacie; to vell far possibil question e response pri li
+signification del lítteres.</p>
+<p>Li aurin efecte es facilmen printat per bronzin incre, o pictet,
+altrimen per un masse de micri puntes, secun li convention de heraldica.
+Comprensibilmen por li buton-insignes noi vell usar real aure.</p>
+<hr />
+<p>Sr. Ferd. Haller de Meiringen scri:</p>
+<hr />
+<p>Yo es contra li adoption del tilde in nor emblema, pro que it da un
+insigne poc decorativ e ínsignificant.</p>
+<p>Mult plu simpatic es me li proposit insigne nr. 2 (in Cosmoglotta), to es li
+sole «occidente se» (= ob-cidente, ex latin: ob-cade {equals} cader vers o
+contra li horizonte) in li mare. Nam ti insigne es interpretativ e
+simbolic. Li sole, per su position inclinant indica vers li occidente,
+de quel li lingues (=radies) del sole es partú li sam in li universe,
+quam ya anc Occidental va esser e vole esser li sam lingue parlat partú
+sur li globe. Anc li tilde, per li undes del mare, es representat in it.
+Pro to yo proposi votar por li adoption del sole por emblema secun li
+nr. 2 in Cosmoglotta o li nr. 1 o 2, du variantes esquissat de me.</p>
+<p>Anc li planiglobe de sr. den Outer plese me mult, e si on es contra li
+selection del «sole sur li mare», yo vell preferer ti emblema o li
+variante nr. 3. It vell dar anc un decorativ, sat simplic insigne, li
+dessine nigri sur yelb funde.</p>
+<p>Un bell motive por nor insigne vell dar ancor li esquisse sur li
+covriment del libre «Occidental, die Weltsprache», to es, li conturas
+de Europa o del Occidente. Per li figura 4 yo intentet animar qualmen on
+posse adaptar li conturas
+a un insigne.</p>
+<p>Revuante ancor un vez mi esquisses, yo deve confesser, que mi
+preferentie apartene ante omnicos al «sole» e al «planiglobe»; e li
+vor?</p>
+<hr />
+<p>Sr. C. Varela, Figueras (Hispania) proposi:</p>
+<hr />
+<p>Sr. Weinberg (Franca) developa su proposition: un schematisation del
+arc-in-ciel. Il scri que li arc-in-ciel es un signe de alliantie inter
+Deo e li homes. On posse anc considerar que li 7 colores del arc-in-ciel
+es comparabil al 7 lingues principal quel Occidental vole reunir in un
+sol.</p>
+<p>On remarca que li arc-in-ciel oferta un multitá de realisationes e que
+it have li avantage permisser al diferent gustes exercir se sin
+forjettar li simbol quel es in li base.</p>
+<p>Si pro rasones tecnic li 7 colores del arc-in-ciel ne posse esser
+printat, sr. Weinberg proposi representar li arc per tri colores
+fundamental rubi, blu, yelb, e in libres printat in nigri, vice ti tri
+colores, on posse representar tri stries con li monogramme LI in un
+angul.</p>
+<hr />
+<p>Sr. A. Lindström de Svedia, presidente del societé Occidental,
+Stockholm, scri:</p>
+<hr />
+<p>Li question pri un emblema por Occidental ha ocupat me durant pluri annus. Mi
+unesim projecte esset ti quel es monstrat in li Nr. 92 de Cosmoglotta, fig. 3.
+Yo tamen strax trovat it tro complicat e provat in mult manieres
+simplificar it. Pos mult provas, yo haltat ye li opinion que li simplic
+líttere «O» con apti fund vell esser li max bon. Yo imaginat me un
+circul con sett cordes de un comun punctu del periferie e in ti figura
+un fortios «O» inscrit.</p>
+<p>Mi postulation por un emblema es: 1) Pro practic cause it deve esser
+<em>rond</em>. 2) Tam simplic quam possibil. 3) Null textu. 4) Totmen
+geometric, por impedir fals formes. 5) Bon visibil. 6) Bellitá.</p>
+<p>Mi ultim projecte cade sur punctu 5. Li proposition del centrale de
+Vienna sembla me esser un bon solution, ma esque li form del unde va
+esser líber? Yo persiste ye mi quaresim punctu, que li form in li
+detallies deve esser fixat. Ye li permission del redactor yo monstra du
+casus por formes de unde. It sembla que li form del fig. 2 es plu bell
+quam li unesim.</p>
+<p>In fine quelc paroles pri li colores. Sur printates li emblema es nigri
+sur blanc funde. In altri casus solmen aure es suficent representar li
+idé Occidental. Li proposit yelb colore quam funde ne plese al nordanes.
+Li colore es bon e practic sur tabules por automobilistes, posit ye
+cruce-vias, ma desbell por Occidental-emblema.</p>
+<p>Yo proposi li emblema <em>sin funde</em>. Lass nos usar it transparent, e in
+tal maniere it es apt quam broches, cravatt-agullies o pingles sur li
+vestimentes.</p>
+<p>Li max mult de nos occidentalistes forsan es povri, ma un sol ornament
+noi certmen posse aquisiter, li occidental-emblema de aure.</p>
+<hr />
+<p>Li supra expresset opiniones, noi consenti, ma desira que li metall del
+emblema mey esser argente o facultativ.</p>
+<p>E{dot} Berggren -- Anteyan administrator de Cosmoglotta</p>
+<p>H{dot} Lindholm. -- Secr. de Societé Occidental, Stockholm.</p>
+<h2><a class="header" href="#redaction-de-cosmoglotta" id="redaction-de-cosmoglotta">Redaction de Cosmoglotta</a></h2>
+<p>Li redactor ha studiat con grand interesse li divers criticas e
+suggestiones pri li labor de redaction. Naturalmen, it es impossibil
+contentar omnes nam li gustes es tro diferent.</p>
+<p>Noi agnosce que li part linguistic esset un poc tro extendet. Pro to
+quam on va constatar it ho-annu, li articules de polemic contra altri
+lingues va esser minu extendet. Tamen, it ha semblat nos e it ancor
+sembla nos que nor unesim deventie es <em>documentar</em> li propagandistes e
+monstrar les pro quo nor lingue es superior al altri projectes.</p>
+<p>Alcunes ha proposit publicar resumates de articules aparient in li
+national lingues, quam fa li revúe Auslese in Germania. Ma esque li
+letores desira releer in Occidental quo ili ha ja leet in lor jurnal
+local? Ante omnicos ili desira leer quo es ancor ínedit, nov e
+ínconosset. Pro to, noi besona <em>original</em> articules e ne solmen
+traductiones de articules quel ha ja circulat in li tot presse national.</p>
+<p>Noi recive quelcvez articules de coidealistes, ma regretabilmen tro long
+e ne sempre interessant. Li grand criterie por nos es: publicar solmen
+interessant articules.</p>
+<p><em>Noi exhorta</em> do nor corespondentes inviar nos <em>curt</em> articules (ne
+plu quam 100 lineas) ma <em>sempre altmen interessant, vivid,
+passionant</em>.</p>
+<p>Sr. Tailliez, de Metz scri nos li 3 januar 1935:</p>
+<hr />
+<p>Yo anc deve dir vos que li tre vivent historie de august in
+Cosmoglotta <em>Un drama in li station</em>, de Keyser (con li horrific
+figura) ha havet ci un tre grand successe: yo ha fat leer it a pluri
+persones quel esset astonat del claritá del raconta. Mult melior: por li
+ultim classe del trimestre, yo leet it in classe, yo self, <em>in
+Occidental</em>, e, juxta me, mi melior litt traductor de latin traductet
+it al tot classe quel sovente ha ja comprendet tot ante su traduction.
+It havet un enorm successe. Si vu posse dar nos sovente racontas de ti
+qualitá narrativ e stilistic!</p>
+<hr />
+<p>Sr Tailliez regreta solmen alcun figuras de nuditás, quel impedi li
+revúe esser monstrat a infantes. Ti remarca es just e in futur noi va
+evitar les, anc sur li covriment.</p>
+<p>Ma li linguistic rubrica es ancor demandat. Por exemple, sr. Švec de
+Praha scri nos:</p>
+<hr />
+<p>Esque it ne vell esser bon inserter anc un lingual rubrica in
+Cosmoglotta? Sovente on hesita e ne save pro manca de vocabularium, quel
+form o expression es just. In tal casus un lingual rubrica, bon
+redactet, vell dar information.</p>
+<hr />
+<p>In su circulare del 16 decembre 1934, sr. Fritzsche de Leipzig da mult
+suggestiones pri li maniere diffuser Cosmoglotta in omni circules. Ti
+idés ne es omni realisabil, principalmen ti concernent li kioskes. Noi
+ja mult ha experimentat e constatat que in practica, li afere ne es tam
+facil. Tamen noi va provar divers ex su suggestiones.</p>
+<h2><a class="header" href="#fotogrammas" id="fotogrammas">Fotogrammas</a></h2>
+<p>Noi possede li fotogrammas de sr. Quensel, Federn e Akerman. Ma por ne
+changear li budgete de Cosmoglotta, noi peti li portretates benevoler
+rimborsar al administration li custa del cliché, to es Fr. 6.— sviss <em>e
+li cliché va esser donat a ili pos printation in Cosmoglotta</em>. Li
+redaction es sempre grat al coidealistes quel accepte talmen augmentar
+li interesse de nor revúe, permissente li membres de nor grand familie
+conosser unaltru malgré li distanties.</p>
+<h2><a class="header" href="#stampes" id="stampes">Stampes</a></h2>
+<p>Occidentalistes, ples comendar modic stampes che dan firma quel
+favorisa Occidental. Ples comunicar demandas a: Occidental-Information,
+Aaboulevard 3, Köbenhavn-V, Dania.</p>
+<h2><a class="header" href="#annu-colectiones-de-cosmoglotta" id="annu-colectiones-de-cosmoglotta">Annu-colectiones de Cosmoglotta</a></h2>
+<p>Li administration exchangea ancian
+numerós de Cosmoglotta 1927 e 1928 e Kosmoglott contra Nr. de 1929-1934.
+HELVETIA. Annu-colectiones 1929, 1930, 1931, 1932, e 1933 custa Fr. 12.—
+sviss.</p>
+<h2><a class="header" href="#nov-editiones" id="nov-editiones">Nov editiones</a></h2>
+<p>Noi es informat que pluri libres es in preparation in divers landes: In
+ANGLIA, un grammatica in anglés; in DANIA, sr. Federn elabora un complet
+lexico de Occidental quel ja es in parte redactet; in SVEDIA, on elabora
+li Sved-Occidental lexico; in SVISSIA, sr. Ritter just perfini un
+grammatica italian, quel va esser printat con li apoy del
+Occidental-Buró de Chapelle. In FINLAND, sr. Tattari va editer un libre
+de aprension por Finlandeses. In JAPAN on anc prepara un librette pri
+Occidental.</p>
+<p>Noi peti omni autores atender ancor quelc témpor por li edition, nam
+CELIA just fini su exploration pri li mollat lítteres. Li resultates del
+votation va esser publicat sive in Cosmoglotta sive in
+Cosmoglotta-Informationes.</p>
+<h2><a class="header" href="#congresse-1935" id="congresse-1935">Congresse 1935?</a></h2>
+<p>Cosmoglotta Nr. 99 anunciat li proposition del gruppe de Vienna
+organisar li 1-im congresse in ti cité in 1935. Ma poy arivat oposition
+de pluri láteres, principalmen del Germanes quel ne posse partiprender
+pro li taxe de 1000 RM imposit a omni viagero eant a Austria. Si li
+duesim congresse va evenir in Svissia, li Svissianes va renunciar a ti
+de Vienna. Li question va do dever esser studiat. Nor letores va esser
+informat strax pos un decision del Senat del Occidental-Union.</p>
+<h2><a class="header" href="#cronica" id="cronica">Cronica</a></h2>
+<h3><a class="header" href="#anglia" id="anglia">Anglia</a></h3>
+<p>In li grand jurnal «Morning Post», sr. G.A. Moore pos har
+monstrat li principies de Occidental fini per ti atestation:</p>
+<hr />
+<p>I would add that I am an old hand at the Interlanguage game, having
+passed successively through Volapük, Esperanto, Idiom Neutral and Ido;
+and have at last found peace and quiet in Professor de WAhl's
+«Occidental».</p>
+<hr />
+<p>Nov adresse: Noi informa nor coidealistes que li secretario de «The
+Interlanguage of Great Britain» es nu:</p>
+<p>Sr. E. Biddle, 9 Durban Avenue, Christleton, CHESTER.</p>
+<p>Nov postchec-conto: Por li payament de Cosmoglotta e de omni
+lítteratura, li Occidental-Buró, Chapelle (Vaud), Switzerland apertet
+sub ti nómine un postchec-conto in Anglia: LONDON S.B.D. Nr. 18 363.</p>
+<h3><a class="header" href="#austria" id="austria">Austria</a></h3>
+<p>Li Mitteilungen de Hoerbiger-Institut, in su numeró de januar 1935,
+publica un articul propagativ por Occidental. Ti «Mitteilungens», quel
+es redactet de sr. E. Pigal, director del Central Oficie del
+Occidental-Union, oferta ad ultra alt interessant articules pri
+astronomie e geologie. Noi recomanda vividmen ti revúe a omni
+coidealistes (Adresse: Ehamgasse 40, Wien XI). Precie por 3 successiv
+cadernes: 8 öS.</p>
+<p>Li principal articules es sequet de un resumate in Occidental. Ti
+publication constitue do li unesim prova de penetration de nor lingue in
+li scientific circules.</p>
+<h3><a class="header" href="#brasil" id="brasil">Brasil</a></h3>
+<p>Un Esperantist de Rio de Janeiro traductet pluri documentes de
+propaganda por Occidental in lingue portugales e distribuet it al
+conosset interlinguistes.</p>
+<h3><a class="header" href="#francia" id="francia">Francia</a></h3>
+<p>Pro que li adresse de sr. de Guesnet ne plu es citat in Cosmoglotta,
+alcunes credet que nor amico desertet! To es un erra. Sr. de Guesnet es
+sempre activ e devoet. Si li Buró de Chapelle, apertet in chec-conto in
+Francia, it es pro li comoditá del payamentes. Tamen, sr. de Guesnet
+informa li membres frances que ili posse sempre payar al sequent
+adresse: L.M. de Guesnet, 83 Rue Rochecouart, PARIS 9-e</p>
+<p>Postchec-conto: PARIS 26 437.</p>
+<p>Un articul propagativ pri Occidental, scrit de sr. Gilbert W., aparit in «La
+Dépêche du Centre», li 11 nov. 1934.</p>
+<p>Li Association Proletari Interlinguistic, quel propaga Occidental in
+socialistic circules, publicat un folie volant in quel it da su statutes
+e exposi li principies de nor lingue. Por omni informationes pri A.P.I.
+adressar se a: G. Poujet, ISLES s/Suippe (Marne), Francia.</p>
+<h3><a class="header" href="#germania" id="germania">Germania</a></h3>
+<p>«Der Deutsche Occidentalist» publicat in su numerós del 1 novembre,
+del 15 novembre e del 1 decembre un important studie pri li terminologie
+del «chac lude» e «li provenientie del Germanes in Bohemia».</p>
+<p>Adresse: J. Quensel, GUNTHERSLEBEN über Gotha, Germania.</p>
+<h3><a class="header" href="#svedia" id="svedia">Svedia</a></h3>
+<p>Noi recive sempre li circulares mensual del Svenska
+Occidental-Förbundets. Noi solmen regreta ne posser comprender les pro
+que ili es redactet in sved lingue. Li numeró de novembre 1934 publicat
+li statutes del Societé. Li numeró de januar esset consacrat al necessi
+informationes concernent li reabonnament a Cosmoglotta e li
+participation al societé de garantes. Nor sincer mersís!</p>
+<h3><a class="header" href="#svissia" id="svissia">Svissia</a></h3>
+<p>Durant octobre mult jurnales del quar lingues national raportat pri li
+ultim reunion del Sviss Association por Occidental, indicante li
+composition del Comité del Association.</p>
+<h3><a class="header" href="#tchecoslovakia" id="tchecoslovakia">Tchecoslovakia</a></h3>
+<p>Du grand jurnales publica ho-témpor un curs de Occidental, redactet
+de nor activ colaboratores Svec e Podobsky.</p>
+<p>-- Sr. J. Podobsky ha finit li manuscrit del nov tchec libre
+«Occidental dřuha řec pro všecký» (Occidental, li secund lingue por
+omnes), quel va contener li historic evolution del idé in concis
+explication, curt grammatica, prov-textus, liste de litteratura e
+informationes pri Occidental-movement e organisation.</p>
+<p>-- On prepara li edition de vocabularium Occidental-Tchec e Tchec-Occidental.</p>
+<p>-- Li 13 februar 1935 esset inaugurat li CLUB OCCIDENTAL de Praha,
+presidet de sr. Dr. K. Stastny, Dvorakova 27, PRAHA. Noi recivet li
+sequent lettre:</p>
+<hr />
+<p>Al seniores del redaction e administration de Cosmoglotta,</p>
+<p>Ye li ocasion del oficial constitution del CLUB Occidental in Praha, li
+subsignat assistentes del assemblé constitutiv prende li libertá,
+presentar vos e a omni sviss coidealistes li max sinceri salutationes
+junt con desires de bon successe de nor bell lingue Occidental.</p>
+<p>Vor sempre devoet,</p>
+<p>(Signat) Karel Stastny, A. Stastnà, M. Svecova, H. Malousek, J. Svec, J.
+Huberg (?)</p>
+<hr />
+<p>Cordial mersís a nor coidealistes e bon successes!</p>
+<p>-- Articules in jurnales. Noi dismisset un noticie pri nor movement a
+circa 100 jurnales tchec e ultra to, yo dat 30 exemplares a li oficial
+Tchecoslovac Buro de Pressa, quel liverat ti information a omni grand
+jurnales tchec.  Noi ne posse controlar, esque li noticie esset in omni
+jurnales publicat, ma secun quo noi posset controlar, noi videt, que
+<em>pluri jurnales insertet it</em>. Noi recivet un demanda de information
+del jurnal «Poledni List». Noi dat al redactor quelc printages e li 14
+octobre li dit jurnal publicat un grand articul <em>redactional</em> pri
+Occidental. Regretabilmen, il atacca Esperanto tre vehementmen, ma to es
+ya su personal vis-punctu! Pro que ti jurnal have adminim 100 000 e mem
+plu mult letores, it sembla, que ti articul adminim va far atenter a nor
+lingue. Un altri jurnal tchec, tre expandet, organ del partise
+socialistic in Tchecoslovakia, «Ceské Slovo» (Li Parol Tchec) insertet
+un curt articul pri Occidental.</p>
+<p>-- Noi joya dar apart li textu del 1-im numeró del OCCIDENTAL-BULLETIN,
+mensual, redactet de sr. J. Svec, Skroupova, PRAHA VII, Tchecoslovakia.</p>
+<h2><a class="header" href="#servicie-de-librería-nov-precies-desde-li-15-marte-1935" id="servicie-de-librería-nov-precies-desde-li-15-marte-1935">Servicie de librería (Nov precies desde li 15 marte 1935)</a></h2>
+<p>Occidental, die Weltsprache, brochat Fr. 3.—; ligat Fr. 4.50</p>
+<p>Radicarium directiv Fr. 2.50</p>
+<p>Wörterbuch Deutsch-Occidental Fr. 2.50</p>
+<p>Micri Chrestomatie Fr. 1.50</p>
+<p>Ti precies es <em>afrancat</em>, do sin augmentation por li postal expenses.</p>
+<p>Un <em>rabatte de 10%</em> es dat a omni persones quel compra litteratura por
+adminim Fr. 10.— sviss. Li rabatte ne es dat por li abonnament por
+Cosmoglotta ni sur li ancian colectiones de COSMOGLOTTA.</p>
+<p>Li payament deve esser fat in sam témpor quam li comende. Li maxim
+simplic es far li comende sur li cupon de nor postchec-contos (por
+Francia, Germania o Svissia) o del mandat international. To simplifica
+nor labores: li expedition es fat ye li reception del pecunie.</p>
+<p>Por Anglia e USA e landes u ne existe li mandat international, ples far
+li comende apart per postcarte, con just indication del adresse.</p>
+<p>Postchec-contos: ANGLIA: LONDON S.B.D. Nr, 18 363. FRANCIA: Paris 1765
+46. GERMANIA: Berlin 1683 36. SVISSIA: II.1969.</p>
+<p>Occidental-Buró, CHAPELLE (Vaud) SVISSIA.</p>
+<p>LETTRE-BUX: Sr. e Sra. Dr. Nidecker, Basel inviat lor bon desiras de nov
+annu per un maniere original: un curt cante in german e Occidental,
+nominat: «Canon 1935». Cordial mersí!</p>
+<h2><a class="header" href="#complet-lexico-de-occidental" id="complet-lexico-de-occidental">Complet lexico de Occidental</a></h2>
+<p>Sr. I. Federn, Copenhag, scri nos:</p>
+<p>Tre probabilmen it va esser redactet tal, que por li mill max frequent
+paroles (secun Graber in «Occidental, die Weltsprache») noi da traduction in mult lingues, e por
+li rest noi da definitiones in Occidental self.</p>
+<p>Li liste ja esset finit in januar. Nu noi comensa li manuscrite
+definitiv quel noi pensa terminar in li curs de 1935.</p>
+<h2><a class="header" href="#al-professores-instructores-docentes-etc" id="al-professores-instructores-docentes-etc">Al professores, instructores, docentes, etc.</a></h2>
+<p>Noi remarcat que li Occidental-movement comprende precipue docentes in
+su majorité. Ti fact es tre injoyant pro que Occidental trova in ili su
+max bon defensores e su max bon propagatores. In ultra li docentes have
+continual relationes con li yunesse, quel, secun nos, deve esser li prim
+interessat a nor movement: it have ne solmen idealisme, ma li fide, li
+devotion, li tenacitá quel es necessi al difusion de un movement quam li
+nor.</p>
+<p>Pro to, noi opine que noi deve ja nu pensar pri un organisation
+international del docentes.</p>
+<p>Secun nor opinion, noi crede que li via a sequer es:</p>
+<ol>
+<li>
+<p>Li edition de un revúe pedagogic contenent precipue articules
+cultural, articules concernent li metodes de docentie, li reserches
+pedagogic in li divers landes e anc abundant informationes. Per ti ultim
+punctu, noi vide precipue li medie interessar li landal pedagogic revúes
+a nor movement.</p>
+</li>
+<li>
+<p>Li fundation in futur de un organisation international de docentes.
+Per ti-ci, mult practic realisationes vell esser organisat:
+corespondentie inter scoleros, exchanges de scoleros, viages de studie
+por docentes tra li munde, etc., etc.. Li possibilitás practic es
+ínnumerabil!</p>
+</li>
+</ol>
+<p>SI NOR PROJECTE INCONTRA SUFICENT INTERESSE, li realisation del unesim
+punctu vell posser JA NU comensar: Noi vell posser adjunter in comense
+un mimeografat parte in Cosmoglotta-Informationes. Si it have successe,
+un tipografat revúe va esser editet.</p>
+<p>Noi invita instantmen omni nor letores quel have interesse o
+suggestiones pri nor projecte benevoler strax interrelater con li
+Occidental-Buró de Chapelle.   Lg.</p>
+<p>GERMAN-OCCIDENTAL FEDERATION: J. Quensel, GUNTHERSLEBEN ü/GOTHA. GERMANIA</p>
+<h2><a class="header" href="#mediation-de-corespondentie" id="mediation-de-corespondentie">Mediation de corespondentie!</a></h2>
+<p>Esque vu conosse, in fact, homes qui nomina se chac-lusores -- ma ili ne
+lude chac? O esque vu ama tis qui lude cartes solmen quam...
+spectatores?!</p>
+<p>Coidealistes, tamen li situation de Occidental, in cert mode, es ancor
+conform a un match de football: 2 x 11 fa li currida e li lucte e 11 000
+exhorta e aplauda quam spectatores...</p>
+<p>Ma li nov sport-movement comensa hodie ja detornar se de un tal monoton
+particularitá. Solmen 5 000 spectatores -- li altri curre nu self,
+gimnastica, jetta li disco o salta trans hagaturas, in curt: ili
+practica self li sport!</p>
+<p>E nu, solmen realisar lu sam che OCCIDENTAL! Vu questiona in qual
+maniere. Noi responde: PER CORESPONDENTIE. Adminim por omni coidealistes
+qui domicilia isolat.</p>
+<p>Fro li German Occidental-Federation yo porosi ti maniere certmen
+interessant e sufficentmen animant al USA de Occidental.</p>
+<p>Qui vole participar misse strax su complet adresse al signator de infra.
+Ti invia poy al unesim un lettre pri un neutral tema actual. Li
+destinatario lee ne solmen, ma adjunte su propri pensas. Li duesim
+recive li lettre, il acte egalmen. Quam li duesim fa li triesim, tam li
+quaresim e omni sequentes. Chascun lee e <em>scri</em>! Li ultim rendi li plu
+o min completat «brochura» al expeditor e li circulare ea li via «da
+capo», ma circummisset es solmen li materiale <em>nov</em> por li proxim.</p>
+<p>Noi posse comensar sin retarde, HODIE!</p>
+<p>Noi besona solmen vor complesent declaration, car coidealist!</p>
+<p>Por ne peccar contra li comun custom noi comensa parlar pri li -- tempe.
+Li prim tema es do «HIVERNE». Noi demanda vor aventuras hivernal de
+omni species desde vor yunesse til li unesim albi capilles... (mey noi
+devenir totmen yun). Adplu vu mey notar vor reflexiones serios e
+esperantios queles productet in vos li albi campania... durant
+ski-tures, chasses, slitt-excursiones o anc al camine. (Ergo, strax
+comensar vor amusant sketch!) -- O esque vu have observationes scientific
+o tal opiniones pri li tema? O vu vole <em>traducter</em> alquicos? Omnicos
+es apt, exceptet solmen... ínutil e minutios critica. Vu es convocat al
+colaboration, a un colaboration quel forsan posse esser FRUCTUOS anc por
+revúe COSMOGLOTTA!</p>
+<p>Temas por plu tard:</p>
+<ol>
+<li>
+<p>Ad u yo desira viagear?</p>
+</li>
+<li>
+<p>Pro quo yo ama mi profession omnidial.</p>
+</li>
+<li>
+<p>Yo recivet li unesim premie del loteríe! Quo far, yo -- povre?? (Ya,
+vu conosse certmen trist racontas pri tal povres, vermen «povres»...)</p>
+</li>
+</ol>
+<p>Directiones detalliat recive omni participantes in lettres.</p>
+<p>Car coidealistes, vu ama Occidental: ples do prender ti engageament!</p>
+<p>J{dot} Quensel, G.O.F., GUNTHERSLEBEN über Gotha, GERMANIA.</p>
+<h2><a class="header" href="#nov-adresses-o-postchec-contos" id="nov-adresses-o-postchec-contos">Nov adresses o postchec-contos</a></h2>
+<p>TCHECOSLOVAKIA: Noi peti nor coidealistes de Tchecoslovakia inviar lor
+abonnament a Cosmoglotta a:</p>
+<p>J{dot} Svec, 2 Skroupova, PRAHA-VII (Postchec-conto: Praha Nr. 9 438)</p>
+<p>SVEDIA: Nor sved abonnates posse payar lor abonnament a Cosmoglotta al
+postchec-conto del «Sved Occidental-Federation», Box 171, STOCKHOLM
+Nr. 70 315. (Ples atenter ti nov numeró!)</p>
+<p>ANGLIA: Por facilmen payar abonnamentes o comendes de litteratura, ples
+inviar li summas a nor postchec-conto: LONDON S.B.D. Nr. 18 363, con li
+sequent adresse: Occidental-Buró, CHAPELLE (Vaud), Switzerland.</p>
+<p>Annu 1.   Praha, li 1 februar 1935.    Numeró 1.</p>
+<p>A nor letores!</p>
+<p>Til nu li Buró de Occidental in Praha per circulares informat nor amicos
+pri li Occidental-movement in Tchecoslovakia. Ti circulares trovat un bon
+acceptation che nor amicos e nor Buró de Occidental recivet mult lettres
+aprobativ. Por posser plu regularimen informar nor adherentes, por esser
+in permanent contacte con ili e -- precipue -- por lucrar li bass taxes
+postal valid por jurnales, noi decidet editer un gazette.
+«Occidental-Bulletin».</p>
+<p>Un tre modest gazette, in fact. Ma omni comensa es desfacil. Quo va
+devenir nor Bulletin in li futur, <em>to va depender de vos</em>, de vor apoy
+moral e financial...</p>
+<p>Noi deve accentuar ci, que nor bulletin es destinat solmen al
+information de nor tchecoslovac coidealistes e al propaganda de
+Occidental in Tchecoslovakia. Noi have null pretensiones devenir un
+jurnal litterari. To significa, que it ne va esser possibil publicar in
+nor Bulletin articules de bell prosa, poemes etc. Ma noi va publicar
+sempre con joy curt articules de nor coidealistes, informant pri li
+labor fat e particularimen <em>pri li successes atinget</em>. Ti ultim genre
+de informationes es li max desirabil por nos! Ergo, al labor, al
+success!  Li redaction</p>
+<p>Nota del administration.</p>
+<p>Li abonnament a nor Occidental-Bulletin va custar necos. -- Chascun interessate
+va reciver it gratuitmen, regularimen chascun mensu, con exception de
+julí e august. Ma noi peti omni nor amicos, prender li crayon e calcular
+un pac, quel expenses noi have a far: Li paper, li printería, li postal
+expenses, li covertes etc. Noi paya omni ti expenses ex nor propri
+tasca. Ergo, si vu trova just, que <em>noi omnis</em> deve contribuer al
+difusion de Occidental, ples ne obliviar nor bulletin in vor budgete e misser
+nos quelc subvention secun vor possibilitá e vor porta-moné.</p>
+<p>Micri Chrestomathie</p>
+<p>Referat pri li 1 numeró de nor BIBLIOTECA IN OCCIDENTAL ha publicat
+sequent jurnales: NÁRODNÍ OSVOBOZENÍ li 9 januar / nro 7 /, NYMBURSKÉ
+LISTY li 16 januar / nro 3 / e MLADOBOLESLAVSKÉ LISTY li 26 januar / nro
+7 /. Qui ne possede ancor ti excellent libre, ples comendar it strax.
+Pd.</p>
+<p>Fine de polemica con esperantistes.</p>
+<p>MLADOBOLESLAVESKÉ LISTY in su numeró 2 del 12 januar publicat in articul
+«Druhy konec» / Li secund fine / de c. Podobsky, per quel il cludet li
+polemica con sr. Solc. In ti articul c. Podobsky emfasat que Occidental ne es
+alquel reformat Esperanto, ma un lingue totalmen diferent, constructet
+sur altri principies quam Esperanto. Il demonstrat li naturalitá de Occidental per
+comparation del esp. parol «humaneco» con Occidental «humanitá» e publicat
+comparativ textus de Occidental e Esperanto. Li printería omisset esp.
+circumflexes, pro que it ne possede les.</p>
+<p>PRAGER ABENDBLATT.</p>
+<p>Li jurnal quotidian de Praha, publicat in su numeró 10 del 12 januar un
+articul de c. Kolar «Was ist Occidental» (Quo es Occidental?). In ti
+articul, pos un introduction historic, c. Kolar accentua li
+internationalitá del vocabularium de Occidental e su facilitá por chascun
+educat hom. C. Kolar recivet mult demandas de informationes e noi posse
+solmen gratular le e desirar mult success a su Central Propaganda-Buró
+por li german regiones de Tchecoslovakia in Nyrsko / Neuern / 10.</p>
+<p>DER KOHLENINTERESSENT.</p>
+<p>Organ zur Förderung der Interessen des nordwestböhmischen
+Braunkohlenbeckens, ferner für Volkswirtschaft, Handel und Verkehr / in
+su numeró 1 / 5 januar 1935 / del 55-esim annu-colection publicat in li
+rubrica «Litteratura» un referate de sr. ing. Julius Bauer pri
+Occidental, in quel il raporta pri nor circulares e lauda, «li bell
+entusiasme por li afere»   Pd.</p>
+<p>Curs de Occidental.</p>
+<p>Occidental-Club de Nyrsko / Neuern / va arangear un curs de Occidental.
+Li unesim lecion va evenir li 1 februar 1935. Til nu adheret 8 persones.
+Guida c. Rudo Kolár. Noi desira mult success a nor agil coidealistes in
+Nyrsko!   rK.</p>
+<p>L.P.O. -- Liga del propagatores de Occidental.</p>
+<p>Con joy noi publica li nómines del unesim honor-membres de L.P.O. queles
+recrutat adminim 5 nov adherentes:</p>
+<p>1{dot} Jan A. Kajš, Brno; -- 2. Rudo Kolar, Nyrsko; -- 3. J. Cordonnier. Noi
+mersía sincerimen a ti fervent coidealistes e peti les continuar
+ínfatigabilmen lor labor! Ad avan! In li labor por li difusion de
+Occidental!   Pd.</p>
+<p>2-esim numeró del BIBLIOTECA DE OCCIDENTAL.</p>
+<p>Bentost va aparir li 2 nró de nor biblioteca, editet de sr. J. A. Kays.
+Li nov tome va contener un colection de original poemas in Occidental de sr.
+Jar. Podobsky sub li titul: LI ASTRES DE VERNE. Ti unesim colection de
+ecc.(?) poemas, dedicat al autor de Occidental, sr. prof. Edgar de Wahl, va
+esser equipat per du linoleo-gravuras de sr. prof. Ric.Berger. On posse
+comendar it ja nu.</p>
+<p>Li quaresim reunion de occidentalistes in Praha
+evenit li 16 januar 1935. Ulteriori salutationes venit de sres. redactor
+Musil, Boskovice, sr. Quensel, Günthersleben e c. Kolár, Nyrsko. Noi
+mersía pro ti manifestationes de simpaties e repeti li salutationes
+cordialmen. Li reunion decidet, convocar li assemblé constituent del
+CLUB OCCIDENTAL in Praha por li 13 februar 1935 in li café «U Nováku»,
+ye clocca ott vésp. Noi peti omni nor amicos in Praha, visitar ti
+assemblé constituent.   C.O.</p>
+<p>Cassa de propaganda.</p>
+<p>Noi atesta har recivet li sequent subventiones: Malousek, Praha, Kc 6.—,
+Svecová, Praha: Kc 6.—, Ex Jicín: Kc 17.—, Dr. Stastny, Praha: Kc 2.—.
+In summa / januar / Kc 31.—. Summa total til hodie: Kc 238.80.
+Cordialissim mersí a omnes!   BdO.</p>
+<p>A nor colaboratores!</p>
+<p>Noi recivet tam mult articules valorosi e mem poemas, que li micri cadre
+de nor bulletin absolutmen ne sufice inbrassar ti vast materiale. Ergo,
+ples pardonar. C.Dr.Stastny va responder per privat lettres a sres:
+prof. Dr. Sommer-Batek, Josef Stádler / Bulteno de la laborista ligo
+Esperantista / in Plzen.   Red.</p>
+<p>Tisk: St. Fechtner &amp; spol., Praha-1.195. -- Odpovedny redaktor: Jos.
+Svec, Praha-VII., Skroupova 2.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../Cosmoglotta/1935.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../Cosmoglotta/100.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../Cosmoglotta/1935.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../Cosmoglotta/100.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script src="https://occidental-lang.com/website-word-lookup/lookup.js"></script>
+        <script>
+            lookupInit('https://occidental-lang.com/website-word-lookup/dict.json');
+            document.onselectionchange = debounce(lookup, 500);
+        </script>
+        
+
+    </body>
+</html>

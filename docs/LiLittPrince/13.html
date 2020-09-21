@@ -1,0 +1,986 @@
+<!DOCTYPE HTML>
+<html lang="ie" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Capitul 13 - scritorium</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        
+
+        <div id="definition"></div>
+
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="../index.html">Hem</a></li><li class="chapter-item "><a href="../MicriCrestomatie/0.html"><strong aria-hidden="true">1.</strong> Micri Crestomatie</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../MicriCrestomatie/1.html"><strong aria-hidden="true">1.1.</strong> Capitul 1</a></li><li class="chapter-item "><a href="../MicriCrestomatie/proverbies.html"><strong aria-hidden="true">1.2.</strong> Proverbies</a></li></ol></li><li class="chapter-item expanded "><a href="../LiLittPrince/0.html"><strong aria-hidden="true">2.</strong> Li Litt Prince</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../LiLittPrince/1.html"><strong aria-hidden="true">2.1.</strong> Capitul 1</a></li><li class="chapter-item "><a href="../LiLittPrince/2.html"><strong aria-hidden="true">2.2.</strong> Capitul 2</a></li><li class="chapter-item "><a href="../LiLittPrince/3.html"><strong aria-hidden="true">2.3.</strong> Capitul 3</a></li><li class="chapter-item "><a href="../LiLittPrince/4.html"><strong aria-hidden="true">2.4.</strong> Capitul 4</a></li><li class="chapter-item "><a href="../LiLittPrince/5.html"><strong aria-hidden="true">2.5.</strong> Capitul 5</a></li><li class="chapter-item "><a href="../LiLittPrince/6.html"><strong aria-hidden="true">2.6.</strong> Capitul 6</a></li><li class="chapter-item "><a href="../LiLittPrince/7.html"><strong aria-hidden="true">2.7.</strong> Capitul 7</a></li><li class="chapter-item "><a href="../LiLittPrince/8.html"><strong aria-hidden="true">2.8.</strong> Capitul 8</a></li><li class="chapter-item "><a href="../LiLittPrince/9.html"><strong aria-hidden="true">2.9.</strong> Capitul 9</a></li><li class="chapter-item "><a href="../LiLittPrince/10.html"><strong aria-hidden="true">2.10.</strong> Capitul 10</a></li><li class="chapter-item "><a href="../LiLittPrince/11.html"><strong aria-hidden="true">2.11.</strong> Capitul 11</a></li><li class="chapter-item "><a href="../LiLittPrince/12.html"><strong aria-hidden="true">2.12.</strong> Capitul 12</a></li><li class="chapter-item expanded "><a href="../LiLittPrince/13.html" class="active"><strong aria-hidden="true">2.13.</strong> Capitul 13</a></li></ol></li><li class="chapter-item "><a href="../UnDesertor/0.html"><strong aria-hidden="true">3.</strong> Un Desertor</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../UnDesertor/1.html"><strong aria-hidden="true">3.1.</strong> Capitul 1</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/0.html"><strong aria-hidden="true">4.</strong> Cosmoglotta</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/1927.html"><strong aria-hidden="true">4.1.</strong> 1927</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/038.html"><strong aria-hidden="true">4.1.1.</strong> A 38</a></li><li class="chapter-item "><a href="../Cosmoglotta/039.html"><strong aria-hidden="true">4.1.2.</strong> A 39</a></li><li class="chapter-item "><a href="../Cosmoglotta/040.html"><strong aria-hidden="true">4.1.3.</strong> A 40</a></li><li class="chapter-item "><a href="../Cosmoglotta/041.html"><strong aria-hidden="true">4.1.4.</strong> A 41</a></li><li class="chapter-item "><a href="../Cosmoglotta/042.html"><strong aria-hidden="true">4.1.5.</strong> A 42</a></li><li class="chapter-item "><a href="../Cosmoglotta/043.html"><strong aria-hidden="true">4.1.6.</strong> A 43</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1928.html"><strong aria-hidden="true">4.2.</strong> 1928</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/044.html"><strong aria-hidden="true">4.2.1.</strong> A 44</a></li><li class="chapter-item "><a href="../Cosmoglotta/045.html"><strong aria-hidden="true">4.2.2.</strong> A 45</a></li><li class="chapter-item "><a href="../Cosmoglotta/046.html"><strong aria-hidden="true">4.2.3.</strong> A 46</a></li><li class="chapter-item "><a href="../Cosmoglotta/047.html"><strong aria-hidden="true">4.2.4.</strong> A 47</a></li><li class="chapter-item "><a href="../Cosmoglotta/048.html"><strong aria-hidden="true">4.2.5.</strong> A 48</a></li><li class="chapter-item "><a href="../Cosmoglotta/049.html"><strong aria-hidden="true">4.2.6.</strong> A 49</a></li><li class="chapter-item "><a href="../Cosmoglotta/050.html"><strong aria-hidden="true">4.2.7.</strong> A 50</a></li><li class="chapter-item "><a href="../Cosmoglotta/051-052.html"><strong aria-hidden="true">4.2.8.</strong> A 51-52</a></li><li class="chapter-item "><a href="../Cosmoglotta/053.html"><strong aria-hidden="true">4.2.9.</strong> A 53</a></li><li class="chapter-item "><a href="../Cosmoglotta/054.html"><strong aria-hidden="true">4.2.10.</strong> A 54</a></li><li class="chapter-item "><a href="../Cosmoglotta/055.html"><strong aria-hidden="true">4.2.11.</strong> A 55</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1929.html"><strong aria-hidden="true">4.3.</strong> 1929</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/056.html"><strong aria-hidden="true">4.3.1.</strong> A 56</a></li><li class="chapter-item "><a href="../Cosmoglotta/057.html"><strong aria-hidden="true">4.3.2.</strong> A 57</a></li><li class="chapter-item "><a href="../Cosmoglotta/058.html"><strong aria-hidden="true">4.3.3.</strong> A 58</a></li><li class="chapter-item "><a href="../Cosmoglotta/059.html"><strong aria-hidden="true">4.3.4.</strong> A 59</a></li><li class="chapter-item "><a href="../Cosmoglotta/060.html"><strong aria-hidden="true">4.3.5.</strong> A 60</a></li><li class="chapter-item "><a href="../Cosmoglotta/061.html"><strong aria-hidden="true">4.3.6.</strong> A 61</a></li><li class="chapter-item "><a href="../Cosmoglotta/062-63.html"><strong aria-hidden="true">4.3.7.</strong> A 62-63</a></li><li class="chapter-item "><a href="../Cosmoglotta/064.html"><strong aria-hidden="true">4.3.8.</strong> A 64</a></li><li class="chapter-item "><a href="../Cosmoglotta/065.html"><strong aria-hidden="true">4.3.9.</strong> A 65</a></li><li class="chapter-item "><a href="../Cosmoglotta/066.html"><strong aria-hidden="true">4.3.10.</strong> A 66</a></li><li class="chapter-item "><a href="../Cosmoglotta/067.html"><strong aria-hidden="true">4.3.11.</strong> A 67</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1930.html"><strong aria-hidden="true">4.4.</strong> 1930</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/068.html"><strong aria-hidden="true">4.4.1.</strong> A 68</a></li><li class="chapter-item "><a href="../Cosmoglotta/069.html"><strong aria-hidden="true">4.4.2.</strong> A 69</a></li><li class="chapter-item "><a href="../Cosmoglotta/070.html"><strong aria-hidden="true">4.4.3.</strong> A 70</a></li><li class="chapter-item "><a href="../Cosmoglotta/071.html"><strong aria-hidden="true">4.4.4.</strong> A 71</a></li><li class="chapter-item "><a href="../Cosmoglotta/072.html"><strong aria-hidden="true">4.4.5.</strong> A 72</a></li><li class="chapter-item "><a href="../Cosmoglotta/073.html"><strong aria-hidden="true">4.4.6.</strong> A 73</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1931.html"><strong aria-hidden="true">4.5.</strong> 1931</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/074.html"><strong aria-hidden="true">4.5.1.</strong> A 74</a></li><li class="chapter-item "><a href="../Cosmoglotta/075.html"><strong aria-hidden="true">4.5.2.</strong> A 75</a></li><li class="chapter-item "><a href="../Cosmoglotta/076.html"><strong aria-hidden="true">4.5.3.</strong> A 76</a></li><li class="chapter-item "><a href="../Cosmoglotta/077.html"><strong aria-hidden="true">4.5.4.</strong> A 77</a></li><li class="chapter-item "><a href="../Cosmoglotta/078.html"><strong aria-hidden="true">4.5.5.</strong> A 78</a></li><li class="chapter-item "><a href="../Cosmoglotta/079.html"><strong aria-hidden="true">4.5.6.</strong> A 79</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1932.html"><strong aria-hidden="true">4.6.</strong> 1932</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/080.html"><strong aria-hidden="true">4.6.1.</strong> A 80</a></li><li class="chapter-item "><a href="../Cosmoglotta/081.html"><strong aria-hidden="true">4.6.2.</strong> A 81</a></li><li class="chapter-item "><a href="../Cosmoglotta/082.html"><strong aria-hidden="true">4.6.3.</strong> A 82</a></li><li class="chapter-item "><a href="../Cosmoglotta/083.html"><strong aria-hidden="true">4.6.4.</strong> A 83</a></li><li class="chapter-item "><a href="../Cosmoglotta/084.html"><strong aria-hidden="true">4.6.5.</strong> A 84</a></li><li class="chapter-item "><a href="../Cosmoglotta/085.html"><strong aria-hidden="true">4.6.6.</strong> A 85</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1933.html"><strong aria-hidden="true">4.7.</strong> 1933</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/086.html"><strong aria-hidden="true">4.7.1.</strong> A 86</a></li><li class="chapter-item "><a href="../Cosmoglotta/087.html"><strong aria-hidden="true">4.7.2.</strong> A 87</a></li><li class="chapter-item "><a href="../Cosmoglotta/088.html"><strong aria-hidden="true">4.7.3.</strong> A 88</a></li><li class="chapter-item "><a href="../Cosmoglotta/089.html"><strong aria-hidden="true">4.7.4.</strong> A 89</a></li><li class="chapter-item "><a href="../Cosmoglotta/090.html"><strong aria-hidden="true">4.7.5.</strong> A 90</a></li><li class="chapter-item "><a href="../Cosmoglotta/091.html"><strong aria-hidden="true">4.7.6.</strong> A 91</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1934.html"><strong aria-hidden="true">4.8.</strong> 1934</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/092.html"><strong aria-hidden="true">4.8.1.</strong> A 92</a></li><li class="chapter-item "><a href="../Cosmoglotta/093.html"><strong aria-hidden="true">4.8.2.</strong> A 93</a></li><li class="chapter-item "><a href="../Cosmoglotta/094.html"><strong aria-hidden="true">4.8.3.</strong> A 94</a></li><li class="chapter-item "><a href="../Cosmoglotta/095.html"><strong aria-hidden="true">4.8.4.</strong> A 95</a></li><li class="chapter-item "><a href="../Cosmoglotta/096.html"><strong aria-hidden="true">4.8.5.</strong> A 96</a></li><li class="chapter-item "><a href="../Cosmoglotta/097.html"><strong aria-hidden="true">4.8.6.</strong> A 97</a></li><li class="chapter-item "><a href="../Cosmoglotta/098.html"><strong aria-hidden="true">4.8.7.</strong> A 98</a></li><li class="chapter-item "><a href="../Cosmoglotta/099.html"><strong aria-hidden="true">4.8.8.</strong> A 99</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1935.html"><strong aria-hidden="true">4.9.</strong> 1935</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/B-001.html"><strong aria-hidden="true">4.9.1.</strong> B 1</a></li><li class="chapter-item "><a href="../Cosmoglotta/100.html"><strong aria-hidden="true">4.9.2.</strong> A 100</a></li><li class="chapter-item "><a href="../Cosmoglotta/101.html"><strong aria-hidden="true">4.9.3.</strong> A 101</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-002.html"><strong aria-hidden="true">4.9.4.</strong> B 2</a></li><li class="chapter-item "><a href="../Cosmoglotta/102.html"><strong aria-hidden="true">4.9.5.</strong> A 102</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-003.html"><strong aria-hidden="true">4.9.6.</strong> B 3</a></li><li class="chapter-item "><a href="../Cosmoglotta/103.html"><strong aria-hidden="true">4.9.7.</strong> A 103</a></li><li class="chapter-item "><a href="../Cosmoglotta/104.html"><strong aria-hidden="true">4.9.8.</strong> A 104</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-004.html"><strong aria-hidden="true">4.9.9.</strong> B 4</a></li><li class="chapter-item "><a href="../Cosmoglotta/105.html"><strong aria-hidden="true">4.9.10.</strong> A 105</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/theRest.html"><strong aria-hidden="true">4.10.</strong> The Rest</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">scritorium</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <div id="langPicker"></div>
+                        
+                        <a href="https://github.com/occidental-lang/scritorium" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#13" id="13">13</a></h1>
+<p>Li quaresim planete esset li planete del comerciante. Ti mann esset tant ocupat, que il ne adminim
+levat li cap quande li litt prince arivat.
+&quot;Bon die&quot;, li litt prince dit a il. &quot;Vor cigarette ha extintet.&quot;
+&quot;Tri e du es quin. Quin e sett es deci-du. Deci-du e tri es deci-quin. Bon die. Deci-quin e sett es
+duantdu. Duantdu e six es duantott. Yo ne have témpor por accender it denov. Duantsix e quin es
+triantun. Uf! Dunc to fa quincent un milliones sixcent duantdu mill settcent triantun.&quot;
+&quot;Quincent milliones de quo?&quot;
+&quot;Qualmen? Tu es ancor ci? Quincentun milliones de ... yo ne save it plu ... yo have tant mult labor!</p>
+<p>Yo es un seriosi mann, yo ne ocupa me pri infantilesses. Du e quin es sett ...&quot;
+&quot;Quincentun milliones de quo?&quot;, li litt prince repetit. Il nequande in li vive abandonat un question,
+quel il ha unvez posit.
+Li comerciante levat li cap.
+&quot;In li quinantquar annus, in queles yo habita sur ti planete, yo esset solmen trivez trublat. Li unesim
+vez esset ante duantdu annus quande un melolont hat cadet de úcunc a bass. It fat un terribil bruida
+e yo ha fat un addition con quar errores. Li duesim vez esset ante deciun annus. It esset un atacca de
+reumatisme. It manca a me movida.Yo ne have li témpor por flanar. Yo es un seriosi mann. E nu it
+es ja li triesim vez! Dunc yo di quinantcentun milliones ...&quot;
+&quot;Milliones de quo?&quot;</p>
+<p>Li comerciante comprendet que il ne havet un chance por pace.
+&quot;Milliones de ti litt coses, queles on quelcvez vide in li ciel.&quot;
+&quot;Moscas?&quot;</p>
+<p>&quot;Ma no, li litt coses queles brillia.&quot;
+&quot;Apes?&quot;
+&quot;Ma no. Litt aurin coses per queles li fa-necoses deveni revosi. Yo es un seriosi mann. Yo ne have li
+témpor por reveríes.&quot;
+&quot;Ah, li stelles?&quot;
+&quot;Dunc ili es li stelles.&quot;
+&quot;E quo tu fa con quincent milliones stelles?&quot;
+&quot;Quincentun milliones sixcent duantdu mill settcent triantun. Yo es un seriosi mann, yo es tre
+exact.&quot;
+&quot;E quo tu fa con ti stelles?&quot;
+&quot;Quo yo fa con ili?&quot;
+&quot;Yes.&quot;
+&quot;Nequó. Yo possede les.&quot;
+&quot;Esque tu possede li stelles?&quot;
+&quot;Yes.&quot;
+&quot;Ma yo ha ja videt un rey, qui ..&quot;
+&quot;Li reyes ne possede, ili 'regna súper&quot; alquó. To es un totmen altri cose.&quot;
+&quot;E in quel maniere tu profita de to?&quot;
+&quot;To fa me rich.&quot;
+&quot;E in quel maniere tu profita de esser rich?&quot;
+&quot;Yo posse comprar pluri stelles si alquí trova alqueles.&quot;</p>
+<p>Ti-ci hom, li litt price dit a se self, pensa un poc quam mi trincard.
+Támen il posit ancor pluri questiones.
+&quot;Qualmen on posse posseder stelles?&quot;
+&quot;A qui ili apartene?&quot;, li comerciante replicat morosimen.
+&quot;Yo ne save. A nequí.&quot;
+&quot;Tande ili apartene a me, yo ha pensat a to quam unesim.&quot;
+&quot;Esque to sufice?&quot;
+&quot;Certmen. Si tu trova un diamant quel apartene a nequí, tande it es li tui. Si tu trova un insul quel
+apartene a nequí, talmen it es li tui. Si tu have quam unesim person un idé e tu patenta it, tande it es
+li tui. E yo, yo possede li stelles, pro que nequí ante me ha pensat pri posseder les.&quot;
+&quot;To es ver&quot;, li litt prince dit. &quot;E quo tu fa con ili?&quot;
+&quot;Yo administra les. Yo conta les denov e denov&quot;, li comerciante dit. &quot;To ne es facil. Ma yo es un
+seriosi mann.&quot;
+Li litt prince ancor ne esset satisfat.
+&quot;Si yo have un silkin chal, yo posse voluer it circum mi col e prender it con me. Si yo have un flor
+yo posse colier it e prender it con me. Ma tu ne posse colier stelles!&quot;
+&quot;No, ma yo posse posir les in li bank.&quot;
+&quot;Quo significa to?&quot;
+&quot;To significa que yo scri li númere de mi stelles sur un litt papere. E poy yo clude ti papere in un
+tirbux.&quot;
+&quot;E to es omnicos?&quot;
+&quot;To sufice.&quot;</p>
+<p>To es amusant, li litt prince pensat. It es quasi poetic. Ma on ne posse egarda it quam totmen
+seriosimen.
+Li litt prince pensat pri li seriosi aferes totmen altrimen quam li grand homes.
+&quot;Yo,&quot; il ancor dit. &quot;Yo possede un flor, quel yo arosea chascun die. Yo possede tri vulcanes, queles
+yo balaya chascun semane. Nam yo anc balaya li extintet vulcan. On save nequande. It es bon por
+mi vulcanes e por mi flor que yo possede les. Ma tu have null utilitá por li stelles ...&quot;
+Li comerciante apertet li bocca, ma il ne trovat un response e li litt prince desaparit.
+Li grand homes es vermen tre strangi, il dit a se durant su viage.</p>
+<h1><a class="header" href="#14" id="14">14</a></h1>
+<p>Li quinesim planete esset tre strangi. It esset li minim de omnicos. Li spacie just sufice por un
+stradlaterne e un accendero del laterne. Li litt prince ne posset se explicar pro quo on besona un
+stradlaterne e un accendero del laterne alcú in li ciel sur un planete sin dom e sin habitantes. Ma il
+dit a se self:
+It es tre probabil que ti mann es un poc alienat. Ma il ne es min alienat quam li rey, li vanitoso, li
+comerciante e li trincard. Adminim su labor have un sense. Si il accende su laterne, it es quasi quam
+il crea un nov stelle o un flor sur li munde. Si il extinte su laterne, tande li stelle o laterne indormi.
+To es vermen un jolli ocupation. It es anc vermen util, pro que it es jolli.
+Quande il arivat sur li planete, il salutat li accendero del laterne honorabilmen.
+&quot;Bon die. Pro quo tu ha just extintet tui laterne?&quot;
+&quot;Yo have li instruction por it&quot;, li accendero del laterne respondet. &quot;Bon die.&quot;
+&quot;Quo es to, 'li instruction'?</p>
+<p>&quot;Li instruction extinter mi laterne. Bon véspere.&quot;
+E il accendet it denov.
+&quot;Ma pro quo tu ha accendet it just nu denov?&quot;
+&quot;To es li instruction&quot;, li accedero del laterne respondet.
+&quot;Yo ne comprende&quot;, li litt prince dit.
+&quot;To es nequó que on deve comprender&quot;, li accendero del laterne dit. &quot;Li instruction es just li
+instruction. Bon die.&quot;
+E il denov extintet li laterne.</p>
+<p>Poy il siccat se su fronte per un rubi-quadrillat nas-linette.
+&quot;Yo fa ci un terribil servicie. Ante quelc témpor it esset plu rasonabil. Yo extintet in li matine e
+accendet in li véspere. Yo posset reposar li reste del die e yo posset dormir in li reste del nocte... &quot;
+&quot;E desde tande li instruction esset changeat?&quot;
+&quot;Li instruction ne esset changeat&quot;, li accendero del laterne dit. &quot;To es exactmen li tragedie! Li
+planete ha rotat se chascun annu plu e plu rapidmen e li instruction ha restat li sam!&quot;</p>
+<p>&quot;E?&quot;, li litt prince dit.
+&quot;E nu, pro que it fa in un minute un complet rotation, yo ne have plu un seconde de repose. Chascun
+minute yo accende unvez e yo extinte unvez!&quot;
+&quot;To es amusant! Li dies che te dura un minute!&quot;
+&quot;To tot ne es amusant&quot;, li accendero dit.
+&quot;Noi conversa nu ja un mensu con unaltru.&quot;
+&quot;Un mensu?&quot;
+&quot;Yes, triant minutes. Triant minutes! Bon véspere!&quot;
+E il accendet denov li laterne.
+Li litt prince regardat le e il amat ti accendero, qui esset tant fidel a su instruction. Il memorat li
+descensiones del sole pri queles il se ocupat plu tost per que il movet su fotel. Il volet auxilar su
+amico.
+&quot;Esque tu save ... yo conosse un mesura per quel tu vell posser reposar te, si tu vell voler ... &quot;
+&quot;Yo vole sempre&quot;, li accendero dit.
+Nam on posse esser fidel e pigri in li sam témpor.
+Li litt prince continuat:
+&quot;Tui planete es tam litt que tu posse ear circum it per tri saltas. Tu solmen deve ear solmen suficent
+lentmen por restar sempre in li sole. Si tu vole restar, tande tu ea ... e li die va durar tam long quam
+tu vole.&quot;
+&quot;To ne es un grand amusament&quot;, li accendero dit, &quot;to quo yo ama in li vive, es li dorme.&quot;
+&quot;In ti casu it es sin chances.&quot;
+&quot;Sin chances&quot;, li accendero dit. &quot;Bon die.&quot;</p>
+<p>E il extintet su lampe.
+Ti mann, li litt prince dit a se, durant il continuat su viage, il va esser despreciat de omni altris, del
+rey, del vanitoso, del trincard e del comerciante. Ma il es li sol person, qui yo ne egarda quam
+risibil. Fórsan pro que il ocupa se pri altri coses in vice pri se self. Il sospirat pro regrete e ancor dit
+a se self:
+Il es li sol, qui yo vell har posset far a mi amico. Ma su planete es vermen tro litt. Ne hay suficent
+spacie por du ...
+To quo li litt prince ne audaciat admisser a se esset que il regretat que il ne posset restar sur ti
+benedit planete, precipue pro li mill quarcent quarant descensiones del sole in duantquar hores!</p>
+<h1><a class="header" href="#15" id="15">15</a></h1>
+<p>Li sixesim planete esset decivez tant grand. It esset habitat de un old senior, qui scrit imensi libres.
+&quot;Vi! Un explorator!&quot;, il vocat quande il videt li litt prince qui sedentat se al table e reposat se un
+poc. Il viageat ja tant mult!
+&quot;De u tu veni?&quot;, li old senior questionat le.
+&quot;Quo es to, ti-ci spess libre?&quot;, li litt prince dit. &quot;Quo vu fa ci?&quot;, li litt prince dit.
+&quot;Yo es geograf&quot;, li old senior dit.
+&quot;Quo es to, un geograf?&quot;
+&quot;To es un erudito qui save u li mares, li cités, li montes e li desertes es situat.&quot;
+&quot;To es tre interessant&quot;, li litt prince dit. &quot;Finalmen un ver profession!&quot;
+Il regardat circum se al planete del geograf. Il nequande hat videt un tal majestosi planete.
+&quot;It es tre tre bell, vor planete. Esque it hay ci anc oceanes?&quot;</p>
+<p>&quot;Yo ne posse saver to&quot;, li geograf dit.
+&quot;Ah!&quot; Li litt prince esset deceptet. &quot;E montes?&quot;
+&quot;Yo anc ne posse saver to&quot;, li geograf dit.
+&quot;Ma vu es geograf! - E cités e fluvies e desertes?&quot;</p>
+<p>&quot;Yo ne posse saver anc to.&quot;
+&quot;Ma vu ya es geograf!&quot;
+&quot;Corect&quot;, li geograf dit, &quot;ma yo ne es un explorator. It totmen manca a noi exploratores. It ne es li
+geograf qui ea por contar li cités, fluvies, montes, mares, oceanes e li desertes. Li geograf es tro
+important por vagar. Il ne forlassa su scri-table. Ma il recive li exploratores solemnimen. Il interroga
+les e il nota se lor impressiones. E si li noticies de un explorator sembla a il remarcabil, li geograf fa
+examinar oficialmen li moralitá de ili.&quot;
+&quot;Pro quo to?&quot;
+&quot;Pro que un explorator qui menti posse causar catastrofes in li geografie-libres. E anc un explorator
+qui trinca tro mult.&quot;
+&quot;Qualmen to?&quot;, li litt prince dit.
+&quot;Pro que trincardes vide omnicos duplic. Li geograf vell dunc registrar du montes u existe solmen</p>
+<p>un.&quot;
+&quot;Yo conosse un person&quot;, li litt prince dit, &quot;qui vell esser un mal explorator. &quot;
+&quot;To es possibil. Ma si li moralitá de un explorator sembla esser bon, on fa un examination de su
+decovrition.&quot;
+&quot;Esque on ea a ti loc por controlar?&quot;
+&quot;No. To es tro complicat. Ma on demanda del explorator que il livera pruvas. Si it acte se por
+exemple pri un grand monte, on demanda que il aporta con se grand lápides.&quot;
+Subitmen li geograf excitat se:
+&quot;E tu, tu veni de un distant loc! Tu va descrir me tui planete!&quot;
+E li geograf apertet su registre-libre e acutat su crayon.
+In prim on nota li narrationes del explorator per un crayon. Por scrir les con incre on atende til li
+explorator ha liverat pruvas.
+&quot;Nu?&quot;, li geograf questionat.
+&quot;O che me in hem&quot;, li litt prince dit, &quot;ne eveni mult, pro que it es tre micri. Yo have tri vulcanes e un
+extintet. Ma on nequande save it.&quot;
+&quot;On nequande save&quot;, li geograf dit.
+&quot;Yo anc have un flor.&quot;
+&quot;Noi ne nota li flores&quot;, li geograf dit.
+&quot;Pro quo to? Ili es lu max bell!&quot;
+&quot;Pro que li flores es passageari.&quot;
+&quot;Quo significa 'passageari'?&quot;
+&quot;Li geografie-libres&quot;, li geograf replicat, &quot;es li max valorosi de omni libres. Ili nequande inolda. It
+es tre rar que un monte cambia su loc. It es tre rar que un ocean perdi su aqua. Noi registra li eterni
+coses. &quot;
+&quot;Ma li extintet vulcanes posse denov avigilar se?&quot;</p>
+<p>&quot;Ca li vulcanes es extintet o activ, it es li sam&quot;, li geograf dit. &quot;To quo es important por noi, to es li
+monte. It ne muta se.&quot;
+&quot;Ma quo significa 'passageari'?, repetit li litt prince, qui in su vive ancor nequande hat renunciat de
+un unvez posit question.
+&quot;To significa que it es menaciat de un bentost desaparition.&quot;
+&quot;Esque mi flor es menaciat del bentost desaparition?&quot;
+&quot;Certmen. &quot;
+Mi flor es passageari, li litt prince dit a se self e it have solmen quar spines por defender se contra li
+munde! E yo ha lassat it retro totmen sol!
+To esset su prim emotion de repentie. Ma il retrovat denov su corage.
+&quot;Quo vu recomanda me a u yo deve ear?&quot;, il questionat.
+&quot;Al planete Terra&quot;, li geograf respondet, &quot;it have un bon reputation ...&quot;
+E li litt prince departet e pensat a su flor.</p>
+<h1><a class="header" href="#16" id="16">16</a></h1>
+<p>Li settesim planete dunc esset li Terra. Li Terra ne es alcun planete! On conta ta cent e deciun reyes,
+si on ne oblivia li reyes del negros, sett mill geografes, nincent mill comerciantes, sett e un demi
+million vanitosi homes, curtmen dit - circa du milliardes adult homes.
+Por dar vos un idé pri li grandore del Terra, yo deve dir vos que on havet ta ante li invention del
+electricitá sur omni continentes un tot armé de quarcent sixantdu milles e quincent deci-un
+accenderos del laternes in servicie.
+Videt de un quelc distantie to havet un magnific efecte. Li movementes de ti armé esset executet</p>
+<p>tam quam un ballett del ópera. Li accenderos del laternes de Nov-Zeland e Australia comensat li
+rond-dansa. Quande ili hat accendet su laternes, ili eat dormir. Tande li accenderos del laternes de
+China e Siberia comensat su dansa. E anc ili desaparit detra li culisses. Tande li accenderos del
+laternes de Russia e India esset sur li scene. Poy tis de Africa e Europa. Pos to tis de Sud-America.
+Poy tis de Nord-America. E ili nequande errat se in li órdine. It esset grandiosi. Solmen li accendero
+del sol laterne in li nord-pol e su colego del sol laterne in li sud-pol vivet plen de ociositá e
+comfortabilitá. Ili laborat duvez in li annu.</p>
+<h1><a class="header" href="#17" id="17">17</a></h1>
+<p>Si on vole esser espiritosi, tande it eveni que on fanfarona un poc. Yo ne esset totmen sinceri quande
+yo narrat vos pri li accenderos del laternes. Yo es li in li dangere que yo da a tis, qui ne conosse nor
+planete, un fals image de it. Li homes usa solmen tre poc del spacie sur li Terra. Li du milliardes
+habitantes, qui popula li Terra, vell stantar se verticalmen e un poc strettmen apu unaltru quam in un
+reunion populari, ili vell haver facilmen suficent spacie sur un public plazza con un longore de</p>
+<p>duant milies e un largore de duant milies. On vell posser assemblar li homanité sur li minim insul
+del Pacific Ocean.
+Li grand homes ne va vos creder to. Ili imagina que ili besona mult spacie. Ili prende se tam seriosi
+quam li baobab-árbores. Da les li consilie que ili deve calcular to self! Ili adora li ciffres, to va
+pleser les. Ma vu ne deve perdir vor témpor per to. It es sin sense. Vu have confidentie a me.
+Unvez sur li Terra li litt prince astonat se que il videt nequí. Il ja timet que il errat se in li planete
+quande un lunicolori anelle movet se in li sand.
+&quot;Bon nocte&quot;, li litt prince dit sin plan.
+&quot;Bon nocte&quot;, li serpent dit.</p>
+<p>&quot;Sur quel planete yo ha cadet?&quot;, li litt prince questionat.</p>
+<p>&quot;Sur li Terra, tu es in Africa&quot;, li serpent respondet.
+&quot;Ah! ... dunc nequí es sur li Terra?&quot;
+&quot;Ci es li deserte. In li desertes es nequí. Li Terra es grand&quot;, li serpent dit.
+Li litt prince sedentat se sur un lápide e levat li ocules al ciel.
+&quot;Yo questiona me&quot;, il dit, &quot;ca li stelles brillia por que chascun posse un die retrovar li su. Regarda a
+mi planete. Il sta súper noi ... Ma it es tant distant.
+&quot;It es bell&quot;, li serpent dit. &quot;Quo tu vole far ci?&quot;
+&quot;Yo have problemas con un flor&quot;, li litt prince dit,
+&quot;A!&quot;, li serpent dit.
+E ili tacet.
+&quot;U es li homes?&quot;, li litt prince finalmen continuat. &quot;On es un poc solitari in li deserte ...&quot;
+&quot;On es anc solitari che li homes&quot;, li serpent dit.
+Li litt prince regardat longmen al serpent.
+&quot;Tu es un drolli animale&quot;, il dit finalmen, &quot;tenui quam un fingre ... &quot;
+&quot;Ma yo es plu potent quam li fingre de un rey&quot;, li serpent dit.
+Li litt prince devet subrider.
+&quot;Tu ne es tre potent ... Tu ne adminim have pedes ... Tu ne adminim posse viagear.&quot;
+&quot;Yo posse portar te plu lontan quam un nave&quot;, li serpent dit. It rulat se circum li maleol del litt
+prince quam un aurin brasselette.
+&quot;Ti qui yo tucha, yo da le retro in li terra ex quel il ha originat&quot;, it ancor dit.
+&quot;Ma tu es pur, tu veni de un stelle ... &quot;
+Li litt prince respondet nequó.
+&quot;Yo regretta te que tu es sur ti Terra ex granite, tu qui es tant debil. Un die yo posse auxiliar te, si tu
+desira te tro ardentmen a tui planete. Yo posse ... &quot;</p>
+<p>&quot;O, yo ha comprendet tre bon&quot;, li litt prince dit, &quot;ma pro quo tu parla sempre in enigmas?&quot;
+&quot;Yo solve les omnes&quot;, li serpent dit.
+E ili tacet.</p>
+<h1><a class="header" href="#18" id="18">18</a></h1>
+<p>Li litt prince transeat li deserte e incontrat solmen un flor con tri petales, un tre miseri flor ...</p>
+<p>&quot;Bon die&quot;, li litt prince dit.
+&quot;Bon die&quot;, li flor dit,
+&quot;U es li homes?&quot;, li litt prince questionat politmen.
+Li flor hat videt un die un passant caravane.
+&quot;Li homes? Yo pensa que it hay six o sett. Yo ha videt les ante quelc annus. Ma on nequande save u
+on posse trovar les. Li vente forsoffla les. Ili ne have radicas, to es tre mal por ili.&quot;
+&quot;Adío&quot;, li litt prince dit.</p>
+<p>&quot;Adío&quot;, li flor dit.</p>
+<h1><a class="header" href="#19" id="19">19</a></h1>
+<p>Li litt prince grimpat ad supra un alt monte. Li sol montes, queles il conosset, esset li tri vulcanes e
+ili esset tam bass quam su genú. E il usat li extintet vulcan quam taburette.
+De un tal tant grand monte, il dit a se self, yo va strax vider li tot planete e omni homes ... Ma il
+videt nequó except li agullies de acut roccas.
+&quot;Bon die&quot;, il dit sin plan.</p>
+<p>&quot;Bon die ... Bon die... Bon die...&quot;, li ecó respondet.
+&quot;Qui es tu?&quot;, li litt prince dit.
+&quot;Qui es tu ... Qui es tu ... Qui es tu...?&quot;, li ecó respondet.</p>
+<p>&quot;Ples esser mi amico, yo es solitari&quot;, il dit.
+&quot;Yo es solitari ... solitari ... solitari...&quot;, li ecó respondet.
+Qual strangi planete! - il pensat. It es totmen arid, plen de puntas e totmen salosi. E it manca li
+fantasie al homes. Ili repeti to quo on di a ili ... In hem yo havet un flor: It parlat sempre in prim ...</p>
+<h1><a class="header" href="#20" id="20">20</a></h1>
+<p>Ma pos li litt prince hat longmen migrat súper li sand, li roccas e li nive, it evenit que il finalmen
+decovrit un strada. E omni stradas ducte al homes.
+&quot;Bon die&quot;, il dit.
+Ta esset un florescent jardin de rosieros.
+&quot;Bon die&quot;, li roses dit.
+Li litt prince regardat a ili. Ili omnes similat a su flor.</p>
+<p>&quot;Qui vu es?&quot;, il questionat les tre astonat.
+&quot;Noi es roses&quot;, li roses dit.
+&quot;Ah!&quot;, li litt prince dit.
+E il sentit se tre ínfelici. Su flor hat narrat le que it es sur li tot munde li sol de su specie. E vi! Ci
+esset quin milles de it, omnes identic, in un sol jardin.
+Su flor vell esser tre furiosi si it vell vider to. E it vell tussar terribilmen e simular que it vell morir
+por evitar li risibilitá.
+E yo vell dever simular si yo cuida me pri it, nam si ne it vell far que it vermen mori, por ahontar
+me ...
+Tande il dit ancor a se self: Yo credet que yo vell esser rich per un unic rose e yo possede solmen un
+ordinari flor. It e mi tri vulcanes, queles es solmen tam alt quam mi genú e de queles un es fórsan
+extintet por sembre, to ne fa ex me un tre grand prince ... E il jettat se in li herbe e plorat.</p>
+<h1><a class="header" href="#21" id="21">21</a></h1>
+<p>In ti moment aparit li fox.
+&quot;Bon die&quot;, li fox dit.
+&quot;Bon die&quot;, li litt prince respondet politmen e il tornat se, ma videt nequó.
+&quot;Yo es ci&quot;, li voce dit, &quot;sub li pomiero ...&quot;
+&quot;Qui es tu?&quot;, li litt prince dit. &quot;Tu es tre jolli ... &quot;
+&quot;Yo es un fox&quot;, li fox dit.
+&quot;Veni e lude con me&quot;, li litt prince proposit a il. &quot;Yo es tant trist ...&quot;
+&quot;Yo ne posse luder con te&quot;, li fox dit. &quot;Yo ancor ne es amansat!&quot;
+&quot;O, pardon!&quot;, li litt prince dit. Ma il addit pos quelc reflection.
+&quot;Quo significa 'amansar'?&quot;
+&quot;Tu ne es de ci&quot;, li litt fox dit, &quot;quo to sercha?&quot;
+&quot;Yo sercha li homes&quot;, li litt prince dit. &quot;Quo significa 'amansar'?&quot;
+&quot;Li homes&quot;, li fox dit, &quot;ili have fusiles e tira. To es molestant. Ili eleva gallines. To es lor sol
+interesse. Esque tu sercha gallines?&quot;
+&quot;No&quot;, li litt prince dit, &quot;yo sercha amicos. Quo significa 'amansar'?&quot;
+&quot;Amansar es un cose quel on ha obliviat hodie&quot;, li fox dit. &quot;It significa que 'on fa se confider'.&quot;
+&quot;Far se confider?&quot;
+&quot;Certmen&quot;, li fox dit. &quot;Tu es ancor por me nequó altri quam un litt púer, qui totmen simila a cent</p>
+<p>milles altri púeres. Yo ne besona te e tu ne besona me sam poc. Yo es por te solmen un fox, quel
+simila a cent milles altri foxes. Ma si tu amansa me, noi va necessitar unaltru. Tu va esser unic por
+me sur li munde. Yo va esser unic por te sur li munde ...&quot;
+&quot;Yo comensa comprender&quot;, li litt prince dit. &quot;It hay un flor ... yo crede que it ha amansat me ...&quot;
+&quot;To es possibil&quot;, li fox dit. &quot;On incontra omni possibil coses sur li terra ... &quot;
+&quot;O, to ne es sur li terra&quot;, li litt prince dit.</p>
+<p>Li fox semblat esser tre excitat.
+&quot;Sur un altri planete?&quot;
+&quot;Yes.&quot;
+&quot;Esque it hay chassatores sur ti planete?&quot;
+&quot;No.&quot;
+&quot;To es tre interessant! E gallines?&quot;
+&quot;No.&quot;
+&quot;Nequó es perfect&quot;, li fox sospirat.
+Ma li fox retornat a su pensa:</p>
+<p>&quot;Mi vive es monoton. Yo chassa gallines, li homes chassa me. Omni gallines simila unaltru e omni
+homes simila unaltru. Dunc yo enoya me un poc. Ma si tu amansa me mi vive va esser plen de sole.
+Yo va conosser li son de tui passu, quel difere se del omni altris. Li altri passus chassa me sub li
+terra. Ma tui passus va lurar me quam musica ex mi caverne. E tande regarda! Esque tu vide ta li
+campes de frument? Yo ne manja pane. Por me li frument es ínutil. Li campes de frument memora
+me a nequó. E to es trist. Ma tui capilles es blond quam frument. O, it va esser marvelosi si tu va har
+unvez amansat me! Li aure del campes de frument va memorar me a te. E yo va amar li bruida del
+vente in li frument. &quot;
+Li fox devenit mut e regardat longmen al litt prince.
+&quot;Ples ... amansar me!&quot;, il dit.</p>
+<p>&quot;Yo vermen vole to!&quot;, li litt prince respondet, &quot;ma yo ne have tant mult témpor. Yo deve trovar
+amicos e yo vole conossentar mult coses.&quot;
+&quot;On save solmen li coses queles on amansa&quot;, li fox dit. &quot;Li homes ne have plu témpor por
+conossentar alquó. Ili compra omnicos finit in li buticas. Ma pro que it ne hay buticas por amicos, li
+homes ne have plu amicos. Si tu vole haver un amico, tande amansa me.&quot;
+&quot;Quo yo deve far?&quot;, li litt prince dit.
+&quot;Tu deve esser patientosi&quot;, li fox respondet. &quot;In prim tu sedenta te un poc distant de me in li herbe.
+Yo va regardar te un poc secretmen ex li angul del ocul e tu va dir nequó. Li lingue es li fonte de</p>
+<p>omni miscomprenses. Ma chascun die tu va sedentar te un poc plu proxim ...&quot;
+In li sequent matine li litt prince retornat.
+&quot;It vell esser plu bon si tu vell har retornat ye li sam clocca&quot;, li fox dit. &quot;Si tu por exemple veni ye
+quar clocca in li posmidí, yo posse comensar esser felici ye tri clocca. Plu témpor passa plu felici yo
+va sentir me. Ye quar clocca yo va excitar me ja e desquitar me. Yo va experir quel valore li felicitá
+have. Ma si veni alquande, yo nequande va saver quande mi cordie deve esser ta. It es necessi que it
+hay fix customes.&quot;
+&quot;Quo significa 'fix customes'?&quot;, li litt prince dit.
+&quot;Anc alquó que on ha obliviat&quot;, li fox dit. &quot;It es to per quo un die difere se de un altri, un hor del
+altri hores. It hay por exemple un custom che mi chassatores. Ili dansa chascun jovedí con li puellas
+in li village. Pro to jovedí es un marvelosi die. Yo promena til li viniera. Si li chassatores vell ear
+alquande al dansa, omni dies vell esser egal. Yo nequande vell haver vacanties.</p>
+<p>Talmen li litt prince fat li fox confider con se. E quande li hor del adío esset proxim:
+&quot;Ah!&quot;, li fox dit, &quot;yo va plorar&quot;.
+&quot;To es tui culpa&quot;, li litt prince dit. &quot;Yo ne desirat a te alquó mal, ma tu volet que yo amansa te ...&quot;
+&quot;Certmen&quot;, li fox dit.
+&quot;Ma nu tu va plorar!&quot;, li litt prince dit.
+&quot;Certmen&quot;, li fox dit.
+&quot;Talmen tu ha ganiat nequó&quot;.
+&quot;Yo ha ganiat li color del frument&quot;, li fox dit.
+Poy li fox addit:
+&quot;Ea denov regardar li roses! Tu va comprender que tui rose es unic in li munde. Tu va retornar e dir
+adío a me e yo va donar te un secrete.</p>
+<p>Li litt prince foreat por revider li roses.
+&quot;Vu totmen ne simila a mi rose, vu ancor es nequó&quot;, il dit a ili. &quot;Nequí ha fat se confidet a vu e anc
+vu ne ha fat vu confidet a nequí. Vu esset quam mi fox esset. It esset nequó quam un fox tam quam
+mill cent altris. Ma yo ha fat it a mi amico e nu it es unic in li munde.
+E li roses esset tre ahontat.
+&quot;Vu es bell, ma vu es vacui&quot;, il ancor dit. &quot;On ne posse ear alquande al dansa, omni dies vell esser
+egal. Yo nequande vell haver vacanties.
+Talmen li litt prince fat li fox confider con se. E quande li hor del adío esset proxim:
+&quot;Ah!&quot;, li fox dit, &quot;yo va plorar&quot;.
+&quot;To es tui culpa&quot;, li litt prince dit. &quot;Yo ne desirat a te alquó mal, ma tu volet que yo amansa te ...&quot;
+&quot;Certmen&quot;, li fox dit.
+&quot;Ma nu tu va plorar!&quot;, li litt prince dit.</p>
+<p>&quot;Certmen&quot;, li fox dit.
+&quot;Talmen tu ha ganiat nequó&quot;.
+&quot;Yo ha&quot;, li fox dit, &quot;li color del frument.&quot;
+Poy li fox addit:
+&quot;Ea denov regardar li roses! Tu va comprender que tui rose es unic in li munde. Tu va retornar e dir
+adío a me e yo va donar te un secrete.</p>
+<p>Li litt prince foreat por revider li roses.
+&quot;Vu totmen ne simila a mi rose, vu ancor es nequó&quot;, il dit a ili. &quot;Nequí ha fat se confidet a vu e anc
+vu ne ha fat vu confidet a nequí. Vu esset quam mi fox esset. It esset nequó quam un fox tam quam
+cent milles altri. Ma yo ha fat it a mi amico e nu it es unic in li munde.
+E li roses esset tre ahontat.
+&quot;Vu es bell, ma vu es vacui&quot;, il ancor dit. &quot;On ne posse
+&quot;Ma nu tu va plorar!&quot;, li litt prince dit.
+&quot;Certmen&quot;, li fox dit.
+&quot;Talmen tu ha ganiat nequó&quot;.
+&quot;Yo ha&quot;, li fox dit, &quot;li color del frument.&quot;
+Poy li fox addit:
+&quot;Ea denov regardar li roses! Tu va comprender que tui rose es unic in li munde. Tu va retornar e dir
+adío a me e yo va donar te un secrete.</p>
+<p>Li litt prince foreat por revider li roses.
+&quot;Vu totmen ne simila a mi rose, vu ancor es nequó&quot;, il dit a ili. &quot;Nequí ha fat se confidet a vu e anc
+vu ne ha fat vu confidet a nequí. Vu esset quam mi fox esset. It esset nequó quam un fox tam quam
+mill cent altris. Ma yo ha fat it a mi amico e nu it es unic in li munde.</p>
+<p>E li roses esset tre ahontat.
+&quot;Vu es bell, ma vu es vacui&quot;, il ancor dit. &quot;On ne posse morir por vu. Certmen, alquí person, qui
+passa, vell posser creder que mi rose es simil a vu. Ma in se self it es plu important quam vu omnes,
+pro que it es li rose quel yo ha versat. Pro que it es li rose quel yo ha posit sub un vitre por protecter
+it. Pro que it es li rose quel yo ha protectet per un para-vente. Pro que it es li rose de quel erucas yo
+ha mortat (except du o tri pro li papiliones). Pro que it es li rose quel yo ha audit lamentar o laudar
+se o anc quelcvez tacer. Pro que it es mi rose.&quot;</p>
+<p>E il retornat al fox.
+&quot;Adío&quot;, il dit.
+&quot;Adío&quot;, li fox dit. &quot;Ci es mi secrete. It es tre simplic: On vide solmen per li cordie bon. Lu essential
+es por li ocules ínvisibil&quot;.
+&quot;Lu essential es por li ocules ínvisibil&quot;, li litt prince repetit por amemorar it.
+&quot;Li témpor quel tu ha perdit por tui rose, it fa tui rose tant important. &quot;
+&quot;Li témpor quel yo ha perdit ...&quot;, li litt prince dit por amemorar it.
+&quot;Li homes ha obliviat ti veritá&quot;, li fox dit. &quot;Ma tu ne deve obliviar it. Tu es durant tui tot vive
+responsabil por to quo tu ha fat confider a te. Tu es responsabil por tui rose ...&quot;
+&quot;Yo es responsabil por mi rose ...&quot;, li litt prince repetit por amemorar it.</p>
+<h1><a class="header" href="#22" id="22">22</a></h1>
+<p>&quot;Bon die&quot;, li litt prince dit.
+&quot;Bon die&quot;, li rel-comutero dit.</p>
+<p>&quot;Quo tu fa ci?&quot;, li litt prince dit.
+&quot;Yo assorti li viageatores in paquettes de mill&quot;, li rel-comutero dit. &quot;Yo invia li trenes queles
+forporta les unvez a levul e unvez a dextri.&quot;
+E un tren rapid quel brilliat quam luce e rul-sonat quam tónnere fat li cabane del rel-comutero
+tremar.
+&quot;Ili es tre hastosi&quot;, li litt prince dit. &quot;A u ili vole?&quot;
+&quot;Li mann del locomotive ne save it self&quot;, li rel-comutero dit.
+E un duesim brilliant tren-rapid passat bruiosimen in li oposit direction.
+&quot;Esque ili ja retorna?&quot;, li litt prince questionat ...
+&quot;To ne es li sam persones&quot;, li rel-comutero dit.
+&quot;To alterna.&quot;
+&quot;Esque ili ne es content ta, u ili esset?&quot;
+&quot;On es nequande content u on es&quot;, li rel-comutero dit.
+E it rul-sonat li tónnere del triesim brilliant tren rapid quel passat.
+&quot;Esque tis-ci perseque li unesim viageatores?&quot;, li litt prince questionat.
+&quot;Ili perseque totmen nequó&quot;, li rel-comutero dit.
+&quot;Ili dormi in it o ili anc hia. Solmen li infantes presse su nases al quadres del vitre.&quot;
+&quot;Solmen li infantes save a u ili vole&quot;, li litt prince dit. &quot;Ili usa su témpor por un pupé ex stoffchifrones e li pupé deveni tre valorosi por ili e si on forprende it, ili plora ...&quot;
+&quot;Ili standa bon&quot;, li rel-comutero dit.</p>
+<h1><a class="header" href="#23" id="23">23</a></h1>
+<p>&quot;Bon die&quot;, li litt prince dit.
+&quot;Bon die&quot;, li venditor dit.
+Il vendit tre efectiv pillules queles calma li sete. On gloti chascun semane un pillul e on in tot ne
+senti plu un beson trincar.
+&quot;Pro quo tu vendi to?&quot;, li litt prince dit.
+&quot;On sparnia mult témpor&quot;, li venditor dit. &quot;Li expertes ha fat calculationes. On sparnia quinanttri
+minutes in li semane.&quot;
+&quot;E quo on fa con ti quinanttri minutes?&quot;
+&quot;On fa con it quo on vole ...&quot;
+&quot;Si yo vell haver suplementari quinanttri minutes&quot;, li litt prince dit. &quot;Yo vell ear lentmen a un
+puteo ...&quot;</p>
+<h1><a class="header" href="#24" id="24">24</a></h1>
+<p>It esser ye li ottesim die pos mi panne in li deserte e yo just audit li narration pri li venditor de
+pillules quande yo trincat li ultim gutte de mi provision de aqua.
+&quot;Ah&quot;, yo dit al litt prince, &quot;tui memories es tre jolli, ma yo ancor ne ha reparat mi avion. Yo ne have</p>
+<p>plu alquó por trincar e yo vell esser felici, si yo anc vell posser ear tre lentmen a un puteo!&quot;
+&quot;Mi amico li fox&quot;, il dit ...
+&quot;Mi homette, it ne acte se plu pri li fox!&quot;
+&quot;Pro quo?&quot;
+&quot;Pro que on va morir pro sete ...&quot;</p>
+<p>Il ne comprendet mi objection, il respondet:
+&quot;It es bon, hat havet un amico, mem si on deve morir. Yo es felici que yo havet un fox quam
+amico ...&quot;
+Il ne posse judicar li dangere, yo dit a me self. Il nequande suffret fame e sete: Un poc de sole sufice
+por il ...
+Ma il regardat a me e respondet a mi penses:
+&quot;Yo anc have sete ... lass nos serchar un puteo ...&quot;
+Yo fat un geste del desperantie, it es ínsensat, serchar sin plan un puteo in li deserte. Malgré to noi
+comensat li sercha.</p>
+<p>Quande noi hat circumeat tacente por hores, li nocte iruptet e li stelles comensat lucer. Yo videt les</p>
+<p>tam quam in un somnie, yo havet un poc febre pro li sete.
+Li paroles del prince dansat tra mi mente.
+&quot;Esque tu dunc have anc sete?&quot;, yo questionat le.
+Il ne respondet a mi question.
+Il simplicmen dit: &quot;Aqua anc posse esser bon por li cordie ... &quot;
+Yo ne comprendet li paroles e tacet. Yo savet bon que on ne devet questionar le.
+Il esset fatigat. Yo sedentat me apu il. E pos un tacentie il ancor dit:
+&quot;Li stelles es bell pro que ili memora me a un flor quel on ne vide ... &quot;
+Yo respondet: &quot;Certmen&quot;, e yo regardat tacente li plicas del sand sub li lune.
+&quot;Li deserte es bell&quot;, il addit.
+To es ver. Yo ha sempre amat li deserte. On sedenta se adsur un sand-dune. On vide nequó. On audi
+nequó. E durant to alquó brilliat in li silentie.
+&quot;It fa li deserte bell&quot;, li litt prince dit, &quot;que it alcú cela un puteo.&quot;
+Yo esset surprisat que yo subitmen comprendet li misteriosi splendore del sand. Quande yo esset un
+litt púer, yo habitat in un old dom e secun li legende esset un tresor celat in it. Certmen, nequande
+alquí ha posset decovrir it, fórsan nequí ha serchat it alquande. Ma it insorciat ti tot dom. Mi dom
+celat un secrete sur li suol de su cordie...
+&quot;Yes&quot;, yo dit al litt prince, &quot;ca it acte se pri un dom, pri li stelles o pri li deserte. To quo causa su
+bellitá es ínvisibil!&quot;
+&quot;Yo es felici&quot;,il dit, &quot;que tu consenti con mi fox.&quot;
+Pro que li litt prince indormit, yo prendet le in mi brasses e continuat denov li via. Yo esset
+emotionat. It semblat a me quam yo vell portar un fragil juvel. It semblat a me mem si it ne vell
+exister alquó plu fragil sur li Terra. Yo regardat in li luce del lune ti pallid fronte, ti cludet ocules, ti
+in li vente trement capilles e yo dit a me:
+&quot;To quo yo vide ci es solmen un covritura. Li essentie es ínvisibil ...&quot;</p>
+<p>Pro que su demí-apertet labies indicat presc un subrise, yo anc dit a me: To quo emotiona me tant a
+ti litt indormit prince, esset su fide a un flor. It es li image de un rose quel radia tra il quam li
+flamme de un lampe mem quande il dormi ... E il sembla a me ancor plu fragil quam til nu. On deve
+protecter li lampes cuidosimen: Un burasca posse far extinter les ...
+E durant yo continuat ear, yo decovrit in li aurora li puteo.</p>
+<h1><a class="header" href="#25" id="25">25</a></h1>
+<p>&quot;Li homes&quot;, li litt prince dit, &quot;presse se in trenes rapid, ma ili totmen ne save a u ili vole ear. Poy ili
+excita se e torna se in li circul ...&quot; E il adjuntet:
+&quot;To ne vale li pena ...&quot;
+Li puteo, quel ili hat atinget, ne similat al puteos in li Sahara. Li puteos del Sahara es simplic in li
+sand fossat fores. Ti-ci similat a un puteo in un village. Ma it esset nequal village ci e yo pensat que
+yo reva.
+&quot;To es strangi&quot;, yo dit al lit prince, &quot;omnicos es pret: li vind, li sitelle e li corde ...&quot;
+Il ridet, tuchat li corde e lassat li vind luder. E li rul cracat quam un old vent-rot si li vente ha dormit
+longmen.
+&quot;Tu escuta&quot;, li litt prince dit, &quot;que noi avigila ti puteo e il canta ... &quot;
+Yo ne volet que il pena se tro mult.
+&quot;Lass me far to&quot;, yo dit a il, &quot;to es tro pesant por te.&quot;
+Yo levat lentmen li sitelle til li márgine del puteo. Yo posit it a ta tre rectmen. In mi oreles esset
+ancor li cantada del vind por tirar. E in li aqua, quel ancor tremet, yo videt li sole.
+&quot;Yo have sete a ti aqua&quot;, li litt prince dit, &quot;da me it por trincar...&quot;</p>
+<p>E yo comprendet quo il hat serchat.
+Yo levat li sitelle a su labies. Il trincat con cludet ocules. It esset quam un festa. Ti aqua esset alquó
+totmen altri quam un trincage. It originat ex li marcha sub li stelles, ex li cantada del rul e ex li pena
+de mi brasses. It esset bon por li cordie quam un don. Quande yo esset un púer li luces del
+cristnascentie-árbor, li musica del cristnascentie-messe e li suavitá del subrise esset li ver splendore
+del dones, queles yo recivet.</p>
+<p>&quot;Li homes che te in hem&quot;, li litt prince dit, &quot;cultiva quin mill roses in un e li sam jardin ... malgré to
+ili ne trova ta to quo ili sercha ...&quot;
+&quot;Ili ne trova it&quot;, yo respondet ...
+&quot;Ma on posse trovar to quo ili sercha in un sol rose o in un poc de aqua ...&quot;
+&quot;Tre certmen&quot;, yo respondet.
+E li litt prince adjuntet:
+&quot;Ma li ocules es ciec. On deve serchar con li cordie.&quot;</p>
+<p>Yo hat trincat. It respira se denov plu bon. Li sand havet in li aurora li color de miel. Yo esset felici
+pri ti miel-color. Pro quo yo deve suciar me ...
+&quot;Tu deve tener tui promesse&quot;, li litt prince, qui hat sedet apu me, dit lenimen.
+&quot;Quel promesse?&quot;
+&quot;Tu save it, un museliere por mi agne ... Yo es responsabil por ti flor!&quot;
+Yo prendet mi esquisses ex li tasca. Li litt prince videt it e dit ridente.
+&quot;Tui baobab-árbores aspecte un poc quam caules ... &quot;
+&quot;O!&quot;
+E yo esset tant fier pri li baobab-árbores!
+&quot;Tui fox ... su oreles ... aspecte un poc quam cornes ... ili es mult tro long!&quot;
+E il ridet denov.
+&quot;Tu es ínjust, homette, yo posset dessiner nequó altri quam apert o cludet gigant-serpentes!&quot;
+&quot;O! It va suficer&quot;, li litt prince, &quot;nam li infantes save it.&quot;
+Do yo scriachat un museliere. E li cordie convulset se in me quande yo dat it al litt prince:
+&quot;Tu have planes pri queles yo ne save ...&quot;
+Ma il ne respondet. Il dit:
+&quot;Tu save, mi cade al Terra ... Deman it va har esset exactmen ante un annu ... &quot;
+Poy, pos un tacentie, il ancor dit:
+&quot;Yo hat cadet a bass tre proxim...&quot;
+E il rubijat.
+Yo sentit denov un strangi chagrine sin saver pro quo.
+Ínterim yo havet un question:
+&quot;Esque tande it ne es un coincidentie que tu in li matine in quel yo connossentat te, ante ott dies,
+promenat totmen sol, mill miles distant de omni habitat regiones? Esque tu retornat al punctu a u tu</p>
+<p>hat cadet?&quot;
+Li litt prince rubijat ancor plu.
+E il adjuntet hesitante:
+&quot;Fórsan it esset li anniversarie? ... &quot;
+Li litt prince rubijat denov. Il nequande respondet al questiones, ma si on rubija, tande to significa
+'yes', ca ne?
+&quot;Uf&quot;, yo dit, &quot;yo time me!&quot;
+Ma il respondet:
+&quot;Tu nu deve laborar. Tu deve retornar denov a tui machine. Yo va expectar te ci. Retorna deman in li
+véspere ... &quot;
+Ma yo ne esset tranquilisat. Yo memorat me pri li fox. On es in dangere que on plora un poc si on ha
+lassat se amansar ...</p>
+<h1><a class="header" href="#26" id="26">26</a></h1>
+<p>Apu li puteo stat li ruine de un old mur ex petre. Quande yo retornat in li sequent véspere de mi
+labor, yo videt ex li distantie que mi litt prince sedet sur it con pendent gambes. E yo audit le parlar.
+&quot;Do tu ne memora te plu?&quot;, il dit. &quot;It es ne totmen exact ci!&quot;
+Sin dúbite un altri voce respondet a il, pro que il replicat:
+&quot;Ma yes! Ma yes! It es probabilmen li die, ma ne li exact loc ...&quot;
+Yo continuat mi via al mur. Yo videt e audit nequí. Támen li litt prince replicat denov:
+&quot;Certmen. Tu va vider u mi tracie comensa in li sand. Tu solmen besona expectar me ta. Ho-véspere</p>
+<p>yo va esser ta.
+Yo esset duant metres distant del mur e yo ancor videt nequó. Li litt prince ancor dit, pos un curt
+tacentie:
+&quot;Esque tu have fort venen? Esque tu es cert que tu ne va lassar me longmen suffrer?&quot;
+Yo haltat e mi cordie convulset se in me, ma yo ancor ne comprendet it.
+&quot;Nu forea&quot;, il dit, &quot;yo vole saltar de supra!&quot;.</p>
+<p>Tande yo regardat al pede del mur e yo fat un salta! Ta hat erectet se un de ti yelb serpentes, queles
+posse mortar te in triant secondes, avan li litt prince ... Yo serchat in mi tasca por mi revólver e
+comensat currer. Pro li bruida quel yo fat, li serpent lassat se glissar lentmen in li sand quam un
+aqua-spruzza quel mori e sin tro grand hasta it glissat con un litt metallic rasle inter li lápides.
+Yo atinget li mur exactmen in li just témpor por capter mi homette de un prince in mi brasses; il
+esset pallid quam nive.</p>
+<p>&quot;Qual coses tu fa ci? Esque tu nu parla con serpentes?!&quot;
+Yo hat desmettet le su chal quel esset yelb quam li sole. Yo hat humidat un poc su tempie e dat le
+alquó por trincar. E nu yo ne audacicat questionar le plu.
+Il regardat a me seriosimen e mettet su brasses circum mi col. Yo sentit qualmen su cordie palpitat
+quam un de un morient avie, quel on ha fusilat.
+Il dit a me:
+&quot;Yo es felici que tu ha trovat to quo esset damegeat in ti machine. Tu va posser retornar a hem ... &quot;
+&quot;De u tu save to?&quot;
+Yo just hat volet narrar a il que mi labor hat successat in contrarie de mi tot expectation!
+Il ne respondet a mi question, ma il continuat:
+&quot;Anc yo va hodie retornar a hem ... &quot;
+Tande melancolicmen:
+&quot;To es mult plu distant ... To es mult plu desfacil ... &quot;
+Yo bon sentit que alquó extraordinari evenit.
+Yo inbrassat le fortmen quam un litt infante e malgré it semblat a me que il verticalmen cadet in un
+precipitie sin que yo posset retener le ...
+Su regard esset seriosi; it perdit se in un tre grand lontanie.
+&quot;Yo have tui agne. E yo have li buxe por li agne. E yo have li museliere ... &quot;
+E il subridet melancolicmen.
+Yo atendet tre longmen. Yo sentit que il calentar se plu e plu:
+&quot;homette tu hat timet ... &quot;
+Il hat timet, tre certmen! Ma il ridet lenimen:
+&quot;Yo va timer ho-véspere ancor mult plu ... &quot;
+Denov yo tre frissonat pro li sentiment del ínevitabil adío. Yo comprendet que yo ne posset tolerar li</p>
+<p>pense que yo ne va audir plu ti ride. It esset por me quam un puteo in li deserte.
+&quot;homette, yo vole audir te ancor rider.&quot;
+Ma il dit a me:
+&quot;In ti nocte un annu va har passat. Mi stelle va esser exactmen súper li loc u yo ha aterrat in li passat
+annu ... &quot;
+&quot;homette, esque it ne es un mal somnie, ti afere con li serpent e li consentiment e li stelle ... &quot;
+Ma il ne respondet a mi question.
+Il dit: &quot;On ne vide to quo es important ...&quot;
+&quot;Certmen ... &quot;
+&quot;To es li sam afere tam quam con li serpent: Si tu ama un flor, quel habita sur un stelle, tande it es
+bell regardar li ciel in li nocte. Omni stelles es plen de flores.&quot;
+&quot;Certmen ...&quot;
+&quot;To es li sam tam quam con li aqua. To quo tu ha dat a me por trincar esset quam musica, li vind e li
+corde ... tu memora te ... it esset bon.&quot;
+&quot;Certmen ...&quot;
+&quot;Tu va regardar li stelles in li nocte. Mi hem es tro micri por monstrar te u it es situat. It es plu bon
+in ti maniere. Mi stelle va esser por te un del stelles. Tande tu va regardar al stelles con plesura. ...
+Ili omnes va esser tui amicos. E tande yo va far te un don... &quot;
+Il ancor ridet.
+&quot;Ve! homette, homette! Yo audi ti ride con tant grand plesura!&quot;
+&quot;Exactmen to va esser tui don ... It va esser li sam tam quam con li aqua ...&quot;
+&quot;Quo tu vole dir?&quot;
+&quot;Li homes have stelles, ma it ne es li sam stelles. Por li unes qui viagea li stelles es lor guideros. Por
+altris ili ne es alquó altri quam micri luces. Por quelc altris, li eruditos, ili es li problemas. Por mi
+comerciante ili esset aure. Ma omni ti stelles tace. Tu, tu va haver stelles, tam quam nequí have</p>
+<p>les ... &quot;
+&quot;Quo tu vole dir?&quot;
+&quot;Si tu regarda al stelles in li nocte it va esser por te tam quam li stelles ride pro que yo habita sur un
+de ili e pro que yo ride sur un de ili. Tu va esser li sol person quel have stelles queles posse rider!&quot;
+E il ridet denov.
+&quot;E si tu va har consolat te (on consola se sempre), tu va esser felici que tu ha conosset me. Tu va
+esser sempre mi amico. Tu va voler rider con me. E tu va aperter quelcvez li fenestre solmen pro
+plesura ... E tui amicos va esser astonat quande il vide que tu regarda li ciel e ride. Tande tu va dir a
+ili: 'Yes, li stelles, ili fa me rider.' E ili va pensar que tu es alienat. Yo va har fat a te un bell joca ... &quot;
+E il ridet denov.
+&quot;It va esser tam quam yo vell har donat a te in vice del stelles mult litt tintinettes queles posse
+rider ...&quot;</p>
+<p>E il ancor ridet. Tande il devenit denov seriosi:
+&quot;Ti nocte ... tu save que it ... ne veni!&quot;
+&quot;Yo ne va forlassar te.&quot;
+&quot;It va aspecter tam quam yo vell esser malad tam quam yo vell morir. It es talmen. Ne veni por</p>
+<p>regardar to, it ne vale li pena ... &quot;
+&quot;Yo ne va forlassar te.&quot;
+Ma il es tre suciat.
+&quot;Yo di it a te ... anc pro li serpent .. It ne deve morder te ... Li serpentes es maliciosi. Ili posse
+morder pro plesura ...&quot;
+&quot;Yo ne va forlassar te.&quot;
+Ma alquó tranquilisat le:
+&quot;It es ver, ili ne have plu venen por un duesim morsion ...&quot;
+Yo ne ha videt qualmen il departet in li nocte. Il escapat silentiosimen. Quande yo successat rejunter
+le, il marchat rapidmen con firm passus.
+Il dit solmen:
+&quot;Bon, tu es ci ...&quot;
+E il prendet mi manu. Ma il ancor tormentat se:
+&quot;To ne es bon por te. It va far dolore a te. It va aspecter tam quam yo es mort e to ne va esser ver ...&quot;
+Yo tacet.
+&quot;Tu comprende. It es tro distant. Yo ne posse prender con me ti córpor. It es tro desfacil.&quot;
+Yo tacet.
+&quot;Ma it va jacer sur li suol tam quam un old abandonat pelle. On ne deve esser trist pro tal old
+pelles ...&quot;
+Yo tacet.
+Il perdit un poc li corage. Ma il efortiat se ancor:
+&quot;Tu deve saver, it va esser marvelosi. Anc yo va regardar li stelles. Omni stelles va esser puteos con
+un oxidat vind. Omni stelles va dar a me alquó por trincar ...&quot;
+Yo tacet.</p>
+<p>&quot;To va esser tant joyosi! Tu va haver quincent miliones tintinettes e yo va haver quincent miliones
+puteos ... &quot;</p>
+<p>E anc il tacet pro que il plorat ...
+&quot;Ta it es. Lass me far un passu sol.&quot;
+E il sedentat se pro que il timet.
+Il ancor dit:
+&quot;Tu save ... mi flor ... yo es responsabil por it! E it es tant debil! E it es tant infantil! It have quar
+spines queles ne es apt por protecter it contra li munde ... &quot;
+Yo sedentat me, pro que yo ne posset star plu.
+Il dit:
+&quot;Ci ... To es omnicos ...&quot;
+Il hesitat ancor un poc, tande il levat se. Il fat un passu. Yo ne posset mover me plu.
+It esset nequó altri quam un yelb fúlmine apu su maleol. Il restat un momente sin mover se. Il ne
+criat. Il cadet lentmen quam un árbor cade. Sin alcun bruida il cadet in li sand.</p>
+<h1><a class="header" href="#27" id="27">27</a></h1>
+<p>E nu ja six annus ha passat ... Yo ancor nequande ha narrat to. Li camarados, qui ha revidet me,
+esset felici. Yo esset trist, ma yo dit a ili que to es li exhaustion.
+Nu yo ha consolat me un poc. To significa ... ne totmen. Ma yo save bon, que il ha retornat a su
+planete, nam in li comensa del matin yo ne ha retrovat su córpor. It ne esset un tant pesant córpor ...
+E yo ama escutar al stelles in li nocte. Ili es quam quincent miliones tintinettes ...</p>
+<p>E nu eveni alquó extraordinari.
+Yo ha obliviat fixar un cutin strap al museliere, quel yo ha dessinat por li litt prince! Il ne va har
+successat metter it al agne.</p>
+<p>Pro to yo questiona me: Quo ha evenit sur li planete? Fórsan li agne ha vermen manjat li flor ...
+Quelcvez yo di a me: Certmen ne! Li litt prince covri su flor chascun nocte per un vitrine e il tre
+bon atente a su agne. Tande yo es felici. E omni stelles ride pianimen.
+Ma quelcvez yo di a me: On es in quelc momentes ínatentiv e to sufice! Il ha obliviat in un véspere
+li vitrine o li agne ha escapat in un nocte sin far un bruida ... Tande omni tintinettes transforma se in
+lácrimes! ...</p>
+<p>To es un tre grand secrete. Por vu, qui anc ama li litt prince, nequó sur li munde posse restar
+íntuchat, sam quam por me, si alcú, on ne save u, un agne, quel noi ne conosse, ha fórsan devorat un
+rose o fórsan ne ha devorat it ...
+Vu mey regardar li ciel. Questiona vos self: Esque li agne ha manjat li flor o ne? Yes o no? E vu va
+vider qualmen omnicos se transforma ...
+Ma necun del grand homes va alquande comprender que to have un tant grand importantie!</p>
+<h1><a class="header" href="#fin" id="fin">Fin</a></h1>
+<p>To es por me li max bell e max trist paisage del munde. It es li sam paisage quam sur li precedent
+págine, ma yo ha dessinat it ancor un vez por fa it a vu tre clar. Ci ha aparit li litt prince sur li Terra
+e ha denov desaparit. Regarda ti paisage tre exactmen por que vu certmen va reconosser it quande
+vu un die va viagear tra li african deserte. E si vu per hasarde passa tra ti paisage, ne hasta plu
+lontan, yo implora vos – atende un poc, exactmen sub li stelle! Si tande un infante ea vers vu, si il
+ride, si il have aurin capilles, si il ne responde, quande on questiona le, tande vu va divinar qui es to.
+Tande ples esser tam bon e ne lassa me tant trist. Vu deve scrir a me rapidmen, si il ha retornat.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../LiLittPrince/12.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../UnDesertor/0.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../LiLittPrince/12.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../UnDesertor/0.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script src="https://occidental-lang.com/website-word-lookup/lookup.js"></script>
+        <script>
+            lookupInit('https://occidental-lang.com/website-word-lookup/dict.json');
+            document.onselectionchange = debounce(lookup, 500);
+        </script>
+        
+
+    </body>
+</html>

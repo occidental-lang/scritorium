@@ -1,0 +1,1248 @@
+<!DOCTYPE HTML>
+<html lang="ie" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>A 62-63 - scritorium</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        
+
+        <div id="definition"></div>
+
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="../index.html">Hem</a></li><li class="chapter-item "><a href="../MicriCrestomatie/0.html"><strong aria-hidden="true">1.</strong> Micri Crestomatie</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../MicriCrestomatie/1.html"><strong aria-hidden="true">1.1.</strong> Capitul 1</a></li><li class="chapter-item "><a href="../MicriCrestomatie/proverbies.html"><strong aria-hidden="true">1.2.</strong> Proverbies</a></li></ol></li><li class="chapter-item "><a href="../LiLittPrince/0.html"><strong aria-hidden="true">2.</strong> Li Litt Prince</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../LiLittPrince/1.html"><strong aria-hidden="true">2.1.</strong> Capitul 1</a></li><li class="chapter-item "><a href="../LiLittPrince/2.html"><strong aria-hidden="true">2.2.</strong> Capitul 2</a></li><li class="chapter-item "><a href="../LiLittPrince/3.html"><strong aria-hidden="true">2.3.</strong> Capitul 3</a></li><li class="chapter-item "><a href="../LiLittPrince/4.html"><strong aria-hidden="true">2.4.</strong> Capitul 4</a></li><li class="chapter-item "><a href="../LiLittPrince/5.html"><strong aria-hidden="true">2.5.</strong> Capitul 5</a></li><li class="chapter-item "><a href="../LiLittPrince/6.html"><strong aria-hidden="true">2.6.</strong> Capitul 6</a></li><li class="chapter-item "><a href="../LiLittPrince/7.html"><strong aria-hidden="true">2.7.</strong> Capitul 7</a></li><li class="chapter-item "><a href="../LiLittPrince/8.html"><strong aria-hidden="true">2.8.</strong> Capitul 8</a></li><li class="chapter-item "><a href="../LiLittPrince/9.html"><strong aria-hidden="true">2.9.</strong> Capitul 9</a></li><li class="chapter-item "><a href="../LiLittPrince/10.html"><strong aria-hidden="true">2.10.</strong> Capitul 10</a></li><li class="chapter-item "><a href="../LiLittPrince/11.html"><strong aria-hidden="true">2.11.</strong> Capitul 11</a></li><li class="chapter-item "><a href="../LiLittPrince/12.html"><strong aria-hidden="true">2.12.</strong> Capitul 12</a></li><li class="chapter-item "><a href="../LiLittPrince/13.html"><strong aria-hidden="true">2.13.</strong> Capitul 13</a></li></ol></li><li class="chapter-item "><a href="../UnDesertor/0.html"><strong aria-hidden="true">3.</strong> Un Desertor</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../UnDesertor/1.html"><strong aria-hidden="true">3.1.</strong> Capitul 1</a></li></ol></li><li class="chapter-item expanded "><a href="../Cosmoglotta/0.html"><strong aria-hidden="true">4.</strong> Cosmoglotta</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/1927.html"><strong aria-hidden="true">4.1.</strong> 1927</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/038.html"><strong aria-hidden="true">4.1.1.</strong> A 38</a></li><li class="chapter-item "><a href="../Cosmoglotta/039.html"><strong aria-hidden="true">4.1.2.</strong> A 39</a></li><li class="chapter-item "><a href="../Cosmoglotta/040.html"><strong aria-hidden="true">4.1.3.</strong> A 40</a></li><li class="chapter-item "><a href="../Cosmoglotta/041.html"><strong aria-hidden="true">4.1.4.</strong> A 41</a></li><li class="chapter-item "><a href="../Cosmoglotta/042.html"><strong aria-hidden="true">4.1.5.</strong> A 42</a></li><li class="chapter-item "><a href="../Cosmoglotta/043.html"><strong aria-hidden="true">4.1.6.</strong> A 43</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1928.html"><strong aria-hidden="true">4.2.</strong> 1928</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/044.html"><strong aria-hidden="true">4.2.1.</strong> A 44</a></li><li class="chapter-item "><a href="../Cosmoglotta/045.html"><strong aria-hidden="true">4.2.2.</strong> A 45</a></li><li class="chapter-item "><a href="../Cosmoglotta/046.html"><strong aria-hidden="true">4.2.3.</strong> A 46</a></li><li class="chapter-item "><a href="../Cosmoglotta/047.html"><strong aria-hidden="true">4.2.4.</strong> A 47</a></li><li class="chapter-item "><a href="../Cosmoglotta/048.html"><strong aria-hidden="true">4.2.5.</strong> A 48</a></li><li class="chapter-item "><a href="../Cosmoglotta/049.html"><strong aria-hidden="true">4.2.6.</strong> A 49</a></li><li class="chapter-item "><a href="../Cosmoglotta/050.html"><strong aria-hidden="true">4.2.7.</strong> A 50</a></li><li class="chapter-item "><a href="../Cosmoglotta/051-052.html"><strong aria-hidden="true">4.2.8.</strong> A 51-52</a></li><li class="chapter-item "><a href="../Cosmoglotta/053.html"><strong aria-hidden="true">4.2.9.</strong> A 53</a></li><li class="chapter-item "><a href="../Cosmoglotta/054.html"><strong aria-hidden="true">4.2.10.</strong> A 54</a></li><li class="chapter-item "><a href="../Cosmoglotta/055.html"><strong aria-hidden="true">4.2.11.</strong> A 55</a></li></ol></li><li class="chapter-item expanded "><a href="../Cosmoglotta/1929.html"><strong aria-hidden="true">4.3.</strong> 1929</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/056.html"><strong aria-hidden="true">4.3.1.</strong> A 56</a></li><li class="chapter-item "><a href="../Cosmoglotta/057.html"><strong aria-hidden="true">4.3.2.</strong> A 57</a></li><li class="chapter-item "><a href="../Cosmoglotta/058.html"><strong aria-hidden="true">4.3.3.</strong> A 58</a></li><li class="chapter-item "><a href="../Cosmoglotta/059.html"><strong aria-hidden="true">4.3.4.</strong> A 59</a></li><li class="chapter-item "><a href="../Cosmoglotta/060.html"><strong aria-hidden="true">4.3.5.</strong> A 60</a></li><li class="chapter-item "><a href="../Cosmoglotta/061.html"><strong aria-hidden="true">4.3.6.</strong> A 61</a></li><li class="chapter-item expanded "><a href="../Cosmoglotta/062-63.html" class="active"><strong aria-hidden="true">4.3.7.</strong> A 62-63</a></li><li class="chapter-item "><a href="../Cosmoglotta/064.html"><strong aria-hidden="true">4.3.8.</strong> A 64</a></li><li class="chapter-item "><a href="../Cosmoglotta/065.html"><strong aria-hidden="true">4.3.9.</strong> A 65</a></li><li class="chapter-item "><a href="../Cosmoglotta/066.html"><strong aria-hidden="true">4.3.10.</strong> A 66</a></li><li class="chapter-item "><a href="../Cosmoglotta/067.html"><strong aria-hidden="true">4.3.11.</strong> A 67</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1930.html"><strong aria-hidden="true">4.4.</strong> 1930</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/068.html"><strong aria-hidden="true">4.4.1.</strong> A 68</a></li><li class="chapter-item "><a href="../Cosmoglotta/069.html"><strong aria-hidden="true">4.4.2.</strong> A 69</a></li><li class="chapter-item "><a href="../Cosmoglotta/070.html"><strong aria-hidden="true">4.4.3.</strong> A 70</a></li><li class="chapter-item "><a href="../Cosmoglotta/071.html"><strong aria-hidden="true">4.4.4.</strong> A 71</a></li><li class="chapter-item "><a href="../Cosmoglotta/072.html"><strong aria-hidden="true">4.4.5.</strong> A 72</a></li><li class="chapter-item "><a href="../Cosmoglotta/073.html"><strong aria-hidden="true">4.4.6.</strong> A 73</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1931.html"><strong aria-hidden="true">4.5.</strong> 1931</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/074.html"><strong aria-hidden="true">4.5.1.</strong> A 74</a></li><li class="chapter-item "><a href="../Cosmoglotta/075.html"><strong aria-hidden="true">4.5.2.</strong> A 75</a></li><li class="chapter-item "><a href="../Cosmoglotta/076.html"><strong aria-hidden="true">4.5.3.</strong> A 76</a></li><li class="chapter-item "><a href="../Cosmoglotta/077.html"><strong aria-hidden="true">4.5.4.</strong> A 77</a></li><li class="chapter-item "><a href="../Cosmoglotta/078.html"><strong aria-hidden="true">4.5.5.</strong> A 78</a></li><li class="chapter-item "><a href="../Cosmoglotta/079.html"><strong aria-hidden="true">4.5.6.</strong> A 79</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1932.html"><strong aria-hidden="true">4.6.</strong> 1932</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/080.html"><strong aria-hidden="true">4.6.1.</strong> A 80</a></li><li class="chapter-item "><a href="../Cosmoglotta/081.html"><strong aria-hidden="true">4.6.2.</strong> A 81</a></li><li class="chapter-item "><a href="../Cosmoglotta/082.html"><strong aria-hidden="true">4.6.3.</strong> A 82</a></li><li class="chapter-item "><a href="../Cosmoglotta/083.html"><strong aria-hidden="true">4.6.4.</strong> A 83</a></li><li class="chapter-item "><a href="../Cosmoglotta/084.html"><strong aria-hidden="true">4.6.5.</strong> A 84</a></li><li class="chapter-item "><a href="../Cosmoglotta/085.html"><strong aria-hidden="true">4.6.6.</strong> A 85</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1933.html"><strong aria-hidden="true">4.7.</strong> 1933</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/086.html"><strong aria-hidden="true">4.7.1.</strong> A 86</a></li><li class="chapter-item "><a href="../Cosmoglotta/087.html"><strong aria-hidden="true">4.7.2.</strong> A 87</a></li><li class="chapter-item "><a href="../Cosmoglotta/088.html"><strong aria-hidden="true">4.7.3.</strong> A 88</a></li><li class="chapter-item "><a href="../Cosmoglotta/089.html"><strong aria-hidden="true">4.7.4.</strong> A 89</a></li><li class="chapter-item "><a href="../Cosmoglotta/090.html"><strong aria-hidden="true">4.7.5.</strong> A 90</a></li><li class="chapter-item "><a href="../Cosmoglotta/091.html"><strong aria-hidden="true">4.7.6.</strong> A 91</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1934.html"><strong aria-hidden="true">4.8.</strong> 1934</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/092.html"><strong aria-hidden="true">4.8.1.</strong> A 92</a></li><li class="chapter-item "><a href="../Cosmoglotta/093.html"><strong aria-hidden="true">4.8.2.</strong> A 93</a></li><li class="chapter-item "><a href="../Cosmoglotta/094.html"><strong aria-hidden="true">4.8.3.</strong> A 94</a></li><li class="chapter-item "><a href="../Cosmoglotta/095.html"><strong aria-hidden="true">4.8.4.</strong> A 95</a></li><li class="chapter-item "><a href="../Cosmoglotta/096.html"><strong aria-hidden="true">4.8.5.</strong> A 96</a></li><li class="chapter-item "><a href="../Cosmoglotta/097.html"><strong aria-hidden="true">4.8.6.</strong> A 97</a></li><li class="chapter-item "><a href="../Cosmoglotta/098.html"><strong aria-hidden="true">4.8.7.</strong> A 98</a></li><li class="chapter-item "><a href="../Cosmoglotta/099.html"><strong aria-hidden="true">4.8.8.</strong> A 99</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1935.html"><strong aria-hidden="true">4.9.</strong> 1935</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/B-001.html"><strong aria-hidden="true">4.9.1.</strong> B 1</a></li><li class="chapter-item "><a href="../Cosmoglotta/100.html"><strong aria-hidden="true">4.9.2.</strong> A 100</a></li><li class="chapter-item "><a href="../Cosmoglotta/101.html"><strong aria-hidden="true">4.9.3.</strong> A 101</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-002.html"><strong aria-hidden="true">4.9.4.</strong> B 2</a></li><li class="chapter-item "><a href="../Cosmoglotta/102.html"><strong aria-hidden="true">4.9.5.</strong> A 102</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-003.html"><strong aria-hidden="true">4.9.6.</strong> B 3</a></li><li class="chapter-item "><a href="../Cosmoglotta/103.html"><strong aria-hidden="true">4.9.7.</strong> A 103</a></li><li class="chapter-item "><a href="../Cosmoglotta/104.html"><strong aria-hidden="true">4.9.8.</strong> A 104</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-004.html"><strong aria-hidden="true">4.9.9.</strong> B 4</a></li><li class="chapter-item "><a href="../Cosmoglotta/105.html"><strong aria-hidden="true">4.9.10.</strong> A 105</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/theRest.html"><strong aria-hidden="true">4.10.</strong> The Rest</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">scritorium</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <div id="langPicker"></div>
+                        
+                        <a href="https://github.com/occidental-lang/scritorium" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#cosmoglotta-a-62-63-jul-aug-1929" id="cosmoglotta-a-62-63-jul-aug-1929">Cosmoglotta A 62-63 (jul-aug 1929)</a></h1>
+<p>Annu VIII -- Julí, August 1929 -- Nr. 62, 63 (7, 8)</p>
+<h2><a class="header" href="#contene" id="contene">Contene</a></h2>
+<ul>
+<li>Mollat sones n' l' e lor transscrition, Edgar de Wahl</li>
+<li>Remarca, Engelbert Pigal</li>
+<li>Cronica</li>
+<li>Litteratura</li>
+<li>De Arte a Scientie., Prof. Wilhelm Ostwald, trad. Karl Janotta</li>
+<li>Fortun in negocie, John T. Flynn, trad. Dr. K. Schüppel</li>
+<li>Interiore de un atom, Arnold Sommerfeld, trad. Dr. Ing. A. Wormser</li>
+<li>Cicade e Formíca, secun Lafontaine, trad. A. Creux</li>
+<li>Corespondentie</li>
+<li>Subventiones al Occidental-Union</li>
+</ul>
+<h2><a class="header" href="#mollat-sones-n-l-e-lor-transscrition" id="mollat-sones-n-l-e-lor-transscrition">Mollat sones «n'», «l'» e lor transscrition</a></h2>
+<p><em>de E. de Wahl</em></p>
+<p>Proque divers persones es chocat per li form scritiv del mollat sones, e
+proque on ha presentat divers metodes de elimination ne del scrition, ma
+del sones self, it es necessi tractar ti question max detalliatmen
+possibil, porque li judicie mey esser sufficent clar. Unesimmen do li
+sones self.</p>
+<p>On save que li tempo del parlada in li ultim témpor ha devenit plu rapid
+quam in anteyan témpores. Sammen quam li tot comunication e trafic
+deveni sempre plu rapid e intensiv, anc li parlada ne posse restar in li
+antiqui comfortabil flegma. In li témpor del telefon, radio e aeroplan,
+li lingue de César o antiqui gotic vell esser risibil. Ma anc ja li
+lingue de Goethe, de Moliére hodie ne coresponde plu al ritme del vive
+modern.</p>
+<p>Omni lingues, e specialmen li cultural tales, evolue in li sense de plu
+brevitá. To es atinget per acurtation del paroles, simplification del
+grammatic relationes etc. Tro long paroles deveni íntolerabil, e es
+abreviat sovente mem in barbaric maniere. P. ex. «automobil» in German
+ha devenit «auto» e in sved «bil», «omnibus» in angles nu es «bus». To
+es naturalmen extrem exemples, ma un tendentie vers unisillabitá, o
+almen plu curt paroles es constatabil in omni lingues, in divers gradu,
+ma in progressiv usation. Li divers lingues procede ci tre diferentmen.
+In general on posse constatar li grand signification del accentu. Existe
+lingues preferent li accentu sur li unesim síllabes, precipue sur li
+radica del parol, p. ex. angles, german, tchec; e existe tales queles
+posi li accentu plu in li fine del paroles, sur li sufixes e grammatical
+finales, p. ex. frances, polones etc.</p>
+<p>Li síllabe accentuat presc sempre es conservat e max intact (advere
+sovente li vocal es clinat o diftongisat) ma li parte sequent pos li
+accentuat, o li ínaccentuat comensa del parol es abreviat, sovente
+totalmen suppresset: p. ex. L flebilis devenit
+F faible, quel es quasi unisíllabic. Li lingue italian sincopa sovente
+li comensa, p. ex. stragrande por extragrande. In general on posse dir
+que li curt vocales deveni demívocales e poy desapari, e li fricant
+consonantes trova un plu comod form sive per elision, sive per
+assimilation.</p>
+<p>Grec epíscop(os) in angles deveni biscop -- bishop, in italian vescovo
+e in frances evesque -- evêque. L fragilis devenit fragil-frayl, F
+frêle, etc. Un capitul apart presenta li ínaccentuat vocales, specialmen
+e, i, u. L epístola deveni in D epistel e in F epître. Precipue li i
+ínaccentuat presc sempre deveni demívocal e have li tendentie amalgamar
+se con li precedent consonant, evocante mollat consonantes.</p>
+<p>Noi save que in latin li líttere c sempre esset pronunciat quam k. Ma li
+rapid parlada de ti k con li secuent i + altri vocal ha mollat li k-son
+til ch, t, s, ts in li divers lingues, chascun secun su propri fonetic
+leges. E to ne solmen in li romanic lingues ma anc in li slavic (kasak,
+kasačiy) e nordic (in sved ki, kj
+es pronunciat chi). In german e sved li g avan e, i, sovente es
+pronunciat y. In polones e tchec mem li r es ductet a
+ř (pronunciat presc quam (r)sh).</p>
+<p>Ti curt quasi consonantic i in li romanic lingues sovente passa mem ante
+li precedent consonante, p. ex. F secretaire de secretario, victuaille
+de victualia.</p>
+<p>Un specialmen strett union ti i ha intrat con li precedent sones n, l,
+queles on posse persequer in presc omni lingues, clarmen visibil in li
+romanic lingues, ma anc in li slavic e mem in german, u «bewilligen» in
+rapid parlada sona quasi quam «bewilyen». Lu sam on posse vider anc in
+li finnic lingues. Do li tendentie es quasi general e commun. In angles
+it es poc remarcabil proque ti lingue ja ha presc atinget li
+unisillabitá, e con li son i ja passat ante li consonant, almen in li
+diftongic pronunciation del accentuat vocale. F tailleur {equals} A tailor. In
+li casu de l' in frances in li últim 30 annus li l mem ha desaparit e
+restat solmen li y (in li pronunciation; in li scritura ti l es
+conservat). Ma con n un tal process ne ha ocaset, ma prendet plazze un
+curios ortografie gne, quel es trovat anc in italian, quel lingue pro
+analogie scri anc gl por li mollat l. Li lingue hispan scri n con tilde,
+ma ll; li portugues e provenzal: nh, lh; altri lingues usa ancor altri
+transcritiones, in polones ń, lettonian n, l con cedile etc.</p>
+<p>Del supradit noi vide que li mollation in pronunciation de consonantes
+ante sequent e, i es quasi absolut international e commun por omni
+europan lingues, mem de foren orígine. Anc li pronunciation self del
+mollat l, n, es sovente li sam, mem in angles, quel in general evita ti
+son, ma have it in quelc paroles quam p. ex. seignorial, Cognac,
+halyard, William. Do li assertion que ti sones es desfacil por angleses,
+sembla esser un miscomprense.</p>
+<p>It apare do que on ne posse bon eliminar e interdicter ti evolution del
+pronunciation del curt i in li combination con li precedent consonantes,
+precipue n, l, pri queles ci principalmen es question. Li sones es quasi
+general.</p>
+<p>It resta do explorar nu li question del transscrition, quel, quam ja
+indicat, es completmen caotic. Li max logic vell esser usar li curt i,
+expresset in italian e li germanic, finnic, hungaric lingues per j, in
+angles e li majorité del romanic lingues per y.</p>
+<p>In Occidental li maniere germano-italian per j es ínpossibil, proque
+secun opressent majoritá e internationalitá on ha devet attribuer a ti
+líttere li son sibilant angles (jurnal, jungle, jazz, just etc.). E li
+transscrition per y vell esser ínacustomat e chocant in Europa.</p>
+<p>Do noi constata: 1) li pronunciation es presc identic in omni lingues e
+2) li transscrition es absolut caotic e sovente
+ínlogic (ll,
+gn, gl, lh, nh, ń,
+n'
+etc).</p>
+<p>Do in tal casu li principie de maximum de internationalitá postula
+naturalmen ne un violentiation del international pronunciada, ma un
+regulation del ortografie.</p>
+<p>Ci ye unesim regard sembla recomendar se un del du sequent vias: 1)
+prender li max conosset ortografie gn, e 2) retroear al fundamental
+latin i, con li permission pronunciar it quam demívocal.</p>
+<p>Li unesim solution have támen mult ínconvenienties. Li unesim es, que si
+li mollat pronunciation de gn es sufficent conosset in Europa per li
+parol Cognac, li analog a it gl es incontrat solmen in italian. Do poc
+conosset extra límites de Italia, it vell chocar multissim persones
+queles postula de un lingue international sive internationalitá sive
+almen logic regularitá.</p>
+<p>Ma li duesim ínconvenientie es, que it ne es possibil aplicar ti regul
+de pronunciation, quel do vell postular divers exceptiones, p. ex.
+agnat, agnoscer, gnostica, sphagnum, Cosmoglotta, glosse, glossarium,
+inglotir, aglutination, gnu, aglomerar, te-glass, gloriar, Aglae, angles
+etc, etc, u tal pronunciation es ínpossibil.</p>
+<p>E yo pensa que noi ne posse introducter in li lingue international
+centes de exceptiones e un cáos in li pronunciation.</p>
+<p>Adplu veni li confusion de du divers etimologies. P. ex.: F ligne e
+signe, esset L linea e signum. E si noi vell pronunciar li
+occidental-parol «ligne», D Holz, quam «lin'e», to vell ducter a
+miscomprenses.</p>
+<p>To posse confuser li non-latinistes. E on save bon que depos li guerre
+li númere de latinistes decresce constantmen in rapid proportion.</p>
+<p>Omni ti rasones sembla me excluder li transscrition del mollat sones per
+«gn» e «gl».</p>
+<p>Ma esque it ne vell esser possibil reintroducter li historic latin
+scrition con «i»?</p>
+<p>Li unesim objetion es un fonetic tal. In omni lingues li vocal ante li
+mollat sones es curt, evocat quam ja dit supra per li plu rapid tempo
+del modern parlada. Ma secun li principies del pronunciation in
+Occidental li paroles castanie, ferrallia etc vell haver li accentuat
+síllabe long. On do vell dever sive mutar ti regules de pronunciation,
+quo vell causar mult exceptiones e altri ínconvenienties, sive postular
+un ínacustomat pronunciation just quam hodie in Esperanto per su regul
+del accentu.</p>
+<p>A to advere on vell posser objecter que ti micri diferenties in longore
+ne va impedir li comprension. Forsan on vell posser tolerar to. Ma in
+mult casus li paroles self vell devenir ínacustomat long e archaistic:
+bottel'e {equals} bottilia; in altri casus un tal form vell ne concordar con li
+etimologic orígine e pro to evocar un repugnantie, p. ex. emal'e quel
+deveni de german smalt-emalt e nequande ha esset «emalie». Do noi vell
+dever in chascun singul casu aplicar divers metodes. To vell esser
+apartmen íncomod quande it relate paroles tre conosset in tot Europa. P.
+ex. F detail, émail, conosset in presc identic form in li majorité de
+europan lingues, vell haver totalmen diferent form reductet, proque
+«detail» deveni de F tailler.</p>
+<p>Un desfacilitá vell causar anc li diminutives e caressives in -in'e,
+-il'e, queles vell esser tre strangi in li form -inie, -ilie.</p>
+<p>Ma li cardinal objetion es, que per un tal process un grand númere de
+paroles recive li finales -ie e -ia, queles in li regulari sistema de
+suffixes in Occidental have un preciset signification, justificat per
+centenes de international paroles. -ie significa un notion abstract, e
+-ia have un local sense. Ples comparar maladie, aristocratie, anarchie,
+convenientie, consonantie, chirurgie, chemie, astronomie, negocie,
+manie, follie, bigotterie, diabolerie, utopie; sammen patria, Russia,
+Francia, laboratoria, libreria, barberia, Oceania, Australia, extrania,
+utopia etc.</p>
+<p>Ultra li mult singul paroles anc un grand amasse derivat per li suffix:
+-al'a, -il'e, -in'e, vell esser ínpossibil. Un orientalo vell supposir
+sub «ferralia» un local por ferre, sub «vanilia» un qualitá de un person
+van, etc; do on vell dever changear omni ti regulari derivation per
+alcun nov altri sufix. E on ancor ne posse saver in tal casu, quant nov
+ínconvenienties on vell incontrar in tal successiv reconstruction!</p>
+<p>On vide que sin cáos e disturbation un tal solution forsan ne es
+possibil, adminim it totmen ne es tam simplic, quam li mult propositores
+de compensation imagina. Apartmen destructiv es li supracitat metodes in
+aplication con un serie de verbes quam
+attin['er,
+distin'er, extin'er etc. Nu ti verbes es facilmen inregistrat in li
+regul general de verbes, finient in un vocal o quasi vocal. Ili forma li
+perfect e li derivat de it paroles per adjunction de t; extin'tion,
+distin'tiv etc. Adplu li formes del verbes self in li infinitiv es
+foneticmen absolut natural, e max proxim al formes del lingue provenzal,
+portugues e anc italian{blank}footnote:[Ples vider li adjuntet tabelle.].
+Anc li derivationes del radica verbal es tre
+natural e elegant regulari: atin'ibil, extin'ibil, distin'ibilitá.</p>
+<p>Anc ci li du supra citat medies de regulation del ortografie ne es apt.
+Li unesim es sequer li lingues anglo-frances e haver
+extinguer-extinction, distinguer-distinction, do divers radicas, per
+altri paroles un serie de exceptiones, ne desirabil in un Lingue
+International, si on posse atinger un natural regularitá con bon
+derivationes. Por li verb «atin'er» monstra se ancor quelc desfacilitás.
+Li form «attinguer» vell esser stran'i. Li u pos g ne existe in null
+lingue, e «attinger» con sibilant g vell
+esser ínacustomat. (In italian existe un verbe «attingere» con ti
+pronunciation ma quel have un tutmen altri signification: hauster). Ti
+verb in F atteindre, A attain monstra clar li intrat i, quel in
+provenzal ancor es «atenher» u nh es pronunciat quam
+n'. Li
+pirenéic lingues have alcanzar, de arabic orígine. Un form «attener» ne
+vell recommandar se pro li verb tener. Anc li proposit «obtener» ne vell
+posser sufficer por omni significationes de «atin'er».</p>
+<p>Li proposit de quelc persones «attincter, extincter» etc. queles vole
+evitar il duplic radicas, anc ne posse esser nominat apt. Ja li form del
+infinitive es tro repugnant, ma in li derivativ form «attinctibil,
+destinctibil, extinctibil» it atinge li límite de repugnantie e
+monstrositá, durant que li formes «distin'ibil, extin'ibil, attin'ibil»
+foneticmen es absolut quasi natural. On deve prender in calcul que un
+lingue deve anc esser parlat, e ne solmen scrit e leet.</p>
+<p>Do ti solution proposit visibilmen es mancativ.</p>
+<p>Noi nu mey explorar du altri provas de solution:</p>
+<ul>
+<li>con i: distinier, attinier, extinier, e</li>
+<li>sin i: distiner, attiner, extiner.</li>
+</ul>
+<p>Li unesim metode da passabil resultates in li participie: attinit,
+destinit, extinit e in li adjectives: attinibil, distinibil, extinibil,
+ma totalmen ínsuficent in li derivationes del perfectic radica:
+attinition, extinition, distinition, distinitiv, extinitiv es hideos
+formes, ínpossibil por talmen quasi international paroles.</p>
+<p>Li duesim metode postula denov un separat form por li perfect, proque
+formes quam distinion, extiniv etc es naturalmen ínpossibil. Anc un
+proposit extraregul, que li verbes finient in n adjunte un t sammen quam
+li finient in vocales, ne es usabil,
+proque altri verbes por exemple «opiner» vell postular un nov exception,
+proque on ne posse dir «opintion». Un altri ínconvenientie vell esser li
+mixtura de divers radicas sub li sam form, quo vell confuser li
+non-latinistes e non-romanos, proque existe divers paroles quam:
+continent, pertinent, abstinentie, pertinaci, ne stant in etimologic
+relation con li supra-nominat verbes.</p>
+<p>On posse do vider que omni tal solutiones del desfacil question vell
+introducter sive nov exceptiones e ínregularitás, sive ínnatural formes
+chocant.</p>
+<p>Do noi deve provar ca it ne es possibil regular li ortografie per un
+general metode, ancor ne usat, ma sat simplic, comod e ne tro deformant
+li paroles in lor aspecte. Li max bon metode vell esser ti del lingue
+lettonian, quel have mult analogies in divers altri lingues. It es un
+diacritic signe che n, l, quo vell deformar minim li aspecte. In
+lettonian on have special lítteres l, n, con un cedille sub il líttere,
+simil quam in frances ç o in rumanian li cedillat t, queles monstra ambi
+li mollat pronunciation del c e del t, p. ex. in li parol «national». Un
+tal metode vell esser unitari, simplic e suficent commod, almen ne minu
+comod quam scrition de i, quel anc contene un separat punctu. Naturalmen
+on vell posser posir ti punctu o cedille o apostrofe super li líttere o
+mem usar li hispan tilde. Ma in li ultim casu it vell esser desfacil che
+l.</p>
+<p>De omni ti metodes li max bon sembla esser sive li lettonian cedille sub
+li líttere o li apostrofe sur o apu li líttere. Ambi es anc
+scientificmen justificabil, sive per juntion total del i con li
+consonante in sam maniere quam li cedille in frances e portugues sive in
+form del apostrofe quel monstra li elision del curt pronunciativ i. Do
+del vispunctu de logica on ne posse objecter
+contra ti metode. Ma divers persones senti se chocat per li apostrofe,
+quel es les ínacustomat. E in fact in ti form, qualmen it apare in
+textus scrit per machine, on ne posse negar que it es desbell. In
+printat textus it es ja un poc plu bon, ma ne posse contentar nor
+estetic postulationes. Ma to es un purmen tecnic problema. On save bon
+que p. ex. in german on usa quelc lítteres quam ch, ß etc in un sol
+type. Si ínacustomat printeros composi les per separat lítteres, on
+senti se chocat per li aspecte; sammen in hollandes, u li ij nu es
+printat junt per un sol tipe etc.</p>
+<p>Li sol ínconvenientie es, que ti tipes ancor ne existe partú, e on vell
+dever mandar les ex Riga (Lettonia), si on ne vell voler far producter
+les in un fabrica de print-lítteres. It es li sam cose quam con li
+lítteres con circumflexes in Esperanto. On ha monstrat un extrem
+antagonisme contra ti lítteres, quel mem ha ductet al secession de Ido.
+E hodie on deve dir, que just ti particularitá de Esperanto es li
+minimalissim, quel on objectiona a it. E Esperanto ancor hodie sta e
+progresse durant que Ido es in discadentie.</p>
+<p>On deve do considerar li hodial metode de apostrofes solmen quam
+temporari medie, til que on va haver li necessi lítter-tipes.</p>
+<p>Forsan alcun de nor interessat amelioratores va posser trovar un nov plu
+bon medie eliminar li desfacilitá. Yo vell salutar to con plesure. Ma yo
+deve sammen confesser, que li metodes proposit til nu, e queles
+introducte un masse de exceptiones e un caotic sistema, es ínacceptabil
+in un lingue international.</p>
+<p>On ne mey obliviar que li normal publica postula regularitá e facil
+comprensibilitá e stabilitá. On ne mey atribuer tro grand póndere a to
+que ti o altri person es chocat per ti o altri form. On va posser haver
+quelcunc possibil form, e sempre va trovar se persones queles va esser
+chocat. «Placer a omnes on ne posse», ja di un antiqui proverbie. Divers
+romanes es chocat per «del matre», altres del articul «li», ancor altres
+per li form «va». Ili consenti ye «il va parlar», ma es chocat per «Vu
+va parlar», etc, altres es chocat per germanic paroles, quam mann,
+segle, fox, e postula homogen latin, plu altres postula plu germanic e
+slavic paroles, proque Occidental es tro romanic por ili. Per un parol,
+ne existe tal proposition o critica, ye quel ne existe contraproposition
+e contra-critica. Ma on ne deve obliviar que it es absolut ínpossibil
+contentar omni postulationes, gustas, repugnanties etc. Li minu
+essentiales deve ceder ante li fundamentales. Al fundamental
+postulationes yo conta 1) li autonom unitaritá del lingue, 2) li
+naturalitá, 3) li regularitá, 4) li internationalitá. Forsan on va
+astonar se que yo mette li internationalitá solmen sur quadresim loc. Ma
+un lingue artificial posse viver e exister anc sin ti quadresim
+postulation, quo ha montrat Volapük e Esperanto, ma ne posse far to, si
+li 3 unesims ne es compleet. Ma it sembla me, que anc li postulation de
+internationalitá es soluet in Occidental in un gradu quel hodie
+representa quasi li maximum inter omni projectes!</p>
+<p>In omni casu on ne posse debilisar li 3 unesim conditiones per ancor plu
+grand aproximation al similitá con angles e frances o antiqui latin. Ti
+dangere nor latinistes e romanes visibilmen ancor ne comprende. Ili ne
+ha posit sufficent attention al unesim 3 absolut necessi qualitás, sin
+queles li vive e evolution del Lingue International es indangerat e che
+ignoration del vital postulationes deveni ínpossibil.</p>
+<p>[cols=8]
+|===
+| Latin | Hispan | Portuguez | Provenzal | Frances | Italian | Occidental | Angles</p>
+<p>| tingere, tinct-ura
+| teñir, tint-ura
+| tenher, tingir, tint
+| tenher, teint
+| teindrefootnote:[Li son «d» in li verbes frances es solmen eufonic
+inter li consonantes «n», «r».], teint
+| tignere, tinto
+|
+|</p>
+<p>| attingere, attact-
+| (alcanzar)
+| (attingir)footnote:[Altri sense: existe «atinar» {equals} german <em>treffen</em>,
+esperantic <em>trafi</em>.], (alcanzar)
+| atenher, ateint
+| atteindre, atteint{blank}footnote:atteint:[Li pronunciation in li síllabe final «eteint»,
+«atteint» e «distinct» es li sam.]
+| attignere, attinto{blank}footnote:[Ti parol have in italian un altri sense (hauster), ma li
+form es analog.]
+| atin'er, atin'tion
+| attain</p>
+<p>| extinguere, extinct-
+| extinguir, extinción
+| extinguir, extincto
+| estenher, esteint{blank}footnote:atteint:[]
+| éteindre, éteint(3)
+| estinguere, estinto
+| extin'er, extin'tion
+| extinguish, extinction</p>
+<p>| distinguere, distinct-
+| distinguir, distinto
+| distinguir, distinctivo
+| destenher
+| distinguer, distinct{blank}footnote:atteint:[]
+| distinguere, destintivo
+| distin'er, distin'tiv
+| distinguish, distinctiv</p>
+<p>| cingere, cinct-
+| ceñir, cint-ura
+| cingir, cinto
+| cenher, ceint
+| ceindre, ceint-ure
+| cignere, cinto
+| cint-ura
+|</p>
+<p>| fingere, fict-io
+| fingir, (fintes), ficción
+| fingir, finta, ficçao
+| fenher, feint
+| feindre, feint
+| fignere, finto
+| ficter, fict-ion
+|</p>
+<p>| jungere, junct-
+| juntar, juntura
+| ajuntar, junctura
+| jonher, joint
+| joindre, joint
+| giugnere, giunto
+| junter, junt-ura
+| join, joint</p>
+<p>| pingere, pict-or
+| pintar, pint-or, -ura
+| pint-or
+| penher, pint-or
+| peindre, peint-re
+| pignere, pinto, pittore
+| pict-or
+| pictur-esc</p>
+<p>| ungere, unct-
+| ungir, untar, unción
+| ungir, untar, unçao
+| onher, oint
+| oindre, oint
+| ugnere, unto
+|
+|</p>
+<p>|===</p>
+<h3><a class="header" href="#remarca" id="remarca">Remarca</a></h3>
+<p>Per li precedent articul noi presentat a nor letores li divers motives
+queles sr de Wahl iniciat a adopter li mollat sones e in-plu lor
+transscrition per li apostrof. On vide do que ti detallie de Occidental,
+li max criticat per su interessates, es ne un pur capricie del autor de
+Occidental quam divers arbitrari trates in artificial sistemas, ma que
+it es seriosmen fundat.</p>
+<p>Li labores till nu in li Comité Explorativ ha monstrat que li mollat
+sones vell esser evitabil in quelc paroles ma ne in omnes criticat. P.
+ex. li formes «detail», «email» trova se in grand lingues e con diftong
+ili es plu facilmen parlabil quam «detal'e, emal'e», con mollation. Li
+anc proposit parol «extinter» vice «extin'er» adver es minu cacofonic
+quam «extincter» o li existent «absorpter»; e «extintion» vell esser
+justificat pro analogie a «adtration» vice «attraction» e «juntion» vice
+«junction», quel in Occidental ne devenit: «jun'tion» (de «jun'er» vice
+«junter»). Noi have anc «function» e «functionar» e ne «fun'tion» de
+«fun'er».</p>
+<p>Si Occidental va esser plu difuset quam hodie, tande anc cert tactic
+motives in li propaganda ne va luder ti rol quam regretabilmen ancor in
+present. Tande li Occidental-Academie adminim por scientific ovres vell
+posser admisser exceptiones,
+p{dot} ex. «extinguer» e «extinction» apu «extin'er» e «extin'tion». On vell
+posser evitar li mollation in presc omni verbes sub condition que on ne
+abhorre exceptiones in li derivation. Plu cardinal por un L.I. es li
+regularitá del flexion (conjugation). Ples comparar «Latino sine
+Flexione» e li antiqui projectes naturalistic, queles have quasi null
+regules de derivation. Ma si on nu examina li enunciationes favorabil de
+mult prominent interessates ínprejudiciat, on constata strangimen que li
+successes de Occidental in fact have su cause ne minu in li modern
+naturalitá international del lingue quam in su regulari metode de
+parol-formation por obtener ti aspect. Possibilmen li Comité Explorativ
+va trovar acceptabil expedientes por facultativmen evitar li mollation
+in li majoritá del paroles. U es vole e metode, ta es via e solution.</p>
+<p>Al duesim problema, li transscrition del mollat sones, es a junter que
+li apostrof representa li elision de quelcunc son, ne solmen de «i». Ti
+fact ducte a ínconvenienties in poesie. Pro li divers desavantages on do
+posse tolerar li function special del apostrof in Occidental solmen por
+li témpore de transition. Li max apt definitiv signe diacritic por li
+mollation sembla esser li proposit de sr de Wahl cedille sub l, n, simil
+quam in ç. Li normal scri-machines con simplic commutation ordinarimen
+have un clave non-transportant por li accent circonflex e accent grav.
+Un duesim tal clave non-transportant poy va haver quam prim tipe li
+accentu acut (por li accentu tonic) e quam secund tipe li cedille (vice
+ç), quel on va usar simultanmen sub c (frances), t, s (rumanian), l, n
+(lettonian e Occidental). Comprensibilmen por Occidental vell esser plu
+practic, que li du signes diacritic (accent acut e cedille) es prim
+tipes. On posse usar anc li comma vice li cedille; ma in ti ci casu on
+deve aplicar anc li retro-clave, quo es mem plu inpractic quam li
+usation del apostrof.</p>
+<p><em>E{dot} P.</em></p>
+<h2><a class="header" href="#cronica" id="cronica">Cronica</a></h2>
+<p>Noi have li plesur informar pri li fundation del OCCIDENTAL-SOCIETÉ DE
+FRANCIA quam section del OCCIDENTAL-UNION (Organisation universal de
+Lingue International Occidental). Nor Organisation accepta li Statut del
+Occidental-Union, publicat in «Cosmoglotta» decembre 1928. Li Comité
+provisori del O. S. F. (Occidental-Societé de Francia) es
+constituet del secuent persones: President: L. M. de Guesnet, Commercial
+agent, 83, rue Rochechouart, Paris (9eme); Secretario-cassero: G. Bohin,
+Director del «École Moderne», 7, Place de Bordeaux, Strasbourg
+(Bas-Rhin); Vice-Secretaria: Senioretta J. Colas, Instructora, Souday
+(Loire et Cher). Membres: Ingeniero Thibault, Director del
+Hydro-Distribution, 15, rue de la Madeleine, Angers (Maine et Loire),
+Senioretta M. Guilbert, Instructora, Videcosville par Quettehou
+(Manche). Li unesim scope de nor Societé es l'organisation del
+propagande por Occidental in Francia e colonias. Li quote annual es
+fixat provisorimen a 10 francs, includet li contribution al
+Occidental-Union.</p>
+<p>G{dot} Bohin.</p>
+<p>FEDERALIA (Federation del amicos del lingue international auxiliari)
+havet su annual reunion li 15 may 1929. Esset electet sequent
+functionarios: Presidente: J. A. Kajš, Vranovská 44, Brno. Vicepresidente: Vl.
+Trávníček, Husova 101,
+Brno-Husovice. Secretario: Senioretta Jarmila
+Kajšová, Vranovská 44, Brno. Vice-secretario: Bohumil
+Jelínek.
+Cassero: Seniora
+Růžena Trávníčková, Husova 101, Brno-Husovice. Li membres ha
+resoluet: 1. far plu intensiv propaganda per printates anexet a divers
+jurnales. 2. prender parte in li exposition del modern comercie, quel
+eveni in august-septembre in Brno. (Li necessi printates in Occidental
+va furnir Typografia Kajš &amp; Fellmann, Brno XII. Palackého 32). 3.
+arangear un propaganda-soaré con discurs pri L.I. Senior Jelínek va
+payar durant 6 mensus un Occidental-reclame in un kino.</p>
+<p>J{dot} A. K.</p>
+<p>CANDIDE, semanal jurnal de litteratura, Paris, 6 junio. Sr Pierre Veber
+hante jocat pri Esperanto, di que li esperantistes es íngrat e ínhabil,
+pro que, vice mersiar le pro li reclame, ili misset insultant lettres.
+«Nu li esperantistes besona cuidar, nam on misse me li manifest del
+adeptes de un nov lingue universal Occidental. It es minu complicat quam
+Esperanto e plu bellsonant». Il conclude assertent que li mundi-lingues
+es utopic.</p>
+<p>L{dot} M. G.</p>
+<p>Li mancas circum nos ye maxim parte depende del mancas in nos.</p>
+<p>Coudenhove-Kalergi.</p>
+<p>Ordinaritás on crede a chascun, por ínordinaries es necessi autoritá.</p>
+<p>August Pauly.</p>
+<h2><a class="header" href="#litteratura" id="litteratura">Litteratura</a></h2>
+<p>De Arte a Scientie.</p>
+<p>Discurs de Professor Wilhelm Ostwald.</p>
+<p>Li unesim januar 1929 on ha interprendet por li unesim vez li experiment
+divulgar un discurse scientie ne solmen per li proxim radio-stationes.
+Quande Wilhelm Ostwald ha parlat avan li microfon in li studio-chambre
+de su hem, radio-stationes del Mar Nordic e Baltic til Graz in Austria
+emisset li paroles de ti scientist. Nequande il ha trovat un plu grand
+auditorium quam in ti die, quande li radio portat su voce a omni
+possessores de detector-aparates in Centraleuropa e a omni possessores
+de audion-aparates in tot Europa. Wilhelm Ostwald, li famos chemico e
+fisico, ha explorat desde quelc annus li teorie de colores e formes.
+Nequi es plu competent quam il monstrar li mult relationes inter arte e
+scientie.</p>
+<p>In general on have li opinion que arte e scientie es explicit
+contrastes. Li arte es dominant in li sfere del sentiment; li scientie
+es li object del sicc rason. To es in fact clar contrastes.</p>
+<p>Ma solmen coses queles have un comun fund, posse star submisset al
+relation del contrast. Ti comun fund es to que li du es suprem
+manifestationes del spíritu homan. Es evident que in german li parol
+«Kunst» (arte) es derivat de «können» (posser), e «Wissenschaft»
+(scientie) de «wissen» (saver). Ma li saventie es solmen li unesim gradu
+al scientie; ti ci satisfá su suprem vocation solmen in li creatori
+formation, ergo anc in li posser.</p>
+<p>Hodie noi comprende quam arte in sense restrictet li creation de lu
+bell, o dit plu bon e general, li excitation de agreabil sentimentes.
+Unquande li dominia del arte esset mult plu vast. Ante plur centennies
+li construction de machines e de naves, de fortificationes e armes esset
+considerat quam arte tam bon quam li piction de images e li erection de
+eclesias e palacios. In li medievie, leer e scrir esset reputat quam rar
+arte, e in un ancian indic saga yo trovat descrit quam un arte mem li
+contada.</p>
+<p>Ti general notion del arte significa do un extraordinari capabilitá,
+quel es propri solmen a poc privilegiates, e li aquisition de quel
+postula apart talentes. Noi do reconosse li sam qualitás queles on
+suposi hodie pri li arte in sense restrictet, i. e. li arte estetic.</p>
+<p>Ti dominias, abandonat del arte, comensat del contada, letion e scrition
+til li construction de machines e de altri desfacil ovres, venit a esser
+ocupat del scientie, per quo ti conossenties ha recivet un developation
+enorm súper li statu sur quel ili ha stat quam artes.</p>
+<p>Esque li sam fate es destinat por li arte in sens restrictet, li poesie,
+musica e pictura? Secun mi opinion, anc por li production de lu bell noi
+va perviver li progress del subconscient creation del artist al
+conscient construction del scientist.</p>
+<p>Li artist crea subconscientmen. Il ne posse dir pro quo il junte a su
+ovre just ti elementes (sones, colores, paroles) e ne li numerosi altris
+essent a su disposition. Li pictor es in li situation max ínfelici
+proque li pictura es li max índevelopat de omni artes. Avan li mental
+ocul del pictor sta li ovre quel il vole crear. Si il successat atinger
+un passabil aproximation a su intern ideal, il ne risca provar li ultim
+passu al perfection; nam un desagreabil experientie ha docet le cent
+vezes, que un tal procedura have quam consequentie plu sovent un
+deterioration quam amelioration, e que poy it es por il sovente
+ínpossibil restaurar li statu anterior.</p>
+<p>Li poet e li componist es in un situation plu agreabil. Che ili li
+anterior statu ne ea perdit si ili execute modificationes. Ili ya posse
+juxtaposir li divers versiones e selecter in plen calmesse li max bon.
+Li poemas de Heinrich Heine debi li ravissent naturalitá de lor bellitás
+a un penosi, multiplic e sempre repetit experimentation del poet pri li
+divers possibilitás, queles li lingue dat a su disposition.</p>
+<p>Ma ti procedura corresponde totalmen a ti del scientie explorator. Ci li
+creatori labores del artist e del scientist mult aproxima se.</p>
+<p>Si tam generalmen, quam descrit, li scientie conquesta li dominias antey
+occupat del arte, ti process deve esser lent e continui. Plu e plu grand
+partes del arte deveni sciential e in fine resta solmen un micri residue
+de arte, quel nequande va desaparir totalmen.</p>
+<p>Li artist producte per li sentiment, li scientist per li lege. Li lege
+developa li arte al scientie. Lege es iteration. Omni lege natural have
+li form sequent: si A existe, B conseque. Ci A posse esser omnicos
+possibil, del max abstract notion til li max concret eveniment. Si de un
+tal duo li lege es conosset, on deve sempre expectar B, si on incontra
+A{dot} Per
+to li conossor del lege deveni un profet, nam il predicte lu
+futur. In li antiquitá un astronom esset considerat quam magico, proque
+il hat justmen predit un futur eclipse solari, hante decovrit li lege
+del repetition de ti eclipses ex li anterior observationes. Ho-témpore
+noi expecta trovar tal profeties in omni calendare, e noi ne es astonat
+in minimal gradu si ili eveni punctualmen; in contrari, noi vell esser
+astonat, si noi vell decovrir que li profet calendari ha errat. Ma il
+nequande erra.</p>
+<p>Lu sam vale in li arte. Chascun cantator o actor save per su
+experientie, que cert tornas in su maniere de representation ha
+specialmen fort impressionat li publica. To es un ver lege natural, etsí
+de extension restrictet: quande li torna es arrivat, li publica aplaude.
+Il trovat it subconscientmen quam artist. Ma in futur, si li occasion
+veni, il posse aplicar it tam conscientmen quam li chimico aplica un
+reaction trovat de il.</p>
+<p>Talmen in omni arte existe un sciential parte. On reconosse it per to
+que it posse esser docet. Tal docibil partes de un arte on nomina su
+tecnica. On posse nominar les egalmen bon su scientie, nam tecnica es
+scientie aplicat.</p>
+<p>Quam plu alt un art es developat, tam plu grand es su parte tecnical o
+sciential. Li max impressiv de omni artes es ho-témpore li musica; su
+ovres posse fascinar nos durant hores e excitar nor sentimentes max
+profundmen. Poy seque li poesie e, in plu grand distantie, li pictura.
+Nam un image, mem li max bell e impressiv, posse captivar nos durant
+admaxim quelc minutes; poy li ocul comensa promenar e serchar altri
+objectes. Tut analogmen on trova anc li sciential parte del musica quam
+apartmen grand e ti del pictura quam minimal.</p>
+<p>Li consideration del sciential fundamentes del musica doce un cos
+decisiv pri li arte in general. Un simplic colp de aer producte un son o
+crac, secun li fortie; un ínregulari consecution de aer-colpes producte
+un brui. In li du ancor ne existe li minimal bellitá. Ma si on lassa
+acter egalmen fort colpes in egal intervalles plu rapidmen quam 30 vez
+in un seconde, ili confonde se a un ton. Ti ci ja possede bellitá, etsí
+simplic e modest. Li tones difere secun li quantitá del colpes in un
+second; quam plu frequent ili es, tam plu alt es li ton. Si noi lassa
+intersequer tones de divers altore, resulta un bell coherentie, un
+melodie, ma solmen si lor númeres de oscillationes (frequentie) sta in
+simplic proportiones. 1:2 da li octave, 2:3 li quinte, 3:4 li
+quarte, 4:5 li grand ters, 5:6 li
+micri ters. Li sam lege es valid por li simultan sonantie de du tones,
+li harmonie. Finalmen li temporal bellitá del tones es basat sur li
+ritme, i. e. li lege-conform consecution de egal intervalles.</p>
+<p>Fals cantada o fals lude musical trova explication in to que li supra
+indicat proportiones del frequenties ne es observat. Noi do vide que li
+leges natural es quasi marca-vias o cartes geografic, queles predicte al
+migrator ad u il va venir si il perseque un cert via.</p>
+<p>Al pictor ne es conosset li fisical leges del harmonie de colores,
+quáncam ili ha esset publicat del autor ante deci annus. Pro to li
+pictor consuma adminim nin decimes de su témpore por producter sur su
+palette ex li color-butonettes de su rud materiale li color-mixturas,
+pri queles il espera que ili va haver li just aspect in li image. E si
+il da li colore sur su loc, il sovente constata que it támen ne es rect
+e deve esser modificat.</p>
+<p>Si on picte med li organe cromatic (D Farbenorgel) omni manual mixtion
+de colores es superflúi. Qualmen in li organe musical omni besonat tones
+es providet in form de organ-tubes, talmen anc in li organe cromatic
+existe colores regularmen graduat, in númere 672, arangeat in 28
+registres de singul 24 color-tones; in addition a to es ancor, quasi
+quam pedal-tones 8 graduat gris colores con blanc e nigri. Li artist
+reflecte unesimmen, quel colores in quel harmonies il vole aplicar in su
+ovre. Il nota les, nam chascun color del organ have su signe, sam quam
+chascun ton in li musica have su signe in form del notes. Poy il prende
+li colores selectet ex li organ, prepara les e aplica les in lor loc. Li
+resultat es sempre un image harmonios, si li artist observa li
+corespondent regules. Li artistic effect posse esser plu intensiv o plu
+debil secun que li selectet harmonie supporta o diminue li altri
+factores del pictura (form, idé). It ne esset possibil constructer ti
+organe cromatic per li artistic sentiment; solmen li scientie ha
+efectuat it.</p>
+<p>Talmen li scientie penetra ínrestibilmen in li dominias queles antey
+esset administrat del artist ex su sentiment; ma li artist sin cessa
+conquesta nov dominias, u il regna autonom in prim témpore, e ad u li
+scientist trova accesse ne ante que li artist ja de long ha ganiat su
+recolte.</p>
+<p>In li scientie it ne es altri quam in li arte. Anc in li scientie li
+unesim avansas de beat exploratores, precismen quam che
+li artistes, es fat secun li sentiment, i. e. per li aplicationes del
+leges natural, queles li explorator posse aplicar solmen per li
+subconscientie, pro que il ancor ne posse enunciar les, ma queles ducte
+le a nov e just resultates. Advere totalmen ne sempre; in contrari il
+deve far mult van avansas, queles resta sin success, qualmen li critical
+examinationes demonstra le. Ma in fine il támen atinge li scop e li
+decovrition desde long serchat es fat.</p>
+<p>Lass nos in fin retornar al griv-infant del hodial arte, al pictura, e
+questionar, qualmen on posse promover it; li response es: per aplicar
+anc li temporal motion in li image. Li hodial images es ínmobil e pro to
+ne posse emover li spectator. In li cinema noi have li unesim comensa
+del image movent, e yo ne besona descrir quant ínresistibil li film
+atrae pro to li masses. Ma it es solmen un comensa, ergo ínperfect. Noi
+deve aspirar al concerte cromatic: un image movent, quel posse
+transformar rapid o lent, continui o subit omni form e omni color,
+talmen que li serie del fenomenes posse excitar un corespondent serie de
+sentimentes con sam o plu grand securitá durant hores, qualmen un
+musical ovre de arte fa it. Yo pensa que yo posse expresser li motivat
+espera que il scientic-tecnical fundament de ti ci nov foto-arte va
+esser constructet in li proximissim témpore.</p>
+<p>Extraet e translatet secun li revúe «Radio-Wien»</p>
+<p>de Karl Janotta.</p>
+<p>Fortun in negocie</p>
+<p>Unquande yo audit negar Charles Schwab li existentie de genialitá e
+felicie in li afferic vive e exposir a su auscultantes, que un success
+in comercial vive es solmen li resultat de «dur, honest e penosi labor»
+e necos altri. E tamen on di que il self debit su unesim incontra con
+Andrew Carnegie a un felici circumstantie. Schwab havet quam púer un
+agreabil voce de cantada. Un die su tones sonat ex li stalles u il
+laborat al veranda, u li scottic stal-rey sidet. Li voce e li cant del
+garson placet Carnegie, il fat venir li cantator in li dom por juir li
+musica tut proxim. Esque to ne esset un felici die por Schwab?</p>
+<p>Durant mi jurnalistic carriere yo interviuat mult prominent negociantes
+e yo ha fat li du conclusiones, que li max mult homes, successosi anc
+vell har avansat in cert relation sub
+omni altri circumstanties e duesimmen, que un excellent success in
+comercial vive precipue depende del just election de un carriere; si
+Fortuna favori nos, it es ordinarimen in li comensa, sur li sill de nor
+carriere.</p>
+<p>Yo laborat unvez, apu un old jurnalist, qui credet har esset fraudat pri
+su fortune per un hasarde. Quam infant de 12 annus il e un amico serchat
+un ocupation. On ofertat le du vacant positiones, li un che un gazette,
+li altri che un curtagero. Ili lotat pri ambi positiones. Li lot
+atribuet a su amic li position che li curtagero -- e ti ci devenit
+rich.</p>
+<p>«Omnicos depende del comensa», li old mann havet custome dir. Su classic
+exemple quel il sempre citat, esset John Jakob Astor. Astor abandonat
+Holland sin alcun penny in su tasc. Li nave, ductent le a America, esset
+fortiat a un dumensual halta in glacie avan New-York. Durant ti ci du
+mensus, Astor fat connossentie de un passagero, qui informat le pri li
+oportun circumstanties in comercie de pelisses, explicante, que un povri
+hom in exchange por luderies e desvalorallias vell posser aquisiter
+ínnumerabil pelisses, queles il vell posser vendir in London por enorm
+precies. Li retardation del nave, sur quel Astor trovat se aplanat le li
+via a un capitale, quel tande il apen vell har posset aquisiter in un
+altri maniere.</p>
+<p>Chascun mey imaginar su propri carriere e constatar per quel micri
+hasard il esset ductet sur su present via e per quel insignificant
+bagatelle il fallit un altri.</p>
+<p>Un del max grand venderos de ligne de nor land -- Thomas B. Walker --
+raconta, quam il atendet un die in un hotel sur li campanie pro un
+epistul de universitate de Wisconsin, quel devet comunicar le un
+installation quam instructor. Il intrat un conversation con un senior ex
+Minneapolis. To esset li hor fatal de Walker. Walker lotat per un
+monete; it decidet se por li vapor-nave e li pedagog in spe navigat, ne
+atendente li ariva del epistul a Minneapolis, e ganiat ta su richess per
+un negocie de ligne.</p>
+<p>Andrew Carnegie quam púer unquande lassat cader un paquette, contenent
+pecunie por payamentes de salarie, ex li fenestre de un tren. It rulat
+a-bass li rive de un fluvie, ma stoppat ye li extrem borde. Andrew
+retrorecivet su fasce de moné. Ma quo vell har evenit, si it hat rulat
+in li profund aqua? Certmen on vell acrimen har blamat e forsan mem
+demisset le e tot su vive vell har havet un altri aspect. Forsan
+il nequande vell har intrat un ferr- e stal-firma. E si il ne vell har
+actet talmen un Carnegie-stal-association sin dúbita ne vell har nascet
+e ergo null Charles Schwab e finalmen null judico Gary quam noi connosse
+le.</p>
+<p>Judico Gary, li general-director del stal-trust, forsan vell esser hodie
+avocate, si un die il ne devet pledar contra J. W. Gates hasardmen in un
+bagatellatri afere. John W. Gates nequande obliviat, qualmen ti jun
+avocat presset le dangerosimen e quande il esset al punctu fundar li
+trust de spin-fil, il ingageat Gary, por stirar le tra li labirint del
+juristic leges. It possibilisat a Gary, plu tard fundar li federal
+association de relvias e finalmen li stal-trust.</p>
+<p>Henry Davison, companion in li banque-firma Morgan, raconta qualmen,
+metaforicmen expresset, quam oficiat de banque, il quasi esset «tirat»
+in un plu alt position.</p>
+<p>Un die il levat li ocules e videt rectmen in li tub de un pistol. Un
+alienato postulat in solemni paroles li payament de un chec quel hat
+esset tirat «al ordre del omnipotent Deo». Casseros de banque rarmen
+have dramatic momentes, ma Davison travivet it. Il leet li chec fortmen,
+tre fortmen, ostentativmen, por convicter se, esque it esset in órdine,
+ma in realitá, por traer li atention de altri oficiarios sur se. Li tric
+pruvat se successosi. Li functionario in li vicin chambre vocat un
+policist, qui arestat li alienate e in tal maniere salvat al banque su
+moné e a Davison li vive. Davison esset strax promovet; e tri annus pos
+to, il esset gerant director del banque.</p>
+<p>Comprensibilmen fortuna sol ne posse procurar successe. Li hom favorit
+del fortuna deve auxiliar per omni forties. Quamcunc on mey pensar pri
+li morale de Doheny, li rey de petroleo, it resta li notabil fact, que
+il es un del max rich homes de America. Ante mult annus il sidet
+unquande avan un litt hotel in Los Angeles. Il esset completmen sin
+pecunie e meditat, quo interprender. In ti moment un carre passat,
+chargeat per pech. Doheny recivet information del cochero, un mexican,
+que li charge de terre venit de Westlake-park. Pos to Doheny eat al
+park, grattat in li excavates e trovat, que li obscur terre, semblantmen
+esset impregnat per oleo. Il possedet null pecunie, ma trovat un old
+companion e ambi acquisitet un jure de precompra por li suole. Poy ili
+efortiat ganiar quelc dóllars e comensat forar. Li oleo spruzzat ex
+li terre. Pos quelc hores Doheny vell har abandonat Los Angeles, si ti
+carre ne vell har aparit avan su ocules. E tut-vez li carre passat
+préter mill persones e solmen per su passada trombonat li bon
+opportunitá in li oreles del publica. It esset un voca del sorte a omnis
+-- ma solmen Doheny audit li voca.</p>
+<p>John T. Flynn in «Harper's magazine»</p>
+<p>Trad. de Dr. K. Schüppel.</p>
+<p>Interiore de un atom</p>
+<p>Ex Arnold Sommerfeld: Atombau und Spektrallinien, 2.
+edition{blank}footnote:[Li
+ultim observationes ha ductet a un altri conception pri li natura
+del electrones quam li descriptet in li article insertet ci: on opine nu
+que ili es undes simil a ti del lúmine, ma circulari. Noi va referer
+forsan un altri vez pri ti novissim teorie, ma noi crede que nor article
+es támen interessant pro que it da li fundamental observationes e
+teories.]</p>
+<p>Li absorption del catode-radies e su dependentie del velocitá ja in 1903
+ductet Lenard al opinion que li structura del materie contene vacui
+spacies e que solmen un ínsensibilmen micri parte del spacie ocupat de
+it es ínpermeabil a rapid catod-radies, ma li tot céteri parte del
+spacie lassa les passar líbermen (Dinamide-theorie o -- quam noi vole
+nominar it -- nucleo-teorie del materie).</p>
+<p>Al sam conclusion, extendet per quantitativ indicationes, ha esset
+ductet Rutherford deci annus plu tard per li dispersion del alfa-radies
+passant tra subtil metall-folies. Un fasce de alpha-radies suffre per to
+in unesim loc un general dispersion, quel es distribuet exact secun li
+leges de probabilitá. Egalmen quam li tiras de un fusil in un disc
+visori, li {asterisk}hit-punctus{blank}footnote:[hitar, A to hit, F toucher, D treffen.
+Li asterisc {asterisk} significa que
+li parol es ne acceptat ma solmen proposit por usa in Occidental.
+Red.]
+del alfa-particules amasse se circum un loc
+medial maxim probabil quel es li prolongation del incident fasce de
+alpha-radies, e de ta lor frequentie diminue se vers omni láteres. In un
+luminant scren qual es usat in li conosset spintariscop, on posse
+observar e contar li hits del singul alpha-particules per li
+scintillationes excitat. Ma eveni isolat fort deviationes queles sembla
+totalmen exceder del regules de hasard til angul de 150° con li
+direction de incidentie. Lor númere es minimal (p. ex. 1 per 8000
+incident particules, si alfa-radies venient de RaC es disperset per un
+folie de platin), ma mult plu grand
+quam it esset a expectar secun li lege de dispersion valent por li micri
+angules. Rutherford e su disciplos Geiger e Marsden ha studiat exactmen
+por un serie de divers metall-folies li distribution de ti ci abnorm
+deviation inter li divers regiones de angules. Noi ha ja incontrat
+correspondent abnorm deviationes in li fotogrammas de Wilson in form de
+flexiones al fine del via del alfa-radies, excitat ci ne per
+metall-atomes, ma per molecules de aer.</p>
+<p>Quo accidet al alfa-particul ye ti ci inflexion? Rutherford conclude al
+action del maxim fort electric campes quel departe de un tre micri
+spacial part, t. e. de un «nucleo». Pro que li grandore del abnorm
+deviationes augmenta se con li pesa atomic del deviant element, li
+intensitá del deviant camp deve esser proportional al pesa atomic. Por
+aur (pesa atomic 197) li charge concentrat in li nucleo generant li camp
+vell dever esser circa 100 e (e {equals} elementar charge) por explicar li
+trovat deviationes. Li charges del nucleos vell posser per se esser tam
+bon negativ quam positiv, t. e. li deviationes posse provisorimen esser
+conceptet tam bon quam attractiones quam anc quam repulsiones. Ma li
+general experienties pri iones e electrones decide que li signe del
+nucleo-charge es positiv. Nam li nucleo deve posseder ne solmen un alt
+charge, ma anc un alt capabilitá de resistentie, t. e. un grand masse
+por posser efectuar li grand deviationes del alfa-particules. Nu it es
+li positiv charge, quel es conjuntet con li ponderabil materie secun su
+natura, durant que li negativ charge apartene al levi e facilmen mobil
+electron. Electrones quam centres de negativ charges posse excitar li
+micre deviationes del regular dispersion; ma por li abnorm deviationes
+li ponderos nucleo con positiv charge deve esser responsabil.</p>
+<p>Per to resulta li sequent resumant image: li positiv chargeat
+alfa-particul es repulset del positiv chargeat nucleo si it passa preter
+it exceptionalmen proxim. In li vicinitá del nucleo es un atmosfere de
+negativ electrones; de ili li alfa-particul es atraet. Ti ci
+atractiones, superposient se reciprocmen secun leges de hasard, explica
+li regulari dispersion de micri angul e ti repulsiones explica li rar
+flexiones con grand deviation.</p>
+<p>Anc pri li extension del nucleos on posse deducter alquicos ex li
+observationes del alfa-radies. Li distribution del deviationes inter li
+divers angules es calculat de Rutherford sub li suposition que li
+nucleo-charge es punctual. In tant quant li
+deviationes observat concorda con li calculat, ili demonstra, que li
+extension del nucleos ne ha impedit li via del particules. Ex li max
+grand deviationes observat resulta do un superior límite del admissibil
+extension de nucleo.</p>
+<p>In su totalitá li atom deve esser electric neutral: consequentmen li
+númere del electrones per atom es egal al númere del positiv elementari
+Charge concentrat in li nucleo: t. e. al númere del nucleo-charges. De
+to seque nor unesim tese: númere de nucleo-charges es egal al númere de
+electrones. Li atomisme del negativ electricitá postula -- quo
+Helmholtz ja remarcat pri li electrolise -- anc ti del positiv
+electricitá.</p>
+<p>Ma adjuntente li explorationes de Rutherford pri li dispersion del
+alfa-radies, seque li duesim tese: númere de nucleo-charges es egal al
+númere de electrones in li atom e es egal a circa un demí pesa atomic.</p>
+<p>Ti tese es subtenet per un resultat ex li teorie e mesuration del
+Röntgen-radiation: li grandore del disperset radiation per atom. Ti ci
+ducte al conclusion que li númere del con-oscillant electrones queles
+emisse li disperset radiation prendet per atom, es quasi egal al demí
+pesa atomic. Durant que ye li optic undes solmen li extern o lax juntet
+electrones (tal nominat electrones de dispersion o valentie) con-oscilla
+perceptibilmen -- li intern electrones es juntet tro rigidmen in
+relation al optic incitationes -- per li mult plu rapid Röntgen-radies
+anc li maxim intern electrones es prendet con se. Pro to ja antey noi
+interpretat li supradit resultat pri li disperset radiation talmen: Li
+total númere del electrones in li atom concorda aproximativ con li demí
+pesa atomic.</p>
+<p>Noi presenta un altri resultat, per quel ti sam númere es iluminat ancor
+de un quart látere. Li númere ordinal del elementes, t. e. li númere de
+lor loc in li natural sistema, precipue in li comensa de ti sistema,
+concorda aproximativmen con li demí pesa atomic. Do anc li final tese es
+valid: li númere del nucleo-charges es egal al númere del electrones, es
+egal al númere ordinal e es egal a circa un demí pesa atomic.</p>
+<p>Evidentmen li experienties utilisat til nu posse subtener ti ci ley
+solmen tre aproximativmen. Noi recive por it mult plu cert fundamentes
+ex li factes del Röntgen-spectrums. Anticipante ti fundamentes noi
+asserte: Con chascun passu adavan in li periodic sistema del elementes
+li númere de nucleo-charges cresce exact per un unitá, li nucleo-masse
+per circa du
+unitás. Nam li pesa atomic, pro que li electrones contribue le solmen
+ínsensibil poc, deve essentialmen esser efectuat per li masse del
+nucleo. In ultra chascun element secuent in li periodic sistema contene
+un electron plu quam li precedent.</p>
+<p>Nu qualmen li electrones del atom posse mantener se contra li atraent
+efect del nucleo-charge? Ne deve ili, sequent a ti effect, cader in li
+nucleo? Li response -- un response possibil e apartmen simplic e
+contentant -- es furnit nos per li conditiones in li sistema solari. Li
+terre ne cade in li sole pro que per su revolution it developa forties
+centrifugal, queles equilibria li atration del sole. Transport del image
+a nor atom-modelle ducte al sequent conception: Li atom es un sistema de
+planetes girant circum li central córpor, li nucleo. Li atom del ordinal
+númere Z es format de Z simplic negativ chargeat planetes e un Z-plic
+positiv chargeat sole. Li atration del gravitation secun li lege de
+Newton es viceat per li electric attration secun li ley de Coulomb, quel
+expresse se formalmen exact quam ti. Un diferentie consiste solmen in to
+que in nor microcosmo li planetes repulse un altre -- sammen secun li
+lege de Coulomb -- durant que in li macrocosmo ili es atraet ne solmen
+del sole ma anc un del altri. Li dinamic leges -- introductet les just
+nu in li populari diction de centrifugal forties -- es valid in nor
+microcosmo exact quam in li astronomic macrocosmo.</p>
+<p>Noi mey nu considerar ancor un vez li fenomen del deviation del
+alfa-radies sub li image del planet-sistema. Trans nor planet-sistema
+noi lansa un alfa-particul, un comete. Generalmen it vola per un rect
+linea e es deviat (disperset) solmen poc per li max proxim micri
+planetes. Ma si it {asterisk}hita just li sole o passa proxim preter ti, it
+suffre un ínproportional fort e abrupt repulsion. It descri un
+hipérbolic trajectorie, in li foco de quel sta li nucleo. Li angul de
+deviation es egal al angul inter li du asimptotes del hipérbol.</p>
+<p>Per ti astronomic descrition del fenomen noi samtémpore indica vagmen li
+via del calculation per quel Rutherford discusset ye unesim vez li
+mesurationes del deviation del alfa-radies e motivat su nucleo-teorie.
+In historic relation es adjuntend que van den Broek ye unesim vez
+formulat clarmen li idé de un nucleo-charge e númere de electrones
+crescent con li ordinal númere e demonstrat it per chemic factes.</p>
+<p><em>Trad. Dr. Ing. A. Wormser</em></p>
+<h3><a class="header" href="#cicade-e-formíca" id="cicade-e-formíca">Cicade e formíca</a></h3>
+<p>[verse]</p>
+<hr />
+<p>Durant li seson estival
+Seniora Cicada sempre cantat;
+Ma quande arivat
+Li vente nival
+Alor in su dom li pane mancat:
+Null micri pezzette
+De vermette,
+De gran o de mosc
+In alcun loc
+Por passar li dies hivernal.
+Quo va far l'imprudent animal?
+Sin hesitar
+Li Seniora vade mendicar
+Che li Formíca
+Su bon amíca.
+«Vide, cara, mi povritá:
+Yo sta por morir!
+Oh! presta me per caritá
+Alcuni granes por me nutrir...
+Yo te va payar -- parol cicadal --
+Interesse con capital
+Ante li mensu de li flores.
+Oh! ples esser bon: te prega mi plores...»
+Li Formíca responde con finess:
+«Vermen yo deplora vor povress;
+Ma ples, Vicina, dir me vor labores
+Durante li bell calores».
+«Inter li flores rident yo fe cantar!»
+«Ah! Vu cantat inter li flores:
+Nu, Seniora, sur li nive ples dansar!»</p>
+<hr />
+<p><em>Secun Lafontaine +
+A{dot} Creux</em></p>
+<h2><a class="header" href="#corespondentie" id="corespondentie">Corespondentie</a></h2>
+<p>Noi recivet li sequent lettre de sr Jan Casse, expresidente del Dan
+Ido-Federation:</p>
+<p>Car senior Pigal.</p>
+<p>Per to yo desira informar vos que yo ha abandonat Ido e Novial e nu
+adhere definitivmen a Occidental.</p>
+<p>Ti ci transition, quel yo fa con grand joya, pro que yo senti har
+finalmen trovat mi unic just position pri nor grand idé, es li resultat
+de un long e lent evolution por me.</p>
+<p>Yo ha esset un convictet idist, un grand admirator del lingue del
+Delegation, e pro to, quande yo videt Occidental ye li unesim vez, it
+plenat me per horrore e abomination! Ma ja bentost in mi usa de Ido yo
+hat remarcat, alor con regret, li practic desfacilitás pro li
+hiperlogica del derivation. E per continui usada de Ido, e anc per
+letion del occidentalistic critica de Ido, lentmen, sempre plu mult yo
+comprendet li defectes de ti lingue, e pri tro mult logica e pri
+ínnaturalitá. Precipue yo posse dir que vor articul in su témpore «Li
+ovre de Edgar de Wahl» fat un grand impression ye me.</p>
+<p>Ma ancor un long témpore yo credet que nor problema posse esser soluet
+sur li fundamental principies de Ido, per un reform de ti lingue talmen
+que it vell devenir plu simplic e plu natural; e yo ne aprobat li
+ínfonetic ortografie de Occidental e su, supposit, ínregularitá. E
+quande Novial aparit, yo credet que it representat li desirabil reform
+de Ido. Ma ja bentost yo comensat dubitar pri li usabilitá anc de ti
+sistema. Formes quam «nusen», «vusen», «lesen», «lum», «sal», «bli» es
+e resta ínacceptabil in un practic L.I. On ne posse negliger li lingual
+sentimentes, e tis es chocat de tal e altri formes arbitrari o adminim
+ínhomogen con li céteri sistema. E per quelc experimentes yo crede har
+constatat que anc li derivation de Novial es mult tro desfacil in
+practica. Li fundamental principie del sistema Couturat: li logic
+construction del derivates, es conservat malgré simplificationes in
+quelc detallies. E in plu li nov, arbitrari, sistema -e, -a, -o va far
+necessi un constant hesitation esque li paroles a usar es verbal
+substantives o ne: «danso» o «danse», «nivo» o «nive» etc.</p>
+<p>Li resultat de mi pensas e provas pri Novial e Occidental es to que yo
+nu comprende que it es li fundament quel es mal in Ido e Novial, it es
+li mecanic-sistematic structura, li ínnatural construction del paroles,
+quel deve esser abolit. Li naturalitá e internationalitá es li «conditio
+sine qua non» del L.I. Li adoption in Occidental del international
+paroles in lor natural formes, e pri derivation e pri ortografie, fa ti
+sistema mult plu facil a comprender e usar quam li altris. E certmen on
+posse desfacilmen exagerar li importantie del fact que Occidental
+aspecte quam un lingue natural, contra que li plu ancian sistemas, e nu
+anc Novial have un caractere artificial e ínnatural.</p>
+<p>It es con grand joya que yo nu intra in li yun e avansant
+Occidental-movement, un movement quel es fundat sur li sol ver
+principies, e quel pro to va victer in li future.</p>
+<p>Li representation del Occidental-Union por Dania, quel yo ha in su
+témpore acceptat provisorimen, naturalmen yo va nu con plesur acceptar
+quam permanent.</p>
+<p>Con cordial salutationes vor devoet</p>
+<p>Jan Casse</p>
+<p>Willemoesgade 23 IV, Köbenhavn Ö, Dania.</p>
+<h2><a class="header" href="#subventiones-al-occidental-union" id="subventiones-al-occidental-union">Subventiones al Occidental-Union</a></h2>
+<p>L{dot} M. de Guesnet (Paris): 30,5 fr. fr. -- Prof. F. V. Lorenz (Sao
+Feliciano): 21,70 öS. -- C. in K.: 20 öS. -- Regierungsrat Dr. Mell
+(Rudolstadt): 25 öS.</p>
+<h2><a class="header" href="#li-central-officie" id="li-central-officie">Li Central Officie</a></h2>
+<p>Eigentümer, Herausgeber und Verleger: Occidental-Union, Sitz: Mauer bei
+Wien. Verantwortl. Schriftleiter: Ing. E. Pigal, Liesing b. Wien. Druck:
+Milan Nedvídek, Tábor.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../Cosmoglotta/061.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../Cosmoglotta/064.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../Cosmoglotta/061.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../Cosmoglotta/064.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script src="https://occidental-lang.com/website-word-lookup/lookup.js"></script>
+        <script>
+            lookupInit('https://occidental-lang.com/website-word-lookup/dict.json');
+            document.onselectionchange = debounce(lookup, 500);
+        </script>
+        
+
+    </body>
+</html>

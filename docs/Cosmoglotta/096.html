@@ -1,0 +1,1174 @@
+<!DOCTYPE HTML>
+<html lang="ie" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>A 96 - scritorium</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        
+
+        <div id="definition"></div>
+
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="../index.html">Hem</a></li><li class="chapter-item "><a href="../MicriCrestomatie/0.html"><strong aria-hidden="true">1.</strong> Micri Crestomatie</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../MicriCrestomatie/1.html"><strong aria-hidden="true">1.1.</strong> Capitul 1</a></li><li class="chapter-item "><a href="../MicriCrestomatie/proverbies.html"><strong aria-hidden="true">1.2.</strong> Proverbies</a></li></ol></li><li class="chapter-item "><a href="../LiLittPrince/0.html"><strong aria-hidden="true">2.</strong> Li Litt Prince</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../LiLittPrince/1.html"><strong aria-hidden="true">2.1.</strong> Capitul 1</a></li><li class="chapter-item "><a href="../LiLittPrince/2.html"><strong aria-hidden="true">2.2.</strong> Capitul 2</a></li><li class="chapter-item "><a href="../LiLittPrince/3.html"><strong aria-hidden="true">2.3.</strong> Capitul 3</a></li><li class="chapter-item "><a href="../LiLittPrince/4.html"><strong aria-hidden="true">2.4.</strong> Capitul 4</a></li><li class="chapter-item "><a href="../LiLittPrince/5.html"><strong aria-hidden="true">2.5.</strong> Capitul 5</a></li><li class="chapter-item "><a href="../LiLittPrince/6.html"><strong aria-hidden="true">2.6.</strong> Capitul 6</a></li><li class="chapter-item "><a href="../LiLittPrince/7.html"><strong aria-hidden="true">2.7.</strong> Capitul 7</a></li><li class="chapter-item "><a href="../LiLittPrince/8.html"><strong aria-hidden="true">2.8.</strong> Capitul 8</a></li><li class="chapter-item "><a href="../LiLittPrince/9.html"><strong aria-hidden="true">2.9.</strong> Capitul 9</a></li><li class="chapter-item "><a href="../LiLittPrince/10.html"><strong aria-hidden="true">2.10.</strong> Capitul 10</a></li><li class="chapter-item "><a href="../LiLittPrince/11.html"><strong aria-hidden="true">2.11.</strong> Capitul 11</a></li><li class="chapter-item "><a href="../LiLittPrince/12.html"><strong aria-hidden="true">2.12.</strong> Capitul 12</a></li><li class="chapter-item "><a href="../LiLittPrince/13.html"><strong aria-hidden="true">2.13.</strong> Capitul 13</a></li></ol></li><li class="chapter-item "><a href="../UnDesertor/0.html"><strong aria-hidden="true">3.</strong> Un Desertor</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../UnDesertor/1.html"><strong aria-hidden="true">3.1.</strong> Capitul 1</a></li></ol></li><li class="chapter-item expanded "><a href="../Cosmoglotta/0.html"><strong aria-hidden="true">4.</strong> Cosmoglotta</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/1927.html"><strong aria-hidden="true">4.1.</strong> 1927</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/038.html"><strong aria-hidden="true">4.1.1.</strong> A 38</a></li><li class="chapter-item "><a href="../Cosmoglotta/039.html"><strong aria-hidden="true">4.1.2.</strong> A 39</a></li><li class="chapter-item "><a href="../Cosmoglotta/040.html"><strong aria-hidden="true">4.1.3.</strong> A 40</a></li><li class="chapter-item "><a href="../Cosmoglotta/041.html"><strong aria-hidden="true">4.1.4.</strong> A 41</a></li><li class="chapter-item "><a href="../Cosmoglotta/042.html"><strong aria-hidden="true">4.1.5.</strong> A 42</a></li><li class="chapter-item "><a href="../Cosmoglotta/043.html"><strong aria-hidden="true">4.1.6.</strong> A 43</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1928.html"><strong aria-hidden="true">4.2.</strong> 1928</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/044.html"><strong aria-hidden="true">4.2.1.</strong> A 44</a></li><li class="chapter-item "><a href="../Cosmoglotta/045.html"><strong aria-hidden="true">4.2.2.</strong> A 45</a></li><li class="chapter-item "><a href="../Cosmoglotta/046.html"><strong aria-hidden="true">4.2.3.</strong> A 46</a></li><li class="chapter-item "><a href="../Cosmoglotta/047.html"><strong aria-hidden="true">4.2.4.</strong> A 47</a></li><li class="chapter-item "><a href="../Cosmoglotta/048.html"><strong aria-hidden="true">4.2.5.</strong> A 48</a></li><li class="chapter-item "><a href="../Cosmoglotta/049.html"><strong aria-hidden="true">4.2.6.</strong> A 49</a></li><li class="chapter-item "><a href="../Cosmoglotta/050.html"><strong aria-hidden="true">4.2.7.</strong> A 50</a></li><li class="chapter-item "><a href="../Cosmoglotta/051-052.html"><strong aria-hidden="true">4.2.8.</strong> A 51-52</a></li><li class="chapter-item "><a href="../Cosmoglotta/053.html"><strong aria-hidden="true">4.2.9.</strong> A 53</a></li><li class="chapter-item "><a href="../Cosmoglotta/054.html"><strong aria-hidden="true">4.2.10.</strong> A 54</a></li><li class="chapter-item "><a href="../Cosmoglotta/055.html"><strong aria-hidden="true">4.2.11.</strong> A 55</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1929.html"><strong aria-hidden="true">4.3.</strong> 1929</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/056.html"><strong aria-hidden="true">4.3.1.</strong> A 56</a></li><li class="chapter-item "><a href="../Cosmoglotta/057.html"><strong aria-hidden="true">4.3.2.</strong> A 57</a></li><li class="chapter-item "><a href="../Cosmoglotta/058.html"><strong aria-hidden="true">4.3.3.</strong> A 58</a></li><li class="chapter-item "><a href="../Cosmoglotta/059.html"><strong aria-hidden="true">4.3.4.</strong> A 59</a></li><li class="chapter-item "><a href="../Cosmoglotta/060.html"><strong aria-hidden="true">4.3.5.</strong> A 60</a></li><li class="chapter-item "><a href="../Cosmoglotta/061.html"><strong aria-hidden="true">4.3.6.</strong> A 61</a></li><li class="chapter-item "><a href="../Cosmoglotta/062-63.html"><strong aria-hidden="true">4.3.7.</strong> A 62-63</a></li><li class="chapter-item "><a href="../Cosmoglotta/064.html"><strong aria-hidden="true">4.3.8.</strong> A 64</a></li><li class="chapter-item "><a href="../Cosmoglotta/065.html"><strong aria-hidden="true">4.3.9.</strong> A 65</a></li><li class="chapter-item "><a href="../Cosmoglotta/066.html"><strong aria-hidden="true">4.3.10.</strong> A 66</a></li><li class="chapter-item "><a href="../Cosmoglotta/067.html"><strong aria-hidden="true">4.3.11.</strong> A 67</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1930.html"><strong aria-hidden="true">4.4.</strong> 1930</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/068.html"><strong aria-hidden="true">4.4.1.</strong> A 68</a></li><li class="chapter-item "><a href="../Cosmoglotta/069.html"><strong aria-hidden="true">4.4.2.</strong> A 69</a></li><li class="chapter-item "><a href="../Cosmoglotta/070.html"><strong aria-hidden="true">4.4.3.</strong> A 70</a></li><li class="chapter-item "><a href="../Cosmoglotta/071.html"><strong aria-hidden="true">4.4.4.</strong> A 71</a></li><li class="chapter-item "><a href="../Cosmoglotta/072.html"><strong aria-hidden="true">4.4.5.</strong> A 72</a></li><li class="chapter-item "><a href="../Cosmoglotta/073.html"><strong aria-hidden="true">4.4.6.</strong> A 73</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1931.html"><strong aria-hidden="true">4.5.</strong> 1931</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/074.html"><strong aria-hidden="true">4.5.1.</strong> A 74</a></li><li class="chapter-item "><a href="../Cosmoglotta/075.html"><strong aria-hidden="true">4.5.2.</strong> A 75</a></li><li class="chapter-item "><a href="../Cosmoglotta/076.html"><strong aria-hidden="true">4.5.3.</strong> A 76</a></li><li class="chapter-item "><a href="../Cosmoglotta/077.html"><strong aria-hidden="true">4.5.4.</strong> A 77</a></li><li class="chapter-item "><a href="../Cosmoglotta/078.html"><strong aria-hidden="true">4.5.5.</strong> A 78</a></li><li class="chapter-item "><a href="../Cosmoglotta/079.html"><strong aria-hidden="true">4.5.6.</strong> A 79</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1932.html"><strong aria-hidden="true">4.6.</strong> 1932</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/080.html"><strong aria-hidden="true">4.6.1.</strong> A 80</a></li><li class="chapter-item "><a href="../Cosmoglotta/081.html"><strong aria-hidden="true">4.6.2.</strong> A 81</a></li><li class="chapter-item "><a href="../Cosmoglotta/082.html"><strong aria-hidden="true">4.6.3.</strong> A 82</a></li><li class="chapter-item "><a href="../Cosmoglotta/083.html"><strong aria-hidden="true">4.6.4.</strong> A 83</a></li><li class="chapter-item "><a href="../Cosmoglotta/084.html"><strong aria-hidden="true">4.6.5.</strong> A 84</a></li><li class="chapter-item "><a href="../Cosmoglotta/085.html"><strong aria-hidden="true">4.6.6.</strong> A 85</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1933.html"><strong aria-hidden="true">4.7.</strong> 1933</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/086.html"><strong aria-hidden="true">4.7.1.</strong> A 86</a></li><li class="chapter-item "><a href="../Cosmoglotta/087.html"><strong aria-hidden="true">4.7.2.</strong> A 87</a></li><li class="chapter-item "><a href="../Cosmoglotta/088.html"><strong aria-hidden="true">4.7.3.</strong> A 88</a></li><li class="chapter-item "><a href="../Cosmoglotta/089.html"><strong aria-hidden="true">4.7.4.</strong> A 89</a></li><li class="chapter-item "><a href="../Cosmoglotta/090.html"><strong aria-hidden="true">4.7.5.</strong> A 90</a></li><li class="chapter-item "><a href="../Cosmoglotta/091.html"><strong aria-hidden="true">4.7.6.</strong> A 91</a></li></ol></li><li class="chapter-item expanded "><a href="../Cosmoglotta/1934.html"><strong aria-hidden="true">4.8.</strong> 1934</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/092.html"><strong aria-hidden="true">4.8.1.</strong> A 92</a></li><li class="chapter-item "><a href="../Cosmoglotta/093.html"><strong aria-hidden="true">4.8.2.</strong> A 93</a></li><li class="chapter-item "><a href="../Cosmoglotta/094.html"><strong aria-hidden="true">4.8.3.</strong> A 94</a></li><li class="chapter-item "><a href="../Cosmoglotta/095.html"><strong aria-hidden="true">4.8.4.</strong> A 95</a></li><li class="chapter-item expanded "><a href="../Cosmoglotta/096.html" class="active"><strong aria-hidden="true">4.8.5.</strong> A 96</a></li><li class="chapter-item "><a href="../Cosmoglotta/097.html"><strong aria-hidden="true">4.8.6.</strong> A 97</a></li><li class="chapter-item "><a href="../Cosmoglotta/098.html"><strong aria-hidden="true">4.8.7.</strong> A 98</a></li><li class="chapter-item "><a href="../Cosmoglotta/099.html"><strong aria-hidden="true">4.8.8.</strong> A 99</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1935.html"><strong aria-hidden="true">4.9.</strong> 1935</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/B-001.html"><strong aria-hidden="true">4.9.1.</strong> B 1</a></li><li class="chapter-item "><a href="../Cosmoglotta/100.html"><strong aria-hidden="true">4.9.2.</strong> A 100</a></li><li class="chapter-item "><a href="../Cosmoglotta/101.html"><strong aria-hidden="true">4.9.3.</strong> A 101</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-002.html"><strong aria-hidden="true">4.9.4.</strong> B 2</a></li><li class="chapter-item "><a href="../Cosmoglotta/102.html"><strong aria-hidden="true">4.9.5.</strong> A 102</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-003.html"><strong aria-hidden="true">4.9.6.</strong> B 3</a></li><li class="chapter-item "><a href="../Cosmoglotta/103.html"><strong aria-hidden="true">4.9.7.</strong> A 103</a></li><li class="chapter-item "><a href="../Cosmoglotta/104.html"><strong aria-hidden="true">4.9.8.</strong> A 104</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-004.html"><strong aria-hidden="true">4.9.9.</strong> B 4</a></li><li class="chapter-item "><a href="../Cosmoglotta/105.html"><strong aria-hidden="true">4.9.10.</strong> A 105</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/theRest.html"><strong aria-hidden="true">4.10.</strong> The Rest</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">scritorium</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <div id="langPicker"></div>
+                        
+                        <a href="https://github.com/occidental-lang/scritorium" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#cosmoglotta-a-96-may-jun-1934" id="cosmoglotta-a-96-may-jun-1934">Cosmoglotta A 96 (may-jun 1934)</a></h1>
+<p>COSMOGLOTTA, may-junio 1934. No 5 (96)</p>
+<p>Caderne litterari. Perles del litteratura francés, sved, tchec, russ,
+portugalés, german. (Ilustrationes de R. Bg.)</p>
+<p>Du Old amicos</p>
+<h2><a class="header" href="#li-melolont" id="li-melolont">Li melolont</a></h2>
+<p>Ex francès: Le livre de l'eau, de G. Barbarin.)</p>
+<p>Sur un nimfea ha just cadet li melolont, ti imbecil.</p>
+<p>It pensa un minut, sur su platt insul, avan li immensitá del morass.</p>
+<p>Ma nu it ha departet, con marcha corageosi e resoluet. It curre tra li
+folie con li tot vitesse de su ventre, ariva sur li altri bord e cade in
+li aqua.</p>
+<p>It sucusse se, crampona se freneticmen al verd palette e, per un
+heroic ascension, trena se up sur li
+flottuore.</p>
+<p>Afamat de securitá, it ne perdi un seconde. It alontana se per
+tot rapiditá del perfid aqua, ariva al altri extremitá del folie e
+recade in li aqua.</p>
+<p>Nov inmersion, nov grimpa sur li nimfea-boye. Nov curse affolat, nov
+plongea.</p>
+<p>Li tot die, it capriola quam un bestie obstinat til quande un
+pisc, interessat de su pantomime, mette it bruscmen in un secur loc per
+un colp de musel.</p>
+<h2><a class="header" href="#li-scrite-sur-li-suol" id="li-scrite-sur-li-suol">Li scrite sur li suol</a></h2>
+<p>de Selma Lagerlöf</p>
+<p>Ex li sved trad. de Y. Sköld.</p>
+<p>Li adultera hat recivet su judicie. Ella savet, que ella va morir. Tis,
+quel trovat la, surprisat la in su pecca, trenat la til li temple,
+ductet la córam li prestres e li lege-erudites, e enunciat, que secun li
+lege de Mosé ella mey esser lapidat.</p>
+<p>Li adultera esset un compatibil, miserabil ente. Ella stat córam su
+judicantes in lacerat vestes, con blu macules in li facie pro sucusses e
+battes, ja presc aterret til morte. Ella fat null provas excusar se, ma
+esset silent. Ella anc ne fat resistentie, quande li mannes, quel hat
+venit al sacri loco con la, pussat e trenat la al loco de suplicie.</p>
+<p>Ma alquant aplatat ella semblat, su tot interiore bollit pro colere e
+odie. Repententie ella totmen ne sentit. Su marito hat esset brutal a
+ella, battet la, lassat laborar penosmen e nequande dat la un afabil
+parol. Ella ne debit le alqual fide. Li féminas in li quartere, quel
+savet quo accidet la, customat pripensar, que ella mem til nu hat esset
+patient e humil e nequande hat provat revanchar mal per mal.</p>
+<p>Subitmen ella támen expulset un penetrant, acri cri e jettat se retro.
+Ella hat avigilat se til conscientie pri ad u on hat ductet la.</p>
+<p>Ja quam infante ella hat audit chuchotar, que in li temple de Jerusalem
+existe un loco de horrore, ad u nequi vade. It es un strett, quadratic
+corte con nigri suol, includet inter mures de colossal blocs petrin. Ta
+intern existe null altar de sacrificie, null cages por columbes, null
+tables u curtageros pondera e calcula, solmen un grand cumul de tot
+ordinari lápides, tal, quel on vide les partú sur li agres, gris-blanc,
+grand quam un cap de un mann. Ella self nequande hat videt li loco, ma
+nu, quande un largi porta esset apertet violentmen e ella subitmen videt
+un cumul de gris-blanc lápides avan se, ella savet u ella esset.</p>
+<p>Chascun vez antey in su vive quande ella hat audit pri li vacui corte
+con li lápid-cumul, u ti féminas, quel hat adulterat, vell expiar lor
+pecca secun li lege de Mosé, un frisson hat traversat la. Plu horribil
+quam Gehenna it hat aparet la. E nu ella self devet esser ductet a ta.</p>
+<p>Ma a quo it servit, que ella criat e fat resistentie?</p>
+<p>Li mannes in-raffat la tra li porta per un fort capte, poy ili negliget
+mantener la, ma lassat la cader sur li suol. Ella for-reptet in un angul
+e jacet ta compatibil e sin auxilie, con li ocules ligat ye li
+lápid-cumul, quam si omni horrore sentit de ella, exeat de it.</p>
+<p>Ma alquant aterret ella esset, tam ínresistibilmen bruit odie e colere
+in ella, e to impedit la vider su propri pecca. Si ella hat posset
+parlar, ella ne vell har excusat se o suplicat pri misericordie, no,
+ella vell har vocat li furiosi mannes, que ili ha peccat plu mult contra
+ella quam ella contra ili e que li Deo de Israel va punir les, si ili
+prende vive de ella.</p>
+<p>Ella tande ne posset pensar a altricos quam al lápides e pro to ne savet
+de u ti mann hat venit, qui subitmen hat posit se avan li lápid-cumul.
+Esque il hat sedet ta intern, ja quande ella venit, o esque il esset un
+de lis curiosi de li grand corte del temple, queles hat sequet detra
+ella a ci?</p>
+<p>Pro quo il hat posit se inter ella e li lápides? Quo il volet ta? Esque
+vell esser il, qui vell comensar?</p>
+<p>Il esset un alt, gracil mann, vestit in nigri corporal vestiment e nigri
+mantele. Li capilles cadet in egal bucles adsur li epoles. Li facie
+esset bell, ma sulcat de mult
+rugas pro suffrentie circum li ocules e ye li bocca. Ella esset cert,
+que ella nequande hat videt le. «Contra te yo do nequande ha peccat.»
+ella pensat. «Pro que tu vole judicar me?»</p>
+<p>Que il vell har advenit por sucurser la, null moment venit in su mente.
+Ma malgré to evenit un alteration in ella self, pos har aperceptet le.
+Li opression sur li péctor aleviat se. Ella posset respirar, sin que it
+sonat quam li stertorada de un moriente.</p>
+<p>Li altres, su patre, su marito, su fratre, li mannes del quartere,
+queles hat ductet la a ci e nu vell mortar la, hat stoppat un moment in
+lor impetuós avansa. Quelc mannes, quel customat passar li dies in li
+temple pregante o inprofundat in sacri interparladas, hat sequet ad-in
+li morn corte, e un de ili hat dat ordon pri ajorna del execution.</p>
+<p>Poy li adultera audit un rapid chuchota in li homamasse detra ella. Ella
+distinctet alquo tal quam: «Lassa nos usar ti ci occasion! Lassa nos
+audir, esque il audacia abnegar li lege de Mosé!»</p>
+<p>Poy li fémina videt, qualmen du lege-erudites, du old mannes con
+argent-blanc barbes e peliss-bordat manteles, aproximat se al
+nigri-vestit foreno e fat un reverentie córam il. «Mastro», li un dit,
+«ti ci fémina ha esset surprisat in plen action de adulterie. Nu Mosé
+ordona in li lege, que teles mey esser lapidat. Quo tu do di?»</p>
+<p>Ti, qui hat esset salutat mastro, levat tande su pesant palpebres. Il
+regardat al du questionantes, al patre, li marito, li fratre, li mannes
+de li cité, queles hat acompaniat la til li temple, a
+lege-erudites, fariséos, a omni ti altres, quel apartenet al temple e
+ta havet su existentie.</p>
+<p>Quande li mastro per ocules hat surpassat omni facies, il clinat se ad
+infra e scrit per li fingre sur li suol, quam si il ne opinet it esser
+convenent dar les alcun response. Ma li du lege-erudites fortiat le
+responder, e tande il levat se e dit a ili:</p>
+<p>«Ti de vu, qui es sin pecca, mey jettar li unesim lápide sur ella!»</p>
+<p>Quande li amasse de mannes audit to, ili respondet per un ridache. Nam
+quel response to esset? Si alquo tal vell devenir un regul, tande vell
+restar ínpunit omni criminard.</p>
+<p>Li adultera lamentat pianmen. Malgré li saventie pri su pecca ella támen
+hat esperat, que li foreno vell dir quelccos, quo posset salvar la. Nu
+ella comprendet, que omni esperantie es in for. Ella abassat li cap e
+ahoccat se, expectante li pluvia de lápides durant gue tis, quel
+partiprendet in li punition, demettet lor manteles e up-tirat
+li corporal vestiment. Li foreno ancor stat ye li sam loco, ma il ne
+plu semblat partiprender in to quo evenit, il hat denove clinat se ad
+infra e scrit sur li nigri suol.</p>
+<p>Li unesim, qui aproximat se a li lápid-cumul, esset li propri patre del
+adultera, proque il esset ti, del rasse de qui ella hat venit e qui pro
+to sentit li pudore de ella max profundmen. Il inclinat se por elevar un
+lápid, ma tande il hasardmen regardat al suol. E ta il videt scrit,
+forsan ne per lítteres, ma támen clar e comprensibil, li historie pri un
+horribil assassination fat de il ante mult annus e quel til tande
+nequande hat esset revelat.</p>
+<p>Ye ti vision li patre retroeat in grandissim terrore. In ínmeditant
+hasta, sin mem araffar se li demettet mantele, il precipitat se de ta.</p>
+<p>Tande li fratre strax hastat ad-avan corecter li conduida del patre,
+quel il interpretat quam li debilitá de un old mann por su infante. Ma
+quande il clinat se ad infra por prender li lápide, quel il volet jettar
+contra ti sestra, qui hat deshonorat le, anc il hasardmen regardat al
+suol.</p>
+<p>Tande il videt ta notat, forsan ne per lítteres, ma támen clar e
+comprensibil, un deshonoration de un sacri loco, quo il hat fat unquande
+in juvenil petulantie e quo vell custar le su civitá in Israel, si it
+esset aconosset.</p>
+<p>Il esset captet de terrore. Il tramplat sur li scrite por anullar it, ma
+it brilliat tam clar. Tande il forprecipitat se, sucusset al látere
+omnes, quel volet impedir le fugir.</p>
+<p>Li adultera reptet un poc plu ad avan ex su angul. Li capilles pendet in
+toffes sub li fronte. Ella retrocaressat les. Ella ordinat li lacerat
+vestes.</p>
+<p>Nu esset su marito, qui vadet ad avan. In altissim gradu irritat pro li
+debilitá del patre e del filio, il clinat se ad infra súper li lápides.
+Su tot córpor dolet pro cupiditá a venjar. Il ne posset imaginar plu
+dulci voluptá quam mortar li marita. Ma tande up-flammat sur li suol un
+scrite, o forsan esset solmen quelc signes. Ili narrat pri un
+conspiration contra li roman procurator, in quel il esset invelopat e
+quel vell dar le li morte sur li cruce, si it esset decovrit tro
+temporan.</p>
+<p>Il levat se, e proque il esset un prudent mann, il fat un compatient
+mime, murmurat alquo, que anc il ne vole judicar e forvadet.</p>
+<p>Quande to evenit, li lege-erudites, quel antey hat parlat a li mastro,
+esset captet de grand curiositá e terrore e hastat ad avan, ne por
+prender un de li lápides, ma solmen por far saver, quo il scrit sur li
+suol, quo posset far un tant potent efect.</p>
+<p>Tande li unesim de li potent mannes videt, que ta stat scrit, que il
+unquande hat translocat sin permission li lápides de límite inter su
+propri agre e ti del vicino. Li duesim videt, que il hat ínlegalmen
+procurat se un grand parte de ti possedage, quel il hat administrat por
+un pupillo.</p>
+<p>Ili fat ambi un profund reverentie córam li scritor, plicat lor facies
+quam si ili hat esset emotionat e desaparit con bon statura.</p>
+<p>Ma quande ti mannes, quel hat esset inter li judicantes de ella,
+forvadet, li adultera levat se ye li genús. Un currente de nov corage
+fluet tra ella. Ella conceptet solmen ínclar qualmen omnicos hat
+procedet, ma ella comprendet que ella vell esser salvat, que ella ja es
+salvat. Li vital spíritu plenat la con abundant joy, strangi spasmas
+aparit tra su tot córpor. It esset íncredibil, ma ella sentit, quam si
+ella hat volet dansar.</p>
+<p>Ancor ella támen ne esset totmen salvat, nam nu lis céteri present
+precipitat al scritor por capter li lápides e executer li judicament. Ma
+un pos altri retroeat, quande ili regardat al suol. Vice prender li
+mortativ lápides e dar li punition, ili forhastat, trement e pallid quam
+li morte, con li ocules timidmen detornat e li epoles contraet.</p>
+<p>Quande nequi de ili restat adplu, li adultera stat erectet. Ella hat
+recivet vive in li ocules, e li antey gris-pallid guancies hat comensat
+rubijar. Ella ancor stat ínmovent, ma ancor ne esset suficent con li joy
+esser salvat. Ella anc hat posset vider su ínamicos aterret e humiliat,
+ella esset ebri pro li dulcesse del venjament. Ella volet dansar ci
+ye ti ci maledit loco, dansar córam li lápides, queles con jure devet
+har aplatat la.</p>
+<p>Tande li foren mastro levat se e regardat a ella.</p>
+<p>«U es li altres?» il questionat. «Esque nequi ha judicat te?»</p>
+<p>«Dómino, nequi», ella respondet. Strax ella pensat, que nu ella ne plu
+posse retener li joy. Nu ella es fortiat dansar.</p>
+<p>Ma li mastro continuat regardar a ella.</p>
+<p>Il videt li índomitat joy bestial, quel logiat in ella. Il videt, que
+ella ne sentit repententie pro su pecca. Il videt, que ella esset plen
+de odie e vole a revenjar e corporal cupidie.</p>
+<p>Ella savet, que il videt ti omnicos, e ella perdit li vole a dansar.
+Ella devenit timid pro li mann, qui hat salvat la. Ella videt le
+circumradiat de luce del ciel, e ella tre timet. Ella credet, que ne
+vell esser li moment de il judicar la. It vell devenir un
+judicament, plu rigorosi quam li anterior, proque ti mann havet jure
+abominar li pecca, quel logiat in ella.</p>
+<p>Ma in su anxie ella audit le dir:</p>
+<p>«Anc yo ne judica te. Vade, e ne pecca plu!»</p>
+<h2><a class="header" href="#li-poetes-de-occidental" id="li-poetes-de-occidental">Li poetes de Occidental</a></h2>
+<p>Li autor tchec Jaroslav Podobsky opine que inter omni lingues
+international, Occidental es li max apti por poesie e li bell
+litteratura. E, pos har publicat du libres de poesles in tchec, il self
+va nu composir in Occidental. Vi su unesim pezze in «verses blanc»:</p>
+<h3><a class="header" href="#un-die-in-septembre" id="un-die-in-septembre">Un die in septembre</a></h3>
+<p>[verse]</p>
+<hr />
+<p>Quam profundmen hodie yo ha esset
+per transparenti lontanesse ravisset!
+Quam si yo vell har regardat in dulci somniette
+alcú in nigri silva in un puri fontanette!</p>
+<p>Li pur ciel esset bluatri, plen d'odores,
+desaparit li nubes e vapores
+e omnicos, que yo desirat vider,
+quam in un pur cristall yo ha posset leer!</p>
+<p>Tu dulci mensu mi amabil,
+Ples dar me, que li dies de mi vita
+mey esser quam tui pur e agreabil!
+Por regardar tam clarmen in mi propri ánim
+Ples tui dulci tranquiltá me dar,
+e tui brillianti luce calm e clar!</p>
+<hr />
+<p>Jaroslav Podobsky, 1934.</p>
+<h3><a class="header" href="#moriente" id="moriente">Moriente</a></h3>
+<p>de Jiri Wolker</p>
+<p>[verse]</p>
+<hr />
+<p>Quande yo va esser mort,
+necos sur ti ci munde va evenir e changear,
+solmen quelc cordies va tremer in rosé
+quam in matin li flore,
+milles ja morit, milles mori,
+milles fatigat a morte va ear,
+nam nequi senti self
+del nascentie e del morte dolore.</p>
+<p>Li morte yo ne time,
+it es solmen un parte del penos vive,
+li morte ne es malicios,
+it es li agonie, quel es mal,
+quel es horrore,
+quande li senses in li volada tirat
+cade de omnicos, de omnicos,
+e in li oxidat tub del córpor
+quam aqua stant putri li témpor
+e destructe chascun muscul,
+ocules, nerves e manus,
+per quel tu inbrassat li mund
+e amat it tant annus.</p>
+<p>Adío, mi puella, adío, amanta,
+adío, image charmant,
+on alontanat mi manus de tui sinu,
+on ruinat mi cordie amant,
+li pensa a te, quam aurin flech,
+durant un demí de annu me ha trapicat;
+quande yo stat mal, it plu dolorat,
+quande plu bon, it auxiliat.
+Ma hodie adío, hodie ja omnicos es van,
+yo scri un lettre hodie,
+que tu mey obliviar me
+e serchar in un altri loc,
+ú on vell posser calmar tui cordie;
+ti lettre esset mi max grand dolor,
+max grand chagrin,
+ma in agonie on deve esser sol e sol,
+abandonat in fin.</p>
+<p>Quande yo va esser mort,
+necos sur ti ci munde va changear e evenir,
+forsan un infante, forsan un árbor,
+forsan un amasse de lápides yo va devenir,
+yo va mi misere perdir
+e changear ex omnicos,
+li morte yo ne time,
+it es quam un parte del penos vive,
+li morte ne es malicios.</p>
+<hr />
+<p>Ex li tchec traductet Jaroslav Podobsky.</p>
+<p>(Jiri Wolker es un poete de Moravia morit in 1924, in li etá de 24
+annus.)</p>
+<h3><a class="header" href="#li-svin-sub-li-querc" id="li-svin-sub-li-querc">Li svin sub li querc</a></h3>
+<p>Fabul de Krylow</p>
+<p>[verse]</p>
+<hr />
+<p>In l'ombre de un querc un stulti svin trovat
+Yelb glandes in grandissim abundantie,
+{nbsp}{nbsp}{nbsp}{nbsp}E il vorat les e vorat
+{nbsp}{nbsp}{nbsp}{nbsp}Presc til crepantie.
+Tre satisfat de ti eveniment,
+{nbsp}{nbsp}{nbsp}{nbsp}Il fat se un amusament
+Li terre circum l'alti querc fossante.
+{nbsp}{nbsp}{nbsp}{nbsp}Vidente to, un corvo le clamat:
+-- «Nudar li radicas? Ho bestie damnat!
+{nbsp}{nbsp}{nbsp}{nbsp}Tu fa perir ya li árbore.»
+-- «It mey perir, to es ya nullmen grav:
+Yo manja solmen sui glandes suav.»
+{nbsp}{nbsp}{nbsp}{nbsp}-- «Feroci creatura!»
+Clamat alor li querc in su chagrin:
+{nbsp}{nbsp}{nbsp}{nbsp}-- «Ti glandes es ya mei genitura,
+Levante l'ocules, tu vell vider to, svin!»</p>
+<hr />
+<p>(Ex russ trad. A. Kofman, Odessa).</p>
+<h2><a class="header" href="#leer-e-scrir" id="leer-e-scrir">Leer e scrir</a></h2>
+<p>de A. Castilho</p>
+<p>Qual bell cose, mi paisan amícos, es li arte leer e scrir! Un
+paperfolie, quel in su ne orígine ne esset plu quam quelc verd
+herbfolliettes, depoy fibrettes sicc e grisatri, in li dies de su major
+glorie forsan un camise, e poy un chiffon despreciat e obliviat; un
+paperfolie posse esser cause de delicies e felicitás. Per su medie un
+hom, ne conosset e cludet in su angulette, strax quande Deo jetta in su
+anim un rapid reflecte del veritá e del suprem bene, il capte ti radie
+de cielin lúmine, generosmen dismisse it partú, solidifica it, sam quam
+de un gase quel on ne vide ni palpa, in li fund del miniera un diamant
+es fat; il jetta it talmen preparat in li comun tresor del homan
+conossenties...</p>
+<p>...Li letura, mi amícos! ... esque vu save bon to quo es li letura!?
+De omni artes it es ti quel minim custa e max producte. It es libres,
+quel, similant a miraculos barcettes, íncoruptibil e ínnaufrageabil,
+porta nos tra li ocean del epocas por descovrir, visitar e conosser li
+tot munde existent: li antiqui popules revive por nos con omni lor
+usanties, customes, vestimentes, fisionomies, credes, idés, vicies,
+vertús, interesses e relationes: li historie es li mastre del vive, e
+su leciones es li augmentation e complement de nor natural judicament:
+ex to quo ha esset, noi aprende to quo va esser.</p>
+<p>Ma ne es solmen li historie, mi amícos, quel charma nos, instructente
+nos: desde li matematica, quel pondera e mesura li astres, til li max
+humili mestiere, ne es scientie, arte o oficie, pri quel li libres ne
+instructe nos, amusante nos. Si vu lee durant li vésper, vu cultura plu
+bon e plu productivmen in li sequent die, vu save plu bon conservar vor
+fructes e directer con plu grand interesse vor possedages; li sam
+eveni a vor vicines. li forjero, li carpentero, li tinturero, li
+textero, etc.</p>
+<p>Li population quel save leer e lee, prospera plu, es plu pacific e
+moralisat, plu unit e rich, plu potent, plu content, plu amabil e plu
+amat. Nam, vu besona saver, mi amicos, que omnicos li homes ha descovrit
+e inventet por augmentar lor forties, lor richesses, lor sanitá, lor
+vertús, lor amorós relationes e li númere de hores dulci e joyós,
+omni ti coses, depoy mani secules til nor témpor, on ha conservat
+cuidosimen in li libres. To es un patrimonie de scientie e bonitá, quel
+cresce sin cessa de patres a infantes, de ú chascun posse prender grand
+manuades ex to quo convene le, e ad ú chascun have li jure e mem li
+agreabilissim deventie portar lu poc o lu mult per quel su judicament ha
+providet le; it es un comercie mutual de omni témpores e de omni
+animes, ex quel nequi surtit detrimentat, e in quel mem donante on
+recive.</p>
+<p>(Ex portugalés trad. Ismael Gomes Braga.)</p>
+<p>(Antonio Feliciano de Castilho es un famos poete e prosator portugalés
+1800-1875.)</p>
+<h2><a class="header" href="#proverbies" id="proverbies">Proverbies</a></h2>
+<p><em>(Trad. W. Gilbert, Francia)</em></p>
+<p>[quote, Goethe]</p>
+<hr />
+<p>Un vive ínutil es un morte anticipat.</p>
+<hr />
+<p>[quote, Vauvenargues]</p>
+<hr />
+<p>Li necessitá delivera nos del embarrasse del selection.</p>
+<hr />
+<p>[quote, La Rochefoucauld]</p>
+<hr />
+<p>It es un grand habilitá saver celar nor habilitá.</p>
+<hr />
+<p>[quote, Gray]</p>
+<hr />
+<p>Esser ocupat significa esser felici.</p>
+<hr />
+<p>[quote, H. Browning]</p>
+<hr />
+<p>Quande un hom intra in lucte contra se self, il comensa haver un
+valore.</p>
+<hr />
+<p>[quote, H. W. Holmes]</p>
+<hr />
+<p>Saver qualmen on falli es comprender qualmen on successa.</p>
+<hr />
+<p>[quote, Marc Aurele]</p>
+<hr />
+<p>Quant líber témpor on gania per ne atenter quo nor proximo ha dit, fat
+o pensat, e per occupar se unicmen pri su propri afferes!</p>
+<hr />
+<p>[quote, O. Feuillet]</p>
+<hr />
+<p>Li espera es quam li nocte-ciel: ne existe loc sat obscur u li ocul
+quel atarda se ne successa decovrir un stelle.</p>
+<hr />
+<p>[quote, Paul Pottier]</p>
+<hr />
+<p>Li hom quel renuncia li effortie, renuncia li vive.</p>
+<hr />
+<p>[quote, Lacordaire]</p>
+<hr />
+<p>Li silentie es, pos li parlada, li duesim potentie del munde.</p>
+<hr />
+<p>[quote, Systema Pelman]</p>
+<hr />
+<p>Haver nequel scop es drivar; haver tro mult de it es misusar nor
+energie.</p>
+<hr />
+<p>[quote, J.-j. rousseau]</p>
+<hr />
+<p>Viver ne es respirar; it es acter.</p>
+<hr />
+<p>[quote, Maeterlinck]</p>
+<hr />
+<p>Li infelicie veni in nos, ma it fa solmen quo on ordona it far.</p>
+<hr />
+<p>[quote, Goethe]</p>
+<hr />
+<p>Qui ne es currosi save necos.</p>
+<hr />
+<p>[quote, Victor Hugo]</p>
+<hr />
+<p>Yo esset micri, con li desir esser grand.</p>
+<hr />
+<p>[quote, Beauchere]</p>
+<hr />
+<p>Ti quel fa sempre quo il vole, fa rarmen quo il deve.</p>
+<hr />
+<p>[quote, Euripide]</p>
+<hr />
+<p>Ne es util iritar se contra li circumstanties, ili es surd avan nor
+colere.</p>
+<hr />
+<p>[quote, Dostoiewski]</p>
+<hr />
+<p>Except li nascentie, li tot rest posse esser acquisitet per talent,
+saventie, inteligentie, genie.</p>
+<hr />
+<p>[quote, De Girardin]</p>
+<hr />
+<p>Li munde apartene a tis qui leva se temporan.</p>
+<hr />
+<p>[quote, ,Ex: «Li mil e un noctes»]</p>
+<hr />
+<p>Ne afecta marchar con vor cap levat, e parlar tre vocosimen, nam si
+haver un fort voce vell esser un avantage, li ásine vell esser li max
+perfect animale.</p>
+<hr />
+<p>[quote, H. W. Holmes]</p>
+<hr />
+<p>It es ínutil rasonar con lu ínevitabil: li sol argument convenient
+contra li vente es cluder nor fenestre.</p>
+<hr />
+<p>[quote, Franklin]</p>
+<hr />
+<p>Li creditores have plu mult memorie quam li debitores.</p>
+<hr />
+<p>[quote, Henri Heine]</p>
+<hr />
+<p>Ti quel pensa al morte es ja demí morit.</p>
+<hr />
+<p>[quote, Tourguéneff]</p>
+<hr />
+<p>Li natura ne es un temple, it es un ateliere e li hom es tá un ovrero.</p>
+<hr />
+<p>[quote, Mayne reid]</p>
+<hr />
+<p>Un avie in li manu vale plu quam du sur li árbor.</p>
+<hr />
+<p>[quote, Sterne]</p>
+<hr />
+<p>Comerciante, un bon sensat hom di nequande omni to quo il pensa.</p>
+<hr />
+<p>[quote, O. W. Holmes]</p>
+<hr />
+<p>Ocupa vos pri vor aferes, e vu bentost va haver aferes quel va ocupar
+vos.</p>
+<hr />
+<p>[quote, Lessing]</p>
+<hr />
+<p>Li natura ha dat nos du oreles e un sol bocca, a fin que noi mey
+escutar mult e que noi mey parlar poc.</p>
+<hr />
+<p>[quote, P. Monsabré]</p>
+<hr />
+<p>In li lucte por li vive, li unesim ínamico a combatter es se self.</p>
+<hr />
+<p>[quote, Gogol]</p>
+<hr />
+<p>Li propri-amore es un fortie quel da impulsion al facultás del hom.</p>
+<hr />
+<p>[quote, Herbert N. Casson]</p>
+<hr />
+<p>Li gross beneficies es reservat a tis quel posse subportar gross
+perdes.</p>
+<hr />
+<p>[quote, Franklin]</p>
+<hr />
+<p>Li pigritá es tam lent, que li misere atinge it rapidmen.</p>
+<hr />
+<hr />
+<p>Li amicos es quam li parapluvies, on nequande trova les quande it
+pluvia.</p>
+<hr />
+<hr />
+<p>Nequo separa plu fortmen du entes quam diferent opiniones pri li deve
+e li honor.</p>
+<hr />
+<h2><a class="header" href="#sententies" id="sententies">Sententies</a></h2>
+<p>(Trad. E. de Wahl.)</p>
+<p>Si li factes, a queles noi es contraposit, contradí al teorie, tande on
+deve aconosser li factes e far cader li teorie, anc si ti ci es enunciat
+de grand erudites e es regardat quam generalmen aconosset.   Claude
+Bernard.</p>
+<p>Noi ne fa changes por far diversion, ma noi nequande hesita interprender
+un changeament strax quande it es demonstrat que li nov via es plu bon
+quam li anteyan metode.  Ford.</p>
+<p>Li dúbita mey esser por li homes un vaccination preventiv contra li
+desilusion, ma li dúbita es anc li mortation de omnicos grand.
+Schulenburg.</p>
+<p>Probabilmen it nequande va esser atinget que on mey judicar li action
+secun li hom, vice li hom secun li action.</p>
+<p>Por li ver felicie on paya li compra-summa in avans, por li fals depos.</p>
+<h2><a class="header" href="#historie" id="historie">Historie</a></h2>
+<p>QUI COMPOSIT LI UNESIM DICTIONARIUM?</p>
+<p>Si on vell demandar a mil persones quel es, inter omni libres, li max
+util, ti quel es max usat, sin dubita li 1000 persones vell responder:</p>
+<p>-- It es li dictionarium.</p>
+<p>-- E qui ha inventet li dictionarium?</p>
+<p>Ci, null del mil persones vell responder, pro ignorantie.</p>
+<p>Li max ancian conosset ovre de ti specie existet in III-im secul ante
+J.-C. It esset composit ex 120 tomes. Su autore hat dat a it quam
+titul: Museo.</p>
+<p>In 1502 apparit un «dictionarium» de paroles latin, scrit de Ambrogio
+Calepino.</p>
+<p>Durant li Renascentie, du grammaticos eminent, Robert Estienne e su
+filio Robert fat apparir un dictionarium latin e un dictionarium
+quel esset long témpor celebri.</p>
+<p>Ma solmen in 1584 aparit li unesim dictionarium francés, de quel li
+paroles esset rangeat per alfabetic órdine. Su autor esset nominat</p>
+<p>Nicot.</p>
+<p>Li unesim dictionarium italian esset composit 18 annus plu tard. In 1756
+aparit li unesim enciclopedie german.</p>
+<p>Depoy ne es un sol land quel ne possede li sui. Felicimen, nam... quo
+on vell far sin dictionarium?</p>
+<p>(Ecolier Romand.)</p>
+<p>Amalté es li nómin del capra quel alactat Jupitet: ti deo plazzat la
+in li Ciel con su caprelles. Il donat un de su cornes al
+Nymphas, quel hat cuidat su infantie, con li
+potentie far producter de it quo ili desirat.
+Vi li orígine del «corn de abundantie».</p>
+<p>Li antimon es un metalle tre dur, tre brilliant quel servi in li
+composition del lítteres printeric. Ti decovrition es atribuet a un
+monaco nominat Valentin. Ti monaco, quel serchat li famosi filosofal
+petre, jettat al svines li residue de su experienties; il constatat que
+li animales quel hat manjat de it, pos har esset purgat violentmen,
+hat devenit poy plu grass. Il imaginat tande far li sam prova sur su
+confratres monacos, ma li dose hant esset tro fort, li religioses
+morit pro it. De to ha venit li nómine
+antimon quel on dat plu tard a ti mineral.</p>
+<p>Li max ancian bastament.</p>
+<p>Li unesim bastament (A. strike, D. Streik, F. grève) historicmen certmen
+constatat esset un bastament de musicos. Li roman autor Titus Livius
+raporta que in 311 ante nor era li roman guilde del musicos (li
+«tibicines») mettet se junt in bastament, pro que on hat anullat les
+li banquette gratuit a quel ili havet jure desde long témpor, e quel in
+chascun annu esset celebrat sur li Capitol. Excitat per ti ruptura de
+sacri traditiones, li musicos emigrat de Roma e transmigrat al proxim
+Tibur (li modern Tivoli). Li roman magistrates esset in grandissim
+embarass, pro que li sacrificies al deos absolut ne posset esser fat sin
+musica. On applicat pro to un tric, i.e. on fat ebri li musicos un pos
+un e ductet les retro a Roma sur grand furgones. Tárnen li bastament
+finit per un plen success del bastamentantes, pro que li
+censores adjudicat denove al musicos lor ancian privilegies por far
+impossibil por omni témpores tal desagreabil
+evenimentes.</p>
+<p>K{dot} Janotta (Wien).</p>
+<h2><a class="header" href="#li-féminas-es-plu-intoxicatori-quam-li-mannes" id="li-féminas-es-plu-intoxicatori-quam-li-mannes">Li féminas es plu intoxicatori quam li mannes</a></h2>
+<p>In omni témpores, li record del intoxicationes es tenet del bell sexu.
+Li pluparte del intoxicationes es debit al féminas: li proportion es
+circa 70%.</p>
+<p>Pro quo? Pro que li fémina, ne havente li fortie, es obligat recurrer al
+astutie.</p>
+<p>Do, li fémina ha intoxicat in li antiquitá, ella ha intoxicat in
+medievie, ella continuat in 17im secul, in li 18im; e in nor dies, li
+intoxicatoras es, ho ve, ínnumerabil. On posse dir que li toxic es un
+feminin arm.</p>
+<p>Qualmen on intoxicat, antey Presc sempre per arsenic, tam plu que solmen
+in 18im secul li celebri chimist Marsch inventet un apparate demonstrant
+con certitá li presentie de arsenic in li homan córpor. Li Brinvilliers,
+li Voisin, famosi intoxicatoras del 17im secul, usat exclusivmen
+arsenic. Altres usat ópium; ma per ti toxic li efecte ne es sat secur.
+On anc mentiona libres de queles li págines esset vernissat de
+subtil toxicos; ma on ne have precis informationes pri ti toxicos.
+Esque it actet se pri mandragore, pri orpiment, pri realgar? Ti du
+ultimes es ancor derivates del arsenic.</p>
+<p>It es trist constatar que hodie on ne intoxica minu quam antey. Li sol
+progress consiste in li drogues usat: on ne usa plu arsenic.</p>
+<h2><a class="header" href="#celebri-manjatores" id="celebri-manjatores">Celebri manjatores</a></h2>
+<p>In li cap del turbe del gurmandes, on posse citar Apicius, quel vivet
+sub li reyitá de Tiberius e quel morit quam gastronom, intoxicante se
+durant un ultim festin. Il hat composit un «Manuale pri li maniere
+acutar li apetite» e intitulat «De gulae irritamentis».</p>
+<p>On cita anc li imperator Claudius Albinus, quel manjat in un sol dejuné
+quin cent figs, cent persics, deci melones, circa deci kilos de vinberes
+e triant-tri dozenes de ostres. Li imperator Maximinus, successor de
+Alexandre Sever devenit tant gross que du mannes esset chargeat subtener
+su ventre. Il portat quam anelle circum su fingres li brasselette de su
+sponsa.</p>
+<p>Li imperator Vitellius havet li custom far quar o quin grand repastes
+omni dies. Un de ti repastes esset composit de 2000 piscos e de 7000
+avies rari e saporosi. Un altri vez, il manjat li contenete de un vase
+plenat de hépates, de fasanes, de lingues de scares, de cerebres de
+pavones, de intrallias de murenes.</p>
+<p>Ex francés trad. R. Bg.</p>
+<h2><a class="header" href="#qualmen-on-informa-se-pri-li-sanitá-del-altres-in-li-divers-landes" id="qualmen-on-informa-se-pri-li-sanitá-del-altres-in-li-divers-landes">Qualmen on informa se pri li sanitá del altres in li divers landes</a></h2>
+<p>Li Francese questiona: Qualmen vu ea? Li Germane: Qualmen vu trova vos?
+Li Anglese: Qualmen vu fa? Li Italiane: Qualmen vu tene vos? Li
+Russe e li Hollandese: Qualmen vu vive? Li Svede: Qualmen vu posse?
+Li Chinese: Quo fa vor stomac, ha vu manjat vor ris? Li Egiptiane:
+Quel es tui statu? Li Persan: Mey tui ombre nequande diminuer!</p>
+<h2><a class="header" href="#scienties" id="scienties">Scienties</a></h2>
+<h3><a class="header" href="#animales-quam-medicos" id="animales-quam-medicos">Animales quam medicos</a></h3>
+<p>(Ex Joseph Delmont «20 Jahre Grosstier-Fang»)</p>
+<p>Omni animales, sin exception, es covrit de parasites, e it es
+interessant que li parasites self suffre sub ancor plu micri vexardes.</p>
+<p>In li african steppe, sur li Nil e altri aquas continental, on
+sempre vide sur li dors del animales divers avios, diligentmen ocupat
+manjar
+divers insectes, vermes, pedicules, pulces, tics queles pulula sur e in
+li pelle de su hóspedes.</p>
+<p>Li animales save quel servicie amical les fa li avios, e tolera it
+ne solmen que tis libera les del parasites vivent sur li pelle, ma,
+mem ne protesta si li diligent alates fende
+per lor bec li pelle de lor hóspedes -- quo certmen ne es fat sin dolor
+-- per extraer li subcutan tics e vermes.</p>
+<p>Si ti avios vell subitmen formorir, tande vell exploder epidemies e
+maladies dermatic queles vell haver quam secuentie li extintion de mult
+géneres de animales.</p>
+<p>Ex german traductet E. de Wahl.</p>
+<h3><a class="header" href="#li-statistica-del-capilles" id="li-statistica-del-capilles">Li statistica del capilles</a></h3>
+<p>Un capille alonga se de 10 til 15 cm in un annu, ad maxim 18 cm. Li
+crescentie in longore del capille augmenta del infantie til li
+etá de 20 a 30 annus; desde ti etá, li
+crescentie diminue. Sur li cap del olde ne
+plu cresce nov capilles; li cadida ne plu essente compensat
+per li capilles novmen format, li calvitá
+eveni.</p>
+<p>Li medial longore de un capillatura de fémina, sur quel ne ha passat li
+tondette del capillero, es 50 cm; ma on ha constatat anc longore
+de capilles til 180 cm che li fémina. Anc on ha trovat barbes
+con longore de 2 metres.</p>
+<p>Li durada de vive de un capille es generalmen de 2 til 3 annus,
+ma quelc capilles resiste til 4 annus (In revancha, li crines del
+cilies dura solmen tri til quar mensus). Strax quande un capille atinge
+un cert longore, forma se in li radica un nov
+capille quel va vicear li ancian destinat
+desaparir.</p>
+<p>Li scientist Jesionek havet li patientie recenser li capilles de
+mult persones; il constata que un cap bon garnit have 90.000 til
+140.000 capilles. Li fin capilles del blond
+féminas sembla esser max numerosi, durant que
+li gross ross capilles es inter li minim
+rich.</p>
+<p>Ex francés trad. Ric. Berger.</p>
+<h3><a class="header" href="#un-lacerte-quel-jetta-su-caude" id="un-lacerte-quel-jetta-su-caude">Un lacerte quel jetta su caude</a></h3>
+<p>Un del creaturas max curiosi del arbust-landes es li lacerte conosset
+sub li nómin de biciclette-lacerte, pro su special maniere moer se. It
+have li custom, quande it es persequet tre proxim, jettar for su caude
+por detornar li atention de ti quel perseque it. It sembla que it posse
+separar se de ti membre secun voluntá, e quande it ha fat it, li caude
+continua agitar se e saltar durant quelc minutes, quam si it vell haver
+un vive índependent. Pro ti fenomen, li persequente halta e examina, quo
+permisse al micri animale escapar de il. Quande li reptil ha talmen
+abandonat su caude, un altri nov cresce pos quelc dies.</p>
+<h3><a class="header" href="#un-ingeniosi-explication" id="un-ingeniosi-explication">Un ingeniosi explication</a></h3>
+<p>Durant pluri secules, on ha mult polemisat por e contra li teories de
+Galiléo concernent li rotation del terre circum li sole. Un monaco
+italian, quel hat esset convictet de ti teories, subtenet in un societé
+li ínmobilitá del sole in li centre de nor sistema planetari. Ma un
+colego objectet le que secun li Sancti Scritures, Josué hat fat
+stoppar li sole e que on ne da un tal ordon a quo es ínmobil!</p>
+<p>«Yes, respondet nor monaco, ma it es justmen desde ti témpor que li
+sole ha cessat tornar circum li terre e que it ha devenit ínmobil!!!»</p>
+<h4><a class="header" href="#lignin-gambes-e-fals-dentes" id="lignin-gambes-e-fals-dentes">Lignin gambes e fals dentes</a></h4>
+<p>On ne deve creder que li lignin gambes, li fals dentes, e in general, li
+usa del membres artificial, es modern invention; li coquetteríe ne es
+de hodie e li féminas, desde li max alt antiquitá, fat metter se fals
+dentes (Li mannes comensat mult plu tard).</p>
+<p>In Old sarcofags exterrat in Etruria, on ha decovrit artificial dentes
+fat ex ligne de sicomore, e ti dentes existe certmen desde 1700 annus
+ante J.-C.</p>
+<p>Li ancianes ha anc conosset li lignin gambes. Sur un vase greco-roman in
+li museo del Louvres (Paris), on posse vider un satire con un lignin
+gambe; on ha anc trovat un lignin gambe in un tombe in Capua, in
+Italia.</p>
+<p>Herodot mentiona fals pedes, Plinius un artificial manu. Ma li ver
+scientie del artificial membres e su aplication origina de Ambroise
+Paré, li grand chirurgo del 16im secul.</p>
+<h3><a class="header" href="#curiositá-matematic" id="curiositá-matematic">Curiositá matematic</a></h3>
+<p>Prende un folie de paper e un crayon, e scri li númer 142, 857. Poy
+multiplica ti númer per 1 (to es ja fat), per 2, 3, 4, 5 e 6, poy
+compara li six productes inter ili. Vu va constatar tri factes
+extraordinari: a) On retrova in omni resultates li sam 6 ciffres; b)
+Ti ciffres ne muta li órdin in quel ili appari li unesim vez; c) Ma
+chascun ciffre figura successivmen in li comensa del producte obtenet.</p>
+<p>In ultra, si vu multiplica ti númer per 7, vu obtene 6 sam cifres!</p>
+<h3><a class="header" href="#li-flores-emblematic" id="li-flores-emblematic">Li flores emblematic</a></h3>
+<p>Desde li cade del reyatu, Francia ne plu have flor emblematic e li lilie
+florea ancor solmen sur li baniere de Johanna d'Arc. Ma it ne es lu sam
+in li altri landes u li old alegories floral persiste perviver. Por
+exemple, Anglia es sempre li land del rose, quam Scotland li land del
+carde e Irland ti del rubi trifolie. Japan have quam emblema un
+crisanteme e Canada li folie de acere. Australia ha adoptet li mimosa e
+Germania, sempre sentimental, li centauréa. In fine USA renunciante li
+violette, intente selecter li margarita. Russia prefere li spica de
+frument.</p>
+<h2><a class="header" href="#save-vu-que" id="save-vu-que">Save vu que...</a></h2>
+<p>...li crocodil e li papagaye es li sol animales de quel li
+superior maxille es mobil. Anc li musvolant es li sol volant animale
+quel have quar pedes, dentes, lacte, quel
+urina e quel parturi yunes.</p>
+<p>...un hom es plu long de un centimetre quande il leva se quam in
+vésper. Du factes explica ti fenomen. 1) Li dorsat spine es plu rect
+quande on jace quam in li position vertical. 2) Li talon infla, e ti
+inflation desapari quande on sta.</p>
+<p>...du moscas posse haver 700.000 descendentes in minu quam tri mensus.</p>
+<p>...li max micri arterie del homan córpor ne es plu grand quam li 1/10
+de un fil de arané.</p>
+<p>...li homes passa lor vive in desirar quo ili ne have, in mis-usar quo
+ili have, e in regretar quo ili ne have plu.</p>
+<p>...li Bible contene 46497 vezes li parol <em>e</em>. Li francesi filosof
+Couturat ha posset dir que li traduction del Bible in Esperanto, per
+Zamenhof, havet almen un utilitá: It monstra quant pesant e íntolerabil
+es li parol kaj de Esperanto.</p>
+<p>...solmen li hom e li simie have cilies in li du palpebres. Li
+altri entes ne have les in li inferior
+palpebre.</p>
+<p>...Senior de Vendome dit que, in li marcha del armés, il hat
+sovente examinat li querelles inter li mules e lor gardatores e que, ye
+li honta del homanité, li rason esset presc
+sempre che li mules!</p>
+<h2><a class="header" href="#politica-de-domination" id="politica-de-domination">Politica de domination</a></h2>
+<p>Apu fluvial jungles vivet un feroci tigre. Li boves del vicinage, queles
+timet le, hesitat venir al aqua. Tamen de témpor a témpor it aparet, que
+li tigre compatit les: il escartat se por que ili posset extincter su
+sitie. Ma apen ili fat deci glotes, il acurret de nov, e su terribil
+voce fat les fugir. -- «Excellentie, pro quo vu impedi li boves
+trincar?» questionat un chacal, «ples vider, ili es debil e magri pro
+manca de aqua. Esgue vu ne prefere haver por vor table bon e frisc carne
+quam ínvalidallia sin succ?» «Yo save self», objectet li tigre: «que
+li carne, suffrent de sitie, ne es attractiv. Ma li potentates prefere
+dominar debil truppes quam timer energic corn-batte, quande ili veni al
+table.»</p>
+<p>A{dot} Kofman (USSR)</p>
+<h2><a class="header" href="#tragic-aventura" id="tragic-aventura">Tragic aventura</a></h2>
+<p>In 1930, in un village del circumité de Split, in Yugoslavia, un old
+fémina esse dormient, jacent in li herb, con li bocca apert.</p>
+<p>Su dorme esset profund. Un serpent profitat de to por atinger li bocca
+del dormienta e... intrar in it. Li fémina avigilat se. Ella tentat
+vanimen desembarassar se del reptile. Ti-ci, in contrari, penetrat plu
+profund in li stomac de su hósped quel esset urgentmen transportat al
+hospital.</p>
+<p>On devet aperter li stomac por extraer li tro audaciosi serpent.</p>
+<h2><a class="header" href="#anecdotes" id="anecdotes">Anecdotes</a></h2>
+<h3><a class="header" href="#li-consequenties-de-un-maritage" id="li-consequenties-de-un-maritage">Li consequenties de un maritage</a></h3>
+<p>Yo incontrat, durant un recent villegiatura, mi old amico Timoleon. II
+logiat in un micri provincial cité e il ha just maritat se. Pro que il
+semblat suciosi, yo demandat le li cause de su anim-statu, e vi quo il
+respondet me:</p>
+<p>-- «Yo have null secrete con te, e yo va strax explicar te quo me fa
+perplex.</p>
+<p>Yo just sponsat un vidua quel havet, de su prim marito, un ravissent yun
+filia, nominat Zelie. Til nu, nullcos extraordinari, ma vi quande mi
+historie deveni vermen formidabil. -- Benque sat etosi, mi patre
+devenit amorós del adorabil Zelie, ma amorós til ne plu trincar e
+manjar, e ti-ta idille ha just terminat se per un maritage, sam quam un
+honest opera-comic.»</p>
+<p>-- Nu, yo dit, to-ci es nullmen extraordinari!</p>
+<p>-- Tu opine! Timoleon respondet con un amari rise. Ma, ínfelico! ples
+meditar un poc pri li consequenties de ti maritage. Ho-moment, li autor
+de mi vive, ha devenit tot simplicmen mi bel-filio, pro que il ha
+sponsat mi filia. De un altri parte, mi bel-filia deveni mi bel-matre,
+pro que ella es li sponsa de mi patre!</p>
+<p>-- To sembla me rigorosmen logic, yo approbat, un poc embarassat avan
+li coses quel on posset divinar, per li confidenties de Timoleon.</p>
+<p>-- Expecta quo seque, mi amico continuat, e tu va svimmar per plen
+brassades in li max burlesc imbrolia. Mi marita ha just obtenet un filio;
+ti infanto es do li filio del matre del marita de mi patre, to es li
+bel-fratre de mi patre, e in sam témpor mi onclo, pro que il esset li
+fratre de mi bel-matre.</p>
+<p>-- Oh! mi cap! mi cap! yo murmurat.</p>
+<p>-- Yes, ples atenter, Timoleon continuat. In ti infernal aventura, mi
+propri filio ha do devenit mi oncle! E pri li sponsa de mi patre, li
+bell Zelie, quam noi nomina la, ella ha just parturit un bellissim
+garson, quel es in sam témpor mi demí-fratre e mi nepoto, pro que il es
+li filio del filia de mi sponsa!</p>
+<p>-- Yo peti gratie! yo exclamat.</p>
+<p>-- No, nequel gratie, Timoleon recomensat con un faruchi visage, tu
+volet conosser omnicos e tu va ear til li fine. Mi filia es ergo mi
+matre, pro que ella es li marita de mi patre, e, íncredibil bizarreríe,
+ne content esser li sponso de mi sponsa, yo self es anc su nepoto. E pro
+que li marito del matre de un person es nominat li patre de ti-ci, esque
+tu save quo eveni?</p>
+<p>-- !!!</p>
+<p>Timoleon exclamat:</p>
+<p>-- Quo eveni! Nu, ho-moment, yo es mi propri patre!!!</p>
+<p>Yo ne escutat le plu long e yo forcurret con li rapiditá de un zebre:</p>
+<p>-- Adío! yo criat le, adío! Yo vade posir glacie sur mi front, nam yo
+time haver un meningite.</p>
+<p>Auguste FAURE</p>
+<p>(Ex francés traductet William Gilbert, Angers.)</p>
+<p>Ilustrationes del traductor</p>
+<h3><a class="header" href="#li-venjantie-de-un-hungarian-pictor" id="li-venjantie-de-un-hungarian-pictor">Li venjantie de un hungarian pictor</a></h3>
+<p>Ne omnes ama li modern pictura. It es li casu de un industriale, tre
+conosset in Budapest, qui havet tamen li mal idé, comendar su portret a
+un pictor del nov scole. Quande li industriale videt li portret, il
+horret. Qui posset reconosser li seriós moné-mann, quel il esset, in li
+individue con flammeant ocules, quel on videt sur li portret? Il
+refusat do accepter ti-ci.</p>
+<p>Li artist ne protestat, ma demandat al industriale que il dat le un
+paper, scrit de su manu, atestant que li portret ne similat le. Talmen
+esset fat.</p>
+<p>Ma quant grand esset li stupefation del industriale constatante que su
+portrete trovat se in un exposition con ti mention: Portret de un
+criminale international!</p>
+<p>Furiosi, li industriale trenat avan li judico li artist, quel naturalmen
+exhibit li atestation scrit del industriale, e quel pruvat li
+non-similitá del portrete.</p>
+<p>On ha mult ridet pri ti historie in li circules artistic de Budapest.</p>
+<h3><a class="header" href="#li-prudent-judico" id="li-prudent-judico">Li prudent judico</a></h3>
+<p>Ti historie evenit in un de ti micri índependent states de Antilles.
+Omni vezes quande un Europan esset punit pro quelcunc culpa, su land ne
+hesitat reclamar índemnitá e apoyar ti demanda per li inviation de un
+curassat nave.</p>
+<p>Talmen it esset sempre tre custosi imposir al blancos li general jure.</p>
+<p>To ne esset ignorat del judico, pri quel yo vole parlar.</p>
+<p>Un blanco hat maltractat un indigeno. Il esset arrestat e ductet avan li
+judico.</p>
+<p>Ti-ci questionat le:</p>
+<p>-- A quel nation apartene vu?</p>
+<p>Li blanco respondet que il esset SVISS cive. Tande li judico, tornante
+se a su secretario, questionat:</p>
+<p>-- Esque Svissia es un land de Europa?</p>
+<p>-- Yes, Senior Presidente.</p>
+<p>-- Esque it es in li bord del mare?</p>
+<p>-- No, Svissia es completmen circumat de terres.</p>
+<p>-- It have null naves?</p>
+<p>-- No, Senior Presidente.</p>
+<p>-- Bon, dit li judico. E tornante se vers li acusate:</p>
+<p>-- Vu es condamnat a six mensus de prison, mi amico.</p>
+<h3><a class="header" href="#li-du-artes" id="li-du-artes">Li du artes</a></h3>
+<p>Isocrat esset rhetor in Athena e docet li art oratori. Un die venit a il
+un mann nominat Creon conosset quam un terribil parlard in li politic
+reuniones.</p>
+<p>-- Tu va dever payar un duplic precie si tu vole que yo da te leciones,
+dit Isocrat.</p>
+<p>-- E pro quo yo va dever payar plu quam li altres? questionat Creon.</p>
+<p>-- Pro que, respondet li rhetor, yo va dever docer te du artes in vice
+de un sol: ti de parlar e ti de tacer.</p>
+<h3><a class="header" href="#li-similitá" id="li-similitá">Li similitá</a></h3>
+<p>In un cité de Saxonia existe un mann quel simila Bismark e quel,
+naturalmen, cuida amorosmen ti similitá.</p>
+<p>-- Mem mi pesa, il dit un die con fiertá, aproxima ti de Bismarck:
+manca me solmen du kilogrammes.</p>
+<p>-- Ti du kilos manca probabilmen in tui dit un camarad con un ínnocent
+mime.</p>
+<p>(Ex. francés trad. F. Lagnel, Svissia)</p>
+<h3><a class="header" href="#li-tri-facturas" id="li-tri-facturas">Li tri facturas</a></h3>
+<p>Li modern dama a su modista:</p>
+<p>-- Ples far me tri facturas. Un de Fr. 50, precie de mi chapel, un de
+Fr. 30 por mi marito e un de Fr. 100 por mi amicas.</p>
+<h3><a class="header" href="#che-li-judico" id="che-li-judico">Che li judico</a></h3>
+<p>-- Acusato, li interogada ne sembla har fatigat vos mult. Esque vu es
+ja acustomat a it?</p>
+<p>-- Yes, yo es maritat!</p>
+<h3><a class="header" href="#li-pruva" id="li-pruva">Li pruva</a></h3>
+<p>Un Senioretta, quel prende leciones de cant di a su servitora:</p>
+<p>-- Crede vu que li yun mann, quel logia vis a vis, audi me cantar?</p>
+<p>-- Certmen, Seniora, nam chascun vez il clude su fenestre.</p>
+<h3><a class="header" href="#li-diferentie" id="li-diferentie">Li diferentie</a></h3>
+<p>On demandat a Piron li differentie existent inter un fémina e un
+spegul.</p>
+<p>-- It es, il dit, que un fémina parla sin reflecter e que un spegul
+reflecte sin parlar.</p>
+<p>-- Save vu dir me, Senior, responde alor li seniora, quel diferentie es
+inter vu e li sam spegul? Vu ne responde? Nu, it es que li spegul es
+polit e vu ne.</p>
+<h3><a class="header" href="#li-pruva-1" id="li-pruva-1">Li pruva</a></h3>
+<p>-- Esque li acusato semblat esser, in li vésper del afere, sub li
+influentie del alcohol?</p>
+<p>Un assistant: -- Certmen senior judico! Il havet un tasca-horloge con
+luminós facie e provat inflammar su cigar per it!</p>
+<h3><a class="header" href="#comparation" id="comparation">Comparation</a></h3>
+<p>Mamá e bebé retroveni del promenada.</p>
+<p>-- Oh! di mamá tot joyosi a su marito, un bon nova: Bebé ha pronunciat
+su unesim parol.</p>
+<p>-- Vermen, di li patre ancor plu joyosi.</p>
+<p>-- Yes. Noi esset in li zoological jardin avan li cage del gross simies.
+Bebé ha clamat: Papá! Papá!</p>
+<h3><a class="header" href="#paroles-de-infant" id="paroles-de-infant">Paroles de infant</a></h3>
+<p>On aresta un micri vagant infant qui refusa indicar li adresse de su
+matre.</p>
+<p>-- Esque vu va retro-ducter me a ella?</p>
+<p>-- Proquo ti question, esque ella batte te?</p>
+<p>-- No! Ma ella pectina me!</p>
+<p>Li dentist: -- It es necessi extraer vor dente. Ma ples ne timer: yo
+va far vos un injection e vu nequant va sentir.</p>
+<p>Li client: -- Vu posse racontar to a altres. Yo self es dentist.</p>
+<p>Li amica: -- Ma il es vermen sempre in un íncredibil distraction, vor
+marito! Esque to ne es sin ínconvenientie?</p>
+<p>Li marita: -- To depende. In li ultim mensu, il ha dat me du vezes li
+pecunie del menage.</p>
+<p>Un jurnal volente enumerar li qualitás de un mort cive scrit:</p>
+<p>«Li morto ha mult suffret in su vive. Il esset abonnat a nor jurnal
+desde su aparition.»</p>
+<p>-- Di me. Seniora Durand, qualmen eveni que li ovrero gipsero-pictor ne
+ha ja finit vernissar mi cocinería, e tamen, por li vor, omnicos esset
+finit pos du dies?</p>
+<p>-- To es tre simplic, Seniora Blanc. Mi cocinera have 60 annus; li vor
+have solmen 20.</p>
+<p>Voltaire scrit a un molestant quel persequet le per ínutil lettres:
+«Senior, yo es mort, talmen yo ne va plu posser responder al lettres,
+quel vu va far me li honor scrir me.»</p>
+<p>Trad. R. Bg.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../Cosmoglotta/095.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../Cosmoglotta/097.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../Cosmoglotta/095.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../Cosmoglotta/097.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script src="https://occidental-lang.com/website-word-lookup/lookup.js"></script>
+        <script>
+            lookupInit('https://occidental-lang.com/website-word-lookup/dict.json');
+            document.onselectionchange = debounce(lookup, 500);
+        </script>
+        
+
+    </body>
+</html>

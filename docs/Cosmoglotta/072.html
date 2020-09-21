@@ -1,0 +1,929 @@
+<!DOCTYPE HTML>
+<html lang="ie" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>A 72 - scritorium</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        
+
+        <div id="definition"></div>
+
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="../index.html">Hem</a></li><li class="chapter-item "><a href="../MicriCrestomatie/0.html"><strong aria-hidden="true">1.</strong> Micri Crestomatie</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../MicriCrestomatie/1.html"><strong aria-hidden="true">1.1.</strong> Capitul 1</a></li><li class="chapter-item "><a href="../MicriCrestomatie/proverbies.html"><strong aria-hidden="true">1.2.</strong> Proverbies</a></li></ol></li><li class="chapter-item "><a href="../LiLittPrince/0.html"><strong aria-hidden="true">2.</strong> Li Litt Prince</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../LiLittPrince/1.html"><strong aria-hidden="true">2.1.</strong> Capitul 1</a></li><li class="chapter-item "><a href="../LiLittPrince/2.html"><strong aria-hidden="true">2.2.</strong> Capitul 2</a></li><li class="chapter-item "><a href="../LiLittPrince/3.html"><strong aria-hidden="true">2.3.</strong> Capitul 3</a></li><li class="chapter-item "><a href="../LiLittPrince/4.html"><strong aria-hidden="true">2.4.</strong> Capitul 4</a></li><li class="chapter-item "><a href="../LiLittPrince/5.html"><strong aria-hidden="true">2.5.</strong> Capitul 5</a></li><li class="chapter-item "><a href="../LiLittPrince/6.html"><strong aria-hidden="true">2.6.</strong> Capitul 6</a></li><li class="chapter-item "><a href="../LiLittPrince/7.html"><strong aria-hidden="true">2.7.</strong> Capitul 7</a></li><li class="chapter-item "><a href="../LiLittPrince/8.html"><strong aria-hidden="true">2.8.</strong> Capitul 8</a></li><li class="chapter-item "><a href="../LiLittPrince/9.html"><strong aria-hidden="true">2.9.</strong> Capitul 9</a></li><li class="chapter-item "><a href="../LiLittPrince/10.html"><strong aria-hidden="true">2.10.</strong> Capitul 10</a></li><li class="chapter-item "><a href="../LiLittPrince/11.html"><strong aria-hidden="true">2.11.</strong> Capitul 11</a></li><li class="chapter-item "><a href="../LiLittPrince/12.html"><strong aria-hidden="true">2.12.</strong> Capitul 12</a></li><li class="chapter-item "><a href="../LiLittPrince/13.html"><strong aria-hidden="true">2.13.</strong> Capitul 13</a></li></ol></li><li class="chapter-item "><a href="../UnDesertor/0.html"><strong aria-hidden="true">3.</strong> Un Desertor</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../UnDesertor/1.html"><strong aria-hidden="true">3.1.</strong> Capitul 1</a></li></ol></li><li class="chapter-item expanded "><a href="../Cosmoglotta/0.html"><strong aria-hidden="true">4.</strong> Cosmoglotta</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/1927.html"><strong aria-hidden="true">4.1.</strong> 1927</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/038.html"><strong aria-hidden="true">4.1.1.</strong> A 38</a></li><li class="chapter-item "><a href="../Cosmoglotta/039.html"><strong aria-hidden="true">4.1.2.</strong> A 39</a></li><li class="chapter-item "><a href="../Cosmoglotta/040.html"><strong aria-hidden="true">4.1.3.</strong> A 40</a></li><li class="chapter-item "><a href="../Cosmoglotta/041.html"><strong aria-hidden="true">4.1.4.</strong> A 41</a></li><li class="chapter-item "><a href="../Cosmoglotta/042.html"><strong aria-hidden="true">4.1.5.</strong> A 42</a></li><li class="chapter-item "><a href="../Cosmoglotta/043.html"><strong aria-hidden="true">4.1.6.</strong> A 43</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1928.html"><strong aria-hidden="true">4.2.</strong> 1928</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/044.html"><strong aria-hidden="true">4.2.1.</strong> A 44</a></li><li class="chapter-item "><a href="../Cosmoglotta/045.html"><strong aria-hidden="true">4.2.2.</strong> A 45</a></li><li class="chapter-item "><a href="../Cosmoglotta/046.html"><strong aria-hidden="true">4.2.3.</strong> A 46</a></li><li class="chapter-item "><a href="../Cosmoglotta/047.html"><strong aria-hidden="true">4.2.4.</strong> A 47</a></li><li class="chapter-item "><a href="../Cosmoglotta/048.html"><strong aria-hidden="true">4.2.5.</strong> A 48</a></li><li class="chapter-item "><a href="../Cosmoglotta/049.html"><strong aria-hidden="true">4.2.6.</strong> A 49</a></li><li class="chapter-item "><a href="../Cosmoglotta/050.html"><strong aria-hidden="true">4.2.7.</strong> A 50</a></li><li class="chapter-item "><a href="../Cosmoglotta/051-052.html"><strong aria-hidden="true">4.2.8.</strong> A 51-52</a></li><li class="chapter-item "><a href="../Cosmoglotta/053.html"><strong aria-hidden="true">4.2.9.</strong> A 53</a></li><li class="chapter-item "><a href="../Cosmoglotta/054.html"><strong aria-hidden="true">4.2.10.</strong> A 54</a></li><li class="chapter-item "><a href="../Cosmoglotta/055.html"><strong aria-hidden="true">4.2.11.</strong> A 55</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1929.html"><strong aria-hidden="true">4.3.</strong> 1929</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/056.html"><strong aria-hidden="true">4.3.1.</strong> A 56</a></li><li class="chapter-item "><a href="../Cosmoglotta/057.html"><strong aria-hidden="true">4.3.2.</strong> A 57</a></li><li class="chapter-item "><a href="../Cosmoglotta/058.html"><strong aria-hidden="true">4.3.3.</strong> A 58</a></li><li class="chapter-item "><a href="../Cosmoglotta/059.html"><strong aria-hidden="true">4.3.4.</strong> A 59</a></li><li class="chapter-item "><a href="../Cosmoglotta/060.html"><strong aria-hidden="true">4.3.5.</strong> A 60</a></li><li class="chapter-item "><a href="../Cosmoglotta/061.html"><strong aria-hidden="true">4.3.6.</strong> A 61</a></li><li class="chapter-item "><a href="../Cosmoglotta/062-63.html"><strong aria-hidden="true">4.3.7.</strong> A 62-63</a></li><li class="chapter-item "><a href="../Cosmoglotta/064.html"><strong aria-hidden="true">4.3.8.</strong> A 64</a></li><li class="chapter-item "><a href="../Cosmoglotta/065.html"><strong aria-hidden="true">4.3.9.</strong> A 65</a></li><li class="chapter-item "><a href="../Cosmoglotta/066.html"><strong aria-hidden="true">4.3.10.</strong> A 66</a></li><li class="chapter-item "><a href="../Cosmoglotta/067.html"><strong aria-hidden="true">4.3.11.</strong> A 67</a></li></ol></li><li class="chapter-item expanded "><a href="../Cosmoglotta/1930.html"><strong aria-hidden="true">4.4.</strong> 1930</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/068.html"><strong aria-hidden="true">4.4.1.</strong> A 68</a></li><li class="chapter-item "><a href="../Cosmoglotta/069.html"><strong aria-hidden="true">4.4.2.</strong> A 69</a></li><li class="chapter-item "><a href="../Cosmoglotta/070.html"><strong aria-hidden="true">4.4.3.</strong> A 70</a></li><li class="chapter-item "><a href="../Cosmoglotta/071.html"><strong aria-hidden="true">4.4.4.</strong> A 71</a></li><li class="chapter-item expanded "><a href="../Cosmoglotta/072.html" class="active"><strong aria-hidden="true">4.4.5.</strong> A 72</a></li><li class="chapter-item "><a href="../Cosmoglotta/073.html"><strong aria-hidden="true">4.4.6.</strong> A 73</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1931.html"><strong aria-hidden="true">4.5.</strong> 1931</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/074.html"><strong aria-hidden="true">4.5.1.</strong> A 74</a></li><li class="chapter-item "><a href="../Cosmoglotta/075.html"><strong aria-hidden="true">4.5.2.</strong> A 75</a></li><li class="chapter-item "><a href="../Cosmoglotta/076.html"><strong aria-hidden="true">4.5.3.</strong> A 76</a></li><li class="chapter-item "><a href="../Cosmoglotta/077.html"><strong aria-hidden="true">4.5.4.</strong> A 77</a></li><li class="chapter-item "><a href="../Cosmoglotta/078.html"><strong aria-hidden="true">4.5.5.</strong> A 78</a></li><li class="chapter-item "><a href="../Cosmoglotta/079.html"><strong aria-hidden="true">4.5.6.</strong> A 79</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1932.html"><strong aria-hidden="true">4.6.</strong> 1932</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/080.html"><strong aria-hidden="true">4.6.1.</strong> A 80</a></li><li class="chapter-item "><a href="../Cosmoglotta/081.html"><strong aria-hidden="true">4.6.2.</strong> A 81</a></li><li class="chapter-item "><a href="../Cosmoglotta/082.html"><strong aria-hidden="true">4.6.3.</strong> A 82</a></li><li class="chapter-item "><a href="../Cosmoglotta/083.html"><strong aria-hidden="true">4.6.4.</strong> A 83</a></li><li class="chapter-item "><a href="../Cosmoglotta/084.html"><strong aria-hidden="true">4.6.5.</strong> A 84</a></li><li class="chapter-item "><a href="../Cosmoglotta/085.html"><strong aria-hidden="true">4.6.6.</strong> A 85</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1933.html"><strong aria-hidden="true">4.7.</strong> 1933</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/086.html"><strong aria-hidden="true">4.7.1.</strong> A 86</a></li><li class="chapter-item "><a href="../Cosmoglotta/087.html"><strong aria-hidden="true">4.7.2.</strong> A 87</a></li><li class="chapter-item "><a href="../Cosmoglotta/088.html"><strong aria-hidden="true">4.7.3.</strong> A 88</a></li><li class="chapter-item "><a href="../Cosmoglotta/089.html"><strong aria-hidden="true">4.7.4.</strong> A 89</a></li><li class="chapter-item "><a href="../Cosmoglotta/090.html"><strong aria-hidden="true">4.7.5.</strong> A 90</a></li><li class="chapter-item "><a href="../Cosmoglotta/091.html"><strong aria-hidden="true">4.7.6.</strong> A 91</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1934.html"><strong aria-hidden="true">4.8.</strong> 1934</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/092.html"><strong aria-hidden="true">4.8.1.</strong> A 92</a></li><li class="chapter-item "><a href="../Cosmoglotta/093.html"><strong aria-hidden="true">4.8.2.</strong> A 93</a></li><li class="chapter-item "><a href="../Cosmoglotta/094.html"><strong aria-hidden="true">4.8.3.</strong> A 94</a></li><li class="chapter-item "><a href="../Cosmoglotta/095.html"><strong aria-hidden="true">4.8.4.</strong> A 95</a></li><li class="chapter-item "><a href="../Cosmoglotta/096.html"><strong aria-hidden="true">4.8.5.</strong> A 96</a></li><li class="chapter-item "><a href="../Cosmoglotta/097.html"><strong aria-hidden="true">4.8.6.</strong> A 97</a></li><li class="chapter-item "><a href="../Cosmoglotta/098.html"><strong aria-hidden="true">4.8.7.</strong> A 98</a></li><li class="chapter-item "><a href="../Cosmoglotta/099.html"><strong aria-hidden="true">4.8.8.</strong> A 99</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1935.html"><strong aria-hidden="true">4.9.</strong> 1935</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/B-001.html"><strong aria-hidden="true">4.9.1.</strong> B 1</a></li><li class="chapter-item "><a href="../Cosmoglotta/100.html"><strong aria-hidden="true">4.9.2.</strong> A 100</a></li><li class="chapter-item "><a href="../Cosmoglotta/101.html"><strong aria-hidden="true">4.9.3.</strong> A 101</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-002.html"><strong aria-hidden="true">4.9.4.</strong> B 2</a></li><li class="chapter-item "><a href="../Cosmoglotta/102.html"><strong aria-hidden="true">4.9.5.</strong> A 102</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-003.html"><strong aria-hidden="true">4.9.6.</strong> B 3</a></li><li class="chapter-item "><a href="../Cosmoglotta/103.html"><strong aria-hidden="true">4.9.7.</strong> A 103</a></li><li class="chapter-item "><a href="../Cosmoglotta/104.html"><strong aria-hidden="true">4.9.8.</strong> A 104</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-004.html"><strong aria-hidden="true">4.9.9.</strong> B 4</a></li><li class="chapter-item "><a href="../Cosmoglotta/105.html"><strong aria-hidden="true">4.9.10.</strong> A 105</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/theRest.html"><strong aria-hidden="true">4.10.</strong> The Rest</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">scritorium</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <div id="langPicker"></div>
+                        
+                        <a href="https://github.com/occidental-lang/scritorium" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#cosmoglotta-a-72-sep-oct-1930" id="cosmoglotta-a-72-sep-oct-1930">Cosmoglotta A 72 (sep-oct 1930)</a></h1>
+<p>Oficial organ bimensual del Occidental-Union</p>
+<p>Consacrat al developation, propaganda e aplication de</p>
+<p>Lingue International Occidental</p>
+<p>Redaction e Administration: Postfach 10, Mauer bei Wien, Austria.</p>
+<p>Annu IX Nr 5  Septembre, Octobre 1930 Numeró 72</p>
+<h2><a class="header" href="#contene" id="contene">Contene:</a></h2>
+<ul>
+<li>Influentie del anglés al L.I., de G. Bohin, pg. 85,</li>
+<li>Complet Grammatica (III. Derivation: C. Sufixes ínproductiv, D.
+Contraction, E. Derivation fro -c, -g. F. Liste del sufixes secun
+lor usation), de K. Janotta, pg. 88.</li>
+<li>Cronica, pg. 92.</li>
+<li>Esque Esperanto va perir?, pg. 99.</li>
+<li>Avise al abonnates, pg. 100.</li>
+</ul>
+<h2><a class="header" href="#influentie-del-lingue-anglés-al-lingue-international" id="influentie-del-lingue-anglés-al-lingue-international">Influentie del lingue anglés al lingue international</a></h2>
+<p>de G. Bohin, Director del «École Moderne» in Strasbourg, Francia.</p>
+<p>Ante quelc témpor aparit in jurnales un information indicant que li Unit
+States de America, queles contenet 90 milliones habitantes in 1909, have
+nu 120 milliones -- do, un augmentation de 30 milliones durant 20 annus.
+On save in altri parte que, desde li guerre hispan-american in li fine
+del anteyan secul, li lingue hispan es rapidmen viceat per angles in li
+Filipin insules. Ne minu rapid es li progresses de ti ci lingue in omni
+partes del britannic imperia, in extrem Orient e in quasi omni landes
+stant in comercial relationes con anglo-american regiones. Yo ne save
+esque it es possibil determinar statisticmen li rapiditá de progression
+del lingue anglés in li munde, ma un cose es cert: ti progression del
+lingue anglés in li munde, ma un cose es cert: ti progression es un del
+max important factes linguistic de nor epoca. Chascun annu, li lingue
+anglés gania plu quam 2 til 3 milliones nov parlantes.</p>
+<p>Ti fact, quel on posse comparar con li progression del lingue latin in
+li epoca del roman imperia, have plur causes: politic, economic,
+demografic etc. Ma un inter ili deve esser ne negliget: it es li grand
+facilitá del lingue anglés. Chascun docente de lingues posse dir que
+scoleros aprende anglés plu facilmen quam alcun altri lingue extran. Yo
+constatat it personalmen con scoleros parlant francés o german. In altri
+parte, li influentie del lingue anglés sur li altri lingues national
+deveni
+sempre plu e plu fort per sportiv o tecnic expressiones. Ples pensar que
+nu mult machines veni de America, e it es current audir pri tal o tal
+tip de fabrication, por ex. in li sapates (sutura Good year), in li
+fdonodfilmes, li fonografic records e radiodifusion. Quande on lee
+programmas de radiodifusion, on vide solmen listes de american dansas.
+Ples memorar anc que in mult amator-distractiones li lingue anglés es
+universalmen usat. Li code de abreviation del amator-radio-telegrafistes
+es purmen anglés, por ex. on usa sovent OM (old man), MSG (message) e
+mem parol-jocas quam B4 (before), 2NITE (to-night) etc. Li vocabularium
+francés es litteralmen invadet per paroles anglés e li témpor ne es
+lontan quande li Francés va dir quam li Franco-Canadianes «suivez le
+traces du char» follow the traks of the car) vice «suivez les rails du
+tramway», o «patates machées» (mashed potatoes) por «purée de pommes
+de terre».  In sequent un frase «francés» citat per sr Lichtenberger,
+quel ne es tam exagerat quam on vell posser suposir:</p>
+<hr />
+<p>A l'arrivée de l'express, le globe-trotter sortit de son sleepinget,
+accompagné de son manager gagna le palace, vêtu d'un pull-over sous son
+trench-coat. Il prit son breakfast dans le hall, alla voir li yearling
+au paddock, luncha au grillroom, assista à un match de rugby et au
+handicap de steeple-chase, prit pour son five o'clock un cocktail avec
+toasts, puis ayant revêtu son smoking, dina au club, refit un speech,
+applaudit au music-hall les Dolly-Sisters, voulut faire du footing pour
+rentrer chez lui, et assailli par un pickpocket, le mit knock-out d'un
+swing magistral.</p>
+<hr />
+<p>To es li lingue francés de 1930! Relativmen al problema de lingue
+international, li progressent influentie de anglés have un grand
+importantie quel noi, mundlinguistes, deve prender in consideration.
+Esque un lingue auxiliari creat per li volentie del homes posse devenir
+suficent vital ante que anglés atinge li punctu de suprematie?
+Specialistes in linguistica mey dar nos un response quel, certmen, ne es
+facil. Suposiente li question resoluet afirmativmen, yo vole considerar
+li cose sub un altri punctu de visu, it es: quel va esser influentie
+futur del lingue anglés sur li lingue international? Tre grand, secun mi
+opinion. Un del labores del Occidental-Academie va esser observar it
+atentivmen e ducter li evolution del lingue secun ti observationes, in
+tal maniere que li evolution de Occidental ne conflicte con li
+influentie anglés.</p>
+<h2><a class="header" href="#complet-grammatica" id="complet-grammatica">Complet grammatica</a></h2>
+<p>Composit de K. Janotta, revidet de E. de Wahl e organisat de E. Pigal.</p>
+<p>(6-esim continuation)</p>
+<h3><a class="header" href="#iii-esim-capitul-derivation" id="iii-esim-capitul-derivation">III-esim Capitul: Derivation</a></h3>
+<h4><a class="header" href="#c-sufixes-ínproductiv" id="c-sufixes-ínproductiv">C. Sufixes ínproductiv.</a></h4>
+<h5><a class="header" href="#1-sufixes-nominal-ínproductiv" id="1-sufixes-nominal-ínproductiv">1. Sufixes nominal ínproductiv.</a></h5>
+<p>-est significa «havent, causant», ma anc «apartenent a...», p. ex.:
+modest (de L mod-us {equals} moderation), molest (L mol-es {equals} pena, efortia),
+honest (L hon-os {equals} honor), funest (L fun-us {equals} funerale, morte), celest
+(L cael-um {equals} ciel). It existe anc li formes secundari -est-ic e -est-ri:
+agrest(ic) de agre, domest(ic) de dom; campest(ri) de camp, silvest(ri)
+de silva, terrest(ri) de terre.</p>
+<p>-id, usat generalmen con li verbes per -ed, indica «havent qualitá
+respondent al verbe»; calid (de caler), candid (de cander), fervid (de
+ferver), fluid (fluer), frigid (friger), horrid (horrer), liquid
+(liquer), lucid (lucer), pallid (paller), rigid (riger), splendid
+(splender), timid (timer), tumid (tumer), (in)-valid (valer), vivid
+(viver). De altri verbes (in -ar e -ir): glissid (glissar), bollid
+(bollir), languid (languir), putrid (putrir).</p>
+<p>-il have du orígines, (a) de L -ilis ínaccentuat e (b) de L -ílis
+accentuat; in Occidental it es sempre accentuat e indica (a) un possibilitá,
+analog al sufixes -ibil e -iv: debil (de de[ha]bil), docil (docer),
+ductil (ducter), facil (L facere «far»), fertil (L ferre «portar,
+producter»), fragil (L frangere «fracter»), gracil (de provenientie
+dubitosi), habil (L habere «haver, conduir»), humil (hum), reptile
+(repter), simil (parent a «simular»), steril (parent a sanscrit starí,
+grec steíreós, goth. staira, omnis del sam signification; li finale -il
+es ci un association al antonim «fertil»), textil (de texter), util
+(de L uti «usar»), vigil (de quel: vigilar: de L vigere «vigorar»),
+volatir (de volar); (b) it have li signification «havent li tipic
+qualitá de un tal person o cose», p. ex.: civil (de cive), gentil
+(gente), hostil (L hostis «ínamic»), juvenil (juven), senil (L sen-ex
+«old mann»), servil (servo), viris (L vir «mann»). Li parol
+«subtil» ne es format per -il, ma it es composit ex latin sub+tela (=
+textura) «fin textet».</p>
+<p>-n significa «venient de» e es juntet al complet latin tema de
+personal nómines, p. ex.: fratern (de L frater), matern (L mater),
+patern (L pater). On posse adjunter anc -al: fraternal, maternal,
+paternal, ma por continuat derivation on usa solmen li formes sin -al:
+fraternisar, maternitá, paternitá. On posse anc usar li regulari formes
+per -in: fratrin, matrin, patrin.</p>
+<p>-nd (juntet al tema presentic) significa un obligation passiv:
+diminuend, dividend, examinand, horrend, radicand, reverend, subtraend,
+summand, timend, le(g)ende, vigiland.</p>
+<h5><a class="header" href="#2-sufixes-verbal-ínproductiv" id="2-sufixes-verbal-ínproductiv">2. Sufixes verbal ínproductiv.</a></h5>
+<p>-esce-r es un sufix purmen scientic e significa «haver luce quam...»:
+fluor, fluorescer; opale, opalescer; phosphor, phosphorescer. -- Compara
+li sufix -esc in li anterior parte (III,B,1.)</p>
+<p>-ica-r ne have un signification fix: communicar (= far commun a un
+altre, partiprender li commun table, i.e. li communion), excommunicar (=
+excluder de lu commun); fumicar (= tractar per fum). Li verb
+«cavalcar» es nascet ex caval(li)car (= ear sur un cavalle).</p>
+<h4><a class="header" href="#d-contraction" id="d-contraction">D. Contraction.</a></h4>
+<p>Un fenomen remarcabil in li parolformation es li contraction, nominat
+anc «haplologie». It consiste in li redaction de du simil succedent
+sones o songruppes a un. Talmen on di p. ex.: «Amphora» in vice de
+amphiphora, «mineralogie» in vice de mineralologie, «tragicomic» in
+vice de tragicocomic.</p>
+<p>Ci es regardat in sequent li casus de contraction in li derivation u ili
+es tre frequent.</p>
+<p>1{dot} Contraction che sufixes nominal.</p>
+<p>-ide; i+ide {equals} ide: apatride (= apatri-ide).</p>
+<p>-in; i+in {equals} in: glac(i)in.</p>
+<p>-ism; i+ism {equals} ism: anarch(i)ism; ic+ism {equals} ism: pacif(ic)ism.</p>
+<p>-ist; i+ist {equals} ist: anarch(i)ist, artiller(i)ist, cavaller(i)ist,
+infanter(i)ist. Ad plu ic + ist {equals} ist: pacif(ic)ist.</p>
+<p>-ite; i+ite {equals} ite: bronch(i)ite.</p>
+<p>-os; on + os {equals} os: ambiti(on)os, infecti(on)os, pretensi(on)os,
+religi(on)os.</p>
+<p>-tá; ic+itá {equals} itá: ident(ic)itá; ti+tá {equals} tá: paren(ti)tá.</p>
+<p>-t(or)r-essa: tri+tressa {equals} tressa: «nutressa» in vice de nutritressa
+del verb nutrir (tema perfectic: nutrit).</p>
+<p>2{dot} Contraction che sufixes verbal.</p>
+<p>i-fica-r: i+i {equals} I: glor(i)ificar, mum(i)ificar; ic+i {equals} i:
+ident(ic)ificar.</p>
+<p>-isa-r: i+i {equals} i: colon(i)isar, harmon(i)isar, popular(i)isar; ic+is =
+is: electr(ic)isar, magnet(ic)isar, polem(ic)isar.</p>
+<p>E{dot} Derivation del temas finient in -c, -g.</p>
+<p>Li problema del temas finient in -c, -g concerne tam li flexion quam li
+derivation. Li solution de ti problema in egard al flexion es tractat in
+li capitul II (D,4).</p>
+<p>Pri li solution del sam tema in consideration del derivation Pigal
+proposi li sequent regul:</p>
+<p>Li sufixes comensant per -e- (-ell, -er, -eria, -erie, -esc, -es-, -ess,
+-ett) conserva li son dur de c, g final del temas, contra que -i- muta
+li son. To es li consequentie de un simplic feromen fisiologic. Nam e
+pronuncia se plu proxim li gúttur, do c, g resta guttural e in li
+derivation per -e- on have k, gh. Ma -i- pronuncia se plu vicin al
+dentes; do c, g ante sufixes comensant per -i- (-ic, -ie, -ier, -ific,
+-il, -isar, -ism, -issim, -ist, -itá) deveni dentales e li scrition
+resta c, g. Ma li sones nasal ng, nc (nk) (cp. I-m capitul, parte H)
+nequande deveni sibilant.</p>
+<p>Exemples de derivation</p>
+<ol>
+<li>
+<p>-gi-: quam logic, magic, agil, tam on vell posser dir anc:
+catalogisar; ma diphthonghic, longhissim, longhitá;</p>
+</li>
+<li>
+<p>-ic-: pacific, piscine, vaccinar, calcinar, grecisar, criticism,
+catholicism, gallicism, grecist, amicitá, electricitá, fascist,
+monacie, monaceria; pro to anc: formiciera, persiciero, tabaciero;
+ma bankist, blankitá.</p>
+</li>
+<li>
+<p>-ghe-: quam l lungheria, I laghetto, tam anc: segheria, borghese,
+longhess, laghette, plughero.</p>
+</li>
+<li>
+<p>-ke-: arkero, bankero, vackero, packero, blankero, monakesc,
+dukessa, bankett, jackett, plackett, packett, boskett (I
+boschetto), furkette, storkell.</p>
+</li>
+</ol>
+<p>«Fig» e «drog» ne apartene al present problema. Nam it es
+recomendabil conservar «figue» pro figuiero (analog al formes S e F).
+On ne posse dir figiero. E fighiero vell esser
+contra li regul, quel on ne va abandonar pro ti unic parol. In
+«drogue» (venient del nederlandan «droog» {equals} sicc) g nequande deveni
+sonor-dental ž. Do ci -u- deve esser conservat in li radica de
+Occidental (F droguerie e droguist, S drogueria, droguero, I droghiere).
+On ne posse acceptar li minu international I droghe, vice li plu
+international «drogue».</p>
+<h4><a class="header" href="#f-liste-del-sufixes-secun-lor-usation" id="f-liste-del-sufixes-secun-lor-usation">F. Liste del sufixes secun lor usation.</a></h4>
+<p>Li sufixes ne es ordinat in general alfabetic, ma secun lor importantie.</p>
+<ol>
+<li>
+<p>Nómines de action (L Nomina actionnes): -ie, -ore (-ntie), -ion
+tema presentic, -da, -ment, -ura; li nómines de action es anc
+nominat verbal substantives.</p>
+</li>
+<li>
+<p>Nómines de actente (L Nomina agentis): -or, -nt, -er-a, -er-o,
+-ario, -ard, -astr, -on.</p>
+</li>
+<li>
+<p>Nómines concret (L Nomina rei concretae), i.e. «substantives
+resultativ»: -ion, tema perfectic, -t, -ment, -ura.</p>
+</li>
+<li>
+<p>Nómines de instrument (L Nomina instrumenti): -ment, -ett, -uor.</p>
+</li>
+<li>
+<p>Nómines de loc (L Nomina locis): -oria, -ia, -eria, -arium, -uor.</p>
+</li>
+<li>
+<p>Nómines de qualitá (L Nomina modi): -tá, -ie, -ntie, -ura, -esse,
+-ore.</p>
+</li>
+<li>
+<p>Participies: -nt, -t, -nd.</p>
+</li>
+<li>
+<p>Adjectives de verbal temas: -bil, -id, -il, -iv, -ori, -aci.</p>
+</li>
+<li>
+<p>Adjectives de nominal temas: -al, -ari, -an, -at, -atr, -esc, -ic,
+-in, -ori, -os, -ut.</p>
+</li>
+<li>
+<p>Diminutives: -ell, -ett, -ill, -il', -in'.</p>
+</li>
+<li>
+<p>Feminines: -a, -essa, (-ín).</p>
+</li>
+<li>
+<p>Nómines colectiv: -arium, -al'a, -age, -ité.</p>
+</li>
+<li>
+<p>Nómines de oficie, mestiere, profession: -atu, -erie, -ie.</p>
+</li>
+<li>
+<p>Nómines de orígine: -in, -it, -id, -oid.</p>
+</li>
+<li>
+<p>Nómines de caracterisation: -ard, -on, -astr.</p>
+</li>
+<li>
+<p>Augmentation: -issim, -ott.</p>
+</li>
+<li>
+<p>Adverbies: -men, -li.</p>
+</li>
+<li>
+<p>Numerales: -esim, -en, -ant, -plic.</p>
+</li>
+</ol>
+<p>(Fine del III-m capitul.)</p>
+<h2><a class="header" href="#cronica" id="cronica">Cronica</a></h2>
+<h3><a class="header" href="#libres" id="libres">Libres</a></h3>
+<p>CURS DE OCCIDENTAL POR ITALIANES de Joseph Ritter; 12 pg, 220 x 175 mm;
+Occidental-Buró Chapelle-Vaud, Svissia; sv Fr -,30. To es un tre bon nov
+medie de propaganda editet de nor sviss propagandistes, de quel noi
+posse atender un vivification del Occidental-movement in li landes de
+italian lingue.   Jtt.</p>
+<p>INICIAÇÃO LINGUISTICA. Mysterios, leis e curiosidades da linguagem
+humana. De Francisco Valdomiro Lorenz, São Paulo, Brazil, 1929, 302 pg.,
+160 x 230 mm. Ti intressant libre portugalés es un populari introduction
+in li scientie del lingue por laicos; ma anc por scientistes it contene
+un grand factic materiale colectet per li poliglottic autor, quel astona
+nos per un extraordinari conossentie de max divers lingues, exemples de
+queles il da in grandissim quantitá. Li idé del libre es monstrar per
+comparation de divers paroles in li max divers lingues, que omni homan
+lingues have un comun unitari órdine.</p>
+<p>Mult teories sur queles li autor basa su deductiones es nu ja tre
+antiquat; p. ex. it ne es possibil subtener li teorie que li max antiqui
+lingues esset monosillabic e poy evoluet til li flexion, quam to opinet
+Max Müller e altres. Li lingue chinés quam tip del monosillabic lingues
+es un product de un long evolution e representa ne un primitiv e povri
+lingue, ma just in su manca del superflú un exemple de cultural altore,
+sam quam hodie anglés in su perfect simplicitá in comparation con
+sanscrit exuberant in floscules. Anc li idé que li lingue in su unesim
+stadie posse esser inspirat al hom de ángeles (pg 34), on ne posse
+nominar scientic.</p>
+<p>Ultra li idé fundamental pruvar li unitá del orígine li autor interesse
+se por li idé de un nov unification del lingues in un lingue universal,
+ad saver ne pur europan, ma visibilmen plu in li direction de
+«Cosman». It ya ne es negabil que in futur li influentie del lingues
+del colorat popules va crescer e dotar li lingue international per un
+stock de nov paroles, a in li hodial statu it es utopic voler far un
+L.I. sur base de quelc similitás in cert paroles. Anc li autor deve
+constatar que li sol du sistemas queles nu posse concurrer, Esperanto e
+Occidental, es ambi exclusivmen europan. Malgré que il vole esser just
+al ambi lingues, li autor lassa vider su preferentie por Esperanto pro
+su regularitá, benque il deve constatar in Esperanto li manca de
+adaptabilitá al términos del scientie.</p>
+<p>Un tre strangi objection professor Lorenz fa contra Occidental, i.e. li
+povritá grammatical! Til nu on ha considerat to quam un avantage,
+adminim por un lingue international quel in essentie es un lingue foren
+a omnes!   E.W.</p>
+<p>FREMDSPRACHLICHES OPTISCHES WOERTERBUCH de Dr. W. Pietzsch, che R.
+Borkmann, Weimar; 120 x 180 mm. Til nu ha aparit 4 tomes: 1. Das Auge
+(li ocul), VIII + 93 pg; 2. Die Brille (li ocle??) VIII + 149 pg; 3.
+Lupen und Lesegläser (lupes e linses de
+letura, VIII + 77 pg; 4. Mikroskope. VIII + 177 pg. Ti lexico es
+redactet in 4 lingues, german, anglés, francés e hispan. Li german
+lingue es usat por li alfabetic ordination in li poliglottic parte de
+chascun tom; ma seque un liste alfabetic del paroles in li tri lingues
+non-german, quel refere al poliglottic parte. Chascun tom custa RM 5,- e
+posse esser comendat del abonnates de Cosmoglotta direct che nor
+administration con un rabatte de 10% in casu de prepayation. Noi deve
+constatar que ti ovre es reductet excellentmen e que it es un tresor de
+linguistic informationes in li dominia del optica. Naturalmen ti lexico
+del optica vell haver un aspect plu international e plu neutral si it
+vell usar un lingue international quam Occidental por li textus
+explicatori, por li paroles indicatori e por li insertiones del
+comercial firmas.    Jtt.</p>
+<h3><a class="header" href="#jurnales" id="jurnales">Jurnales</a></h3>
+<p>HELVETIA, Organ del Sviss Association por Occidental, Chapelle (Vaud),
+nr 24..25 comunica, que li ganiante del 3-m concurs de traduction del
+revúe (premie un original oleo-pictura de valore de sv Fr 100,-) es
+Senior Wettstein de Erstfeld (Canton Uri); nor gratulation. Li revúe
+inserte li textu del 4-m concurs de traduction con un simil premie. In
+plu ti caderne contene un Occidental-poema bon-rimat del old russ
+pionero. A. Kofman; excellent linguistic reflexiones de Dr. Aschvanden
+pri li regul de Wahl sub li titul «Pos li visite de Sr E. de Wahl»: un
+proclamation del Comité Central del Sviss Association por Occidental con
+li titul «Avise al esperantistes concernent li propaganda de
+Occidental»; e mult altri interessant leturas.</p>
+<p>HELVETIA, nr 26..27. Li criticas de sr de Saussure; Pro quo li ovreros
+ne usa Esperanto (de Janotta); Li luce in obscuritá (de J. Podobsky);
+Esque li «wära» es li inflation-moné? (de Nidecker); Li prison del
+lingue (de Arlette Marchal, li conosset film-stelle) etc etc; in plu un
+interessant cosmoglottic dessin de Wilhelm Blaschke «Qui va esser
+unesim?»</p>
+<p>JAZYK MEZINÁRODNÍ, oficial organ de «Federalia», Brno 12 (11,
+Wilsonova; 20 Kc per annu, exter Tchecoslovacia 25 Kc {equals} 0,75 dollar), nr
+1, es redactet in Occidental e tchec e have un suplement «Ucitel
+Svetomluvy», quel contene mult exercities con traduction del vocabules
+a tchec. -- Nr 2 contene un articul in tchec «Lingue de Paneuropa» con
+resuma in Occidental. Li comité de Federalia es nu: presidente J.A.
+Kajš, vicepresidente H. Milner, secretario Fr. Polanský, cassero L.
+Trávnícek. Federalia va comensar nu un intensiv propaganda por
+Occidental e abandona talmen su atitude neutral til nu. Suplement es nr
+2 de Ucitel Svetomluvy. Noi recomanda a omni nor slav coidealistes li
+abonnament de ti ci tchec Occidental-revúe. Li textus in Occidental es
+scrit in un modellatri diction.   Jtt.</p>
+<p>MARKETS AND METHODS FOR WRITERS, Hollywood (California), julí, sub titul
+«Paul Hugon atesta vor capabilitá leer li nov international lingue
+Occidental» denov raporta pri li statistic Occidental-experimentes de
+nor estimat colaborator (cf. Cgtt nr 70 pg
+55). Hugen, conosset scritor e lingue-psicologo, emfasa li valore de
+Occidental-textus por atestar li lingual education de examinandes. Il ha
+constatat per su propri experimentes que persones con superior
+linguistic scolation comprende Occidental in 90/100, multes mem 100/100,
+durant que angleses sin litterari education comprende 45 til 55/100. Por
+verificar ti constatation Hugon presenta un specimen-textu ex
+Cosmoglotta (« Foren Lingue»  de K. Janotta in nr 68).   E.P.</p>
+<p>LE MONDAIN, nr 23, un grand semanale de Genève, contene li portret de
+Senior de Wahl con un curt articul, textu-specimen e adresse del
+Occidental-Secretariatu, Mont-Tendre 14, Lausanne.</p>
+<p>JOURNAL DES DÉBATS, nr 190, Paris informa in su «Revue des Sciences»
+su letores pri Occidental e constata per un textu specimen que it ne es
+necessi traducter it pro que on posse comprender it immediatmen. On cita
+li adresse del Occidental-Societé de Francia e fini per li paroles:
+«Pro omni to Occidental es suficent bon por li popul (til ci in
+Occidental, e nu in francés:) e por li current besones del vive
+omnidial. Evidentmen in ultra per Occidental li majorité del
+scientificos de Europa vell comprender se sin pena.»</p>
+<p>L'AVENIR IMMOBILIER, nr 7, Paris, contene textus de exercitie solmen in
+Occidental.</p>
+<p>La CHRONIQUE ARTISTIQUE, nr 5, Paris, inserte un instructiv articul de
+Senior de Guesnet «Pourquoi une langue auxiliaire», in quel il
+demonstra li immediat usabilitá de Occidental per li exemple de Senior
+Herbert Chevalier in Oakland (California), quel respondet direct in
+Occidental a un epistul scrit in Occidental, solmen con auxile de un
+micri resumation del grammatica de Occidental e con solmen un erra. Nr
+6..7 publica un interessant articul de Senior de Guesnet «Li practica
+del lingues extran» in francés, in quel il demonstra li momentan
+utilitá de Occidental. Poy seque du anecdotes in Occidental. Nr 8
+contene un ulterior articul de De Guesnet, quel refuta quelc argumentes
+del esperantistes contra Occidental e demonstra que it es possibil
+evitar in li lingue international omni arbitraritás e tamen constructer
+un idioma tre facil e in sam témpor natural e ne oposit al customes del
+munde civilisat. Li stabilitá de Occidental ne es fundat solmen sur su
+radicas international, ma anc sur su prefixes, sufixes e su formation de
+paroles.</p>
+<p>LA GAZETTE COMMERCIALE, nr 5, Paris, scri: «In contrarie al lingue
+international max conosset, Esperanto, quel es comprendet solmen de su
+adeptes, Occidental have un camp de enorm action. On posse usar it
+immediatmen por comunicationes con persones queles nequande ha aprendet
+it, queles mem ne conosse su nómine.»</p>
+<p>LE POLYGLOTTE, nr 7, Nancy-Strasbourg contene textus in Occidental:
+corespondentie comercial, grammatica, exercities, letura.</p>
+<p>PROVINCE DE NAMUR, 17 julí, constata que «li persones francés besona
+poc eforties por adjunter Occidental a lor bagage linguistic.» On
+reproducte un textu in Occidental e adjunte: «Quant simplic to es,
+quant bell! E tam facil...»</p>
+<p>KOSMOS, manual periodic por amicos del natura, numeró 7, julí,
+Stuttgart, contene un anuncia del libre «Occidental, die Weltsprache».</p>
+<p>LINZER VOLKSBLATT, 25 julí, recense denov tre favorabilmen (cp Cgtt pg
+80) li libre «Occidental, die Weltsprache».</p>
+<p>MÜNCHNER NEUESTE NACHRICHTEN, München, nr 182, mentiona li libre
+«Occidental, die Weltsprache».</p>
+<p>DIE AUSLESE, nr 42 Berlin S 14, Alte Jakobstraße 88, contene un tre
+eficaci anuncie por Occidenatl. Ti revúe es tre recomandabil a ti de nor
+letores queles comprende german. It contene extractes ex mult revúes del
+tot munde.</p>
+<p>STEIRISCHE ANGESTELLTENZEITUNG, nr 6, publica un articul de nor
+colaborator senior H. Gaminger con textus specimen in Esperanto, Ido e
+Occidental. In fine il mentiona li adresse del Occidental-Union e li
+grand german libre. Ti articul havet un excellent success e causat mult
+demandes de information che li Central Oficie. In ti ci ocasion noi
+informa nor colaboratores que li Central Oficie misse a omni
+interessates gratuitmen un exemplare de Cosmoglotta. Ples usar ti
+information in li propaganda in li presse.</p>
+<p>DER FREMDSPRACHLER, Berlin NO 18 (Landsberger Straße 113), nr 4, contene
+un articul pri Occidental, un «laconic» grammatica de Occidental, ambi
+in Occidental e un recension del grand german libre por Occidental.</p>
+<p>DAS NUTZAUTO, nr 42, Leitmeritz a.d. Elbe, recense li libre
+«Occidental, die Weltsprache» e di: «Pro su construction Occidental
+sembla destinat substituer in curt témpor omni anterior provas crear un
+lingue international. Si li espera a un L.I. have li chance successar,
+in ti casu solmen per li sistema Occidental.»</p>
+<p>DIE SONNTAGSZEITUNG, Stuttgart, nr 21, recense li libre «Occidental,
+die Weltsprache»in maniere neutral e da in fine un textu paralel in
+Esperanto e Occidental.</p>
+<p>SCHOLA ET VITA (Organ del Academie pro Interlingua), Director Prof. N.
+Mastropaolo, Via E. Gagliano 46, Milano 137. Nr 6..7 mentiona li libre
+«Occidental, die Weltsprache» e li biblioteca «Ovre». Henk Bylsma
+exposi su remarcabil project scientificmen motivat de un interlingue tre
+proxim a Occidental. Il di: «Li latin es un excellent base por li
+international lingue, ma ne omni hom es latinist. Si noi vole que li
+grand publica adopte un lingue fundat sur li latin, noi deve simplificar
+nor base tam quam it es necessari, por que li nonlatinist posse facilmen
+comprender e practicar nor lingue. Li intelligibilitá a unesim vide es
+li principal qualitá de un interlingue. Por obtener ti qualitá, noi deve
+ne hesitar adopter un non-latin vocabul, si it es plu minu
+international. Un altri grand medie por facilisar li comprension es
+conservar li international vocabules quam ili es in li modern lingues.
+Li experimentes de Sr Paul Hugon ha demonstrat que it es dangerós
+modificar li international ortografie. Li duplic consonantes e li
+combinationes ph, th deve esser respectet.»  E.P.</p>
+<p>TOLERO, editor G. Dayras, 19 place St-Pierre, Paris 18, have quam
+devise: «Interlinguiste skrib-liberese. No person-ataki». In nr 23 un
+idist Eu. W-er critica sub titul «Por facileso e simpleso» li
+diversitá del radicas in mult paroles de Ido, p. ex. hungro, famino (Occidental
+fame, famine); fisho, peskar (pisc, -ar); vintro, hivernar (hivern-e,
+-ar); suno, solstico, helianto (sol, -sticie, torna-sol); duktar,
+reducar (ducter, re-); flugar, volatila (vol-ar, -atil); fondar, fundo,
+fundamento (fund-ar, -ament); lasta, ultimato (ultim, -atum); etc.
+O.W. Fergusen constata in un articul «Li progresse of anglese» que
+«hodie anglese have solmen un rival, hispanese.» Nu, Occidental es
+justmen quasi un union de anglés e hispan. Il di: «Per medies de
+electricitá noi ha soluet li problema de spermacet, per li machines ti
+del labor de sclaves; per eugenica li societá may soluer li problema de
+criminalitá, ma ne per medies de leges. Un solution del problema del
+guerre va venir ne per international concordates, ma per li grand
+comercie. E li solution del interlingual problema va venir con li
+Universal Lingue.» F.V. Lorenz critica Occidental pro li divers
+pronunciation de c, g, s, y, pro li non-fix desinenties del nómines, pro
+li desfacilitá de n' l' a mult nationes etc.    Jtt.</p>
+<p>In Cosmoglotta nr 70, pg 59, in li recension de «TOLERO» sr Jtt. pro
+mis-comprense ha interpretat Mundilatin ducent principie per Occidental
+«du-cent (i.e. 200) principies». Nu sr Weisbart scri nos que ducent in
+«Mundilatin» es Occidental «ductent» e ne «200», e que de su
+«Mundilatin» have ne «ducent principies» (quam sr Jtt. credet) ma
+solmen «un ductent principie». In ultra sr W. fa nos atenter pri un
+mis-ductent print-erra in linea 11 de infra, u on mey leer Mundi-Latin
+vice «Hundi-Latin». Noi tre regreta ti erras e peti li meritosi autor
+por pardon.   Red.</p>
+<p>OFICIAL BULETINO (idistic) nr 11 (editoría P. Joosten, 43, Geldofstraße,
+Antwerpen-W.), informa que li Ido-Gruppe de Frankfurt am Main changeat
+su nómine a «Weltsprache-Verein Frankfurt a. M.», e que in li comité
+de ti societé es idistes e occidentalistes. Unesim presidente es senior
+Dr. Auerbach, duesim presidente senior Dr. Wormser. Chascun membre
+recive tam «Oficial Buletino» quam «Cosmoglotta». Li sam numeró de
+ti jurnale redactet de senior A. Matejka (15. Avenue des Écoles,
+Villemomble, Seine, Francia) contene un raport de Dr. Auerbach pri li
+«Meeting of Linguistic Research») vide Cosmoglotta, nr 70, pg 61 e 62)
+ex quel noi extracte li sequent lineas: «Leente li procotolles del
+reuniones mult persones va regretar que per tam mult expenses ne plu
+mult ha esset atinget... Seniora Morris have certmen un special
+simpatie por Esperanto, ma to ha esset demonstrat in null maniere in li
+conferentie... yo opene que noi ne posse atender li resultates del
+labores comensat de IALA. Si ili va esser executet secun li programma
+elaborat durant li conferentie de Prof. Funke con Seniora Morris, ili va
+durar forsan pluri decennies. Si noi ne ha successat antey proposir un
+lingue suficent bon usabil e obtener su introduction in li scoles, noi
+va har laborat por un utopie. Li international relationes ha developat
+se til un gradu non-expectat. Li introduction de un lingue auxiliari
+ha devenit un beson urgent, e noi deve laborar per omni nor eforties por
+que bentost un neutral constructet lingue mey esser selectet quam
+auxiliari; altrimen alquel lingue national va ocupar ti loc.» Tre just,
+e pro to noi ne es adherentes de omni max divergent sistemas, ma noi
+propaga ti sistema quel es max facilmen introductibil, i.e. Occidental.</p>
+<p>MONDO, Stockholm (che P. Ahlberg, 54 Brahegatan, Stockholm 8), apari nu
+quam jurnale de Novial in un bell equipation. Nr 1 (231) comunica, que
+presidente del «Unione novialiste international» es J. Barral,
+secretario P. Ahlberg. Li «non-partisan» dan «Societé por li
+international Lingue auxiliari» (6 Sundvej, Hellerup) dismisse
+gratuitmen micri novial-grammaticas contra inviation del portein ante.
+Ex li articul introductori noi cita: «Interlingue exista nur in Oficie
+de instrumente. Lu non es self-eme» (i.e. Interlingue existe solmen
+quam instrument. It ne es self-scop). Ma si to es just, on deve crear un
+instrument facilmen manuabil del homes queles deve usar it con omni lor
+particularitás, e on ne deve crear un instrument por quel on deve in
+unesim transformar li mentalitá del homes europan e apropriar les novi
+customes de pensada e scrition. In quel lingue on trova sene (scene, ma
+ni L senex «oldon», ni senaplante), sent (cent, ne senti), sentio
+(sensation), sinu (sin to, ne sinu), sone (zone, ne son), suave (zuavo,
+e ne suavi), taso (discretion), quum es tum? (quo es to?) -- It sembla
+que Novial tamen es «self-eme», quasi un sport por filofoneticos, ma
+ne un instrument por homes del interlinguistic practica; it es inferior
+in ti relation mem a Esperanto. Per tal fonetic metodes on barbarisa li
+lingue international, sam quam on ha fat to per li ortografic reformes
+in german (1901), hispan, italian etc. -- Nr 2 (232) contene
+gratulationes a Professor Jespersen pro su 70-m anniversarie e un curt
+biografie del jubilant scientist.</p>
+<p>ARBEITER-ESPERANTIST, nr 8, Leipzig, recomenda in un recension li letura
+del libre «Occidental, die Weltsprache». H. Muravkin discusse
+Occidental in un special articul. Il fa li artificie criticar Occidental
+sin inserter mem un unic frase in Occidental. In fine li scritor
+constata: «Esperanto ne besona timen li nov concurrent, ma it va
+prender ex it omnicos bon valorós, un pos un, quam it prendet e va
+prender ex Ido e centenes de altri sistemas, forjettante les depoy quam
+presset citrones.»</p>
+<p>AUSTRIA ESPERANTISTO, Wien, nr 6, tracta Occidental in un articul «Ĉu
+denove Esperantokrizo?» Li autor studiat Occidental tre superficialmen.
+Il reputa «esset» quam form artificial: ergo ti doctor de filosofie
+mem ne conosse latin. Il asserteque «quo de Wahl nu reprochante di pri
+Esperanto, to partmen ja quelc noncontentos ex nor ranges assertet ante
+plu quam duant annus»; ma il ne save que Wahl, un ancian Esperantist e
+corespondente de Zamenhof, esset inter ti noncontent esperantistes ante
+plu quam 20 annus. In ultra li articul contene print-erras queles
+demonstra un significativ desestim por linguistic problemas.</p>
+<h3><a class="header" href="#divers" id="divers">Divers</a></h3>
+<p>Un reunion amical de nor co-idealistes in STRASBOURG eventet jovedí li
+26 junio sub li presidentie de Sr. L.M. de Guesnet, presidente del
+O.S.F. Assistet Senioras Bricka, Gruber, Schwab e Brisach, professoras,
+Seniores Dominon e Bohin, directores de scoles. Sr de Guesnet fat un tre
+interessant discurs pri su experienties in li interlinguistic movement e
+pri li possibilitás de usation immediat de Occidental. Sa Bricka e Sr
+Dominos enunciat lor entusiasme por Occidental e adjuntet que ili va
+laborar seriosmen por auxiliar nor propagande secun lor medies.</p>
+<p>G{dot}B{dot}</p>
+<h2><a class="header" href="#occidental-sur-li-ocean" id="occidental-sur-li-ocean">Occidental sur li ocean</a></h2>
+<p>Nor colaborator Prof. Theodor L. KREBS ha emigrat de München in Germania
+a Ecuador in Sudamerica, de u il ha inviat al redactor de Cosmoglotta un
+epistul ex quel noi extrae li sequent passus interessant apartmen por
+occidental-propagandistes:</p>
+<hr />
+<p>Tre estimat senior Pigal... Ci in Guayaquil, u yo es un del 48
+professores del Colegio Vicente Rocafuerte, yo espera, pos har acomodat
+me, posser far propaganda por Occidental. Sr Karl Gersch, qui anc es
+ocupat in li Collegio (quam unic germano ultra me), ja ha promesset me
+su colaboration.</p>
+<p>Nu pri li evenimentes sur li nave... In un vésper in li curs del
+conversation on tuchat li question de international lingues, e anc de
+Esperanto. Li usual por e contra. Li medico del nave assertet, que per
+latin on facilmen posse leer Esperanto. Nequi savet alquicos plu precis.
+Null hom conosset un del sistemas; solmen li doctor, quam dit, unquande
+ha leet un Esperanto-textu. Comprensibilmen to vell esser un necessitá,
+li unes opinet. To ne es possibil, dit li altres. In fin yo prendet li
+parol. Ad unesim yo contradit al doctor: On ne posse leer Esperanto
+immediatmen, si on ne ha aprendet it antey. No, dit li doctor, yo quasi
+sempre posset divinar li sense. Naturalmen on posse interpretar ne
+omnicos, tamen un grand part. Ha aparit un lingue plu bon quam
+Esperanto, dit yo. Do apen, replicat li ronde. In fact: Occidental,
+Occidental??? Quo es to? It es, yo continuat, simil a un romanic lingue,
+precismen tam elegant, tam flexibil e sammen tam sonori e solmen un
+decesim part tam desfacil... Yo parla que chascun de vos strax posse
+leer ti lingue. Sin hat studiat it jamá??? -- Ples atender.</p>
+<p>Poy yo curre in mi cabine, porta ad supra du epistules inviat a me del
+Central Oficie del Occidental-Union, yo mette les sur li table e lassa
+nor bon Occidental parlar por se self. Chascun parol yo comprende, di li
+old doctor. On deve conosser solmen un poc latin. Es nullmen necessi,
+interclama un yun comerciante de Hamburg, per anglés to es facil in egal
+gradu. To in fact es tre interessant, opine li doctor, yo ancor ne ha
+audit ni un parol pri it. -- Ili omnes concorda que Occidental es ne
+solmen bell, ma tre practic e es valent que on ocupa se plu detalliatmen
+pri it...</p>
+<p>Si omnicos tam successe quam noi plana, noi de Ecuador va laborar li
+altri sudamerican states. Senior Gersch e yo va fundar anc un
+Occidental-gruppe ci.</p>
+<p>Con mult cordial salutationes anc al altri coidealistes</p>
+<p>vor Theodor L. Krebs.</p>
+<hr />
+<h2><a class="header" href="#apelle-al-interlinguistes" id="apelle-al-interlinguistes">Apelle al interlinguistes</a></h2>
+<p>Con exception de su manuale de Volapük nequel ovre de Julius LOTT es plu
+recivibil in li comercie. Pro que just li opiniones e labores de ti
+interlinguist have un grand signification por li historie del natural
+scole de interlinguistica (vide Cosmoglotta nr 68. pg 14..20), li
+Central Oficie del Occidental-Union have li intention editer pri ti tema
+un brochura de adminim 24 págines in li formate de «Cosmoglotta». Un
+parte del necessi moné es ja parat, precipue anc per un prestage de öS
+250 de senior Heinrich Lott. un nevo de Julius Lott. Nu es necessi
+adminim ancor öS 100: ergo ti coidealistes queles vole promover li
+edition de ti ci brochura. mey precomendar adminim exemplares de ti
+brochura (precie admaxim öS 1,50) o prestar al Central Oficie summas
+partial de adminim 15 öS. Ti ci subventionatores va reciver li brochura
+ye un precie moderat in calculation a lor conto antecipatori. Li libre
+va contener excerptes ex omni tre interessant publicationes de Julius
+Lott, queles nu es
+totalmen exhaustet. Do plu grand li disponibil summa de pecunie va
+esser, plu grand va esser li contenete del nov edition. Si li pecunie va
+esser un multiplic del supra indicat summa, li númer del págines
+republicabil anc va esser un multiplic del supra indicat.</p>
+<p><em>OCCIDENTAL-UNION +
+Central Oficie</em></p>
+<h2><a class="header" href="#es-que-esperanto-va-perir" id="es-que-esperanto-va-perir">Es-que Esperanto va perir?</a></h2>
+<p>Mult amicos opine que va venir li témpor que Esperanto va desaparir quam
+unquande desaparit Volapük sin lassar surviver alquel organisation,
+alquel institute o alquel revuette. No. li situation de Esperanto es
+total altri. Quam on save, por Esperanto ha esset fat quelc legates, in
+part tam grand que li capitale resta intact e que solmen li interestes
+es consumat. Nu, si talmen li capitale resta e ne va esser destructet
+pro un inflation de moné o pro un altri
+financial catastrofe, li capitale va sempre producter li interestes e
+ili va dever esser consumat por Esperanto, mem si omni esperantistes va
+har devenit occidentalistes. Do sempre quelc persones va dever propagar
+li lingue de Zamenhof.</p>
+<p>Ti reflexiones fa memorar que it es un erra creder que un bon afere
+posse viver sin financial base e que it prepara self su via al victorie.
+To es fals. Ples vider Pirro, quel havet un solution plu bon quam
+Esperanto ja ante Volapük (in 1868). Ma Pirro ne investit li necessi
+pecunie e ne applicat li necessi methodes de reclame por propulser su
+lingue.</p>
+<p>Sempre es necessi un publicitá max grand possibil, i.e. reclame. i.e.
+moné, anc por un bon cose. Do si Occidental deve ne perir, si it deve
+perseverar in li combatte por li existentie. noi ne solmen besona un bon
+instrument, un bon lingue (to es solmen un afacilation si li altri
+condition es satisfat). ma noi besona anc moné, moné e denov moné.</p>
+<p>Videant consules, ne quid res occidentalistica detrimenti capiat! -o-</p>
+<h2><a class="header" href="#avise-al-abonnates-de-cosmoglotta" id="avise-al-abonnates-de-cosmoglotta">Avise al abonnates de Cosmoglotta</a></h2>
+<p>Pro que noi ancor ne successat fixar li budgete de Cosmoglotta e del
+Occidental-Union por 1931, noi informa nor letores. que it es possibil
+que li numeró novembre-decembre de Cosmoglotta va aparir con un
+retardation, sam quam li ultim numeró de 1929. Nam probabilmen it va
+esser necessi que noi comunica in ti ultim numeró del annu current, un
+changeament del conditiones e del precie de abonnament.</p>
+<p>Pro ti causes on mey payar li abonnament por 1931 ne ante recive del
+numeró novembre-decembre. Redaction e Administration.</p>
+<p>Si vu vole dar a vor filies un bon education comercial e linguistic,
+misse les durant un annu scolari in li</p>
+<p>MODERN SCOLE
+DE COMERCIE E LINGUES</p>
+<p>Tel. 33-28  Director: G. BOHIN TEL. 33-28</p>
+<p>7, Place de Bordeaux -- STRASBOURG (Francia)</p>
+<p>Section comercial: Contabilitá -- Stenografie -- Dactilografie --
+Stenotipie -- Corespondentie comercial.</p>
+<p>Section lingual: Francés -- German -- Anglés -- Occidental.</p>
+<p>Adaptation del francés stenografie a German, Anglés e Occidental.</p>
+<p>Curses in scole o per corespondentie.</p>
+<p>Programma es misset gratuitmen a chascun person qui peti it.</p>
+<p>10% rabatte a membres del Occidental-Union o abonnates de Cosmoglotta.</p>
+<p>Eigentümer, Herausgeber u. Verleger: Occidental-Union, Sitz: Mauer bei
+Wien. Verantwortlicher Redakteur. Ing. Engelbert Pigal, Liesing bei
+Wien. Druck: Milan Nedvídek, Tábor.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../Cosmoglotta/071.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../Cosmoglotta/073.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../Cosmoglotta/071.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../Cosmoglotta/073.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script src="https://occidental-lang.com/website-word-lookup/lookup.js"></script>
+        <script>
+            lookupInit('https://occidental-lang.com/website-word-lookup/dict.json');
+            document.onselectionchange = debounce(lookup, 500);
+        </script>
+        
+
+    </body>
+</html>

@@ -1,0 +1,899 @@
+<!DOCTYPE HTML>
+<html lang="ie" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>A 65 - scritorium</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        
+
+        <div id="definition"></div>
+
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="../index.html">Hem</a></li><li class="chapter-item "><a href="../MicriCrestomatie/0.html"><strong aria-hidden="true">1.</strong> Micri Crestomatie</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../MicriCrestomatie/1.html"><strong aria-hidden="true">1.1.</strong> Capitul 1</a></li><li class="chapter-item "><a href="../MicriCrestomatie/proverbies.html"><strong aria-hidden="true">1.2.</strong> Proverbies</a></li></ol></li><li class="chapter-item "><a href="../LiLittPrince/0.html"><strong aria-hidden="true">2.</strong> Li Litt Prince</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../LiLittPrince/1.html"><strong aria-hidden="true">2.1.</strong> Capitul 1</a></li><li class="chapter-item "><a href="../LiLittPrince/2.html"><strong aria-hidden="true">2.2.</strong> Capitul 2</a></li><li class="chapter-item "><a href="../LiLittPrince/3.html"><strong aria-hidden="true">2.3.</strong> Capitul 3</a></li><li class="chapter-item "><a href="../LiLittPrince/4.html"><strong aria-hidden="true">2.4.</strong> Capitul 4</a></li><li class="chapter-item "><a href="../LiLittPrince/5.html"><strong aria-hidden="true">2.5.</strong> Capitul 5</a></li><li class="chapter-item "><a href="../LiLittPrince/6.html"><strong aria-hidden="true">2.6.</strong> Capitul 6</a></li><li class="chapter-item "><a href="../LiLittPrince/7.html"><strong aria-hidden="true">2.7.</strong> Capitul 7</a></li><li class="chapter-item "><a href="../LiLittPrince/8.html"><strong aria-hidden="true">2.8.</strong> Capitul 8</a></li><li class="chapter-item "><a href="../LiLittPrince/9.html"><strong aria-hidden="true">2.9.</strong> Capitul 9</a></li><li class="chapter-item "><a href="../LiLittPrince/10.html"><strong aria-hidden="true">2.10.</strong> Capitul 10</a></li><li class="chapter-item "><a href="../LiLittPrince/11.html"><strong aria-hidden="true">2.11.</strong> Capitul 11</a></li><li class="chapter-item "><a href="../LiLittPrince/12.html"><strong aria-hidden="true">2.12.</strong> Capitul 12</a></li><li class="chapter-item "><a href="../LiLittPrince/13.html"><strong aria-hidden="true">2.13.</strong> Capitul 13</a></li></ol></li><li class="chapter-item "><a href="../UnDesertor/0.html"><strong aria-hidden="true">3.</strong> Un Desertor</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../UnDesertor/1.html"><strong aria-hidden="true">3.1.</strong> Capitul 1</a></li></ol></li><li class="chapter-item expanded "><a href="../Cosmoglotta/0.html"><strong aria-hidden="true">4.</strong> Cosmoglotta</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/1927.html"><strong aria-hidden="true">4.1.</strong> 1927</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/038.html"><strong aria-hidden="true">4.1.1.</strong> A 38</a></li><li class="chapter-item "><a href="../Cosmoglotta/039.html"><strong aria-hidden="true">4.1.2.</strong> A 39</a></li><li class="chapter-item "><a href="../Cosmoglotta/040.html"><strong aria-hidden="true">4.1.3.</strong> A 40</a></li><li class="chapter-item "><a href="../Cosmoglotta/041.html"><strong aria-hidden="true">4.1.4.</strong> A 41</a></li><li class="chapter-item "><a href="../Cosmoglotta/042.html"><strong aria-hidden="true">4.1.5.</strong> A 42</a></li><li class="chapter-item "><a href="../Cosmoglotta/043.html"><strong aria-hidden="true">4.1.6.</strong> A 43</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1928.html"><strong aria-hidden="true">4.2.</strong> 1928</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/044.html"><strong aria-hidden="true">4.2.1.</strong> A 44</a></li><li class="chapter-item "><a href="../Cosmoglotta/045.html"><strong aria-hidden="true">4.2.2.</strong> A 45</a></li><li class="chapter-item "><a href="../Cosmoglotta/046.html"><strong aria-hidden="true">4.2.3.</strong> A 46</a></li><li class="chapter-item "><a href="../Cosmoglotta/047.html"><strong aria-hidden="true">4.2.4.</strong> A 47</a></li><li class="chapter-item "><a href="../Cosmoglotta/048.html"><strong aria-hidden="true">4.2.5.</strong> A 48</a></li><li class="chapter-item "><a href="../Cosmoglotta/049.html"><strong aria-hidden="true">4.2.6.</strong> A 49</a></li><li class="chapter-item "><a href="../Cosmoglotta/050.html"><strong aria-hidden="true">4.2.7.</strong> A 50</a></li><li class="chapter-item "><a href="../Cosmoglotta/051-052.html"><strong aria-hidden="true">4.2.8.</strong> A 51-52</a></li><li class="chapter-item "><a href="../Cosmoglotta/053.html"><strong aria-hidden="true">4.2.9.</strong> A 53</a></li><li class="chapter-item "><a href="../Cosmoglotta/054.html"><strong aria-hidden="true">4.2.10.</strong> A 54</a></li><li class="chapter-item "><a href="../Cosmoglotta/055.html"><strong aria-hidden="true">4.2.11.</strong> A 55</a></li></ol></li><li class="chapter-item expanded "><a href="../Cosmoglotta/1929.html"><strong aria-hidden="true">4.3.</strong> 1929</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/056.html"><strong aria-hidden="true">4.3.1.</strong> A 56</a></li><li class="chapter-item "><a href="../Cosmoglotta/057.html"><strong aria-hidden="true">4.3.2.</strong> A 57</a></li><li class="chapter-item "><a href="../Cosmoglotta/058.html"><strong aria-hidden="true">4.3.3.</strong> A 58</a></li><li class="chapter-item "><a href="../Cosmoglotta/059.html"><strong aria-hidden="true">4.3.4.</strong> A 59</a></li><li class="chapter-item "><a href="../Cosmoglotta/060.html"><strong aria-hidden="true">4.3.5.</strong> A 60</a></li><li class="chapter-item "><a href="../Cosmoglotta/061.html"><strong aria-hidden="true">4.3.6.</strong> A 61</a></li><li class="chapter-item "><a href="../Cosmoglotta/062-63.html"><strong aria-hidden="true">4.3.7.</strong> A 62-63</a></li><li class="chapter-item "><a href="../Cosmoglotta/064.html"><strong aria-hidden="true">4.3.8.</strong> A 64</a></li><li class="chapter-item expanded "><a href="../Cosmoglotta/065.html" class="active"><strong aria-hidden="true">4.3.9.</strong> A 65</a></li><li class="chapter-item "><a href="../Cosmoglotta/066.html"><strong aria-hidden="true">4.3.10.</strong> A 66</a></li><li class="chapter-item "><a href="../Cosmoglotta/067.html"><strong aria-hidden="true">4.3.11.</strong> A 67</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1930.html"><strong aria-hidden="true">4.4.</strong> 1930</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/068.html"><strong aria-hidden="true">4.4.1.</strong> A 68</a></li><li class="chapter-item "><a href="../Cosmoglotta/069.html"><strong aria-hidden="true">4.4.2.</strong> A 69</a></li><li class="chapter-item "><a href="../Cosmoglotta/070.html"><strong aria-hidden="true">4.4.3.</strong> A 70</a></li><li class="chapter-item "><a href="../Cosmoglotta/071.html"><strong aria-hidden="true">4.4.4.</strong> A 71</a></li><li class="chapter-item "><a href="../Cosmoglotta/072.html"><strong aria-hidden="true">4.4.5.</strong> A 72</a></li><li class="chapter-item "><a href="../Cosmoglotta/073.html"><strong aria-hidden="true">4.4.6.</strong> A 73</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1931.html"><strong aria-hidden="true">4.5.</strong> 1931</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/074.html"><strong aria-hidden="true">4.5.1.</strong> A 74</a></li><li class="chapter-item "><a href="../Cosmoglotta/075.html"><strong aria-hidden="true">4.5.2.</strong> A 75</a></li><li class="chapter-item "><a href="../Cosmoglotta/076.html"><strong aria-hidden="true">4.5.3.</strong> A 76</a></li><li class="chapter-item "><a href="../Cosmoglotta/077.html"><strong aria-hidden="true">4.5.4.</strong> A 77</a></li><li class="chapter-item "><a href="../Cosmoglotta/078.html"><strong aria-hidden="true">4.5.5.</strong> A 78</a></li><li class="chapter-item "><a href="../Cosmoglotta/079.html"><strong aria-hidden="true">4.5.6.</strong> A 79</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1932.html"><strong aria-hidden="true">4.6.</strong> 1932</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/080.html"><strong aria-hidden="true">4.6.1.</strong> A 80</a></li><li class="chapter-item "><a href="../Cosmoglotta/081.html"><strong aria-hidden="true">4.6.2.</strong> A 81</a></li><li class="chapter-item "><a href="../Cosmoglotta/082.html"><strong aria-hidden="true">4.6.3.</strong> A 82</a></li><li class="chapter-item "><a href="../Cosmoglotta/083.html"><strong aria-hidden="true">4.6.4.</strong> A 83</a></li><li class="chapter-item "><a href="../Cosmoglotta/084.html"><strong aria-hidden="true">4.6.5.</strong> A 84</a></li><li class="chapter-item "><a href="../Cosmoglotta/085.html"><strong aria-hidden="true">4.6.6.</strong> A 85</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1933.html"><strong aria-hidden="true">4.7.</strong> 1933</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/086.html"><strong aria-hidden="true">4.7.1.</strong> A 86</a></li><li class="chapter-item "><a href="../Cosmoglotta/087.html"><strong aria-hidden="true">4.7.2.</strong> A 87</a></li><li class="chapter-item "><a href="../Cosmoglotta/088.html"><strong aria-hidden="true">4.7.3.</strong> A 88</a></li><li class="chapter-item "><a href="../Cosmoglotta/089.html"><strong aria-hidden="true">4.7.4.</strong> A 89</a></li><li class="chapter-item "><a href="../Cosmoglotta/090.html"><strong aria-hidden="true">4.7.5.</strong> A 90</a></li><li class="chapter-item "><a href="../Cosmoglotta/091.html"><strong aria-hidden="true">4.7.6.</strong> A 91</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1934.html"><strong aria-hidden="true">4.8.</strong> 1934</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/092.html"><strong aria-hidden="true">4.8.1.</strong> A 92</a></li><li class="chapter-item "><a href="../Cosmoglotta/093.html"><strong aria-hidden="true">4.8.2.</strong> A 93</a></li><li class="chapter-item "><a href="../Cosmoglotta/094.html"><strong aria-hidden="true">4.8.3.</strong> A 94</a></li><li class="chapter-item "><a href="../Cosmoglotta/095.html"><strong aria-hidden="true">4.8.4.</strong> A 95</a></li><li class="chapter-item "><a href="../Cosmoglotta/096.html"><strong aria-hidden="true">4.8.5.</strong> A 96</a></li><li class="chapter-item "><a href="../Cosmoglotta/097.html"><strong aria-hidden="true">4.8.6.</strong> A 97</a></li><li class="chapter-item "><a href="../Cosmoglotta/098.html"><strong aria-hidden="true">4.8.7.</strong> A 98</a></li><li class="chapter-item "><a href="../Cosmoglotta/099.html"><strong aria-hidden="true">4.8.8.</strong> A 99</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1935.html"><strong aria-hidden="true">4.9.</strong> 1935</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/B-001.html"><strong aria-hidden="true">4.9.1.</strong> B 1</a></li><li class="chapter-item "><a href="../Cosmoglotta/100.html"><strong aria-hidden="true">4.9.2.</strong> A 100</a></li><li class="chapter-item "><a href="../Cosmoglotta/101.html"><strong aria-hidden="true">4.9.3.</strong> A 101</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-002.html"><strong aria-hidden="true">4.9.4.</strong> B 2</a></li><li class="chapter-item "><a href="../Cosmoglotta/102.html"><strong aria-hidden="true">4.9.5.</strong> A 102</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-003.html"><strong aria-hidden="true">4.9.6.</strong> B 3</a></li><li class="chapter-item "><a href="../Cosmoglotta/103.html"><strong aria-hidden="true">4.9.7.</strong> A 103</a></li><li class="chapter-item "><a href="../Cosmoglotta/104.html"><strong aria-hidden="true">4.9.8.</strong> A 104</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-004.html"><strong aria-hidden="true">4.9.9.</strong> B 4</a></li><li class="chapter-item "><a href="../Cosmoglotta/105.html"><strong aria-hidden="true">4.9.10.</strong> A 105</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/theRest.html"><strong aria-hidden="true">4.10.</strong> The Rest</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">scritorium</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <div id="langPicker"></div>
+                        
+                        <a href="https://github.com/occidental-lang/scritorium" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#cosmoglotta-a-65-oct-1929" id="cosmoglotta-a-65-oct-1929">Cosmoglotta A 65 (oct 1929)</a></h1>
+<p>Annu VIII -- Octobre 1929 -- Nr. 65 (10)</p>
+<h2><a class="header" href="#contene" id="contene">Contene</a></h2>
+<ul>
+<li>Complet grammatica de Occidental (2), K. Janotta</li>
+<li>Cronica</li>
+<li>Radio-dramas, Ib Lange, trad. Jan Casse</li>
+<li>Comendat exclamation interruptiv, trad. Engelbert Pigal</li>
+<li>Parol de infant, secun Larousse, trad. J. Colas</li>
+<li>Subventiones al Occidental-Union</li>
+</ul>
+<h2><a class="header" href="#complet-grammatica-de-occidental" id="complet-grammatica-de-occidental">Complet grammatica de Occidental</a></h2>
+<p>(1-esim continuation)</p>
+<h3><a class="header" href="#i-esim-capitul-fonologie" id="i-esim-capitul-fonologie">I-esim Capitul: Fonologie</a></h3>
+<p>(Continuation)</p>
+<p>C{dot} Accentuation</p>
+<ol>
+<li>
+<p>Li accentu tonic es situat ordinarmen sur li vocal ante li ultim
+consonant. In li exemples sequent li accentu es indicat per grass
+lítteres (a, e ...): crater, doctor, gallin, general, lateral;
+colere, farine, honore, machine, ordinari, semestre, sinistri,
+turbine; lauda, meuble; linea, Austria, diabolerie, galanterie,
+familie, libreria, observatoria, statue; felici, matrice, judicie;
+telegraphar, il telegrapha, il ha telegraphat; constructer, yo
+constructe, yo ha constructet; il nomina, yo considera, it diminue,
+it flammea, il logia, noi mersia.</p>
+</li>
+<li>
+<p>Li finales -bil, -ic (si it es pronunciat [ik]), -im, -ul es
+ínaccentuat e atrae li accentu al precedent síllabe, mem si li
+precedent síllabe es un de ti quar síllabes (finales atonic):
+labil, nobil, possibil, stabil; archaic, etheric, heroic,
+hyperbolic, lexico, laconic, mathematica, prosaic, radica, sideric,
+it significa; anim, bellissim; intim, proxim, triesim, ultim;
+fistul, gurgul, mandul, nebul, popul, regul, vestibul, vocabul, il
+calcula, yo postula; herculic, articul, pedicul, perpendicul.</p>
+</li>
+<li>
+<p>Li finale -s del plurale e li finales -men e -um es ínaccentuat e
+ne have influentie al accentu del céteri parol-parte (finales
+enclitic): doctor, doctores; linea, lineas; statue, statues;
+lexico, lexicos; vocabul, vocabules; hyperbolic, hyperbolicmen;
+rapid, rapidmen; respectabil, respectabilmen; sobri, sobrimen; tal,
+talmen; album, circum, herbarium, maximum, opossum, plenum; albums,
+herbariums, etc. Li finale -men es li acurtat L «mente» (= in li
+sense, in li qualitá), do li adverbies format per -men es quasi
+composites; ergo -men posse reciver un accentu secundari secun li
+5-m articul in infra: respectabilmen, sobrimen.</p>
+</li>
+<li>
+<p>Paroles ne havent vocales ante li ultim consonant es accentuat sur
+li unesim vocale: die, deo, noi, tui, yo ea, (ma: ear), yo lee (ma:
+leer), yo trae (ma: traer), brui, boa, pie, via; plurale: dies,
+deos, etc.</p>
+</li>
+<li>
+<p>In paroles composit (anc in historic composites) chascun parte
+posse haver un accentu tonic secun li regules superior. Si li
+unesim parte (li parol determinativ) es un substantive, adjective o
+li prefix negativ ín-, it recive li accentu principal (accentu
+primari); si it es un particul, it recive o nequel accentu o un
+accentu accessori (accentu secundari). Li duesim parte (li parol
+determinat) recive in li ultim casu li accentu primari. Exemples
+(accentu primari per grass lítteres: á, é ...; accentu secundari
+per normal lítteres: á, á ...): férrovía (ex ferro-via); málhumorát
+(ex mal-humorat); ínpracticábil (vide in li IV-m capitul inter
+li prefixes). Ma: rétrovenír (ex retro e venir), yo rétrovéni;
+ápplicár, yo aplíca; áttraér, yo attráe; índicár, yo indíca;
+cóntradír: yo cóntradí.</p>
+</li>
+<li>
+<p>In li casus ne conform al regules supra-citat, li accentu es scrit
+(accentu grafic): bonitá, mamá, qualitá; allé, bebé, café, canapé,
+cité, cupé, defilé, epopé, idé, livré, moné, societé; demí, logí,
+mersí; buró, depó, numeró, paletó, plató; cacatú, marabú, menú,
+parvenú, revenú; cacáo, muséo, heróe, revúe; abdómine, ómine,
+(pro)nómine, órdine, págine, rícino, término, órden; céteri,
+cólera, éter, génere, ínter, líber, númere, préter, púer, púber,
+sídere, súper, témpore, tónnere, vésper; cánabe, fílice, hypérbol,
+límite, spíritu, zóbol; in contrari al 2-m e 3-m articul in supra:
+amíc, eríca, formíca, urtíca; ínterim, sublím; parfúm; in contrari
+al regul pri i pos a in li parte B, articul 1: Haíti, país. In li
+plurale resta li accentu scrit: mamás, idés, logís, depós, menús;
+muséos, heróes; númeres etc.</p>
+</li>
+<li>
+<p>On posse usar egal qual accentu grafic: é, é, ê, ma li accentu acut
+(é) es recomandat in prim, in duesim rang li accentu grav (è), in
+contra que li accentu circumflex (ê) deve esser evitat secun
+possibilitá. U accentus ne es accessibil (precipue in majuscules),
+on posse anc posir un apostrof pos li vocale, p. ex. prono'mine,
+caca'o, numero', PRONO'MINE, CACA'O, NUMERO'.</p>
+</li>
+<li>
+<p>On posse omisser li accentu grafic in paroles tre frequent e
+familiari quam amic, femina, inter, pagine, parfum, preter, super
+etc.  In secundari rang on posse omisser it in li casus u it sta
+sur un vocale sequet de un o pluri consonantes:</p>
+</li>
+</ol>
+<ul>
+<li></li>
+</ul>
+<p>abdomin, erica, genere etc. In triesim gradu on posse omisser li
+accentu grafic anc in ti casus u it sta sur un vocale sequet de un
+altri vocale: cacao, museo, heroe. On mey, si alquam possibil, evitar
+li omission del accentu si it sta sur li ultim vocale, do ne
+«qualita», ma «qualitá»; ne «alle», ma «allé»; ne «logi», ma «logí».
+In fin, u accentus absolutmen ne es accessibil, o u on nequam vole
+usar li remedie del apostrofes secun li 8-m articul in supra (precipue
+in majuscules, in titules, affiches etc), it es permisset totalmen
+elisionar li accentus. In vocabulariums li usation del accentus grafic
+es strict obligatori.</p>
+<ol start="9">
+<li>
+<p>Li accentu grafic posse esser usat anc por distinter paroles
+homonym, p{dot} ex. te (pronómine), té (trincage); si
+(conjunction), sí (afirmation pos negation); in- (prefix de
+direction), ín- (prefix de negation) p.  ex.; inscrit {equals}
+scrit in alquo, ínscrit {equals} ne scrit; compara ti prefixes in
+li IV-esim capitul. Sammen on posse distinter per accentu grafic li
+pronómines interrogativ del pronómines relativ; p. ex.; quánde?
+quí?  quó? ú?: quande, qui, quo, u. On posse usar li accentu mem
+sur monosíllabic paroles con vocalic finale (precipue presentes e
+imperatives) por sublinear lor importantie in li frase (accentu
+retoric), p. ex.: dá, dí, fá, stá; yo dá, yo dí, yo fá, yo stá;
+Archimedes dí: «Dá u yo stá, e li terre mover yo vá». Lu sam es
+valid por composites con tal monosíllabic determinat (duesim)
+partes: yo addí, contradí, descrí, refá, transdá; sammen li nómines
+del dies semanal: soledí, lundí, mardí, mercurdí, jovedí, venerdí,
+saturdí.</p>
+</li>
+<li>
+<p>Germanes mey egardar li accentuation deviant de lor custom in
+paroles quam li sequent: doctor, motor, stabil, mobil etc.</p>
+</li>
+<li>
+<p>Franceses mey atenter precipue li accentuation in paroles finient
+per -ic: electric, fisic etc.</p>
+</li>
+</ol>
+<p>D{dot} Separation síllabic</p>
+<p>Li parol-partes juntet per composition es separat in parlation e
+scrition secun li modo de composition: atmo-sphere (e ne atmos-phere),
+dis-tribution (e ne di-stribution), abs-traer (e ne ab-straer),
+con-spiration (e ne cons-piration), con-stant (e ne cons-tant),
+su-specter (e ne sus-pecter), sus-pender (e ne su-spender), tran-spirar
+(e ne trans-pirar), trans-portar (e ne tran-sportar), ob-stacul (e ne
+obs-tacul), obstruction
+(e ne obs-truction), re-stituer (e ne res-tituer), tran-scrir (e ne
+trans-crir).</p>
+<p>Li altri parol-partes es separat secun li regules sequent:</p>
+<p>1-m un singul consonant inter du vocales e de un gruppe de consonantes
+inter du consonantes li ultim consonant apartene al síllabe secuent:
+ba-na-li-tá, va-ria-tion, ve-ri-tá; pen-dul, ver-nis-sar, suc-ces-sar,
+sig-nal.</p>
+<p>2-m ínseparabil e ergo valid quam un unic consonant es li mutes (c, g,
+t, d, p, b) e labiospirantes (f, v) juntet con liquides (l, r), do it es
+li pares consonantic bl, cl, dl, fl, gl, pl, br, er, dr, gr, pr, tr,
+vr,: bi-ble, ta-cle, spin-dle, va-fle, spin-gle, po-ple, cu-cum-bre,
+ma-crel, qua-drat, mi-gren, le-pra, split-tre, po-vres-se. Germanes mey
+egardar que sp e st ne es ínseparabil in Occidental, do on scri:
+mes-pil, ves-tir.</p>
+<p>Li regules superior es valid por li pronunciation e have importantie por
+constatar li quantitá del síllabes secun li regules dat in li sequent
+parte E; ma in scrition e parlation un partition quelcunc es tolerat:
+atmos-phere, si-gnal, quad-rat etc. Ma in printa it es recommendabil
+aplicar li regules superior por li síllabic separation.</p>
+<p>E{dot} Quantitá vocalic</p>
+<p>Por constatar li quantitá del vocales on deve distinter síllabes «apert»
+e «clus»; apert es tales queles fini per un vocale, p. ex.: ca-ra,
+fra-se, pa-tre; clus es tales queles fini per un consonant: car-re,
+tas-se, ves-tri.</p>
+<p>Li vocales accentuat in síllabes apert es long (marcat: â, ê ...): idê,
+marabû, herô-e, câ-ra, frâ-se, râ-me, â-nima, pâ-tre, mâ-nu, juvelê-ro,
+tâ-ble, lê-pra, bî-ble, pô-ple. Li vocales accentuat in síllabes clus es
+curt (marcat: à, è ...): càr-re, tàs-se, ràm-me, sès-tra, princès-sa,
+lùc-te, metàll. Si li accentu tonic es situat sur un clus síllabe final,
+li vocale es tamen long, si li síllabe fini per un unic consonant:
+natiôn, rigorôs, datîv, nationâl; ma li son duplic de x vale quam du
+consonantes e acurta pro to li vocale precendent: stráx, sufíx, sufíxes.</p>
+<p>Li vocales ínaccentuat es sempre demí-long o curt; i e u in quelc casus
+es mem consonantic quam y e w, qualmen es monstrat in supra che li
+pronunciation del vocales (B. 1).</p>
+<p>Li frequent monosíllabic paroles grammatical (articul, pronómines,
+prepositiones, conjunctiones) es curt: lí, ún, nós, lés, dé, cón, é, má,
+qué, és, há, vá, pér, prí etc.</p>
+<p>F{dot} Textu exercitiv</p>
+<p>Remarca: Li accentu tonic del curt vocales es marcat in li sequent
+transscrition per un accentu grav: à, è ... Li long vocales accentuat es
+representat per un accentu circumflex: â, ê ... Un eventual accentu
+primari es indicat per grass lítteres à (curt), â (long) ...</p>
+<p>Textu:</p>
+<p>Li differentie     radical   inter  Occidental     e omni  altri</p>
+<p>lì dìf-fe-rèn-tsye ra-di-kâl ìn-ter òk-tsi-den-tâl è òm-ni àl-tri</p>
+<p>systemas     de lingues   auxiliari     consiste     in li</p>
+<p>ssüs-tê-mass dè lìn-gwess aw-ksi-lyâ-ri kon-ssìss-te ìn lì</p>
+<p>regulari    derivation     del deverbal   substantives       e</p>
+<p>re-gu-lâ-ri de-ri-va-tsyôn dèl de-ver-bâl ssub-sstan-tî-vess è</p>
+<p>adjectives     per li suffixes      international      -ion, -iv,</p>
+<p>ad-žek-tî-vess pèr lì ssuf-fìk-sess ìn-ter-na-tsyo-nâl yôn,   îv,</p>
+<p>-or, -ura  adjuntet   al thema perfectic   del verbes   latin,</p>
+<p>ôr,  û-ra ad-žun-têt àl tê-ma per-fèk-tik dèl vèr-bess la-tîn,</p>
+<p>in quel lingue  existe     plu quam 300      irregulari</p>
+<p>ìn kwêl lìn-gwe eg-sìss-te plû kwâm trî-cent ìr-re-gu-lâ-ri</p>
+<p>verbes.  Ti desfacilitá       ha esset  tro grand por omni</p>
+<p>vèrbess. tì dèss-fa-tsi-li-tâ hà es-sêt tro grànd por òm-ni</p>
+<p>inventores     de international      lingues;   pro  to  illi</p>
+<p>in-ven-tô-ress dè ìn-ter-na-tsyo-nâl lìn-gwess; prò  tò  ìl-li</p>
+<p>circumeat     ti obstacul.    Solmen   de Wahl ha dat li</p>
+<p>tsìr-kum-e-ât tì ob-sstâ-kul. ssôl-men dè vâl  hà dât lì</p>
+<p>solution     scientific.</p>
+<p>sso-lu-tsyôn sstsyen-tî-fik.</p>
+<p>G{dot} Nómines de lítteres</p>
+<p>Quam nómines de lítteres li sequent sembla max convenent: a {equals} â, b {equals} bê,
+c {equals} tsê, d {equals} dê, e {equals} ê, f {equals} èf, g {equals} žê, h {equals} hâ, i {equals} î, j {equals} džî, k {equals} kâ,
+l {equals} èl, m {equals} èm, n {equals} èn, o {equals} ô, p {equals} pê, q {equals} kû, r {equals} èr, s {equals} èss, t {equals} tê,
+u {equals} û, v {equals} vê, w {equals} dûplic vê, x {equals} ìkss, y {equals} üpssîlon, z {equals} dsêd; l' =
+èlye, n' {equals} ènye, ch {equals} tshâ (anc tsê-hâ), eu {equals} ö (o anc ê-û), gh {equals} gê
+(dûr) (o anc žê-hâ), ph {equals} latîn fî (o anc pê-hâ), rh {equals} latîn rô (o anc
+èr-hâ), sh {equals} shâ (o anc èss-hâ), th {equals} latîn têta (o anc tê-hâ), zz =
+tsètt (o anc dûplik dsêd).</p>
+<p>H{dot} Classification del consonantes.</p>
+<p>Tabelle del simplic consonantes</p>
+<p>Secun li loc de articulation  Secun li maniere del articulation</p>
+<p>mutes (o occlusives o explosives)   constrictives (o continues)
+semivocales</p>
+<p>spirantes (o fricatives)         liquides (o vibrantes) nasales</p>
+<p>tenues (o surdes o fortes)    medies (o sonores 0 lenes)  surdes (o
+fortes)       sonores (o lenes)</p>
+<p>labiales         p        b        f         v        --       m
+w</p>
+<p>dentales        t         d        ss; sh  s; ž (ge)        l, r
+n        --</p>
+<p>gutturales     k (c, q) g (ga ...)        kh (archi)      --
+--       (a)ng(ul) (a)nk(er)     y</p>
+<p>glottal --       --       h        --       --       --       --</p>
+<p>On nomina anc sibilantes: ss, s sh, ž (ge); aspirate: h; alveolares: n,
+r (li ultim si it es format per li lingual punta); uvulare: r (si it es
+format per li uvul).</p>
+<p>Li lítteres ne contenet in li tabelle coresponde a sones composit (p.
+ex.: z {equals} d + s), o ili es amollat, palatales: l' [ly], n' [ny]. Li
+lítteres c, g ante e, i (pronunciation [ts], [ž]) es anc nominat
+palatales.</p>
+<h3><a class="header" href="#ii-esim-capitul-flexion" id="ii-esim-capitul-flexion">II-esim Capitul: Flexion</a></h3>
+<p>A{dot} General remarcas pri li parol-formation</p>
+<p>Un parol posse consister ex divers elementes, quam p. ex. nota-librette,
+in quel on distinte:</p>
+<p>1-m du radicas: not e libr,</p>
+<p>2-m du desinenties: a, e,</p>
+<p>3-m un suffix (derivativ): ett.</p>
+<p>Li max important parte del paroles es lor tema. Li thema es li rest de
+un parol pos elimination del ultim desinentie o ultim suffix. Ma li
+radica de un parol es su essential parte,
+un element írreductibil, quel servi a formar li paroles per se
+self o per juntion con desinenties, sufixes, o altri radicas.</p>
+<p>Li sequent exemples va explicar li divers términos del parol-formation.</p>
+<p>Li parol «nota-librette» consiste ex 5 elementes: not-a-libr-ett-e. It
+es un parol composit, consistent ex du paroles, li parol determinativ
+nota e li parol determinat librette. Si on exclude li radicas not- e
+libr- resta li morfemas, it es li desinenties (ci a e e) e li sufixes
+(ci ett). Si on exclude li desinenties, resta li thema del parol; ergo
+nota-librett es li tema del tot parol, not es li tema del parol nota,
+librett es li tema del parol librette. Noi vide que che nota li radica e
+li tema coincide, i. e. not.</p>
+<p>Li paroles «amar, amator, amore» have li sam radica am. In «amar» li
+tema es ama; ci r es li formativ sufix (li desinentie) quel forma li
+infinitive, e -a es li formativ sufix (li desinentie) per quel li tema
+ama es format del radica am. Li tema ama es anc li form del presente de
+«amar» e pro to on nomina ama li tema presentic del verbal radica am. In
+li parol «amator» -or es li sufix e amat li tema format ex li radica am
+(per li formativ sufixes -a e -t). Li tema amat es li tema del latin
+participie perfectic e es nominat pro to tema perfectic. In «amore» li
+sufix es -ore e li tema es am; por distinter it del tema presentic e del
+tema perfectic, on nomina it tema primitiv. Pro que li tema primitiv am
+es ne plu decomposibil; it es anc li radica. Ma ne chascun tema primitiv
+es anc un radica, quam monstra li sequent exemple.</p>
+<p>In li parol «definition» noi distinte li sufix derivativ -ion, li tema
+perfectic definit, li tema presentic defini, li tema primitiv defin, li
+radicas de e fin, li sufixes formativ i e t. Do ci li tema primitiv
+consiste ex du radicas.</p>
+<p>Secun li parol-elementes noi distinte tri species de parol-formation:</p>
+<p>1-m li flexion per desinenties,</p>
+<p>2-m li derivation per sufixes,</p>
+<p>3-m li composition per paroles determinativ.</p>
+<p>Un parol format per derivation (it es per adjuntion de un sufix a un
+tema) es nominat un «derivate»; li tema de ti derivate posse esser un
+radica o self un derivat o un composit. Li nómine «composit» es dat a un
+parol format per composition de du o pluri paroles; ti paroles posse
+esser self simplic paroles (radicas o radicas plus desinentie) o
+derivates o composites.</p>
+<p>P{dot} ex. «tippmachine» es un composite, de quel li componentes es tipp e
+machin. Ma «tippist» es un derivat, pro que -ist ne es un parol, ma un
+sufix addit al parol tipp. Li parol «exterritorialitá» es composit e
+derivat; su componentes es li paroles ex (preposition) e territorial
+(adjective), a queles es juntet li sufix -itá. «Territorial» es derivat
+del tema territori (del parol territoria) per li sufix -al. Territori es
+ne plu analisabil in Occidental, ma in latin it deriva se del radica
+terr- per li suffixes -it e -ori. Li parol «ínfinitesimal» consiste ex
+li prefix ín (parol determinativ), li radica fin, li desinentie i e li
+sufixes t, esim, al (do: in-fin-i-t-esim-al).</p>
+<p>Li derivation e li composition es tractat in li sequent capitules (III-m
+e IV-m capitul). Li present capitul contene li flexion, i. e. li
+parol-formation per desinenties.</p>
+<p>B{dot} Desinenties</p>
+<p>Li flexion es fat per li desinenties, i. e. grammatical finales, queles
+es usat por eufonisar o preciser li substantives, adjectives, adverbies
+e verbes. In li finales grammatical noi distinte du gruppes:</p>
+<p>finales queles es juntet solmen al tema primitiv, i. e. li desinenties
+primari: -a, -e, -i, -o, -u, -um; nominat anc «nuanciant finales»;</p>
+<p>finales queles es anc o solmen juntet al tema primitiv plus un
+desinentie primari, i. e. li desinenties secundari: -r, -s, -men, -li.</p>
+<p>In li derivation e composition li desinenties secundari es sempre
+eliminat, li desinenties primari max sovente.</p>
+<p>Remarca: On nomina sovente li desinenties anc suffixes, i. e. sufixes de
+flexion. Advere precipue li desinenties -li e -men have un aspect quasi
+de sufixes (derivativ) (pro esser etimologicmen originant del paroles A
+like, resp. L mens). Ma secun li definition quel noi dat al parol
+«desinentie», i. e. parol-formative ne permissent un ulterior derivation
+con li suffixes anexibil al thema primitiv, o per altri paroles «morfema
+ne formant un tema primitiv», secun ti definition anc -li e -men es
+desinenties e lor anexion es un «flexion».</p>
+<p>C{dot} Desinenties primari</p>
+<p>1{dot} -a. Ti desinentie significa in prim li sexu feminin, i. e. li sexu
+generic del extension del rasse e ergo in sense metaforic
+alquo extendet, un activitá, loc, témpore, alquo general, universal,
+colectiv, generic, li resultat de un action, ma anc altri paroles secun
+usu international.</p>
+<p>P{dot} ex.: (a) sexu feminin: americana, amica, bella, bellissima, cavalla,
+dormienta, femina, filia, francesa, germana, primadonna, richa, russa,
+studenta e li derivates per li sufix -ess-a (ples vider les in li III-m
+capitul, parte B);</p>
+<p>(b) activitá: li derivates per li sufix -da (vide in infra);</p>
+<p>(c) loc: cámera, plazza, strada, via, e li derivates per li sufixes
+-i-a, -eri-a, -ier-a, -ori-a (vide in infra);</p>
+<p>(d) témpore: carema, clocca, epoca, era, pasca, e li derivates per -da,
+mentionat ja supra che (b), queles have sovente anc li signification del
+témpore del activitá;</p>
+<p>(e) alquo extendet, general, universal, collectiv: alinea, aqua, cólera,
+firma, gala, irredenta, liga, linea, pasta, posta, pressa, publica,
+republica, saliva, secta, tara, terra, terracotta, e li derivates per li
+suffixes -al'a e -ic-a;</p>
+<p>(f) un resultat: li derivates per li sufix -ura, (vide les in infra); p.
+ex. dressura, sculptura etc.</p>
+<p>(g) altri paroles: boa, cornea, eríca, formíca, lama, paria, salva,
+sepia, soda, urtíca, sofa; e precipue li paroles grec finient per -ma
+con li derivativ tema finient per -mat (vide in infra in li III capitul,
+parte A), p. ex. astma, dogma, magma, panorama, problema, rheuma,
+sistema, thema.</p>
+<p>Li finale -a es usat anc por li tema presentic del verbes finient in li
+Infinitive per -ar e anc por li verbal substantives derivat de ti verbes
+e identic con lor tema presentic; tal substantives expresse un singulari
+eveniment, un curt, simplic action; p. ex.: li pluvia del verb pluviar,
+li pecca de peccar, li pensa de pensar.</p>
+<p>2{dot} -e. Ti desinentie es usat:</p>
+<p>(a) quam general, neutral finale, sovente ínobligatori, del substantives
+(ne havent un altri desinentie) sin special signification, pro eufonie o
+distintion de simil paroles, precipue por distinter li substantives fro
+li adjectives;</p>
+<p>(b) quam finale de adjectives de queles li tema fini per -i;</p>
+<p>(c) quam finale del participial adverbies activ.</p>
+<p>Exemples: (a) Substantives: general o generale, lamp o lampe, uniform o
+uniforme. On usa avantageosimen -e sempre por li substantivic derivates
+per -al, -in, -iv e anc -ari, queles da in general un sense adjectivic:
+centrale, circulare, directive, finale, gelatine, locomotive, normale,
+singulare. In
+mult casus li desinentie -e es sempre usat pro motives de eufonie o
+pronunciation: astre, avantage, centre, fibre, image, matrice, patre,
+salice, theatre, temple, voce; li plurales con li sufix -age: foliage,
+plantage; li derivates per li suffix -ie (vide in III, B); anc familie,
+lilie, heróe, revúe, in plu in li plurale, vide in infra che -s.</p>
+<p>(b) Adjectives: ebrie o ebri, pie, proprie o propri, rancie o ranci,
+sobrie o sobri, varie o vari; ti -e apari sempre in li derivates de ti
+adjectives per li suffixes -tá e -té (vide in infra in III. B).</p>
+<p>(c) Participial adverbies; adjectivic participie: cantant; adverbial
+participie: cantante (ne: cantantmen); p. ex.: Senior Paul intrat
+cantante.</p>
+<p>Li finale -e es usat anc por li tema presentic del verbes per -er e por
+lor verbal substantives: lucer, (li lamp) luce, li luce (del lamp);
+conflicter, ili conflicte, lor conflicte.</p>
+<p>3{dot} -i. Ti desinentie significa adjectives, con exception de tis queles
+have li finale tematic -i (vide in supra che -e); on usa ti desinentie
+ne obligatorimen, ma solmen in cert casus. On di sempre: dulci, feroci,
+felici, sagi, savagi, vivaci, pro li pronunciation del g e c, quo vale
+por omni temas finient per g e c sibilant; sovente pro eufonie: altri,
+albi, omni, pigri, salubri; sempre con li suffixes -ari e -ori:
+regulari, imperatori; ma anc in altri casus por evitar un confusion con
+li infinitive: amari, avari, fieri, sinceri.</p>
+<p>Do on mey usar ti finale solmen, si it es necessi; it apari sovente quam
+vocale eufonic in li derivates per -tá e -té: bon, bontá e bonitá,
+quant, quantitá (vide in infra che li suffixes -tá e -té).</p>
+<p>Li vocal -i es anc li finale presentic del verbes per -ir: abolir,
+aboli; finir, fini. Ma lor verbal substantives ne fini per -i, ma per -e
+o -ie: fine, perde, dormie.</p>
+<p>4{dot} -o. Ti desinentie significa in prim li sexu masculin e in sense
+translatet lu concret, material, special, individual. Do ti desinentie
+es quasi li complement del desinentie -a. Ma it ne es necessi junter ti
+finales a omni vivent entes, p. ex. it ne es necessi dir patro e matra
+pro que patre e matre es ja definit in su sexu per li sense self.</p>
+<p>Exemples:</p>
+<p>(a) sexu masculin: americano, amico, bello, bravo, cavallo, dormiento,
+filio, franceso, germano, richo e li derivates per -ario e -ero (vide in
+infra in III. B).</p>
+<p>(b) altri paroles: brutto, cacáo, cargo, caseo, conto, corpo, cosmo,
+cranio, dynamo, foco, fresco, hordeo, humo, lago, lexico, muséo, posto,
+radio, tempo, término, torso, veto etc. e li derivates per li suffix
+-ier-o (vide in li Ill-m capitul).</p>
+<p>5{dot} -u. Ti desinentie significa alquo abstract, neutri, un relativitá,
+un statu factic con li tema perfectic (v. III. A): acter, act, actu;
+proceder, process, processu; star, stat, statu. Compara anc in infra in
+li derivation (III. B.) li suffix -at-u.</p>
+<p>6{dot} -um. Ti desinentie (ínaccentuat) have un signification concret e
+deriva se del latin finale -um del substantives neutri del 2-m
+declination: album, maximum, minimum, pensum, plenum, serum e li
+derivates per -ari-um (vide in li III-m capitul). Que -um es un
+desinentie, on remarca per li derivates e composites u it desapari, p.
+ex.: maximal, minimal, plenari, seroterapie etc. On posse junter ti
+finale anc a chascun tema adjectivic por expresser li general idé de un
+qualitá: li bellum (= lu bell; vide VI. A.), i. e. li idé de bell, alquo
+bell; sammen li bonum, li novum, li verum etc.</p>
+<p>D{dot} Desinenties secundari.</p>
+<ol>
+<li>
+<p>-li. Ti desinentie (derivat de A -ly) es li ínobligatori finale del
+adverbies derivat de non-adjectives, anc participies e numerales;
+p{dot}  ex.: noctli (= in nocte), unesimli (= in unesim range). Ma
+preferibil, pro plu ímmediat comprension, es sempre li analitic
+maniere de expression, p. ex.: in sam témpore (samtemporli), per
+pedes (pedli), in part (partli), per hasard (hasardli), donar quam
+un rey (... reyli), in fact (factli), in fine, o finalmen (finli).</p>
+</li>
+<li>
+<p>-men. Ti desinentie (derivat de L mens, correspondent a F ment, I S
+P mente, Prov. men, do scrit quam in provenzal) es li ínobligatori
+finale del adverbies derivat de adjectives. It es enclitic; to es,
+it ne transloca li accentu del parol a quel it es juntet; vide che
+Pronunciation I. B. Exemples: clar: clarmen, ver: vermen; egalmen,
+lentmen, naturalmen, sammen, sistematicmen; ordinar(i)men,
+regular(i)men; festivmen; ambitios(i)men, conscientios(i)men;
+equitabilmen, esperabilmen; notorimen, obligatorimen; constantmen,
+conscientmen, evidentmen, independentmen, recentmen; detal'atmen,
+repetitmen, conossetmen (= quam it es conosset). Anc ci li analitic
+stilisation in cert casus es plu clar e plu elegant, p. ex.
+propulset motoricmen {equals} ... per motor; illuminat electricmen
+{equals} ... per electric(itá) etc.</p>
+</li>
+<li>
+<p>-r. Ti desinentie indica li infinitive e es usat solmen pos li
+vocale del tema presentic; támen it ne posse esser regardat quam
+sufix, pro que on ne posse formar derivates del infinitive;
+exemples: pluvia, pluviar; pensa, pensar; luce lucer; conflicte,
+conflicter; compati, compatir; demoli, demolir; fini, finir. On ne
+vive por manjar, ma on manja por viver. -- Li question quel
+desinentie es anexet al tema primitiv del verbes por formar li tema
+presentic (esque a, e, i) e in plu li infinitive etc, apartene al
+derivation; ergo ti tema es tractat in li sequent capitul (III.
+A.). Compara anc in infra che li «Verb» (Vl-m capitul, parte F).</p>
+</li>
+<li>
+<p>-s. Ti desinentie significa li plurale e posse esser anexet ne
+solmen al finales vocalic, ma anc al temas finient per consonantes:
+rosiera, rosieras; femina, feminas; amica, amicas; lingue, lingues;
+patre, patres; germano, germanos; annu, annus; mensu, mensus; logí,
+logís. -- Pos li temas finient consonanticmen on prefere intercalar
+-e-: nation, nationes; uniform, uniformes; cavall, cavalles; parol,
+paroles; film, filmes; sport, sportes.</p>
+</li>
+</ol>
+<p>On ne intercala -e pos c e g, por ne mutar li pronunciation dur de ti
+consonantes; do: amics, bancs, blocs, boccs, discs, flancs, floccs,
+moscs, paccs, plancs, roccs, storcs, truncs, turcs, verucs, vessics;
+diphthongs, flags, fugs, hags, plugs, rugs, segs, vergs etc; ma it es
+permisset dir: amicos (in sense comun), bancas, bloccos, boccas, discos,
+flancos, floccos, moscas, paccas, plancas, roccas, storcos, truncos,
+turcos, verucas, vessicas, diftongos, flagas, fugas, hagas, rugas,
+segas, vergas etc, o minu recomandabil per un remedie ortografic
+(compara anc li V-m capitul): amikes, bankes, blokes, bockes, flankes,
+flockes, moskes, packes, plankes, rockes, storkes, turkes, verukes,
+vessikes, diphthonghes, flaghes, fughes, haghes, plughes, rughes,
+seghes, verghes etc. Ma in vice de pisc, piscs (o piscos, o piskes), it
+es forsan preferibil dir (analog a fasce, fasces): pisce, pisces
+(compara I pesce, pesci, S pez, peces, P peix, peixes). It es un punctu
+del programma del Occidental-Academie recomandar un de ti divers
+possibilitás formar li plurale del substantives finient per c, g.</p>
+<p>Pri li accentu ante li pluralic -s vide in supra in li I-m capitul,
+parte D.</p>
+<h3><a class="header" href="#iii-esim-capitul-derivation" id="iii-esim-capitul-derivation">III-esim Capitul: Derivation</a></h3>
+<p>(seque)</p>
+<h2><a class="header" href="#cronica" id="cronica">Cronica</a></h2>
+<p>LE QUOTIDIEN, Paris, un del max difuset diales de Francia, li 29 julí,
+pos har presentat Esperanto e Ido in du anteyan articules, publica un
+textu por Occidental de sr L. M. de Guesnet, Presidente del
+Occidental-Societé de Francia, quel ha evocat sensation. Li 15 august,
+sr de Lajarte, membre del «Lingva Komitato» del «Universala
+Esperanto-Asocio» responde per un articul defensiv. Li 24 august apari
+un anihilant replica de sr G. Bohin, Secretario del Occidental-Societé
+de Francia, con indication de adresse por informationes pri Occidental.
+Li consequentie esset mult questiones ex li circul de letores, inter ili
+li adhesion de sr L. Ravasse, ex-consul de Italia e director del «Expert
+français». Li 30 august «Le Quotidien» denove insertet quelc lettres pri
+lingues international, inter ili un interessant noticie de L. Lecomte,
+quel di: «Sur li principie de Esperanto on posse far un grand quantité
+de lingues. Sur li principie de Occidental it es impossibil etablisser
+un duesim pro que Occidental es fundat sur li maximum de
+internationalitá, ne solmen in li vocabularium ma anc in li flexion e
+derivation del paroles». Seque li textu in Occidental: «Li aparition de
+Occidental significa un revolution in li historie del lingue
+international. It es vermen li democratic latin. Sin pecunie, sin
+reclame, solmen per su intrinsic qualitás, Occidental va conquestar e
+entusiasmar numerosi ancian partisanes de altri sistemas». Li redactor
+sr Robert Bobin comunica que li discussion continua e que poy li gazette
+va prender partie al question. Noi cordialmen gratula li comité del
+frances Occidental-movement pro li remarcabil successes de su bon
+preparat actiones.</p>
+<p>Nor energic coidealist e collaborator sr E. Berggren denove ha scrit un
+long articul in FOLKSKOLLÄRARNAS TIDNING (jurnal del primari
+scol-preceptores), nr 29, sub titul «Foren paroles in li primari scol»,
+u il tractat li pedagogic question pri li international paroles e li
+optim metode dar al scoleros un ver instruction de ti object. Il
+accentuat li grand pedagogic valore de Occidental e li imens importantie
+de ti lingue por li education.</p>
+<p>Samtemporanmen SVENSK LÄRARTIDNING (sved jurnal de preceptores), nr 34,
+contene un articul, «Li lingue del paroles
+international», anc ti de sr Berggren. It es un explication del
+principies de Occidental e un comparation inter ti lingue e Esperanto.</p>
+<p>C{dot} E. S.</p>
+<h2><a class="header" href="#radio-dramas" id="radio-dramas">Radio-dramas</a></h2>
+<p>de Ib Lange.</p>
+<p>Li cause que presc nequi ex nor professional scritores vole o audacia
+composir dramas por radio-representation, es probabilmen partmen li
+practic que it es poc lucrativ e que tal ovres es tre transitori in lor
+form, partmen que lor limitat form ne da liber camp al fantasie, ma
+solmen lassa spacie a un particulari strict dialectica, un presc
+abstract exchange de idés inter tre poc persones ínvisibilmen present.</p>
+<p>Que li telefon poc a poc ha obtenet un presc fix plazza in modern
+realistic dramatica, certmen es debit al facte que it es por li
+dramaturg un extrem util instrument por promotion e fension e anodament
+del dramatic fil de su spectacle. Li telefon fa li desfacilmen movibil
+scen quasi plu mobil, it reparti li voces e elarga li horizont e per to
+li ilusion, aprofunda li psicologic perspective. Nu si on inversmen
+figura se li dramaturg, deprivat de omni altri tecnic remedies (luce,
+colores, decorationes, mimica, plastica e perspective) quam just li
+telefon transformat a mecanic infortiator de son (alt-parlator), alor on
+have aproximativmen li desesperat situation del dramaturg avan li
+radio-representation. Il es a regardar quam un specie de spiritual
+ventriloquist, qui per li sol replica deve esser capabil illuder quam
+pluri diferent persones in diferent situationes, sin que ti persones
+have altri libertá de movement quam li nuancie-registre de lor voces.</p>
+<p>Quantcunc il es secundat de habil actores, támen su situation es tre
+desfacil. Su radie de action es ínfinitmen restrictet, su fantasie
+continualmen incontra obstacules. Tam long quam il move se in li dialog,
+it es passabil, ma strax quande intra un triesim person, it es mal. O un
+ex li conversantes deve advertir li ariva del triesim, o li parlero deve
+cuidar li presentation; ambi coses es plu o minu anihilativ por li liber
+developament del action, si in tot on deve parlar pri «action» in ti
+coherentie!</p>
+<p>Ma to mem ne es lu max mal. Lu max mal es to que li fantasie del
+escutatores, lor elementari beson abandonar se a un sentiment, un
+ilusion, totmen ne longtémpore posse esser satisfat
+per ti form de ciec-nascet dramatica, pro que li sol parol malgré omni
+dialectic finesses e subtil lingual nuancies támen ne posse carir li
+colaboration con li colore, li form, li movement, li atmosfere. Quo poc
+a poc it va ganiar pri richesse del nuancie, pri dialectic fassonage per
+li radio, in li curs del témpore it va egalmen ínfallibil securmen
+perdir pri li impressionabilitá del escutatores, por queles li nuancies
+va esser glotit del íncolori monotonie del repetition, del fatiga,
+abattament del orel e mem del ínsatisfat demandas del tot complex de
+senses. E it es ya un generalmen conosset facte que mult homes, e
+specialmen tales con simplic o impulsiv natura, have un sovente
+ínconscient aversion contra telefonie -- ili senti totmen natural li
+ínperfect contact con li altri, percepte presc fisicmen li manca del
+mimic accompaniament al paroles, li vivi e ínfallibilmen sensibil lingue
+del ocules, li sublineament del movement, del statura.</p>
+<p>No, li radio-drama certmen ne have un future avan se. It es creat del
+actual tecnic beson e apen va superviver un nov fase in li developament.</p>
+<p>Ex un articul, «Li radio e l'arte», in «Politiken» (Köbenhavn).</p>
+<p>Trad. Jan Casse.</p>
+<h2><a class="header" href="#comendat-exclamation-interruptiv" id="comendat-exclamation-interruptiv">Comendat exclamation interruptiv</a></h2>
+<p>It es un antiqui question disputat esque un discurs deve esser lectet,
+recitat per memorie o parlat libermen. Quelc oratores queles in ante ha
+elaborat su discurses, have li amabilitá dar a disposition un copie de
+su discurses al stenografos del presse, queles deve laborar sovente sub
+conditiones desfacil, por exemple stante, li paper sur li manu o sur li
+epol de un vicin, o sident, tenente it sur li genus.</p>
+<p>Victor Hugo in teorie esset adherent del liber parol, ma in practica il
+self laborat in altri maniere. Támen córam li auditores il per teatral
+medies successat far li impression de un liber parol. In annu 1849 on ja
+un vez tractat li question del international pace e arangeat un congress
+li 23 e 24 august in Paris sub presidentie de Victor Hugo. Durant li
+inauguration il parlat li famos paroles: «Un die va venir quande on va
+monstrar li cannones in li muséos, sam quam on hodie monstra ta li
+instrumentes tormentativ e on va esser astonat que tal cos posset
+exister».</p>
+<p>Un amic in erra ja ante li discurs ha distribuet circa 30 copies al
+stenografos del presse. Tis esset astonat trovar un exclamation in li
+copie: Alqui mey interrupter exclamante que li 24 august es li nocte de
+Bartholoméo. E Hugo deve responder per li «improvisation», que li 24
+august 1572 va palidijar in comparation al 24 august 1849. In comensa li
+stenografos ne comprendet to. Ma durant li concernet passu on posset
+audir li paroles conform al programma, sam quam in teatre. Li ultim
+paroles del orator extintet in li mill-vocos aplause, in quel inmerset
+li rise del 30 stenografos del presse.</p>
+<p>Un memoriat discurse es un antiqui artificie, ma li comendat exclamation
+interruptiv in fact esset nov.</p>
+<p>«Deutsche
+Kurzschrift», Elberfeld.</p>
+<p>Trad. E. P.</p>
+<h2><a class="header" href="#parol-de-infant" id="parol-de-infant">Parol de infant</a></h2>
+<p>Unquande un senator acceptat por manjar quelc amics. Su yun filio, etos
+de six annus, volet seder proxim le. «Quo tu fa ci?» dit li patre, «tu
+ne have li barb sat long por dinear con nos». Li púer retornat
+chagrinat. Su matre, por consolar le, plazzat le a un litt table covrit
+per fructes e vafles. Durant que il mangeat, li old cat del dom volet
+anc posir sur li micri dejuné su gurmand pede. Indignat, li infant
+battet per su forc li cap del audacioso e dit: «Ea dinear con mi patre,
+tui barb es sat long».</p>
+<p>Secun Larousse.</p>
+<p>Trad. J. Colas.</p>
+<h2><a class="header" href="#subventiones-al-occidental-union" id="subventiones-al-occidental-union">Subventiones al Occidental-Union</a></h2>
+<p>Senior Generaldirector Gerald A. MOORE (London), Presidente honorari e
+fundator del Occidental-Union, adplu Senior Apothecario Albert HALDIN,
+(Eskilstuna), vicepresidente del Sved Occidental-Federation, membre del
+Senat del Occidental-Union e Senior Director Dr.-Ing. Arthur WORMSER
+(Offenbach a. M.), membre del Direction e Redactor del Comité
+Explorativ, ha obligat se covrir un parte del deficite del propaganda
+per li revue Cosmoglotta por li current annu. Depos comensa del annu
+1929 nor tri mecenes cardinal ha donat in pluri intervalles (ultra li
+summas ja quittat publicmen in li numerós de februar e april): Sr Gerald
+A{dot} Moore: 60 pounds st., Sr Albert Haldin: 300 sved K., Sr Dr.-Ing.
+Arthur Wormser: 507 ö. S.</p>
+<p>Cordial mersí.</p>
+<p>Occidental-Union</p>
+<p>Central Officie.</p>
+<p>Eigentümer, Herausgeber und Verleger: Occidental-Union, Sitz: Mauer bei
+Wien. Verantwortl. Schriftleiter: Ing. E. Pigal, Liesing b. Wien. Druck:
+Milan Nedvídek, Tábor.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../Cosmoglotta/064.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../Cosmoglotta/066.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../Cosmoglotta/064.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../Cosmoglotta/066.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script src="https://occidental-lang.com/website-word-lookup/lookup.js"></script>
+        <script>
+            lookupInit('https://occidental-lang.com/website-word-lookup/dict.json');
+            document.onselectionchange = debounce(lookup, 500);
+        </script>
+        
+
+    </body>
+</html>

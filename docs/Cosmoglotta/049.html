@@ -1,0 +1,871 @@
+<!DOCTYPE HTML>
+<html lang="ie" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>A 49 - scritorium</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        
+
+        <div id="definition"></div>
+
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="../index.html">Hem</a></li><li class="chapter-item "><a href="../MicriCrestomatie/0.html"><strong aria-hidden="true">1.</strong> Micri Crestomatie</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../MicriCrestomatie/1.html"><strong aria-hidden="true">1.1.</strong> Capitul 1</a></li><li class="chapter-item "><a href="../MicriCrestomatie/proverbies.html"><strong aria-hidden="true">1.2.</strong> Proverbies</a></li></ol></li><li class="chapter-item "><a href="../LiLittPrince/0.html"><strong aria-hidden="true">2.</strong> Li Litt Prince</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../LiLittPrince/1.html"><strong aria-hidden="true">2.1.</strong> Capitul 1</a></li><li class="chapter-item "><a href="../LiLittPrince/2.html"><strong aria-hidden="true">2.2.</strong> Capitul 2</a></li><li class="chapter-item "><a href="../LiLittPrince/3.html"><strong aria-hidden="true">2.3.</strong> Capitul 3</a></li><li class="chapter-item "><a href="../LiLittPrince/4.html"><strong aria-hidden="true">2.4.</strong> Capitul 4</a></li><li class="chapter-item "><a href="../LiLittPrince/5.html"><strong aria-hidden="true">2.5.</strong> Capitul 5</a></li><li class="chapter-item "><a href="../LiLittPrince/6.html"><strong aria-hidden="true">2.6.</strong> Capitul 6</a></li><li class="chapter-item "><a href="../LiLittPrince/7.html"><strong aria-hidden="true">2.7.</strong> Capitul 7</a></li><li class="chapter-item "><a href="../LiLittPrince/8.html"><strong aria-hidden="true">2.8.</strong> Capitul 8</a></li><li class="chapter-item "><a href="../LiLittPrince/9.html"><strong aria-hidden="true">2.9.</strong> Capitul 9</a></li><li class="chapter-item "><a href="../LiLittPrince/10.html"><strong aria-hidden="true">2.10.</strong> Capitul 10</a></li><li class="chapter-item "><a href="../LiLittPrince/11.html"><strong aria-hidden="true">2.11.</strong> Capitul 11</a></li><li class="chapter-item "><a href="../LiLittPrince/12.html"><strong aria-hidden="true">2.12.</strong> Capitul 12</a></li><li class="chapter-item "><a href="../LiLittPrince/13.html"><strong aria-hidden="true">2.13.</strong> Capitul 13</a></li></ol></li><li class="chapter-item "><a href="../UnDesertor/0.html"><strong aria-hidden="true">3.</strong> Un Desertor</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../UnDesertor/1.html"><strong aria-hidden="true">3.1.</strong> Capitul 1</a></li></ol></li><li class="chapter-item expanded "><a href="../Cosmoglotta/0.html"><strong aria-hidden="true">4.</strong> Cosmoglotta</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/1927.html"><strong aria-hidden="true">4.1.</strong> 1927</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/038.html"><strong aria-hidden="true">4.1.1.</strong> A 38</a></li><li class="chapter-item "><a href="../Cosmoglotta/039.html"><strong aria-hidden="true">4.1.2.</strong> A 39</a></li><li class="chapter-item "><a href="../Cosmoglotta/040.html"><strong aria-hidden="true">4.1.3.</strong> A 40</a></li><li class="chapter-item "><a href="../Cosmoglotta/041.html"><strong aria-hidden="true">4.1.4.</strong> A 41</a></li><li class="chapter-item "><a href="../Cosmoglotta/042.html"><strong aria-hidden="true">4.1.5.</strong> A 42</a></li><li class="chapter-item "><a href="../Cosmoglotta/043.html"><strong aria-hidden="true">4.1.6.</strong> A 43</a></li></ol></li><li class="chapter-item expanded "><a href="../Cosmoglotta/1928.html"><strong aria-hidden="true">4.2.</strong> 1928</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/044.html"><strong aria-hidden="true">4.2.1.</strong> A 44</a></li><li class="chapter-item "><a href="../Cosmoglotta/045.html"><strong aria-hidden="true">4.2.2.</strong> A 45</a></li><li class="chapter-item "><a href="../Cosmoglotta/046.html"><strong aria-hidden="true">4.2.3.</strong> A 46</a></li><li class="chapter-item "><a href="../Cosmoglotta/047.html"><strong aria-hidden="true">4.2.4.</strong> A 47</a></li><li class="chapter-item "><a href="../Cosmoglotta/048.html"><strong aria-hidden="true">4.2.5.</strong> A 48</a></li><li class="chapter-item expanded "><a href="../Cosmoglotta/049.html" class="active"><strong aria-hidden="true">4.2.6.</strong> A 49</a></li><li class="chapter-item "><a href="../Cosmoglotta/050.html"><strong aria-hidden="true">4.2.7.</strong> A 50</a></li><li class="chapter-item "><a href="../Cosmoglotta/051-052.html"><strong aria-hidden="true">4.2.8.</strong> A 51-52</a></li><li class="chapter-item "><a href="../Cosmoglotta/053.html"><strong aria-hidden="true">4.2.9.</strong> A 53</a></li><li class="chapter-item "><a href="../Cosmoglotta/054.html"><strong aria-hidden="true">4.2.10.</strong> A 54</a></li><li class="chapter-item "><a href="../Cosmoglotta/055.html"><strong aria-hidden="true">4.2.11.</strong> A 55</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1929.html"><strong aria-hidden="true">4.3.</strong> 1929</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/056.html"><strong aria-hidden="true">4.3.1.</strong> A 56</a></li><li class="chapter-item "><a href="../Cosmoglotta/057.html"><strong aria-hidden="true">4.3.2.</strong> A 57</a></li><li class="chapter-item "><a href="../Cosmoglotta/058.html"><strong aria-hidden="true">4.3.3.</strong> A 58</a></li><li class="chapter-item "><a href="../Cosmoglotta/059.html"><strong aria-hidden="true">4.3.4.</strong> A 59</a></li><li class="chapter-item "><a href="../Cosmoglotta/060.html"><strong aria-hidden="true">4.3.5.</strong> A 60</a></li><li class="chapter-item "><a href="../Cosmoglotta/061.html"><strong aria-hidden="true">4.3.6.</strong> A 61</a></li><li class="chapter-item "><a href="../Cosmoglotta/062-63.html"><strong aria-hidden="true">4.3.7.</strong> A 62-63</a></li><li class="chapter-item "><a href="../Cosmoglotta/064.html"><strong aria-hidden="true">4.3.8.</strong> A 64</a></li><li class="chapter-item "><a href="../Cosmoglotta/065.html"><strong aria-hidden="true">4.3.9.</strong> A 65</a></li><li class="chapter-item "><a href="../Cosmoglotta/066.html"><strong aria-hidden="true">4.3.10.</strong> A 66</a></li><li class="chapter-item "><a href="../Cosmoglotta/067.html"><strong aria-hidden="true">4.3.11.</strong> A 67</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1930.html"><strong aria-hidden="true">4.4.</strong> 1930</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/068.html"><strong aria-hidden="true">4.4.1.</strong> A 68</a></li><li class="chapter-item "><a href="../Cosmoglotta/069.html"><strong aria-hidden="true">4.4.2.</strong> A 69</a></li><li class="chapter-item "><a href="../Cosmoglotta/070.html"><strong aria-hidden="true">4.4.3.</strong> A 70</a></li><li class="chapter-item "><a href="../Cosmoglotta/071.html"><strong aria-hidden="true">4.4.4.</strong> A 71</a></li><li class="chapter-item "><a href="../Cosmoglotta/072.html"><strong aria-hidden="true">4.4.5.</strong> A 72</a></li><li class="chapter-item "><a href="../Cosmoglotta/073.html"><strong aria-hidden="true">4.4.6.</strong> A 73</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1931.html"><strong aria-hidden="true">4.5.</strong> 1931</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/074.html"><strong aria-hidden="true">4.5.1.</strong> A 74</a></li><li class="chapter-item "><a href="../Cosmoglotta/075.html"><strong aria-hidden="true">4.5.2.</strong> A 75</a></li><li class="chapter-item "><a href="../Cosmoglotta/076.html"><strong aria-hidden="true">4.5.3.</strong> A 76</a></li><li class="chapter-item "><a href="../Cosmoglotta/077.html"><strong aria-hidden="true">4.5.4.</strong> A 77</a></li><li class="chapter-item "><a href="../Cosmoglotta/078.html"><strong aria-hidden="true">4.5.5.</strong> A 78</a></li><li class="chapter-item "><a href="../Cosmoglotta/079.html"><strong aria-hidden="true">4.5.6.</strong> A 79</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1932.html"><strong aria-hidden="true">4.6.</strong> 1932</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/080.html"><strong aria-hidden="true">4.6.1.</strong> A 80</a></li><li class="chapter-item "><a href="../Cosmoglotta/081.html"><strong aria-hidden="true">4.6.2.</strong> A 81</a></li><li class="chapter-item "><a href="../Cosmoglotta/082.html"><strong aria-hidden="true">4.6.3.</strong> A 82</a></li><li class="chapter-item "><a href="../Cosmoglotta/083.html"><strong aria-hidden="true">4.6.4.</strong> A 83</a></li><li class="chapter-item "><a href="../Cosmoglotta/084.html"><strong aria-hidden="true">4.6.5.</strong> A 84</a></li><li class="chapter-item "><a href="../Cosmoglotta/085.html"><strong aria-hidden="true">4.6.6.</strong> A 85</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1933.html"><strong aria-hidden="true">4.7.</strong> 1933</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/086.html"><strong aria-hidden="true">4.7.1.</strong> A 86</a></li><li class="chapter-item "><a href="../Cosmoglotta/087.html"><strong aria-hidden="true">4.7.2.</strong> A 87</a></li><li class="chapter-item "><a href="../Cosmoglotta/088.html"><strong aria-hidden="true">4.7.3.</strong> A 88</a></li><li class="chapter-item "><a href="../Cosmoglotta/089.html"><strong aria-hidden="true">4.7.4.</strong> A 89</a></li><li class="chapter-item "><a href="../Cosmoglotta/090.html"><strong aria-hidden="true">4.7.5.</strong> A 90</a></li><li class="chapter-item "><a href="../Cosmoglotta/091.html"><strong aria-hidden="true">4.7.6.</strong> A 91</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1934.html"><strong aria-hidden="true">4.8.</strong> 1934</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/092.html"><strong aria-hidden="true">4.8.1.</strong> A 92</a></li><li class="chapter-item "><a href="../Cosmoglotta/093.html"><strong aria-hidden="true">4.8.2.</strong> A 93</a></li><li class="chapter-item "><a href="../Cosmoglotta/094.html"><strong aria-hidden="true">4.8.3.</strong> A 94</a></li><li class="chapter-item "><a href="../Cosmoglotta/095.html"><strong aria-hidden="true">4.8.4.</strong> A 95</a></li><li class="chapter-item "><a href="../Cosmoglotta/096.html"><strong aria-hidden="true">4.8.5.</strong> A 96</a></li><li class="chapter-item "><a href="../Cosmoglotta/097.html"><strong aria-hidden="true">4.8.6.</strong> A 97</a></li><li class="chapter-item "><a href="../Cosmoglotta/098.html"><strong aria-hidden="true">4.8.7.</strong> A 98</a></li><li class="chapter-item "><a href="../Cosmoglotta/099.html"><strong aria-hidden="true">4.8.8.</strong> A 99</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1935.html"><strong aria-hidden="true">4.9.</strong> 1935</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/B-001.html"><strong aria-hidden="true">4.9.1.</strong> B 1</a></li><li class="chapter-item "><a href="../Cosmoglotta/100.html"><strong aria-hidden="true">4.9.2.</strong> A 100</a></li><li class="chapter-item "><a href="../Cosmoglotta/101.html"><strong aria-hidden="true">4.9.3.</strong> A 101</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-002.html"><strong aria-hidden="true">4.9.4.</strong> B 2</a></li><li class="chapter-item "><a href="../Cosmoglotta/102.html"><strong aria-hidden="true">4.9.5.</strong> A 102</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-003.html"><strong aria-hidden="true">4.9.6.</strong> B 3</a></li><li class="chapter-item "><a href="../Cosmoglotta/103.html"><strong aria-hidden="true">4.9.7.</strong> A 103</a></li><li class="chapter-item "><a href="../Cosmoglotta/104.html"><strong aria-hidden="true">4.9.8.</strong> A 104</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-004.html"><strong aria-hidden="true">4.9.9.</strong> B 4</a></li><li class="chapter-item "><a href="../Cosmoglotta/105.html"><strong aria-hidden="true">4.9.10.</strong> A 105</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/theRest.html"><strong aria-hidden="true">4.10.</strong> The Rest</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">scritorium</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <div id="langPicker"></div>
+                        
+                        <a href="https://github.com/occidental-lang/scritorium" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#cosmoglotta-a-49-jun-1928" id="cosmoglotta-a-49-jun-1928">Cosmoglotta A 49 (jun 1928)</a></h1>
+<p>Organ mensual del Association International Cosmoglotta</p>
+<p>Consacrat al developation, propaganda e aplication del Lingue
+International Auxiliari Occidental</p>
+<p>Redaction e Administration: COSMOGLOTTA, Mauer bei Wien, Austria.</p>
+<p>Abonnament annual: 7 ö. S {equals} 1 doll. {equals} 5,2 sv. fr {equals} 4,2 RM {equals} 33 čsl. K</p>
+<p>Annu VII -- Junio 1928 -- Nr. 49 (6)</p>
+<h2><a class="header" href="#contene" id="contene">Contene:</a></h2>
+<ul>
+<li>Su camp es li munde, de A. Z. R., pg. 85.</li>
+<li>Oriente occidental, Red., pg. 88.</li>
+<li>Vive, de E. W., pg. 89.</li>
+<li>Normation, de Ing. E. Pigal, pg. 92.</li>
+<li>Stenografic sistemas e Lingue International, de Rafael E. Rehn, pg.</li>
+</ul>
+<ol start="95">
+<li></li>
+</ol>
+<ul>
+<li>Li film va parlar, de Marius den Outer, pg. 97.</li>
+<li>Etiquette, de Julian Prorók, pg. 99.</li>
+<li>Indianic paroles international, de E. W., pg. 100.</li>
+<li>Subventiones, pg. 100.</li>
+</ul>
+<h2><a class="header" href="#su-camp-es-li-munde" id="su-camp-es-li-munde">Su camp es li munde</a></h2>
+<p>«Nationalismus ist der Gegensatz zum Kosmopolitismus, Internationalismus
+ist die Synthese von Kosmopolitismus und Nationalismus auf höherer
+Bewusstseinsstufe.»</p>
+<p>Noi va discusser ti ci frase secun su sense e usar it extra to, strax in
+comensa del disputation, quam modelle de experiment. Yo imagina, que it
+va esser leet ne solmen de un germano, ma anc de un angleso, italiano,
+franceso, hollandeso, scandinavo, ne totalmen íneducat, in general de
+quelcunc passabilmen instructet hom in li tot munde, qui ordinarimen ne
+have occasion pensar, leer e comprender altri lingues quam su matrin. Yo
+nequant dúbita, que li supra citat frase va esser comprendet de omni
+letores sin special desfacilitá. Ci ne vale pri agnoscer li contene quam
+rect o fals, ma solmen pri comprender it. E ti comprension va venir pos
+curt meditation, proque omni principal e remarcabil paroles appari quasi
+quam interpretes por li restant paroles.</p>
+<p>Ples privar de ti frase su german vestiment e vestir it in frances,
+angles, italian vestes, -- ti facte nequant va esser changeat. Ples
+presentar it in frances a un greco, in hollandes a un hispano, in svedi
+a un germano -- sempre it va esser comprendet secun su essential sense
+durant poc secundes, admaxim minutes.</p>
+<p>Noi hat posit ti frase supra quam modelle de experiment por advenir de
+extran parol a mundan parol. Nam li
+mundan parol ne lude plu micri role in li internationalitá quam quelcunc
+de ti comunitás, queles noi ante nu ha laudat tam alt e queles noi ancor
+va laudar in visibil future.</p>
+<p>E pro quó to ha esset apreciat till nu tam ínsuficent? Sin perifrases
+dit: tot ne agnoscet? Qualmen ha eventet, que tam rar -- o nequande --
+un advocat del extran parol ha prendet plazza che ti verd table, u lu
+international ha esset promoet e demandat?</p>
+<p>Pro to: existe naturalmen un question del international lingue. It anc
+ha trovat su response in artificial productes, queles ha esset fat
+conosset, o si Vu vole, mem famos, sub li nómines Volapük, Esperanto,
+Ido. Li Esperanto conta, secun mi saventie, circa un million adherentes
+e usatores sur li terre{blank}footnote:[Secun li oficial statistica li númere
+del esperantistes hodie es ne mult plu quam 100 000 till 200 000.];
+to es, un deciquinesim parte de un procent
+del homanité. E quande un de deciquincent, lass nos dir, in Tokio intra
+in comunication con un altri de deciquincent, lass nos dir, in Köln,
+tande ili in fact posse comprender unaltru.</p>
+<p><em>Red.</em></p>
+<p>Ma it es pri li comercial lettres in Esperanto quam pri li fantomes: li
+tot mund parla pri ili, ma nequi vide les. Yo personalmen deve
+confesser, que yo ancor nequande ha havet li privilegie reciver un
+epistul in Esperanto avan mi ocules, e yo have nequem inter mi
+conossetes, qui posset racontar me pri li reception de un tal esperantic
+scrite.</p>
+<p>Sin dúbita, to vell esser null pruva contra li future de Esperanto o
+contra li possibilitá de un mundan lingue in general. Ma certmen on
+posse far de to un conclusion de verisimilitá e ti conclusion coincide
+excellent con omni considerationes, in queles on comprende li lingue
+quam alquicos organicmen crescet e crescent. Si on posi lu organic
+contra lu mecanic, lu vivent contra li artificial producte, tande on di
+a se self ja in ante: mem si on vell successar augmentar li númere del
+usatores de Esperanto a deci o cent milliones, sempre su relation a un
+real lingue va esser ti de un attrappe de paper a un flore, de un
+automatic puppe a un spirant hom.</p>
+<p>Ma forsan it posse devenir un surrogat-lingue, un lingue-surrogat, quam
+noi ja possede tant surrogates, per queles noi es auxiliat, quáncam noi
+es conscient pri lor inferioritá. Anc to es ínverisimil in alt gradu. E
+to pro li simplic cause, que null prudent hom va contentar se pri li
+surrogat, quande il posse haver lu genuin. Si un ignorant, in
+vice de exercir Esperanto durant quar semanes lucta con li angles o
+frances durant li sam quar semanes, tande il va apprender de ti lingues
+solmen un minimum, to es ver, ma per ti minimum atinger mult plu quam
+per li maximal saventie de Esperanto. E extra to, mem ti minimum va
+esser ancor un lingue, imperfect, defectiv, ma malgré to un lingue, ne
+solmen flatus vocis e signes sur paper, durant que artificial lingues,
+inventet sur li studietable, ne posse esser o devenir alquicos altri
+quam un summa de signales, in queles on advere posse anunciar alquicos
+pensat, ma ne pensar.</p>
+<p>Li max acri objetion contra ti opinion deriva del participation de grand
+homes. Talmen esset plu temporan Cartesius e Leibniz, talmen es un
+Wilhelm Ostwald recomendatores del artificial mundlingue. Inter Leibniz
+e Ostwald es circa du e demí secules. Naturalmen mi ne posse saver,
+esque ne denove pos altri quart de mill annus un nov eminent hom va
+aparir con li sam confession. Ma to yo save, que ti hom del futur va
+trovar li camp altrimen preparat, ad saver, per to, que tande li
+civilisate va far se comprendet sur li fundament de su real lingues sin
+artificial circuites.</p>
+<p>Couturat ha anunciat pri li contures de un international lingue, quel
+esset tractat sur li scientific congress in 1900 e ductet al fundation
+de un «Delegation por li adoption de un lingue auxiliari international».
+Si li desiras restat ínsatisfat, li cause ne esset in li ínobtenibilitá
+del scope ma in li crede, que it posset esser atinget altrimen quam per
+automatic evolution del lingues. Decides e decretes es debil
+instrumentes por un tal problema. Qui fusila per canones a sparros,
+sempre posse atinger li sparro, ma on ne deve voler fusilar per li cane
+soflatori trans li Alpes o trans li Ocean.</p>
+<p>Esque un «Universal Lingue» es possibil in general? Esque li pensa ne es
+in se self tro vulgari, tro utopic, por esser jamá realisat? Certmen,
+qui expresse ti espera, trova se facilmen in li dangere esser deridet
+quam portero de un «fix idé» o mem devenir descreditet quam
+antinational. E ex li villosi péctores voces va elevar se contra il con
+li assertion: nequande till nu un ver-german autor de rang ha extravagat
+a tal fantastic ínpossibilitá.</p>
+<p>In fact, nequande ante? E, qualmen vell esser, si li fort multisaventes
+unquande vell comensar revider li actes. Ili tande posse trovar un
+dissertation, quel ea retro al annu 1846, e quel have quam autor nequem
+plu inferior quam Friedrich Hebbel. Tá sta scrit concernent cert formes
+in li pensation e versification:</p>
+<p>«... Ci es li punctu, u li pensa pri un universal lingue apari almen ne
+ínrational e arbitrari, un tal universal lingue, a quel li diferent
+national lingues vell relater quam tant mult exercicies precedent ... Ma
+li conossentie pri li cornises ne fa li spegul plu larg, e li espera,
+que on va vider les omni unquande plu e plu aproximar se a unaltru,
+depoy rupter se e sur li sómmite del civilisation dissoluer se in un sol
+lingue, nequant manca un fundament. Anc on ne deve far un salta
+extémpore por arivar a ti scop, on deve simplicmen progresser, proque on
+deve arrivar, si null stagnation eveni, del national lingue al universal
+lingue, sur li sam via e presc con li sam sacrificationes, sur quel on
+arivat del individual lingue (si on vole talmen nominar li unesim
+balbutiant provas de comprension e comunication a familiari, provincial
+e national lingue.»</p>
+<p>Traduction ex li libre «Das Geheimnis der Sprache» del conosset german
+autor Alexander Moszkowski. (Hoffmann und Campe Verlag, Hamburg und
+Berlin 1920.) Trad. A. Z. R.</p>
+<p>Oriente occidental.</p>
+<p>In «Verda Stelo» nr 1 sr Dr S. Nishi, prof. de anatomie in Universitate
+Imperial de Tokyo, publica un articul «Fine ni venkos», de quel noi
+extrae li sequent passus.</p>
+<p><em>Red.</em></p>
+<p>Li grand progress cultural quem li japaneses atinget durant li ultim
+demí-secul es vermen admirabil. Li cause sin dubita jace in li natura
+del popul, quel possede un admirabilmen grand capabilitá de assimilation
+a foren plu alt culturas. Alquande noi introductet li cultura chines,
+quel dominat nor vive plu quam mill annus. Pos li apertion de nor porta
+al cultura europan nor vive denove transmutat se, e in li témpore actual
+noi in fact vive in li cultura europ-american. Ma por continuar ti ci
+statu de vive (e to comprensibilmen es absolut necessi por subtener nor
+position inter cultural popules del munde) noi ne posse ignorar li grav
+impedimentes stant sur li via de nor progress cultural ...</p>
+<p>Li tema quel mi vole tractar un poc plu detalliat, es li problema de
+foren lingues, quel in Japan es particularmen plu grav quam in li altri
+landes cultural.</p>
+<p>In Japan on ancor have generalmen li fals opinion que li lingue angles
+ja es international. Che noi on omni die emisse leciones angles per
+radio, on edite mult angles jurnales e gazettes; on partú posse leer mem
+official surscritiones e afiches redactet in angles; por ex. on ne havet
+alcun strangi sentiment audiente un angles discurs del chef-ministre sr
+Katoo che li 6-esim Oriental Congress por Medicina Tropical, li unesim
+international scientific session quel havet loc in Tokyo, u tre mult
+membres japanes anc devet parlar in lingue angles, mult de ili tam mal,
+que null hom posset comprender les. -- Ja in li scoles medial li yun
+disciples es obligat aprender li lingue angles, quel es totalmen
+different de lor lingue national. Por to ili deve usar un suficent bon
+parte de lor témpore de studie, quasi essente in alcun colonie de Anglia
+o USA! In li scoles superior special li studentes deve aprender ultra
+angles anc german o frances, e scientistes deve plu minu bon apropriar
+se adminim tri modern lingues national por posser intercommunicar con
+foren colegos e por publicar internationalmen su scientific ovres.</p>
+<p>Talmen es li present statu del extran lingues in Japan. In ti maniere
+tre multis del max capabil japaneses perdi un suficent bon parte de lor
+labor-fortie per li apprension de extran lingues. On vell far un grand
+servicie al popul e al homanité, si on vell posser dedicar ti grand
+sacrificie de energie a su profession vice a foren lingues! Li foren
+lingues, quel auxilia nos in li progress cultural, talmen in sam témpore
+efecte mem impeditiv ...</p>
+<h2><a class="header" href="#vive" id="vive">Vive</a></h2>
+<p>Li povri filio del deserte havet un somnie.</p>
+<p>Jace e extende se li grandi Mediterran mare e de tri divers láteres
+regarda ye it li ardent costes de Africa con fin palmes, li Sirian calvi
+desertes e li denspopulat, tut disfossat per li mare rive de Europa.</p>
+<p>Sta in li angul súper li ínmobil mare li antiqui Egipte. Pyramide súper
+piramide; granites ciset quam sfinxes regarda med gris ocules; ascende
+ínnumerabil scalunes. Majestic it sta,
+nutrit del grand Nil, tut ornat per misteriosi signes e sacri animales.
+Sta e ínmobil, quam insorciat, quam mumie, índelebil ye putrition.</p>
+<p>Dissipat ha su líber colonies li gayi Grecia. Formica in li Mediterran
+mare insules, submerset in verdi boscages; cannel, sarmentes, figuieros
+ventola per su branches superverset de miel; colonnes, albi quam digites
+de vírgine, rondea in li luxuriosi obscuritá arborin; passionat spira
+marmor, incendiat per marvelosi cisel, e pudoros it joya ye su bell
+nuditá; circumvindat de uves, con tyrsos e vases in li manus, li popul
+ha haltat in su bruosi dansa. Prestressas, yun e gracil, con disbalayat
+bucles, inspirat ha plongeat su nigri ocules. Cannes ligat ad flute,
+timpanes, musical instrumentes scintilla circumplectet de hedre. Naves
+quam moscas amassa se proxim Rhodos e Corcyra, liverante al spira del
+vent li voluptuosmen undulant flagga. E omnicos sta ínmobil quasi in
+petrificat majestá.</p>
+<p>Sta e extende se li ferrin Roma, directente un foreste de lanses e
+scintillante per li sever stal de gladies, inforante ye omnicos
+invidiosi ocules e extendente su tendonosi dextri. Ma it es ínmobil,
+quam omnicos e ne va mover su leonin membres.</p>
+<p>Li tot aer del celest ocean pendet compresset e suffocant. Li grand
+Mediterran mare ne da son, quam si omni regnes aparit al ultim judicie
+ante li fin del munde.</p>
+<p>E parla Egiptia, balansante li fin palmes, li inhabitantes de su
+planies, e directente li agullies de su obeliscos: «Popules, escuta! Yo
+sol ha capit e penetrat li misterie del vive e li misterie del hom.
+Omnicos es putrallia. Bass es li arte, miserabil es li juienties, ancor
+plu miserabil es li glorie e heroisme. Li morte, morte reye súper li
+munde e li hom! Omnicos li morte devora. Omnicos vive por li morte. It
+es lontan, lontan til resurection! E ca va esser unquande un
+resurection? For li desires e delicies! Plu alt constructe li piramide,
+povri hom, por mem unquant prolongar tu povri existentie!».</p>
+<p>E parla li lucid munde del Grecos, seren quam ciel, quam matin, quam
+yunitá, e, semblat vice paroles, on audi li spira de un flute: «Li vive
+es creat por li vive. Developa tu vive, e junt con it developa su
+juienties. Aporta a it omnicos. Specta, quam convex e bell es omnicos in
+li natura, quam omnicos spira concordie. Omnicos es in li munde;
+omnicos, quocunc possede li deos, omni es in it; save trovar it! Jui,
+divin e superb dómino del munde, corona per querc e laure tu bell
+fronte, rapida sur carosse, habilmen governante li cavalles, in li
+splendid lude-curridas! For li gania e aviditá, for del líber e fier
+ánim! Cisel, palette e flute es creat esser soveranas del munde, e lor
+soverana li bellitá. Orna med hedre e uves tu bonodorant cápite e li
+bell cap del pudic amica! Li vive es creat por li vive, por juida save
+esser digni del juienties!»</p>
+<p>E parla li covrit de ferre Roma, brandissente li fulminant foreste de
+lanses: «Yo ha penetrat li misterie del homan vive. Vil es por li hom li
+tranquilitá: it anihila le in se self. Strett es por li ánim li spacie
+del artes e delicies. Li delicie consiste in gigantic desir. Vil es li
+vive del popules e del hom sin eclatant actiones. Ye glorie, glorie
+sitia, oh hom! In li storm del ínracontat gayitá, asurdat del son de
+ferre, vola sur li cludet scudes del guerrifer legiones! Ca tu audi,
+quam apu tu pedes convenit li tot munde, e brandissente su lanses, ha
+juntet se in un sol exclamation? Ca tu audi, quam tu nómine mori in
+terrore sur li labies del tribus vivent in li límites del mundes?
+Omnicos, quocunc tu regard inbrassa, plena per tu nómine! Aspira sempre:
+ne existe límites al munde -- ne existe límites anc al desir. Savagi e
+rigorosi, plu e plu prende, ocupa li munde -- tu va conquestar, in
+fine, li ciel!»</p>
+<p>Ma Roma haltat e infundat su aquilin ocules ad oriente. Ad oriente
+directet su humid de delicie bell ocules anc Grecia; ad oriente tornat
+Egiptia su ínpur, íncolori ocules.</p>
+<p>Petrosi es li terra; despreciat li popul; un povri village, apoyat al
+denudat collines. rar. ínegalmen adombrat per exsiccat figuieros. Detra
+bass e old hag sta un ásina. In li lignin crippe jace un infante; súper
+il sta declinat li chast matre e regarda it con ocules plen de lácrimes;
+súper il, alt in ciel, sta un astre e ha iluminat li tot munde per
+miraculosi luce. Comensat revar li antiqui Egiptia ornat per
+hieroglifes, abassante plu su piramides; ínquiet regardat li bell
+Grecia; Roma abassat su ocules sur su ferrin lanses; li grand Asia con
+su popules-pastores curbat su orele; inclinat se Ararat li antiqui
+pregrandpatre del terra ...</p>
+<p>N{dot} V. Gogol (ex Arabescas, 1831). Trad. E. W.</p>
+<p>Qui ne posse tener se, ne deve atender til que il cade, ma saltar abass,
+«sacrificar se». It have plu bon aspect; plu yo ne vole dir.</p>
+<p>Paul Mongré.</p>
+<p>Anc in li cap del scientific armé marcha tamburistes, i.e. persones de
+inferior gradu queles fa bruida.</p>
+<p>August Pauly.</p>
+<h2><a class="header" href="#normation" id="normation">Normation</a></h2>
+<p>Li normation es li categoric imperative del etica del labor.</p>
+<p>Dr. Ing. h. c. Hellmich.</p>
+<p>Li economie norma machines, utensiles e altri merces por diminuer li
+custas del fabrication e por facilisar li ínmediat exchange de consumat
+partes. Ti normation (nominat anc: normalisation o standardisation)
+consiste in uniformar, restricter e rationalisar li varietá del
+grandores, formes e qualitás del objectes. Li tendenties normativ es in
+li interesse tam del fabricante quam in ti del consumante.</p>
+<p>Prof. Dr. Dessauer nomina li normation li victorios intrada del ordinant
+spíritu in li caotic materie. Li spíritu del tecnica es un spíritu del
+órdine; per ordinar li materie e li energie in nov formes li technica da
+al substanties potenties enorm. Li medicament es un materie ordinat per
+spíritu. Originalmen ti materie esset caotic. Ma essente ordinat secun
+un cert conception, it posse reciver un potentie quem sovente mem li
+morte cede.</p>
+<p>Desde li grand guerre in omni grand states ha constituet se
+corporationes por normation in industrie.</p>
+<p>Ante quelc témpore li economie in Germania festat li 10-ésim
+anniversarie del fundation del «Deutscher Normenausschuss» (Comité
+German por Normes). In comensa ti comité ha laborat sub titul
+«Normenausschuss für den deutschen Maschinenbau» (Comité por normes in
+li german industrie de machines); poy sub «Normenausschuss der deutschen
+Industrie». Plu tard anc altri branches (administrationes statal e
+municipal, scoles, comercie, medicina, menage) utilisat li avantages
+atinget per ti normation. Conform al augmentat programma li comité
+reconstituet se finalmen quam «Deutscher Normenausschuss»footnote:[Adresse:
+Berlin NW 7, Dorotheenstrasse 47.], e it ocupa
+se nu pri li labores normativ del tot economie in Germania. Til nu on ha
+tractat li normes por li sequent dominias: signes matematical e fisical,
+unités de mesuras, formates, dessines tecnical, scritura, númeres
+normal, crud-materiales, transmissiones, árbores, pulies por strapes
+cutin e por cordes, rotes dentat, tubes, valves, armatures, caldrones,
+levatores, utensiles, utensil-machines, machines por fassonar ligne,
+metallurgie, fonderíe, welderie, autogen-industrie, rel-vias,
+locomotives, wagones, navigation, aviation, automobiles,
+bicicles, electrotecnica, radio, parafoyerie, frigoritechnica, machines
+agricultural, architectura, meubles, requisites e aparates por contores
+e scoles, valises, installation de hospitales, instrumentes chirurgic,
+instrumentes por laboratorias, menage, fototechnica, cinema,
+scrimachines, textil-industrie, stoffes etc, etc.</p>
+<p>Li labores normativ es dividet inter mult sub-comitées special, in quel
+es representat li fabricantes, li consumantes, li comerciantes e li
+scientie.</p>
+<p>Li resultates actual es deposit in plu quam 2200 normfolies, quel omnis
+es caracterisat per li anteyan signe «Din» (Deutsche Industrie-Norm) e
+per un numeró current.</p>
+<p>Mult imens minuciosi labores preparativ es necessi por statuer li textu
+notificat in un curt norm-folie. Sovente un sol númere de grandore es
+omnicos quo representa li resultate de pluri-annual investigationes, e
+del discussion de long series de conferenties.</p>
+<p>Sam quam omni innovationes, anc li normes in comensa have mult
+adversarios. On ha timet economic detrimentes per abandonar li anterior
+usanties in li production, e on considerat li normes mem quam
+impedimentes in li evolution industrial. Ma ti timore miscomprende li
+scopes visat. Li normes ne obliga li economie a crear tipes ínchangeabil
+e rigid, ma in contrari ili deve esser adaptat al technical progress.</p>
+<p>Li DINormes es li resultate de líber convention. Pro to ili ne posse
+esser creat per revolutiones del majorité. Li votation ne es usual in li
+comités; it eveni solmen por posser dar un image pri li situation del
+opiniones. Li violation de un competent minorité es totalmen ínapt por
+introducter un norm durabil.</p>
+<p>Naturalmen por executer ti principie anc existe un límite. Si p. ex. un
+gruppe de fabricantes malgré insistent petitiones ne concede al
+consumantes un discussion pri un norm creand, on vell acter ne just si
+on renuncia pri elaborar ti norm necessi por li consumantes.</p>
+<p>It sembla contradictori que li directiones del comités es plu ocupat per
+li negativ labore (i. e. li defension contra li fanatisme de normation)
+quam per li positiv labor por normes. Quam li manca tam li exuberantie
+del normation es un max grand dangere por li economie. Contra ti malu
+existe solmen un efectiv remedie, i.e. li normes mey introducter se per
+self. Lor intrinsic qualitá deve esser lor potentie. Pro to li comité
+directiv til nu sempre ha declinat dar al normes un obligation oficial
+per public legislatura, etsi to vell esser tre lurativ por promoer li
+labor.</p>
+<p>Li max grand popularitá inter li DINormes ha atinget li formates. On
+postula del formates normal que ili es simil un al altri. Adplu, du
+vicini formates del serie deve nascer per duplication o demí-partition.
+Por satisfar ti postulationes it es necessi que li micri látere relate
+al grand quam li númere un al radica de du, i.e. 1:1,41 [...]
+(o li relation del látere de un quadrate a su diagonale). Ti relation
+trova se ultra altris che li «Mundoformate» proposit de Wilhelm Ostwald
+in annu 1911 in li organisation del «Ponte». Ma ti ci formate havet quam
+unité li látere de un 1 cm, contra que li DIN-formate secun propose de
+Dr. Porstmann departi del area 1 m² i.e. li formate A0 (841 mm × 1189
+mm).</p>
+<p>Li DIN-formates es li sequent:</p>
+<p>|===
+| Formate | Longore in mm</p>
+<p>| A 0     | 841 × 1189
+| A 1     | 594 ×  841
+| A 2     | 420 ×  594
+| A 3     | 297 ×  420
+| A 4     | 210 ×  297
+| A 5     | 148 ×  210
+| A 6     | 105 ×  148
+| A 7     |  74 ×  105
+| A 8     |  52 ×   74
+| A 9     |  37 ×   52
+| A 10    |  26 ×   37
+| A 11    |  18 ×   26
+| A 12    |  13 ×   18
+| A 13    |  9  ×   13
+|===</p>
+<p>Li max usat es li formate A 4, por lettres, libres, revúes etc. Li
+jurnal Cosmoglotta have li formate A 5. Li formate A 6 es usat por
+postcartes, fotogrammes, manuales etc.</p>
+<p>Solmen ta u un application del serie A ne es possibil, on usa li series
+B, C e D del formates quel es geometric interpolat in li serie A. P. ex.
+li formate C 6: 114 × 162 es usat por lettre-covertes.</p>
+<p>Li supra indicat númeres es li dimensiones maximal; it es tolerat un
+diminution til circa 2 mm che li medial grandores.</p>
+<p>Li DINormes esset adoptet ne solmen del guvernia e Industrie in
+Germania, ma partmen e totalmen anc in altri states (Austria, Belgia,
+Svissia, Holland, Svedia, Norvegia, Hungaria, Tchecoslovacia, Polonia
+etc), etsi regretabilmen ancor ne existe un universal organisation por
+normation international. Excludente desiras national e altri
+preferenties special, e fundante sur rational considerationes, metric
+sistema etc, li DINormes posse esser base por li normation in li futuri
+economie europan. Adver in li landes anglo-american ili va successar
+solmen
+secun quant ta anc li metric sistema ja es introductet e sub condition
+que interim ta ne va inradicar se li nov normationes national basant sur
+li sistema secun inch.</p>
+<p>It es grav que li comités quel stipula li normes, anc mey cuidar pri li
+possibilitá de lor introduction in li practica. Nam li valore del max
+bon sistema es van, si on ne have li potentie imposar it al homes. Just
+pro ti cause it ha constituet se un comité special por controlar li
+introduction del normes in li practica. Ti comité have li jure a veto
+pri li projectes de omni comités special e pri revisionar les secun li
+recent demandas del practica. Per ti intim e prudent juntion inter
+practica e teorie ti valent labores successivmen conquesta plu vast
+terren in li tot vive economic.</p>
+<p>Secun publicationes de DIN e VDI.</p>
+<p>Ing. E. Pigal.</p>
+<h2><a class="header" href="#stenografic-sistemas-e-lingue-international" id="stenografic-sistemas-e-lingue-international">Stenografic sistemas e Lingue International</a></h2>
+<p>Du recensiones.</p>
+<p>Ja in 1926 senior M. den Outer in Rotterdam ha adaptat por Occidental su
+stenografic sistema Stenografie International (Cosmo-Stenografie, anc
+Mondo), e ho-annu senior E. Pigal in Wien ha publicat Panscrit, un
+adaptation por Occidental del stenografic sistema Scheithauer.</p>
+<p>In li sistema de M. den Outer omni consonantes in su fundamental
+alfabetic form es scrit per signes de un unic grandore. Por expresser li
+vocales li sequent consonant es scrit in simplic, duplic o triplic
+grandore e posit in divers positiones relativ al linea de scrition. Li
+quantitá del vocales es expresset per diferent formes del juntiv
+ascendent strecas. Li vocales have in ultra anc alfabetic signes.
+Combinationes de consonantes in presc omni casus es scrit per li simplic
+signes mettet apu unaltri con micri juntiv ascendent strecas, li
+diftongos in li sam maniere ma sin juntiv strecas. Un direct
+consequentie de to, que omni consonantes es expresset per signes del sam
+grandore, es que li signes in parte postula 3 e mem 5 (li ch) simplic
+movementes del manu. Malgré li manca de special signes por frequent
+combinationes de consonantes li scrition per auxilie de mut juntiv
+signes deveni fluent e secue tre bon li linea. Li parolimages have un
+tre simpatic aspect ma es long in general, si ne curtat. Li curtativ
+capacitá del quasi-simbolic scrition del vocales deveni efectiv solmen
+si
+li curtation per omission de parol-partes es tam fort, que solmen un
+vocal e li sequent consonant deve esser scrit. In ti casu li consonant,
+scrit in correct grandore e position indica anc li antecedent vocal. --
+Li adaptation es habilmen fat, ma concerne presc solmen li alfabet. It
+vell esser interessant haver un complet catalog del standardisat
+curtationes de max sovent paroles e sufixes, necessi por general usada.
+Li longore del parol-images fa desfacil li atingement de grand rapiditás
+in scrition ma de un altri látere li selection del signes es excellent
+de pur grafic vid-punctu, de quo resulta un ínapreciabil comoditá in
+scrition.</p>
+<p>Li adaptation Panscrit, sam quam su sistema original, apartene al gruppe
+de sistemas, queles scri omni sones per absolutmen rigid alfabetic
+signes, talmen que simil signes in different grandore indica different
+sones, e que li position de un signe relativ al linea ne have influentie
+a su signification. It es conosset, que per tal sistemas on posse
+facilmen atinger grand rapiditás in scrition, e Panscrit probabilmen ne
+fa exception de ti regul. Li similitá inter Panscrit e su sistema
+original es suficent por que un person, conossent ti sistema, sin long
+studia va mastrisar anc Panscrit. Li adaptation es bon perlaborat,
+solmen li catalog del standardisat curtationes (in li brochura:
+abreviationes facultativ) es ancor a completar.</p>
+<p>Li importantie del stenografie in nor témpore es eminent in omni
+cultur-landes, e por chascun national cultur-lingue on ha elaborat un o
+pluri original stenografic sistemas ultra adaptationes de foren
+sistemas. In li lingue international li stenografie deveni un complement
+max essential e necessi. On mey pensar p. ex. al usation quam lingue de
+congress. Durant que in un national lingue un sol stenografic sistema
+vell esser suficent, proque omni hom qui besona stenografie vell posser
+aprender li sistema existent in su lingue, in li lingue international un
+sol sistema ne va suficer, tam long quam es usat diferent national
+stenografic sistemas. Nam li persones, queles va besonar stenografie in
+li lingue international, probabilmen in grand parte ja mastrisa alcunc
+national sistema, e it va esser mult plu facil aprender un bon
+adaptation del conosset sistema quam un original neconosset. De to
+seque, que it va esser necessi adaptar a li lingue international omni
+bon conosset national sistemas, e particularimen li sistemas de vast e
+intensiv usation. In ti direction nu es fat du grav passus.</p>
+<p>Rafael E. Rehn.</p>
+<h2><a class="header" href="#li-film-va-parlar" id="li-film-va-parlar">Li film va parlar</a></h2>
+<p>Ing. Kuechenmeister ha successat fotografar li son. -- Li combination
+de luce- e sona-negatives procura li parlant film. -- On ne posse ancor
+previder li possibilitás de ti film.</p>
+<p>Li german inventor Heinrich Kuechenmeister ha successat filmar sones,
+quam on fotografa images. Per li combination de ti sona-film con li
+existent film de images il ha aportat to, pri quo altris ante il con plu
+o minu success ja ha serchat plu anteyan: li parlant film.</p>
+<p>Li «Vitaphone» e li «Movietone» ja existet ante ti ci parlant film. On
+ja neplu audi pri tis. Sin dúbita on hat ductet li film ad parlada, ma
+li maniere qualmen it evenit, esset tam complicat o tam íncert, que li
+invention ne havet practic utilitá. Sur li altore, quel hat atinget li
+tecnica, on devet trovar li solution del problema. It ne plu relatet
+durant li ultim annus soluer li problema; it relatet li maniere de
+solution. It ha esset precismen lu sam con li invention del automobil.
+Li unesim product esset tam complicat, tam poc secur de explotation e
+tam custosi, que li invention esset tre remarcabil, ma ancor ne bon
+usabil. On devet inventer ancor mult plu, ante que presc omnihom posset
+comprar un «Ford-ette».</p>
+<p>It es li grand merite de ti ci nov parlant film, que it posse esser
+explotat bonmen e do possede signification por li film-explotation.</p>
+<p>Con auxilia de un microfon on fixa musica, parlat paroles e altri sones
+in sam témpor con li image per li fotografic camera sur li film. Li
+microfon, receptet in un curs-circul, capte li sones e transmisse,
+egalmen quam che li telefon o li radio, li sona-undes electricmen a un
+fortificator con lampes. Detrá ti fortificator ha esset incatenat un
+lamp ardentari. Li luce de ti lamp es interruptet ye chascun vez e ya in
+un ritme, quel coresponde al ritme del original sona-undes. Ti
+rapidissim interruption ne es visibil por li ocul. Ili posse esser fixat
+bonmen sur li rotant film. Sur ti ili apari quam clar e tenebros
+lineas.</p>
+<p>To ha esset racontat in rud strecas, qualmen on «capte» li son. Por li
+representation on posse usar li ordinari film-projection-aparate. Deve
+solmen esser montet un micri aparate, just tá, u apu li ordinari
+film-image conrota li clar e tenebros lineas. In ti apparate reside un
+sistema de objectives e un
+lamp. Li serie de variant clar e tenebros micri lineas causa, que li
+luce del lamp passat nu plu fort tande plu debil vers un tre particulari
+organ, li tal nominat luce-sensitiv cellul. Ti cellul trova se denove in
+un curs-circul. Li curs-circul ne lassa passar un curs quande ne cade
+luce sur li cellul. Li rapid variation de tenebros e clar in li
+luce-sensitiv cellul da curs-pussas in li curs-circul, queles have
+denove li sam ritme del captet sones. Ti curs-pussas es fortificat, sam
+quam che li radio e tande es ductet a un o pluri fort-parlatores. Quam
+on vide, li action es tre simplic. E simplicitá es li marca de lu ver.</p>
+<p>A qual postulationes deve satisfar li parlant film?</p>
+<p>It deve esser servit habilmen; li custas acquisitiv deve esser ne tro
+alt; li aparate presc ne deve postular reconstruction. Comprensibilmen
+li sones productet deve sonar purmen e deve coincider precismen con li
+image.</p>
+<p>Nu, li apparate Kuechenmeister posse esser montet a chascun
+projection-aparate in tri hores. De ulterior servition on presc ne
+besona parlar. Li precie es atingibil por chascun cinema. Li accessories
+es modic. Un stagnation es finit in quelc minutes, proque ne existe un
+complicat machineríe in li aparate. E quo es lu principal: li son es
+excellent e coincide precismen con li image. Quande Mussolini herisse se
+in li strippes e aperte su bocc, on audi parlar «il duce». Quande un
+scolseniora tappa in li manus, on aprende li son; on vide un danseressa
+tener li ritme con li musica, quel on audi; e quande un pianist tucha,
+on reconosse Chopin!</p>
+<p>Noi ha videt e audit prova-rotar li film in li City-teatre in Den Haag e
+ha sedet perplex in nor loge. Nam on pensa unquande pri li
+possibilitás!</p>
+<p>Adver li hodial film es basat sur tacer, ma li film parlant vell posser
+mutar su caractere. Esque on va lassar parlar chef-films, film-dramas?
+Noi espera que ne. Un film ya nequande va parlar vermen. Quant on save
+anc aproximar li natura, it es e dura esser un ombre-lude sur un blanc
+toale. Ti ombres ne posse parlar. Ne nu e nequande! E li film-arte, quel
+just prunta su tempo a su tace, vell retroear ínmediatmen a un sorte de
+fotografat scen, quande li parlat parol vell modificar su propri specie.
+Li munde del film es un tot altri quam del scen. Solmen poc a poc noi ha
+renunciat considerar li film quam un paralel o un copie de un existent
+arte. Li film-arte ocupa un propri plazza inter li artes. Li absolut
+stil del film-arte
+ne ha esset trovat ancor, ma li resultates, til hodie acquisitet,
+justifica li crede a un plu aprofundation e elargation.</p>
+<p>Támen li cinematografie divide-se in du partes, queles diverge sempre
+plu. Li dramatic film-arte forsan va haver poc avantage del parlant
+film, ma li cultur-film gania per to un tot nov munde. Li films de
+instruction, scientic e documentari deveni plu util e plu rich, quande
+ili posse anc fixar e reproducter li sones.</p>
+<p>Famos musicantes va reciver per li parlant film un portrete, quel va
+restar conservat por li homanité. To vale anc por famos sceneros,
+erudites, oratores, statmannes, reyes, etc. Chascun historic eveniment
+va esser fixat hodie tam per image quam per parol. Li scol-cinema va
+profitar enorm per it. On ne posse previder li númere de possibilitás.</p>
+<p>Ing. Kuechenmeister ha portat su invention unesimmen a Nederland, proque
+il es mettet in li ocasion per Nederlandan capital far su experimentes.
+Quáncam li product es simplic, li preparant labor ne ha esset talmen.
+Hodie li inventor ocupa se introducter su invention in li practica. Ti
+expenses ne va esser recompensat per li vendition del simplic aparate.
+Ing. Kuechenmeister es accustomat vider plu lontan. In ti aparate es un
+tot industrie de parlant films. On va erecter un nov explotation de
+films.</p>
+<p>Bentost on ya va audir plu de ti remarcabil invention e to ne solmen in
+li cinema. Nam li intention es popularisar li aparate per bentosti
+furnition de un formate, quel es apt esser montet sur dom-cinemas.</p>
+<p>Ex «Nieuwe Rotterdamsche Corrant»</p>
+<p><em>Trad. Marius den Outer.</em></p>
+<h2><a class="header" href="#etiquette" id="etiquette">Etiquette</a></h2>
+<p>Li etiquette es un form del selfdiscipline; in to consiste su
+justification e su necessitá, precipue che ínmatur culturas e homes.</p>
+<p>Sur li max inferior gradus it have li form del tabú. Poy it es religiosi
+e moral usanties, poy li etiquette del corte e del militari discipline,
+poy li bon ton, e quande in fin li hom ha atinget li max alt gradu de
+etic perfection, it es li inscrit lege del tact. Regretabilmen li tact
+ne posse esser atinget per education, it deve esser innascet, e ye
+pluparte solmen pos cultura de mult generationes.</p>
+<p>Tant por li signification del nobilité.</p>
+<p>Pro quo Japan durante un sol generation posset devenir plu civilisat
+quam Grecia, Serbia, Bulgaria etc? Japan possedet un antic nobilité fort
+in su etiquette, quel mancat a ti ta landes.</p>
+<p>On me va monstrar quam refutation ye America. Ma qui esset do ti unesim
+colonistes de America? Puritanes sever in lor mores, con old
+traditiones! Li particule «de» es ci minu grav quam longannual
+tradition. Li nobilité do solmen quam exemple del tradition.</p>
+<p><em>Julian Prorók (Ketzereien)</em></p>
+<h2><a class="header" href="#indianic-paroles-international" id="indianic-paroles-international">Indianic paroles international</a></h2>
+<p>Li american (indianic) paroles in li europan lingues es trovat in
+suficent grand númere, specialmen in angles, hispan e portugales. Ma anc
+li altri europan lingues contene un suficent númere de ili. Karl
+Lokotsch in su etimologic dictionarium de tal american paroles in
+german{blank}footnote:[Karl Lokotsch: Etymologisches Wörterbuch der amerikanischen
+(indianischen) Wörter im Deutschen. Carl Winter, Heidelberg, 1926.]
+cita 158 paroles, li etimologie de queles il explica. Ultra
+geografic nómines, li nómines de plantes, animales e coses es li max
+sovent. Inter ili noi trova ultra li conosset jaguar, boa, lama,
+chinchilla, tapir, guanaco, wigwam, guano, caiman, anc altri paroles
+quam uragan, hamac, chocolate, canú, cautchuc, chinin, cocain, condor,
+copal, máis, macaco, tabac, tomate etc.</p>
+<p>Interessant es li explicat signification de divers geografic nómines p.
+ex. Amazonas descende del indian amassumu {equals} fracass de aqua, Chili =
+frigid, Guatemala {equals} monte vomient aqua, Jamaica {equals} insul de fontes,
+Cánada {equals} cité, Mississippi {equals} grand flue, Niagara {equals} aqua tonnerant,
+Orinoco {equals} aqua rapid, Panamá {equals} papilion, Paraná {equals} mare, Paraguay {equals} aqua
+del papagaye, Popocatepetl {equals} li monte fumant, Titikaka {equals} rocca de
+plumbe, Uruguay: guira-gua hi {equals} aqua del multicolori avios, Yucatan {equals} in
+li land del Yuk, Guito {equals} columbo, etc.</p>
+<p><em>E{dot} W.</em></p>
+<h2><a class="header" href="#subventiones-por-cosmoglotta" id="subventiones-por-cosmoglotta">Subventiones por Cosmoglotta</a></h2>
+<p>C{dot} K.-K-: 4 Doll.; Sra. Agnes v. Wahl-Reval: l Doll.; Dr. A.
+Peipers-Köln: 5 R M; Regierungsrat Dr. Mell-Rudolstadt: 10 R M; Albert
+Haldin-Eskilstuna: 25 sv. K. Cordial mersías.</p>
+<p><em>A{dot} D.</em></p>
+<p>Eigentümer, Herausgeber u. Verleger: Gesellschaft Cosmoglotta, Mauer bei
+Wien, Verantwortlicher Schriftleiter: Ing. E. Pigal, Liesing bei Wien.
+Druck: Milan Nedvídek, Tábor.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../Cosmoglotta/048.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../Cosmoglotta/050.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../Cosmoglotta/048.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../Cosmoglotta/050.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script src="https://occidental-lang.com/website-word-lookup/lookup.js"></script>
+        <script>
+            lookupInit('https://occidental-lang.com/website-word-lookup/dict.json');
+            document.onselectionchange = debounce(lookup, 500);
+        </script>
+        
+
+    </body>
+</html>

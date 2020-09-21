@@ -1,0 +1,852 @@
+<!DOCTYPE HTML>
+<html lang="ie" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>A 86 - scritorium</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        
+
+        <div id="definition"></div>
+
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="../index.html">Hem</a></li><li class="chapter-item "><a href="../MicriCrestomatie/0.html"><strong aria-hidden="true">1.</strong> Micri Crestomatie</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../MicriCrestomatie/1.html"><strong aria-hidden="true">1.1.</strong> Capitul 1</a></li><li class="chapter-item "><a href="../MicriCrestomatie/proverbies.html"><strong aria-hidden="true">1.2.</strong> Proverbies</a></li></ol></li><li class="chapter-item "><a href="../LiLittPrince/0.html"><strong aria-hidden="true">2.</strong> Li Litt Prince</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../LiLittPrince/1.html"><strong aria-hidden="true">2.1.</strong> Capitul 1</a></li><li class="chapter-item "><a href="../LiLittPrince/2.html"><strong aria-hidden="true">2.2.</strong> Capitul 2</a></li><li class="chapter-item "><a href="../LiLittPrince/3.html"><strong aria-hidden="true">2.3.</strong> Capitul 3</a></li><li class="chapter-item "><a href="../LiLittPrince/4.html"><strong aria-hidden="true">2.4.</strong> Capitul 4</a></li><li class="chapter-item "><a href="../LiLittPrince/5.html"><strong aria-hidden="true">2.5.</strong> Capitul 5</a></li><li class="chapter-item "><a href="../LiLittPrince/6.html"><strong aria-hidden="true">2.6.</strong> Capitul 6</a></li><li class="chapter-item "><a href="../LiLittPrince/7.html"><strong aria-hidden="true">2.7.</strong> Capitul 7</a></li><li class="chapter-item "><a href="../LiLittPrince/8.html"><strong aria-hidden="true">2.8.</strong> Capitul 8</a></li><li class="chapter-item "><a href="../LiLittPrince/9.html"><strong aria-hidden="true">2.9.</strong> Capitul 9</a></li><li class="chapter-item "><a href="../LiLittPrince/10.html"><strong aria-hidden="true">2.10.</strong> Capitul 10</a></li><li class="chapter-item "><a href="../LiLittPrince/11.html"><strong aria-hidden="true">2.11.</strong> Capitul 11</a></li><li class="chapter-item "><a href="../LiLittPrince/12.html"><strong aria-hidden="true">2.12.</strong> Capitul 12</a></li><li class="chapter-item "><a href="../LiLittPrince/13.html"><strong aria-hidden="true">2.13.</strong> Capitul 13</a></li></ol></li><li class="chapter-item "><a href="../UnDesertor/0.html"><strong aria-hidden="true">3.</strong> Un Desertor</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../UnDesertor/1.html"><strong aria-hidden="true">3.1.</strong> Capitul 1</a></li></ol></li><li class="chapter-item expanded "><a href="../Cosmoglotta/0.html"><strong aria-hidden="true">4.</strong> Cosmoglotta</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/1927.html"><strong aria-hidden="true">4.1.</strong> 1927</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/038.html"><strong aria-hidden="true">4.1.1.</strong> A 38</a></li><li class="chapter-item "><a href="../Cosmoglotta/039.html"><strong aria-hidden="true">4.1.2.</strong> A 39</a></li><li class="chapter-item "><a href="../Cosmoglotta/040.html"><strong aria-hidden="true">4.1.3.</strong> A 40</a></li><li class="chapter-item "><a href="../Cosmoglotta/041.html"><strong aria-hidden="true">4.1.4.</strong> A 41</a></li><li class="chapter-item "><a href="../Cosmoglotta/042.html"><strong aria-hidden="true">4.1.5.</strong> A 42</a></li><li class="chapter-item "><a href="../Cosmoglotta/043.html"><strong aria-hidden="true">4.1.6.</strong> A 43</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1928.html"><strong aria-hidden="true">4.2.</strong> 1928</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/044.html"><strong aria-hidden="true">4.2.1.</strong> A 44</a></li><li class="chapter-item "><a href="../Cosmoglotta/045.html"><strong aria-hidden="true">4.2.2.</strong> A 45</a></li><li class="chapter-item "><a href="../Cosmoglotta/046.html"><strong aria-hidden="true">4.2.3.</strong> A 46</a></li><li class="chapter-item "><a href="../Cosmoglotta/047.html"><strong aria-hidden="true">4.2.4.</strong> A 47</a></li><li class="chapter-item "><a href="../Cosmoglotta/048.html"><strong aria-hidden="true">4.2.5.</strong> A 48</a></li><li class="chapter-item "><a href="../Cosmoglotta/049.html"><strong aria-hidden="true">4.2.6.</strong> A 49</a></li><li class="chapter-item "><a href="../Cosmoglotta/050.html"><strong aria-hidden="true">4.2.7.</strong> A 50</a></li><li class="chapter-item "><a href="../Cosmoglotta/051-052.html"><strong aria-hidden="true">4.2.8.</strong> A 51-52</a></li><li class="chapter-item "><a href="../Cosmoglotta/053.html"><strong aria-hidden="true">4.2.9.</strong> A 53</a></li><li class="chapter-item "><a href="../Cosmoglotta/054.html"><strong aria-hidden="true">4.2.10.</strong> A 54</a></li><li class="chapter-item "><a href="../Cosmoglotta/055.html"><strong aria-hidden="true">4.2.11.</strong> A 55</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1929.html"><strong aria-hidden="true">4.3.</strong> 1929</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/056.html"><strong aria-hidden="true">4.3.1.</strong> A 56</a></li><li class="chapter-item "><a href="../Cosmoglotta/057.html"><strong aria-hidden="true">4.3.2.</strong> A 57</a></li><li class="chapter-item "><a href="../Cosmoglotta/058.html"><strong aria-hidden="true">4.3.3.</strong> A 58</a></li><li class="chapter-item "><a href="../Cosmoglotta/059.html"><strong aria-hidden="true">4.3.4.</strong> A 59</a></li><li class="chapter-item "><a href="../Cosmoglotta/060.html"><strong aria-hidden="true">4.3.5.</strong> A 60</a></li><li class="chapter-item "><a href="../Cosmoglotta/061.html"><strong aria-hidden="true">4.3.6.</strong> A 61</a></li><li class="chapter-item "><a href="../Cosmoglotta/062-63.html"><strong aria-hidden="true">4.3.7.</strong> A 62-63</a></li><li class="chapter-item "><a href="../Cosmoglotta/064.html"><strong aria-hidden="true">4.3.8.</strong> A 64</a></li><li class="chapter-item "><a href="../Cosmoglotta/065.html"><strong aria-hidden="true">4.3.9.</strong> A 65</a></li><li class="chapter-item "><a href="../Cosmoglotta/066.html"><strong aria-hidden="true">4.3.10.</strong> A 66</a></li><li class="chapter-item "><a href="../Cosmoglotta/067.html"><strong aria-hidden="true">4.3.11.</strong> A 67</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1930.html"><strong aria-hidden="true">4.4.</strong> 1930</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/068.html"><strong aria-hidden="true">4.4.1.</strong> A 68</a></li><li class="chapter-item "><a href="../Cosmoglotta/069.html"><strong aria-hidden="true">4.4.2.</strong> A 69</a></li><li class="chapter-item "><a href="../Cosmoglotta/070.html"><strong aria-hidden="true">4.4.3.</strong> A 70</a></li><li class="chapter-item "><a href="../Cosmoglotta/071.html"><strong aria-hidden="true">4.4.4.</strong> A 71</a></li><li class="chapter-item "><a href="../Cosmoglotta/072.html"><strong aria-hidden="true">4.4.5.</strong> A 72</a></li><li class="chapter-item "><a href="../Cosmoglotta/073.html"><strong aria-hidden="true">4.4.6.</strong> A 73</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1931.html"><strong aria-hidden="true">4.5.</strong> 1931</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/074.html"><strong aria-hidden="true">4.5.1.</strong> A 74</a></li><li class="chapter-item "><a href="../Cosmoglotta/075.html"><strong aria-hidden="true">4.5.2.</strong> A 75</a></li><li class="chapter-item "><a href="../Cosmoglotta/076.html"><strong aria-hidden="true">4.5.3.</strong> A 76</a></li><li class="chapter-item "><a href="../Cosmoglotta/077.html"><strong aria-hidden="true">4.5.4.</strong> A 77</a></li><li class="chapter-item "><a href="../Cosmoglotta/078.html"><strong aria-hidden="true">4.5.5.</strong> A 78</a></li><li class="chapter-item "><a href="../Cosmoglotta/079.html"><strong aria-hidden="true">4.5.6.</strong> A 79</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1932.html"><strong aria-hidden="true">4.6.</strong> 1932</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/080.html"><strong aria-hidden="true">4.6.1.</strong> A 80</a></li><li class="chapter-item "><a href="../Cosmoglotta/081.html"><strong aria-hidden="true">4.6.2.</strong> A 81</a></li><li class="chapter-item "><a href="../Cosmoglotta/082.html"><strong aria-hidden="true">4.6.3.</strong> A 82</a></li><li class="chapter-item "><a href="../Cosmoglotta/083.html"><strong aria-hidden="true">4.6.4.</strong> A 83</a></li><li class="chapter-item "><a href="../Cosmoglotta/084.html"><strong aria-hidden="true">4.6.5.</strong> A 84</a></li><li class="chapter-item "><a href="../Cosmoglotta/085.html"><strong aria-hidden="true">4.6.6.</strong> A 85</a></li></ol></li><li class="chapter-item expanded "><a href="../Cosmoglotta/1933.html"><strong aria-hidden="true">4.7.</strong> 1933</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Cosmoglotta/086.html" class="active"><strong aria-hidden="true">4.7.1.</strong> A 86</a></li><li class="chapter-item "><a href="../Cosmoglotta/087.html"><strong aria-hidden="true">4.7.2.</strong> A 87</a></li><li class="chapter-item "><a href="../Cosmoglotta/088.html"><strong aria-hidden="true">4.7.3.</strong> A 88</a></li><li class="chapter-item "><a href="../Cosmoglotta/089.html"><strong aria-hidden="true">4.7.4.</strong> A 89</a></li><li class="chapter-item "><a href="../Cosmoglotta/090.html"><strong aria-hidden="true">4.7.5.</strong> A 90</a></li><li class="chapter-item "><a href="../Cosmoglotta/091.html"><strong aria-hidden="true">4.7.6.</strong> A 91</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1934.html"><strong aria-hidden="true">4.8.</strong> 1934</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/092.html"><strong aria-hidden="true">4.8.1.</strong> A 92</a></li><li class="chapter-item "><a href="../Cosmoglotta/093.html"><strong aria-hidden="true">4.8.2.</strong> A 93</a></li><li class="chapter-item "><a href="../Cosmoglotta/094.html"><strong aria-hidden="true">4.8.3.</strong> A 94</a></li><li class="chapter-item "><a href="../Cosmoglotta/095.html"><strong aria-hidden="true">4.8.4.</strong> A 95</a></li><li class="chapter-item "><a href="../Cosmoglotta/096.html"><strong aria-hidden="true">4.8.5.</strong> A 96</a></li><li class="chapter-item "><a href="../Cosmoglotta/097.html"><strong aria-hidden="true">4.8.6.</strong> A 97</a></li><li class="chapter-item "><a href="../Cosmoglotta/098.html"><strong aria-hidden="true">4.8.7.</strong> A 98</a></li><li class="chapter-item "><a href="../Cosmoglotta/099.html"><strong aria-hidden="true">4.8.8.</strong> A 99</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/1935.html"><strong aria-hidden="true">4.9.</strong> 1935</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Cosmoglotta/B-001.html"><strong aria-hidden="true">4.9.1.</strong> B 1</a></li><li class="chapter-item "><a href="../Cosmoglotta/100.html"><strong aria-hidden="true">4.9.2.</strong> A 100</a></li><li class="chapter-item "><a href="../Cosmoglotta/101.html"><strong aria-hidden="true">4.9.3.</strong> A 101</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-002.html"><strong aria-hidden="true">4.9.4.</strong> B 2</a></li><li class="chapter-item "><a href="../Cosmoglotta/102.html"><strong aria-hidden="true">4.9.5.</strong> A 102</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-003.html"><strong aria-hidden="true">4.9.6.</strong> B 3</a></li><li class="chapter-item "><a href="../Cosmoglotta/103.html"><strong aria-hidden="true">4.9.7.</strong> A 103</a></li><li class="chapter-item "><a href="../Cosmoglotta/104.html"><strong aria-hidden="true">4.9.8.</strong> A 104</a></li><li class="chapter-item "><a href="../Cosmoglotta/B-004.html"><strong aria-hidden="true">4.9.9.</strong> B 4</a></li><li class="chapter-item "><a href="../Cosmoglotta/105.html"><strong aria-hidden="true">4.9.10.</strong> A 105</a></li></ol></li><li class="chapter-item "><a href="../Cosmoglotta/theRest.html"><strong aria-hidden="true">4.10.</strong> The Rest</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">scritorium</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <div id="langPicker"></div>
+                        
+                        <a href="https://github.com/occidental-lang/scritorium" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#cosmoglotta-a-86-jan-feb-1933" id="cosmoglotta-a-86-jan-feb-1933">Cosmoglotta A 86 (jan-feb 1933)</a></h1>
+<p>Annu XII    Januar -- Februar 1933    No. 1 (86)</p>
+<h2><a class="header" href="#rasmus-rask" id="rasmus-rask">Rasmus Rask</a></h2>
+<p>De A. Z. Ramstedt, Helsingfors.</p>
+<p>Li 14m novembre 1932 100 annus ha passat del morte del grand dan
+linguist Rasmus Christian Rask, un del pioneros del modern linguistica,
+li memorie de qui con jure deve esser celebrat.</p>
+<p>Rask nascet in 1787 in Dania quam filio de un povri farmero. Il posset
+visitar un bon scol, e un die il recivet, pro su diligentie, un premie,
+tamen un strangi: un libre quel contenet un antiqui poema
+«Heimskringla», scrit de un islandic poet Snorre Sturluson, circa annu
+1200, in un antiqui nordic, quasi proto-scandinavic lingue quel
+naturalmen esset íncomprensibil al yun púer. Qualmen leer li libre? Li
+púer ne havet ni vocabulariums ni grammaticas. Il comensat self composir
+un grammatica e un vocabularium del antiqui lingue
+del libre, un interprense unic de un scolero! Su interesse por
+linguistic studies esset avigilat, e il consacrat su tot vive a explorar
+tam mult lingues quam possibil. Il publicat un multitá de grammaticas:
+antiqui islandic, dan, anglosaxon, frisic, hispan, italian, singalés,
+persian, finnic, lappon, etc. Durant un viage a Island in 1816 il scrit
+su grand dissertation: «Investigation pri li orígine del antiqui
+islandic o nordic lingue», per quel il fat epoca in li historie del
+linguistica.</p>
+<p>Quel es li merite de Rask? Il prescrit li general principies del
+comparativ e historic linguistica, il emfasat quam unesim li necessitá
+comparar li grammatic intern structura del lingues in oposition al
+precedent linguistes, queles hat contentat se per citar solmen cert
+vocabules por demonstrar afinitá de lingues. Il dividet li indoeuropan
+lingues in families, queles essentialmen coincide con tis, queles li
+scientie
+accepta quam li corect anc hodie. On deve memorar que ante Rask li
+linguistica apen esset digni del nómine de scientie. Il comprendet que
+li indoeuropan lingues ha evoluet de un comun antiqui protolingue, quel
+il pensat simil al grec -- un assumption, quel plu tard ha esset
+confirmat de modern linguistes.</p>
+<p>Li forsan maxim grand decovriment del comparativ linguistica, li regul
+pri li changes de cert «mut» consonantes del «classic» lingues
+(sanscrit, grec, latin) al germanic lingues, esset li resultate del
+explorationes de Rask, benque it es conosset in mult landes sub li
+nómine «lege de Grimm», secun Jacob Grimm, un famós contemporan german
+linguist. Prof. Otto Jespersen scri in su libre «Die Sprache»: «Si on
+vole nominar ti lege secun un mann, on deve plu bon indicar it quam
+«lege de Rask», nam omni ti transitiones lat. gr. p {equals} f, t {equals} th, k =
+h, etc. es numerat in li libre «Investigation» de Rask, e Grimm
+conosset ti ovre ante quam il hat scrit un sol parol pri li changes del
+consonantes.»</p>
+<p>Ancor es remarcabil specialmen su grammatica del anglo-saxon, per quel
+il apari quam fundator del anglistica, e adplu un dissertation pri li
+antiqui persian lingue, pri quel on ante il hat havet opiniones totalmen
+fals.</p>
+<p>Por studiar lingues il fat un long viage (1816-1823) tra Svedia,
+Finlandia, Russia, Caucasia, Persia e India, durant que il experit mult
+strapacies, mem un naufrage in li Indic Ocean. Solmen in 1831 il esset
+nominat professor del oriental lingues in Copenhagen, ma ja li sequent
+annu il morit, malad e desilusionat. Su contemporanes ne comprendet le.</p>
+<p>Yo permisse me citar ancor un frase ex li excellent libre de prof.
+Jespersen «Die Sprache»: «Benque impedit in mult manieres, per
+povritá, maladie e ti circumstantie, que il scrit
+in un lingue tam poc conosset quam li dan, Rasmus Rask tamen promine,
+pro su clarvidentie, su critic sagacitá e su repulsion de omni fantastic
+teoretisation, quam un del unesim ductores del linguistica.»</p>
+<p>Ples inviar Vor abonnament ja hodie por evitar interruption del
+expedition! Li economie crise universal obliga li administration cessar
+li inviation del revúe a non-payantes!</p>
+<h2><a class="header" href="#li-conjunction-quam" id="li-conjunction-quam">Li conjunction «quam»</a></h2>
+<p>De A. Z. Ramstedt, Helsingfors.</p>
+<p>Yo prende li libertá tractar un poc li usation del comparativ
+conjunction «quam», quel ha esset object de discussion. Yo vole
+constatar, quel roles on ha dat e queles no, secun mi opinion, posse dar
+a it in Occidental.</p>
+<p>Quam introductori observation yo peti remarcar, que «quam» deve esser
+distinctmen separat de «qualmen», quel evidentmen significa solmen «in
+qual maniere», sam quam «talmen» significa «in tal maniere». «Qualmen» e «talmen»
+es pur adverbies, e «qualmen» es ergo equivalent a A how, L quomodo,
+Sv huru, ma ne a G wie, F comme, I come, H como, R kak, queles es ne
+solmen adverbies ma anc conjunctiones. Quam e tam es, in contrari, pur
+conjunctiones e quam have mult functiones in Occidental{blank}footnote:[In
+vice de «tam -- quam» nor grand mastro J. Lott usat «ta -- qua», formes
+queles de mult punctus de vise vell esser defensibil.]. Yo va provar
+ci infra classificar li principal.</p>
+<ol>
+<li>
+<p><em>Assimilativ «quam»</em>: «Tu es quam un flore» (G Du bist wie eine Blume;
+li sequent parol have articul) {equals} simil a, quasi, G wie, A
+like, F comme, I come, H como, Sv som, R kak.</p>
+</li>
+<li>
+<p><em>Identificativ «quam»</em>: «Quam presidente de Germania Hindenburg have li
+suprem potentie» (G Als Präsident .. li sequent parol ne have
+articul) {equals} essent, in capacitá de, in qualitá de; D als, A
+as, in A on usa rarmen anc L qua, F comme, Sv som, R per casus
+instrumentalis.</p>
+</li>
+<li>
+<p><em>Comparativ «quam» de egalitá</em> che li positiv gradu del adjectives:
+«Tam bell quam un flore»; G wie, A as, F grand comme la main, aussi
+grand que son frére, L quam, I come, che, H como, Sv som, R kak.</p>
+</li>
+<li>
+<p><em>Comparativ «quam»</em> de ínegalitá che li comparativ gradu del
+adjectives: «Plu bell quam un flore»; D als, A than, F que, I che,
+di, H que, Sv än, R chem o per casus genitivus, L per casus
+ablativus.</p>
+</li>
+<li>
+<p><em>Corelativ «quam»</em>, conjunctent integri o eliptic frases: «Quam vu
+save, li cose es desfacil.» -- «In li sam maniere noi va morir quam
+nor patres ha morit» {equals} eliptic: «Sam quam nor patres noi va
+morir».</p>
+</li>
+<li>
+<p><em>Exclamativ «quam»</em>: «Quam bell es li flore!» -- «Quam curt es li
+vive!» A ci apartene anc interrogativ quam: «Quam long es li
+strad?» «Quam mult (= quant?) custa li flore?» Ti function es
+conform al usu del Latin, ma ne a A o Sv, queles usa adverbie: A
+«how beautiful»! Sv «hur skön!»</p>
+</li>
+</ol>
+<ul>
+<li></li>
+</ul>
+<p>Li adverbie qualmen ne posse esser usat ci in Occidental, nam it acte
+se ya ne tant pri li qualitá quant pri li mesura, ergo un comparation
+fictiv, in quel casu quam es plu logic. To es confirmat per li hispan
+expression: «¡Cuán hermosa!» e li francés per «Combien» e italian per
+«Quanto».</p>
+<ol start="7">
+<li><em>Enumerativ «quam»</em>: «Domestic animales quam canes, cates, etc.»
+{equals} ad saver, per exemple.</li>
+</ol>
+<p>Dubitabil e mem evitand sembla me li usation de:</p>
+<p>[start=8]
+. <em>Temporal «quam»</em>, benque un tal function vell esser motivat pro li usu
+in li modern lingues. Plu bon vell esser usar in Occidental solmen
+quande o transcrition per gerundium si possibil: G Als ich zu Hause
+war, besuchte mich... F Comme je restais... (anc quand, lorsque), H
+Como estaba en casa... (anc «cuando»)footnote:[In hispan «Como
+estaba en casa...» significa «Nam yo esset in hem...» o «Mercí to,
+que yo esset in hem...», durante que «Cuando estaba en casa...»
+significa «Quande yo esset in hem...». Editor digital.],
+I Come stava accasa...
+(quando) -- Occidental Quande yo esset in hem... G Wie er mich
+sieht, fängt er zu fragen an -- Occidental Quande il vide me, il
+comensa questionar, o Vidente me...
+. <em>Exceptiv «quam»</em> sembla impossibil in Occidental. On deve usar except
+o forsan L nisi. Ples comparar ti du German frases: Niemand hat
+gekämpft wie du -- Occidental. Nequi ha combattet quam tu; Niemand
+hat gekämpft als du -- Occidental. Nequi ha combattet except tu. Li
+Francés expression: Il n'avait qu'un seul défaut, ne deve esser
+traductet: Il ne havet quam un sol defect, ma: Il havet solmen un
+defect. In li sam maniere it vell esser Francés idiomatisme scrir:
+It ne acte se quam pri paroles, in vice de: It ne acte se pri
+altricos quam pri paroles, o It acte se solmen pri paroles.</p>
+<p>In comparationes inter du comparatives o in tal-nominat <em>proportional
+comparation</em> noi usa in Occidental tant -- quant, o null conjunctiones secun li
+usu p. ex. in F e A: Quant plu old, tant plu stupid. Quant plu on vide
+le, tant minu on estima le. Plu on lee, plu on save. Minu on lee, minu
+on save.</p>
+<p>Comparante li functiones del conjunctiones comparativ in li
+diferent national lingues, noi constata, que chascun lingue have su
+propri regules, talmen que it sembla esser impossibil trovar paroles e
+regules, queles vell esser facil, neutral e natural in li sam témpore.
+Etsi du nationes have li sam paroles, ili tamen usa les in diferent
+manieres. Li Anglés as e li German als es ya etimologicmen li sam parol,
+ma noi vide, que ili ne have li sam functiones. Si on vell prender
+conjunctiones ex un modern lingue, on vell esser fortiat introducter
+regules, sovente tre complicat, sive por forenes pri to, qualmen li
+conjunction es usat in li respectiv national lingue, sive por ti nation,
+quel usa it in su lingue, pri to, qualmen on ne deve usar it in Occidental.</p>
+<p>Del altri látere un profund studie del modern lingue monstra, que on ne
+besona 3-5 conjunctiones comparativ, ma que on posse expresser se in
+bon e facil maniere per un sol. Electente un sol conjunction comparativ
+on ne posse trovar un plu bon tal quam li Latin quam, quel sta in bon
+acordantie con li sistema de Occidental. It es ver, que un sol «quam» aporta
+quelc ínconvenienties, benque ili ne es seriós. Anc natural lingues
+monstra casus, u lor mecanisme claudica. Tri exemples:</p>
+<ol>
+<li>Il es tam grand quam poet quam quam prosator.</li>
+<li>Il es plu grand quam poet quam quam prosator.</li>
+<li>Plu bon morir quam quam poltron fugir.</li>
+</ol>
+<p>In li unesim exemple p. ex. anc li Sved lingue vell haver «som som»,
+sin posser evitar it per altri maniere quam per transcrition, o, quo
+sovente es fat in parlada, per omission de ún «som». In li duesim e
+triesim exemple anc li German lingue regularimen vell haver «als als»,
+ma on changea les subitmen a «denn als»! Si noi ne vole tolerar du
+quam's in Occidental, noi posse expresser nos in li sequent manieres:</p>
+<ol>
+<li>Il es tam grand in su capacitá de poet quam in su capacitá de
+prosator.</li>
+<li>Il es tam grand poet quam prosator.</li>
+<li>Plu bon morir quam fugir quam un poltron{blank}footnote:[Por li Latin
+conjunction quamquam noi usa nu generalmen benque, secun un
+proposition fat de me ja in 1928, in vice del mutilation quancam
+usat de E. de Wahl.].</li>
+</ol>
+<p>Existe sempre medies expresser se clar e distinct per un sol quam, sin
+introducter 3 conjunctiones kom, kam e quam, quam ha fat prof.
+Jespersen in Novial{blank}footnote:[Li Rumanian lingue usa por comparation de
+egalitá «ca» e por ínegalitá «că», ambi provenient del Latin «quam», li
+function de quel ergo deve har esset plu general in vulgar Latin quam
+in classic, quo es confirmat anc per li usation de I «che» e F «que».].</p>
+<p>Alqui vell posser ancor far li objection, que noi usa quam ne con li sam
+restrictet function quam fat Cicero. Ma to ya ne posse leder plu li
+auricules del mort Romanos, queles ne
+posse protestar ex Hades. Existe un enorm númere de Latin paroles,
+queles li modern homes usa in altri maniere quam li Romanos, queles
+ergo, si ili vell tornar se in lor tombes chascun vez noi usa falsmen un
+Latin parol, vell dever constantmen rotar.</p>
+<h2><a class="header" href="#por-unitari-pronunciation" id="por-unitari-pronunciation">Por unitari pronunciation</a></h2>
+<p>De Dr. A. Peipers, Köln.</p>
+<p>Li homes have du medies por intercomprender: parlar -- audir, e scrir
+(printar) -- leer. Li unesim (acustic) medie es li original e natural; it
+es mult plu antiqui e general quam li
+duesim (li optic), quel es artificial e un plu-minu bon imitation del
+unesim. Ma durant li ultim centennies, desde li invention del printation
+e precipue del scri-machine, li optic metode de interchange del pensa ha
+superat li acustic in considerabil gradu concernent frequentie e
+qualitá. Li scritura conserva plu bon, plu corect li idé, ma anc su
+lingual form.</p>
+<p>Ti-ci resiste contra li transformativ tendenties del parlat lingue. A ti
+circumstantie noi debi li existentie de un grand stock de international
+paroles, li fundament del modern mundlingue-sistemas.
+Nor autores ha sovente demonstrat que li ortografic
+internationalitá prepondera ye li fonetic.</p>
+<p>Ma justmen pro to noi deve considerar que li mundlingue es destinat ne
+solmen por li international corespondentie e printation de revúes e
+libres, ma anc por li usada in li international trafic, viages,
+negociationes, discussiones in congresses etc., e que por to noi besona
+urgentmen un unitari pronunciation.</p>
+<p>Adplu noi deve considerar que justmen in ti-ci punctu noi es ataccat per
+li maxim grav argument del linguistes. E si noi memora li experienties
+fat in li international congresses del
+sistemas Volapük, Esperanto e Ido, noi save que in fact ci es un del maxim
+debil punctus del mundlingue.</p>
+<p>Pro li present general economic crise noi ne ancor posse esperar
+arrangear bentost un international congress de Occidental, li maxim bon
+ocasion por studiar ti-ci problema. Ma li modern tecnica del acustica ha
+dat nos du excellent auxilies: radio e grammofon! Si noi vell obtener li
+permission de quelc radio-emissorias in divers regiones, emisser quelc
+textus in Occidental, nor samideanes vell posser comparar li
+pronunciation del divers oratores e far su criticas. Ma it es tre
+desfacil obtener li permission. It vell esser mult plu facil e
+practicmen executibil, far recepter textus in Occidental per oratores de
+divers matrin lingue, in grammofon-discos; ti-ci, contra li radio, have
+li avantage que on posse far repetir li
+textus quant sovent on desira e que on posse far li prestudies exter li
+publico; finalmen post un detalliat critica, on vell posser presentar li
+discos con li maxim bon pronunciation al
+competent expertes e autoritás.</p>
+<p>Si li linguistes vell denove argumentar que li mundlingue va fender se
+in divers dialectes per li divers pronunciation del nationes, noi vell
+referer al radio e grammofon quam excellent medies diffuser e conservar
+sempre un unitari pronunciation.</p>
+<h2><a class="header" href="#abonnament-a-cosmoglotta" id="abonnament-a-cosmoglotta">Abonnament a Cosmoglotta</a></h2>
+<p>Ples inviar Vor abonnament ja hodie!</p>
+<p>Li sequent numerós va esser misset solmen a tis qui ha renovat e payat
+su abonnamentes.</p>
+<h2><a class="header" href="#it-es-demonstrat" id="it-es-demonstrat">It es demonstrat</a></h2>
+<p>In un micri cité on hat structet un nov buchería. Li corporation del
+bucheres misset al magistratu un plende pri to, que li porta del
+buchería esset tro strett, talmen que null bove posset passar tra it. Li
+borgomastro self vadet personalmen al loc por examinar li cose.</p>
+<p>Il passat, con extendet brasses, tra li porta e exclamat:</p>
+<p>«Qualmen, esque un bove ne posse passar tra ti ci porta?»</p>
+<h2><a class="header" href="#self-evaluation" id="self-evaluation">Self-evaluation</a></h2>
+<p>Un amato misset a su amata su portrete per posta. Por economisar porte
+il scrit súper li adresse: «Specimen sin valore.»</p>
+<h2><a class="header" href="#li-censor" id="li-censor">Li censor</a></h2>
+<p><em>Paginette ex li ancian regime de Russia. Originale por Cosmoglotta de A.
+Kofman, Odessa.</em></p>
+<p>-- Ples dir, yo suplica, car senior, pro quo Vu interdictet mi libre?</p>
+<p>-- Pro que Vu propaga in it ínmoral idés!</p>
+<p>-- Impossibil! Qual idés ínmoral Vu ha trovat in it?</p>
+<p>-- Esque Vu ha obliviat? Vu mentiona ta du circumstanties extrem
+abominabil. Vu scri: «Quande Hyrcanus li Duesim, por punir su fratre
+Aristobulus, assediat Jerusalem, inter li homes, queles hat fugit ex li
+cité, esset un pie mann Onias. Il cadet in li manus del assediantes,
+qui, in li crede que li ciel sempre acceptat su pregas, postulat que il
+mey dir anatema contra Aristobulus e su partisanes. Ma in vice de to
+Onias pregat: Ho Deo, li assediantes, sam quam li assediates
+es tui popul, refusa do far to, quo singul partie desira contra li altri
+partie! Ti prega indignat li assediantes e ili mortat li pie mann.»
+Talmen Vu ha scrit!</p>
+<p>-- Ma quo es ínmoral in ti prega?</p>
+<p>-- Li ínmoral tendentie es, que Deo quasi ne posset far du oposit e
+contrari fenomenes: satisfar li ambi parties. Secun Vor libre on vell
+pensar, per exemple, que Deo ne posse far, que it es, in li sam témpore
+e in li sam loc, calid e frigid, in consequentie, que Deo es impotent.</p>
+<p>-- Ma qualmen Deo posse far in sam témpore e in sam loc du coses tant
+contrari?</p>
+<p>Li censor contraet li broves.</p>
+<p>-- Si Vu parla tal lingue, nor conversation es finit!</p>
+<p>-- Ma, in li nómine de omni santes! Esque es imaginabil, in sam témpore
+e in sam loc, calore e frigore?</p>
+<p>-- Ples ne dir follies! Vu save tre bon, que si Vu jace in febre, Vu
+have in sam témpore calore e frigore!</p>
+<p>-- Hm... yes... E li duesim circumstantie?</p>
+<p>-- Li duesim? Vu scri: «Quande Pompeius hat assediat Jerusalem e prendet
+it, il usat li ocasion por penetrar in li santuarium e satisfar su
+curiositá pri li particularitás del cult hebréic, pro que un rumore
+curret, que in li temple esset un cap de ásino, adorat del hebrées.
+Vidente que ni un tal
+object, ni alcun altri statue o figura ne esset ta, Pompeius esset tant
+consternat, que il obliviat raubar li temple, benque in li tresorería
+del temple esset circa 2 000 talentes.»</p>
+<p>-- Esque ti casu anc es ínmoral?</p>
+<p>-- Certmen! Yo peti Vos, qual conclusion on posse far de ti fact?</p>
+<p>-- Qual conclusion? Tot simplic: por que un sacrilegie ne eveni, it sufice
+solmen li manca de un cap de ásino...</p>
+<p>-- No, senior! Li conclusion es un altri: li fact que rational homes ne
+adora cap asinin es possibil, ma Vu suggeste li idé, que solmen per
+oblivia un chef de armé ne rauba temples. To
+esset Vor allusion. Ma to es sanguin offense contra li armé, e to ne es
+permissibil.</p>
+<h2><a class="header" href="#sententies-de-a-rivarol-1753-1801" id="sententies-de-a-rivarol-1753-1801">Sententies de A. Rivarol (1753-1801)</a></h2>
+<p>Li maxim civilisat popul posse esser tam proxim al barbarie quam li
+maxim brilliant ferre al oxid. Che li popules quam che li metalles it es
+solmen li superficie, quel brillia.</p>
+<p>Li revolution ha emerget ex li libres de filosofes -- quam un armat
+doctrine.</p>
+<p>Por producter un revolution es necessi un poc stupiditá de ún látere e
+un portion de intelligentie del altri látere.</p>
+<p>Null hom vole esser sol in li munde, mem ne li avaro, benque il tande
+vell posseder omnicos, mem ne li invidioso, benque il tande vell vider
+solmen ruines.</p>
+<p>Li homes passa lor témpore per disputar pri li passate, lamentar pro li
+present, e tremer pro li futur témpore.</p>
+<p>Li grammatica es li arte far plu levi li desfacilitás de un lingue; li
+levuore ne deve esser plu pesant quam li cargo.</p>
+<p>Li idés es un capitale, quel da interest solmen in li manu de un
+talente.</p>
+<p>Li idés viagea circum li munde. Illi passa de secul a secul, de lingue a
+lingue, de poesie a prosa, ante que ili es investit in un splendid
+image, un vivid e brilliant expression, quel plu
+ne escapa. Tal ili apartene al heredage del homanité.</p>
+<h2><a class="header" href="#li-prisoneros" id="li-prisoneros">Li prisoneros</a></h2>
+<p><em>De Friedrich Nietzsche.</em></p>
+<p>Un matin li prisoneros venit a su corte de labor: li inspector ne esset
+ta. Quelc de ili vadet, quam customari, immediatmen al labor, altres
+stat ínocupat e regardat obstinat. Tande un mann avansat e dit con
+sonori voce: «Ples laborar tant quant vu vole o fa nequo: to es egal.
+Vor secret conspiration es revelat. Li inspector ha spionat e va
+preparar vos un horribil judicament in li proxim dies. Vu conosse le, il
+es sever e revenjativ.  Ma ples remarcar mi parol: til nu vu ha
+misconosset me: yo ne es ti, qui yo apare. No, in veritá: yo es li filio
+del inspector e su dextri manu. Yo posse salvar vos, yo vole salvar vos.
+Ma ples remarcar bon, solmen tis de vos, queles crede me pro mi parol,
+que yo es li filio del inspector. Li altres va recoltar li fructes de
+lor incredulitá». -- «Bon», un old prisonero dit post alcun silentie,
+«ma proquo it posse esser te tam grav, que noi crede e que noi ne crede
+te? Si tu vermen es su filio e posse far omni to quo tu di, ples dir un
+parol in favor a nos omnes: it vell esser vermen amabil. Ma lassa li
+babillada pri credulitá e íncredulitá!»  -- «E», un yun mann
+interruptet le, «yo ne crede to, in céteri, it es solmen un cos
+imaginat. Yo paria, que post ott dies noi va esser ci precis quam hodie
+e li inspector va saver nequo». -- «E etsi il vell har savet alquo,
+il ne save it plu», dit li ultim-venit del prisoneros, quel solmen nu
+venit al corte, «li inspector morit just nu!» -- «Holla», plures
+exclamat in un vez, «senior filio,
+senior filio, qualmen sta li cos con li heredit? Esque noi nu forsan es
+tui prisoneros?» -- «Yo ha dit vos to», li questionate replicat
+clement, «que yo va liberar chascun, qui crede
+me, tam ver quam mi patre ancor vive». -- Li prisoneros ne ridet, ma
+movet lor epoles e lassat le star.</p>
+<p>Trad. de C.C.</p>
+<h2><a class="header" href="#li-ideal-fémina" id="li-ideal-fémina">Li ideal fémina</a></h2>
+<p>Li Argentinian pictor Benito Quinquela imagina se li ideal fémina tal:
+Ella deve haver li dignitá del Anglesa, li blu ocules del Sveda, li
+figura del Hispana, li chic del Francesa e li
+brilliant nigri capilles del Argentiniana.</p>
+<h2><a class="header" href="#li-tri-amicos" id="li-tri-amicos">Li tri amicos</a></h2>
+<p>Ex Jean Christoph de Romain Rolland.</p>
+<p>Li facie de Schulz eclarat se. Il expandet se in un confus eulogie de su
+old piano, ma silentiat bentost, nam Christoph hat commensat denov a
+luder. Canzones succedet al canzones. Christoph cantat in semi-voce.
+Schulz sequet chascun de su moves con ocules humid. Kunz hat cruceat li
+manus súper su ventre e cludet su ocules, por juir plu bon. Tande e
+tande Christoph retornat se radiante, vers li du old mannes, qui esset
+in ravissement e il dit con un entusiasme naiv, pri quel ili ne pensat
+a rider:</p>
+<p>-- He! Quam bell to ci es! -- E to! Quo vu di a to ci? -- E to --
+To es lu max bell de omnis.</p>
+<p>-- Nu yo va luder quelccos, quel vu fa herisser li crines sur vor
+cap.</p>
+<p>Quande il finit un revosi pezze musical li cucú del pendule comensat a
+sonar. Christian up-saltat e criat pro colere. Kunz, bruscmen avigilat,
+rulat su grand consternat ocules. Schulz
+self ne comprendet immediatmen. Poy quande il videt, que Christoph
+monstrat imperiosimen per li punie al avie salutant e que il criat
+forportar in li nómine de ciel de ta li idiot, ti spíritu ventriloquent,
+il strax trovat por li unesim vez in su vive, que ti bruida in fact
+esset íntolerabil, e prendente un stul, il volet grimpar sur it por
+decrocar li trublard. Ma il
+presc cadet e Kunz impedit le remontar. Il vocat Salomé. Ella arivat sin
+hastar secun su hábitu e esset stupefat, quande on chargeat su brasses
+per li horloge, quel li impatient Christoph self interim hat decrocat.</p>
+<p>Quo yo deve far con it? ella questionat. To quo vu desira. Ples
+forportar it! Noi ne plu vole revider it ci! dit Schulz, sammen
+ínpatientosi quam Christoph.</p>
+<p>Il questionat se self, quam il hat posset suportar tam long ti horrore.</p>
+<p>Salomé pensat, que sin dúbita ella esset fortmen foll. Li musica denov
+comensat. Li hores passat. Salomé anunciat, que li diné stat servit.
+Schulz ordonat la silentiar. Ella revenit post deci minutes, poy denov
+ancor post deci minutes, ti ci vez ella esset extra se e bolliente ye
+colere e provante aspecter ínsensibilmen, ella plantat se in medie del
+chambre,
+e malgré li gestes desesperat de Schulz ella questionat per un voce de
+trumpete, esque ti ci seniores preferet manjar lor diné, frigidmen o in
+brulat statu. Que it ne concernet la; que
+ella attendet lor ordonas.</p>
+<p>Schulz, confuset del atacca, volet far un scene a su servitora, ma
+Christoph eclatat rider. Kunz imitat le e Schulz in fine actet sammen
+quam ili. Salomé, satisfat del causat efecte tornat circum sur su
+talones con li mime de un reyessa, qui vole pardonar a su subjectes
+repentiv.</p>
+<p>To es un garsonessa! dit Christoph, levante se del piano. Ella es rect.
+Nullcos es plu ínsuportabil quam un public, quel adveni in medie del
+concert. E ili sedentat se circum li table.</p>
+<p>Trad. de Dr. Karl Schüppel, Parchim.</p>
+<h2><a class="header" href="#prega-sin-confession" id="prega-sin-confession">Prega sin confession</a></h2>
+<p>De prof. Knut K jellberg.</p>
+<p>SOL brilliant, lass tui radies fluer súper li munde e súper nos. Avigila
+li natura a floreant vive ex li long hivernal dorme, e fonde in nor
+propri cordies to, quo ancor es dur e gelat.</p>
+<p>Lass li amore profluer in nos, e bruir quam li fluviettes vernal extern
+in boscages e valleyes. Avigila roses sur pallid guancies, avigila
+esperantie in trist cordies e in desesperat mentes!</p>
+<p>Brillia súper lago e rive, tu flammeant torche del die, e brillia súper
+vias, u homes vade. Forchassa li obscuritá del ignorantie, e lass nos
+omnes migrar in li claritá!</p>
+<p>Sol! Tu es li simbol del idés del luce e del veritá; tui calore es li
+simbol de ti claritá quel victe omnicos.</p>
+<p>VENTE vernal, susurra tra li novtextet vestiment del árbores, e súper li
+flores e grámine del prates. Vade quam un caressa súper li facies del
+homes, e forsuffla ex nor mentes e ex nor cordies omnicos includet e
+omni polve, quel durant li omnidial vive posit se súper lu maxim bon in
+nos, súper li maxim nobil desiras e súper nor maxim bell intentiones!</p>
+<p>Da sanitá al malades e consolation al aflictet homes, e avigila che nos
+omnes un plu profund desir a veritá e justitá, sagesse e bellesse!</p>
+<p>TONES es li péctores de avies e homes, ex cord-instrumentes e flutes, ex
+organes e cloches! Vu mey devenir ales, queles eleva nos ex li grus
+súper prejudicies e mesquin inclusion a plu
+alt vispunctus plu clar aer, u noi plu distinctmen posse vider li
+ideales, queles noi tende atinger.</p>
+<p>Porta pace in nor anxiós péctores e avigila, oh tones, che nos omnes to,
+de quo intern bontá, veritá e bellesse posse florear e portar fructes!</p>
+<p>SOL, luce e calenta nos! VENTE, da nos plu pur, plu clar aer! TONES,
+eleva nos a plu alt, plu vast spacies!</p>
+<p>Trad. de A. Lindström.</p>
+<h2><a class="header" href="#vienna" id="vienna">Vienna</a></h2>
+<p>De E. Moess, Vienna.</p>
+<p>Desde li novannu 1932 li Central Oficie del Occidental Union have su
+domicilie in Vienna. Durant quin annus it esset in Mauer, un suburbe del
+austrian metropole. Ergo li loc del central organ de nor representativ
+organisation coincide con li cordie de Europa. Etsi li cap e li borse de
+nor continent es in altri regiones, omni to, quo relate cultural
+valores, specialmen arte, have un ver fusuore in Vienna. In ti respecte
+it constitue in sam témpor un ponte e un node.</p>
+<p>Forsan solmen Istambul ludet un simil rol, con li diferentie, que ti du
+functiones alternat plu explicitmen durant li long existentie de su
+senior fratre sur li sill de Asia: In li témpor de Alexander it esset un
+ponte, till que Bizantia transformat se in Constantinópol, li metropole
+de Ost-Roma. Durant li Grec Imperia it devenit plu e plu li porta e li
+clave del Occidente por redevenir un residentie imperial del sultanes.
+Nu it es solmen li fenestre del nov Turkia, tra quel penetra li
+civilisation modern del Occidente.</p>
+<p>Vienna, situat apu li max grand fluvie de Central-Europa -- ligament de
+sett popules e de sett states -- nu es li max grand cité apu Danubio quel
+unquande ha format li frontiere del Roman Imperia. In ti epoca noi trova
+Vienna (nominat Vindobona) quam un bastion del civilisat sude contra li
+líber norde. Li situation changea, secun que li punctu de gravitation
+de Europa transi del meridional regiones al landes jacent in norde del
+Alpes. E ci, u li central massive de Europa es tuchat del ja imposant
+Danubio, comensat developar se durant li medievie li «Kaiserstadt» del
+Habsburgos. Vienna manet lor residentie durant quin secules. Ante un
+quart millennie it atinget su position max potent e in sam témpor it
+travivet su max grand dangere pro li assalt del turcos. In li 19-m
+centennie li district de su influentie limitat se a plu natural cadres,
+devenient li capitale del monarchia Danubian, ma in sam témpor li
+gérmines del decomposition comensat crescer in li imperia. Hodie it es
+denov un cité excentric quam ante quin-cent annus. In su present statu
+de developament it relate al ínsignificant torso «German-Austria» quam
+un hidrocefale. Per li fortie de su geografic position e per su evoluet
+institutiones ti cité es predestinat luder un simil rol quam un tot
+state: i.e. Svissia, in li altri extremitá del Alpes.</p>
+<p>Ya Vienna ha conservat sempre un duplic facie: un national e un
+international, representat antey per li polaritá: borgesité e corte. Li
+un radicant in li original population german, li altri atraent elementes
+de omni partes de Europa: hollandeses, vallones, lotharingos, hispanes,
+italianes, hungares, grecos, e precipue in li ultim secules judéos e
+slaves in grand varietá. Ili omni lassat su tracies in li facie del
+cité, ili omni contribuet per su talent e per su labor al ascension de
+Vienna. Tot Europa oriental senti li spiritual emanationes de ti cité,
+durant que it transforma li artistic forties del sam regiones. Li munde
+conosse presc solmen li arte de Vienna e ne remarca li sciential e altri
+láteres de su mission cultural.</p>
+<p>Null interlinguist deve obliviar, que ci vivet e actet Julius Lott, li
+fundator de nor interlinguistic scol, ci evenit li unesim congress de
+Ido, ci es etablisset li International Museo de Esperanto e ci aparit
+ante ne long Cosmoglotta.</p>
+<p>Vienna es un nod e un pont!</p>
+<p>R{dot} N. Coudenhove-Kalergi recentmen respondet per li sequent lapidari
+frases a un inqueste «Quo vu opine pri li future de Vienna?», arangeat
+del revúe «Wiener Rundschau»:</p>
+<p>Vienna vell esser destinat pro plu quam un consideration devenir li
+Washington del futuri Paneuropa.</p>
+<p>Si li Europan politica e economie ne changea, ti cité es ínsalvabilmen
+abandonat al ruin.</p>
+<p>Si li creation de Paneuropa realisa se, li future de Vienna va esser plu
+grand, quam su passate.</p>
+<h2><a class="header" href="#li-concurrentie-del-sistemas" id="li-concurrentie-del-sistemas">Li concurrentie del sistemas</a></h2>
+<p>De Ing. E. Pigal, Vienna.</p>
+<p>Li problema de un international lingue ha ocupat li pensas de mult
+erudit persones del ultim decennies. Divers propositiones ha esset
+publicat. Un part del publicum es inclinat a creder, que li multitá del
+projectes fa impossibil li solution del problema. To es un errore. In
+contrari ti concurrentie ha ductet a un progressiv amelioration e al
+selection del maxim
+apt sistema.</p>
+<p>Li resultate de ti evolution es li idioma Occidental, un harmonic
+combination de naturalitá e regularitá. Occidental have un immens
+quantitá de international paroles familiari a omni
+educat europanes. Mult adeptes de altri sistemas ha transit a
+Occidental. Plur decisiv experienties in divers landes demonstra, que
+inteligent persones posse scrir e parlar ti interessant e excellent
+lingue in curt témpore. Su difusion in Europa e America deveni sempre
+plu grand.</p>
+<h2><a class="header" href="#cronica" id="cronica">Cronica</a></h2>
+<p>SOCIAL-DEMOKRATEN, li grand jurnale del sved socialdemocrates, fa in su
+no. de 28m septembre reclam por Occidental. Un cronico scri: «Ja un rapid
+regard al interlingue Occidental di me, que it es
+un tre facil lingue. Malgré que yo vide it hodie solmen li unesim vez,
+yo lee it sin obstacules. It es, ad saver, composit de omni ti
+international términos e fraseologies, queles on constantmen presenta in
+li periodic presse e litteratura, completat con quelc genialmen
+constructet prepositiones (?!) Occidental es ne solmen facil a leer, ma
+anc facil a scrir». E li jurnale reprinta li unesim lecion ex li
+Okzidental-Kursus in li libre «Occidental die Weltsprache».</p>
+<p>BERGSLAGERNAS NYHETER (Filipstad, Svedia) contene in li no. de 28m
+septembre 1932 un detalliat raport pri un discussion interessant, quel
+evenit li 25m septembre in Ekshärad, Svedia, durant li conferenties del
+Bontempleros concernent organisation del populari studies. Sr Palmqvist
+(occidentalist) e sr Anderwall (esperantist) defendet li concurrent
+lingues in discurses, queles durat un hor. Li amical e bonhumorosi
+polemica esset escutat del publica con grand interesse. Noi cita ex li
+gazette: «It aparit que li ambi lingues -- fortunosmen -- in mult
+respectes es simil. Ma durant que on deve in Esperanto constructer un multité
+de desfacil e deformi paroles de fantasie, queles fa li interlingue
+ínnatural e barbaric, Occidental funda se solmen sur li ja existent
+international paroles. Tant quant ili existe in Esperanto ili deve esser
+sovent mutilat til ínreconossibilitá caus li ínnatural schematic
+construction de ti lingue.» Per valent defensores li nómine e li idé de
+nor lingue fa se conosset plu e plu in omni landes e in ínpartial
+comparation con altri sistemas li simpaties de omni jurnales sembla
+esser por Occidental.</p>
+<p>MELLANFOLKLIGT SAMARBETE, grand jurnale mensual editet del Buró de
+information por questiones de pace e international colaboration in
+Stockholm, contene in su no. de novembre 1932 un articul «Världsspråk
+och världsord» (Mund-lingues e mund-paroles) de dr. phil. B. Blomé. In
+li excellent articul li autor presenta li principal idés de Occidental e
+directe li atention del letores al naturalistic sistemas, in oposition a
+Esperanto e Ido. In un precedent no. del sam jurnale mag. Carl Ohlson de
+Stockholm hat accentuat li totalmen just fact, que li international pace
+va esser promovet per un international lingue, e mag. Ohlsson recomandat
+Esperanto, insinuante que Occidental es tro «doct». Dr. Blomé emfasa, que Occidental es
+plu apt promover li international comprension quam Esperanto, quel es un
+lingue tro primitiv por li alt civilisat nationes. Dr. Blomé cita prof.
+Meillet: «Li creator de Esperanto ne audaciat aplicar li necessi
+consequenties de su principies: li comun vocabularium de Europa es
+fundat totalmen sur hellenisat latin. Li vocabularium del international
+lingue ne posse esser altri quam greco-latin. -- Li recentmen proposit
+Occidental monstra ti unitá plu bon quam Esperanto e Ido.» Dr. Blomé
+fini su articul per li paroles: «Omni homes, queles es interessat por
+international colaboration, sive in li ideal sive in li practic dominia,
+deve conosser ti extraordinari auxilie, quel ili posse reciver
+immediatmen por su labor per li international auxiliari lingue del
+mundparoles. Li mundparoles besona null oficialisation de states o de
+altri autoritás. Ili es comprendet partú sin it.
+In li mundparoles es li solution del problema del mundlingue.»</p>
+<p>A.Z.R.</p>
+<p>SUCCÈS, li oficial organ del Federation romand de publicitá, Lausanne,
+devoe in li no. oct.-nov. plur págines a Occidental. Li interessant
+articul, redactet in francés con un anecdote in Occidental, es ilustrat
+per li portrete de sr E. de Wahl e per un cart del lingues europan. Pos
+un exposé del ínconvenienties del national lingues quam L.I. on exposi li
+principies de Occidental, precipue su usabilitá por comerciantes. Noi
+besona mani tal articules demonstrant al homes de aferes li ínmediat,
+practic utilitá de Occidental.   K.B.B.</p>
+<p>Edvard Rydahls Boktryckeri, Stockholm 1933</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../Cosmoglotta/1933.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../Cosmoglotta/087.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../Cosmoglotta/1933.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../Cosmoglotta/087.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script src="https://occidental-lang.com/website-word-lookup/lookup.js"></script>
+        <script>
+            lookupInit('https://occidental-lang.com/website-word-lookup/dict.json');
+            document.onselectionchange = debounce(lookup, 500);
+        </script>
+        
+
+    </body>
+</html>
