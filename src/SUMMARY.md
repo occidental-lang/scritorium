@@ -3,7 +3,7 @@
 [Hem](./README.md)
 
 - [Micri Crestomatie](./MicriCrestomatie/0.md)
-  - [Capitul 1](./MicriCrestomatie/1.md)
+  - [Jocas e Anecdotes](./MicriCrestomatie/jocasEanecdotes.md)
   - [Proverbies](./MicriCrestomatie/proverbies.md)
 
 - [Li Litt Prince](./LiLittPrince/0.md)
