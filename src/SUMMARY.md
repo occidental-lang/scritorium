@@ -1,25 +1,10 @@
 # Summary
 
-[Hem](./README.md)
+[Home](./README.md)
 
 - [Micri Crestomatie](./MicriCrestomatie/0.md)
   - [Jocas e Anecdotes](./MicriCrestomatie/jocasEanecdotes.md)
   - [Proverbies](./MicriCrestomatie/proverbies.md)
-
-- [Li Litt Prince](./LiLittPrince/0.md)
-  - [Capitul 1](./LiLittPrince/1.md)
-  - [Capitul 2](./LiLittPrince/2.md)
-  - [Capitul 3](./LiLittPrince/3.md)
-  - [Capitul 4](./LiLittPrince/4.md)
-  - [Capitul 5](./LiLittPrince/5.md)
-  - [Capitul 6](./LiLittPrince/6.md)
-  - [Capitul 7](./LiLittPrince/7.md)
-  - [Capitul 8](./LiLittPrince/8.md)
-  - [Capitul 9](./LiLittPrince/9.md)
-  - [Capitul 10](./LiLittPrince/10.md)
-  - [Capitul 11](./LiLittPrince/11.md)
-  - [Capitul 12](./LiLittPrince/12.md)
-  - [Capitul 13](./LiLittPrince/13.md)
 
 - [Un Desertor](./UnDesertor/0.md)
   - [Capitul 1](./UnDesertor/1.md)
